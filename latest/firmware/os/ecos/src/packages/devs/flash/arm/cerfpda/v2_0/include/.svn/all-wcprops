@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/arm/cerfpda/v2_0/include
+END
+cerfpda_strataflash.inl
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/arm/cerfpda/v2_0/include/cerfpda_strataflash.inl
+END

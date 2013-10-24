@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/loader/v2_0/docs
+END
+notes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/loader/v2_0/docs/notes.txt
+END
+i386.default.ld
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/loader/v2_0/docs/i386.default.ld
+END

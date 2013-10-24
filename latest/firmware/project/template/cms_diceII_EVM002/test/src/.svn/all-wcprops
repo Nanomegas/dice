@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/test/src
+END
+memTest.c
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/test/src/memTest.c
+END
+pioneerDVDTest.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/test/src/pioneerDVDTest.c
+END
+avsTest.c
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/test/src/avsTest.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/test/src/Makefile
+END

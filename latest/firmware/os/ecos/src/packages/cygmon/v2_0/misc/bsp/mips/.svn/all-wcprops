@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/mips
+END
+gdb-cpu.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/mips/gdb-cpu.c
+END
+gdb.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/mips/gdb.h
+END
+gdb-cpu.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/mips/gdb-cpu.h
+END
+insn.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/mips/insn.h
+END
+singlestep.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/mips/singlestep.c
+END

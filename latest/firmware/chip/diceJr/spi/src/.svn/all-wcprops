@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/spi/src
+END
+spiDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/spi/src/spiDefs.h
+END
+spi.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/spi/src/spi.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/spi/src/Makefile
+END

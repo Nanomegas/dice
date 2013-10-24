@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dsp/src/DSPappl
+END
+reg56367.inc
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dsp/src/DSPappl/reg56367.inc
+END
+MakeDsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dsp/src/DSPappl/MakeDsp
+END
+dspappl.ctl
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dsp/src/DSPappl/dspappl.ctl
+END
+dsptest.asm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dsp/src/DSPappl/dsptest.asm
+END
+dsp56300.inc
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dsp/src/DSPappl/dsp56300.inc
+END

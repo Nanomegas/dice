@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/ns/dns/v2_0/include
+END
+dns_impl.inl
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/ns/dns/v2_0/include/dns_impl.inl
+END
+dns.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/ns/dns/v2_0/include/dns.h
+END
+dns_priv.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/ns/dns/v2_0/include/dns_priv.h
+END

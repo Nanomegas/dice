@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/arm/edb7xxx/v2_0/include
+END
+edb7xxx_strataflash.inl
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/arm/edb7xxx/v2_0/include/edb7xxx_strataflash.inl
+END

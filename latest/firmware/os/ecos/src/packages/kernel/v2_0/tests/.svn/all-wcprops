@@ -1,0 +1,353 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests
+END
+kmutex1.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kmutex1.c
+END
+kcache1.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kcache1.c
+END
+release.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/release.cxx
+END
+kcache2.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kcache2.c
+END
+kmutex3.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kmutex3.c
+END
+kmutex4.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kmutex4.c
+END
+kmbox1.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kmbox1.c
+END
+mutex0.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/mutex0.cxx
+END
+klock.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/klock.c
+END
+mutex1.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/mutex1.cxx
+END
+mutex2.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/mutex2.cxx
+END
+kflag0.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kflag0.c
+END
+mutex3.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/mutex3.cxx
+END
+fptest.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/fptest.c
+END
+kflag1.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kflag1.c
+END
+thread0.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/thread0.cxx
+END
+kintr0.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kintr0.c
+END
+thread1.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/thread1.cxx
+END
+thread2.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/thread2.cxx
+END
+kill.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kill.cxx
+END
+tcdiag.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/tcdiag.cxx
+END
+bin_sem0.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/bin_sem0.cxx
+END
+bin_sem1.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/bin_sem1.cxx
+END
+bin_sem2.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/bin_sem2.cxx
+END
+dhrystone.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/dhrystone.c
+END
+testaux.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/testaux.hxx
+END
+ksched1.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/ksched1.c
+END
+thread_gdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/thread_gdb.c
+END
+kclock0.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kclock0.c
+END
+kclock1.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kclock1.c
+END
+sched1.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/sched1.cxx
+END
+except1.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/except1.cxx
+END
+clock0.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/clock0.cxx
+END
+philo.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/philo.cxx
+END
+clock1.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/clock1.cxx
+END
+tm_basic.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/tm_basic.cxx
+END
+kthread0.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kthread0.c
+END
+clocktruth.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/clocktruth.cxx
+END
+mqueue1.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/mqueue1.cxx
+END
+testaux.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/testaux.h
+END
+kthread1.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kthread1.c
+END
+mbox1.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/mbox1.cxx
+END
+flag0.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/flag0.cxx
+END
+flag1.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/flag1.cxx
+END
+intr0.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/intr0.cxx
+END
+sync2.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/sync2.cxx
+END
+timeslice.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/timeslice.c
+END
+ksem0.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/ksem0.c
+END
+smp.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/smp.cxx
+END
+sync3.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/sync3.cxx
+END
+ksem1.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/ksem1.c
+END
+clockcnv.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/clockcnv.cxx
+END
+kexcept1.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kexcept1.c
+END
+kphilo.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kphilo.c
+END
+cnt_sem0.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/cnt_sem0.cxx
+END
+cnt_sem1.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/cnt_sem1.cxx
+END
+kmutex0.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/kmutex0.c
+END
+stress_threads.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/tests/stress_threads.c
+END

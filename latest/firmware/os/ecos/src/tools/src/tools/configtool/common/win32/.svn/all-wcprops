@@ -1,0 +1,437 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32
+END
+BuildOptionsDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/BuildOptionsDialog.h
+END
+FindDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/FindDialog.cpp
+END
+CdlTemplatesDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CdlTemplatesDialog.cpp
+END
+CTPropertiesDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CTPropertiesDialog.cpp
+END
+NewFolderDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/NewFolderDialog.cpp
+END
+notepage.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/notepage.h
+END
+CTOptionsDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CTOptionsDialog.h
+END
+FailingRulesDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/FailingRulesDialog.h
+END
+CellView.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CellView.cpp
+END
+ControlView.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/ControlView.cpp
+END
+RegionGeneralPage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/RegionGeneralPage.cpp
+END
+treectrltoview.inl
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/treectrltoview.inl
+END
+ConfigItem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/ConfigItem.cpp
+END
+SectionRelocationPage.h
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/SectionRelocationPage.h
+END
+IdleMessage.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/IdleMessage.h
+END
+StdAfx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/StdAfx.cpp
+END
+RulesView.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/RulesView.h
+END
+BuildOptionsDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/BuildOptionsDialog.cpp
+END
+PropertiesList.h
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/PropertiesList.h
+END
+listctrltoview.inl
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/listctrltoview.inl
+END
+ConfigToolDoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/ConfigToolDoc.h
+END
+FolderDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/FolderDialog.h
+END
+ConfigViewOptionsDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/ConfigViewOptionsDialog.h
+END
+NotePage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/NotePage.cpp
+END
+FindDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/FindDialog.h
+END
+SplitterWndEx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/SplitterWndEx.cpp
+END
+DescView.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/DescView.h
+END
+SectionRelocationPage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/SectionRelocationPage.cpp
+END
+RegionGeneralPage.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/RegionGeneralPage.h
+END
+RulesView.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/RulesView.cpp
+END
+CdlPackagesDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CdlPackagesDialog.h
+END
+RulesList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/RulesList.cpp
+END
+ConfigItem.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/ConfigItem.h
+END
+FolderDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/FolderDialog.cpp
+END
+mltview.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/mltview.h
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/stdafx.h
+END
+CTCommonres.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CTCommonres.h
+END
+Thermometer.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/Thermometer.h
+END
+CTCommon.rc
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CTCommon.rc
+END
+SectionGeneralPage.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/SectionGeneralPage.h
+END
+TTListCtrl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/TTListCtrl.cpp
+END
+DescView.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/DescView.cpp
+END
+memmap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/memmap.cpp
+END
+SplitterWndEx.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/SplitterWndEx.h
+END
+CdlPackagesDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CdlPackagesDialog.cpp
+END
+AddRemoveDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/AddRemoveDialog.cpp
+END
+mltview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/mltview.cpp
+END
+CTCommonres.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CTCommonres.cpp
+END
+Thermometer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/Thermometer.cpp
+END
+RulesList.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/RulesList.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/resource.h
+END
+PropertiesView.h
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/PropertiesView.h
+END
+thinsplitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/thinsplitter.h
+END
+SectionGeneralPage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/SectionGeneralPage.cpp
+END
+CTOptionsDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CTOptionsDialog.cpp
+END
+messagebox.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/messagebox.h
+END
+FailingRulesDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/FailingRulesDialog.cpp
+END
+CTCommonDoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CTCommonDoc.cpp
+END
+CdlTemplatesDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CdlTemplatesDialog.h
+END
+CTPropertiesDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/CTPropertiesDialog.h
+END
+NewFolderDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/NewFolderDialog.h
+END
+TTListCtrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/TTListCtrl.h
+END
+cellview.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/cellview.h
+END
+ControlView.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/ControlView.h
+END
+memmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/memmap.h
+END
+IdleMessage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/IdleMessage.cpp
+END
+PropertiesView.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/PropertiesView.cpp
+END
+PropertiesList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/PropertiesList.cpp
+END
+thinsplitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/thinsplitter.cpp
+END
+AddRemoveDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/AddRemoveDialog.h
+END
+ConfigViewOptionsDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/ConfigViewOptionsDialog.cpp
+END
+messagebox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/configtool/common/win32/messagebox.cpp
+END

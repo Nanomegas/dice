@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 39
+xcuserdata
+*.pbxuser
+*.mode1
+*.mode1v3
+
+END

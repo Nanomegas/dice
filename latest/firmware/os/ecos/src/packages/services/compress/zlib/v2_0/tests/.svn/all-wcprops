@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/tests
+END
+zlib1.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/tests/zlib1.c
+END
+zlib2.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/tests/zlib2.c
+END

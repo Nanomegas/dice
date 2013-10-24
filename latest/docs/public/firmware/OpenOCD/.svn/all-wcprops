@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD
+END
+DICE_OOCD_JTAG.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/DICE_OOCD_JTAG.pdf
+END
+dice_oocd_init.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/dice_oocd_init.cfg
+END
+burn_redboot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/burn_redboot.bat
+END
+completeFlashImage_EVM002.bin
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/completeFlashImage_EVM002.bin
+END
+completeFlashImage_EVM003.bin
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/completeFlashImage_EVM003.bin
+END
+completeFlashImage_EVM004.bin
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/completeFlashImage_EVM004.bin
+END
+debug.bat
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/debug.bat
+END
+dice_oocd_flash_redboot.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/dice_oocd_flash_redboot.cfg
+END
+burn_EVM002.bat
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/burn_EVM002.bat
+END
+burn_EVM003.bat
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/burn_EVM003.bat
+END
+burn_EVM004.bat
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/burn_EVM004.bat
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/README.txt
+END
+dice_oocd_debug.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/dice_oocd_debug.cfg
+END
+dice_oocd_flash_EVM002.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/dice_oocd_flash_EVM002.cfg
+END
+dice_oocd_flash_EVM003.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/dice_oocd_flash_EVM003.cfg
+END
+dice_oocd_flash_EVM004.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/dice_oocd_flash_EVM004.cfg
+END
+completeFlashImage_redboot.bin
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/docs/public/firmware/OpenOCD/completeFlashImage_redboot.bin
+END

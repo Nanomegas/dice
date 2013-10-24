@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B556A3C11E3059200ED616B /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B556A3B11E3059200ED616B /* CoreMIDI.framework */; };
+		6B5B93850DFD93C500CF3C7F /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6B5B93840DFD93C500CF3C7F /* icon.icns */; };
+		84078F3E09E6B42E004E7BCD /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84078F3D09E6B42E004E7BCD /* AGL.framework */; };
+		84F30CED08FEAD7A0087E26C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F30CEC08FEAD7A0087E26C /* CoreAudio.framework */; };
+		8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
+		CD241EB50C70D16A00BA7ECB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD241EB40C70D16A00BA7ECB /* main.cpp */; };
+		CD8779260D12010800FCB292 /* libtcat_dice_pal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE173EF0D11FE1000AD9ACB /* libtcat_dice_pal.a */; };
+		CDEBA73D0C70CA4E001D321B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEBA73C0C70CA4E001D321B /* IOKit.framework */; };
+		D30D125E136892DC0038BD19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30D125D136892DC0038BD19 /* Foundation.framework */; };
+		D38BA3780FCC8285000F3545 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38BA3770FCC8285000F3545 /* Cocoa.framework */; };
+		D3FF7F3B1587BE0E00104335 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FF7F3A1587BE0E00104335 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B54CDE40EF09C690023DE99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDC2CE170C70E2BB00DAC88D /* tcat_dice_pal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD97016E0E2D2E330088B1A6;
+			remoteInfo = tcat_dice_avc_pal;
+		};
+		CD7DB0320DFF2439008EBB78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDC2CE170C70E2BB00DAC88D /* tcat_dice_pal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC06E0554671400DB518D;
+			remoteInfo = tcat_dice_pal;
+		};
+		CDE173EE0D11FE1000AD9ACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDC2CE170C70E2BB00DAC88D /* tcat_dice_pal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC06F0554671400DB518D;
+			remoteInfo = tcat_dice_pal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		6B556A3B11E3059200ED616B /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		6B5B93840DFD93C500CF3C7F /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../../../resource/icon.icns; sourceTree = SOURCE_ROOT; };
+		84078F3D09E6B42E004E7BCD /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		84F30CEC08FEAD7A0087E26C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D0C4E970486CD37000505A6 /* inspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inspector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD241EB40C70D16A00BA7ECB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CD241EB90C70D18900BA7ECB /* inspector.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = inspector.xcconfig; sourceTree = "<group>"; };
+		CDC2CE170C70E2BB00DAC88D /* tcat_dice_pal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tcat_dice_pal.xcodeproj; path = ../../pal/tcat_dice_pal.xcodeproj; sourceTree = SOURCE_ROOT; };
+		CDEBA73C0C70CA4E001D321B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		D30D125D136892DC0038BD19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		D38BA3770FCC8285000F3545 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		D3FF7F3A1587BE0E00104335 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0C4E910486CD37000505A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8779260D12010800FCB292 /* libtcat_dice_pal.a in Frameworks */,
+				D30D125E136892DC0038BD19 /* Foundation.framework in Frameworks */,
+				8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */,
+				84F30CED08FEAD7A0087E26C /* CoreAudio.framework in Frameworks */,
+				6B556A3C11E3059200ED616B /* CoreMIDI.framework in Frameworks */,
+				84078F3E09E6B42E004E7BCD /* AGL.framework in Frameworks */,
+				CDEBA73D0C70CA4E001D321B /* IOKit.framework in Frameworks */,
+				D38BA3780FCC8285000F3545 /* Cocoa.framework in Frameworks */,
+				D3FF7F3B1587BE0E00104335 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195DF8CFFE9D517E11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4E970486CD37000505A6 /* inspector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20286C29FDCF999611CA2CEA /* inspector */ = {
+			isa = PBXGroup;
+			children = (
+				CD241EB90C70D18900BA7ECB /* inspector.xcconfig */,
+				20286C2AFDCF999611CA2CEA /* Sources */,
+				20286C2CFDCF999611CA2CEA /* Resources */,
+				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
+				195DF8CFFE9D517E11CA2CBB /* Products */,
+			);
+			name = inspector;
+			sourceTree = "<group>";
+		};
+		20286C2AFDCF999611CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CD241EB40C70D16A00BA7ECB /* main.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		20286C2CFDCF999611CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B5B93840DFD93C500CF3C7F /* icon.icns */,
+				8D0C4E960486CD37000505A6 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CDC2CE170C70E2BB00DAC88D /* tcat_dice_pal.xcodeproj */,
+				84078F3D09E6B42E004E7BCD /* AGL.framework */,
+				4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */,
+				D38BA3770FCC8285000F3545 /* Cocoa.framework */,
+				20286C33FDCF999611CA2CEA /* Carbon.framework */,
+				4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */,
+				84F30CEC08FEAD7A0087E26C /* CoreAudio.framework */,
+				6B556A3B11E3059200ED616B /* CoreMIDI.framework */,
+				D30D125D136892DC0038BD19 /* Foundation.framework */,
+				CDEBA73C0C70CA4E001D321B /* IOKit.framework */,
+				D3FF7F3A1587BE0E00104335 /* QuartzCore.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		CDE173EB0D11FE1000AD9ACB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDE173EF0D11FE1000AD9ACB /* libtcat_dice_pal.a */,
+				6B54CDE50EF09C690023DE99 /* libtcat_dice_avc_pal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0C4E890486CD37000505A6 /* inspector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F30CBF08FEAA620087E26C /* Build configuration list for PBXNativeTarget "inspector" */;
+			buildPhases = (
+				8D0C4E8C0486CD37000505A6 /* Resources */,
+				8D0C4E8F0486CD37000505A6 /* Sources */,
+				8D0C4E910486CD37000505A6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD7DB0330DFF2439008EBB78 /* PBXTargetDependency */,
+			);
+			name = inspector;
+			productInstallPath = "$(HOME)/Applications";
+			productName = inspector;
+			productReference = 8D0C4E970486CD37000505A6 /* inspector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20286C28FDCF999611CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = 84F30CC308FEAA620087E26C /* Build configuration list for PBXProject "inspector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 20286C29FDCF999611CA2CEA /* inspector */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CDE173EB0D11FE1000AD9ACB /* Products */;
+					ProjectRef = CDC2CE170C70E2BB00DAC88D /* tcat_dice_pal.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D0C4E890486CD37000505A6 /* inspector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6B54CDE50EF09C690023DE99 /* libtcat_dice_avc_pal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtcat_dice_avc_pal.a;
+			remoteRef = 6B54CDE40EF09C690023DE99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDE173EF0D11FE1000AD9ACB /* libtcat_dice_pal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtcat_dice_pal.a;
+			remoteRef = CDE173EE0D11FE1000AD9ACB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0C4E8C0486CD37000505A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B5B93850DFD93C500CF3C7F /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0C4E8F0486CD37000505A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD241EB50C70D16A00BA7ECB /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD7DB0330DFF2439008EBB78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tcat_dice_pal;
+			targetProxy = CD7DB0320DFF2439008EBB78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84F30CC008FEAA620087E26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				OTHER_LDFLAGS = "-ljucedebug";
+			};
+			name = Debug;
+		};
+		84F30CC108FEAA620087E26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				OTHER_LDFLAGS = "-ljuce";
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F30CC408FEAA620087E26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD241EB90C70D18900BA7ECB /* inspector.xcconfig */;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					_DEBUG,
+				);
+				RUN_CLANG_STATIC_ANALYZER = YES;
+			};
+			name = Debug;
+		};
+		84F30CC508FEAA620087E26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD241EB90C70D18900BA7ECB /* inspector.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					_NDEBUG,
+				);
+				RUN_CLANG_STATIC_ANALYZER = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F30CBF08FEAA620087E26C /* Build configuration list for PBXNativeTarget "inspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F30CC008FEAA620087E26C /* Debug */,
+				84F30CC108FEAA620087E26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F30CC308FEAA620087E26C /* Build configuration list for PBXProject "inspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F30CC408FEAA620087E26C /* Debug */,
+				84F30CC508FEAA620087E26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20286C28FDCF999611CA2CEA /* Project object */;
+}

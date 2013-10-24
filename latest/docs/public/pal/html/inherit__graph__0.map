@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$classtcat_1_1dice_1_1base.html" title="tcat::dice::base" alt="" coords="7,56,119,83" />
+<area shape="rect" href="$classtcat_1_1dice_1_1bus__impl.html" title="tcat::dice::bus_impl" alt="" coords="179,6,317,32" />
+<area shape="rect" href="$classtcat_1_1dice_1_1device.html" title="tcat::dice::device" alt="" coords="187,56,309,83" />
+<area shape="rect" href="$classtcat_1_1dice_1_1system__impl.html" title="Platform dependent system implementation." alt="" coords="168,107,328,134" />
+<area shape="rect" href="$classtcat_1_1dice_1_1bus.html" title="tcat::dice::bus\&lt; device_t \&gt;" alt="" coords="379,6,557,32" />
+<area shape="rect" href="$classtcat_1_1dice_1_1system.html" title="Application wide singleton acts as the STL device tree root." alt="" coords="376,107,560,134" />
+</map>

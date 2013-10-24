@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/dpc
+END
+DpcLatencyDriverBinary32.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/dpc/DpcLatencyDriverBinary32.h
+END
+dpcChk.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/dpc/dpcChk.h
+END
+DpcLatencyDriverBinary64.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/dpc/DpcLatencyDriverBinary64.h
+END
+DpcLatencyDriverInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/dpc/DpcLatencyDriverInterface.h
+END
+dpcChk.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/dpc/dpcChk.cpp
+END
+DPCChk.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/dpc/DPCChk.vcproj
+END

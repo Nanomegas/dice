@@ -1,0 +1,4 @@
+#!/bin/bash
+osascript -e 'tell app id "kTCAT_DICE_CONFIG_APP_BUNDLE_ID" to quit'
+sleep 1
+exit 0

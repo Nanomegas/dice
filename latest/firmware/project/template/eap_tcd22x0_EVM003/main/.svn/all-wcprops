@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main
+END
+AKM4384.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/AKM4384.h
+END
+display.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/display.c
+END
+patch-level.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/patch-level.h
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/display.h
+END
+myAppCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/myAppCli.c
+END
+myAppCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/myAppCli.h
+END
+version.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/version.c
+END
+eapCfg.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/eapCfg.c
+END
+myApp.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/myApp.c
+END
+cyg_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/cyg_main.c
+END
+standAlone.c
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/standAlone.c
+END
+eapCfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/eapCfg.h
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/version.h
+END
+myApp.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/myApp.h
+END
+AKM4384.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/AKM4384.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/Makefile
+END
+standAlone.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/main/standAlone.h
+END

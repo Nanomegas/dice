@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/tests
+END
+basic.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/tests/basic.c
+END
+cache.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/tests/cache.c
+END
+cpp1.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/tests/cpp1.c
+END
+vaargs.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/tests/vaargs.c
+END
+context.c
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/tests/context.c
+END
+intr.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/tests/intr.c
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/make
+END
+Make.params
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/make/Make.params
+END
+buildDiceFromMSVC.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/make/buildDiceFromMSVC.txt
+END
+vc_insight.bat
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/make/vc_insight.bat
+END
+AudioMonitor.sln
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/make/AudioMonitor.sln
+END
+Make.def
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/make/Make.def
+END
+vc_make.bat
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/make/vc_make.bat
+END
+AudioMonitor.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/make/AudioMonitor.vcproj
+END
+gccpipe.awk
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/make/gccpipe.awk
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/make/Makefile
+END

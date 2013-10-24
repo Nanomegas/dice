@@ -1,0 +1,43 @@
+10
+
+dir
+37897
+https://dev.tctechnologies.tc/tcat/tags/release/basic/latest/firmware/project/template/no1394_tcd22x0
+https://dev.tctechnologies.tc/tcat
+
+
+
+2010-07-06T02:36:57.728383Z
+29218
+brian
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cb784262-f21f-0410-bc70-b56a7c46d0f2
+
+test
+dir
+
+main
+dir
+
+target
+dir
+
+doxygen
+dir
+
+make
+dir
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/include
+END
+mb.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/include/mb.h
+END
+ctype.inl
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/include/ctype.inl
+END

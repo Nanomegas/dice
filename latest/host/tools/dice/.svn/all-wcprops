@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice
+END
+dice.sln
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/dice.sln
+END
+build.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/build.cmd
+END
+dice_win.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/dice_win.cpp
+END
+dice.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/dice.xcconfig
+END
+dice_streaming.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/dice_streaming.h
+END
+dice.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/dice.cpp
+END
+dice_mac.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/dice_mac.cpp
+END
+dice.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/dice.vcproj
+END
+dice.rc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/dice.rc
+END
+dice_streaming_coreaudio.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/dice_streaming_coreaudio.cpp
+END
+dice_streaming_asio.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/dice_streaming_asio.cpp
+END
+dice.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/dice.h
+END
+asiolist_unicode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/asiolist_unicode.cpp
+END
+dice_streaming.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dice/dice_streaming.cpp
+END

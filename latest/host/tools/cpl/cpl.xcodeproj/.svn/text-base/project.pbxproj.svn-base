@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B896E0D0DF896F200B95EA4 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6B896E0C0DF896F200B95EA4 /* icon.icns */; };
+		6BDC5F3111DFFA2C00C5E8D2 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDC5F3011DFFA2C00C5E8D2 /* CoreMIDI.framework */; };
+		84078F3E09E6B42E004E7BCD /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84078F3D09E6B42E004E7BCD /* AGL.framework */; };
+		84F30CED08FEAD7A0087E26C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F30CEC08FEAD7A0087E26C /* CoreAudio.framework */; };
+		8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
+		CD7DB0100DFF23C5008EBB78 /* libtcat_dice_pal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4037260D47BF4E00CC9839 /* libtcat_dice_pal.a */; };
+		CDEBA73D0C70CA4E001D321B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEBA73C0C70CA4E001D321B /* IOKit.framework */; };
+		D306E27C0D8C574D00D604F6 /* DeviceSimpleFirmwareComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D306E2750D8C574D00D604F6 /* DeviceSimpleFirmwareComponent.cpp */; };
+		D306E27D0D8C574D00D604F6 /* dice_eap_device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D306E2770D8C574D00D604F6 /* dice_eap_device.cpp */; };
+		D306E27E0D8C574D00D604F6 /* VMeter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D306E2790D8C574D00D604F6 /* VMeter.cpp */; };
+		D30D10A21365DBC00038BD19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30D10A11365DBC00038BD19 /* Foundation.framework */; };
+		D31C6E440E6888D0003F21DF /* HMeter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D31C6E420E6888D0003F21DF /* HMeter.cpp */; };
+		D33AF2BF16156A3700DFE601 /* libfwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B8C9EC1615643F00724E19 /* libfwi.a */; };
+		D33AF2C116156A8B00DFE601 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D33AF2C016156A8B00DFE601 /* libcurl.dylib */; };
+		D33AF2C316156AC600DFE601 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D33AF2C216156AC600DFE601 /* libxml2.dylib */; };
+		D3470C790DFC7B05007A0EB5 /* appDefaults.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3470C750DFC7B05007A0EB5 /* appDefaults.cpp */; };
+		D3470C7A0DFC7B05007A0EB5 /* DefaultsFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3470C770DFC7B05007A0EB5 /* DefaultsFile.cpp */; };
+		D366BC480E5C7F4100E73C36 /* EventLogComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D366BC440E5C7F4100E73C36 /* EventLogComponent.cpp */; };
+		D366BC490E5C7F4100E73C36 /* EventLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D366BC460E5C7F4100E73C36 /* EventLogger.cpp */; };
+		D366BC520E5C808100E73C36 /* BusInfoComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D366BC500E5C808100E73C36 /* BusInfoComponent.cpp */; };
+		D375324B117B759E001187B3 /* BlenderSerialize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3753246117B759E001187B3 /* BlenderSerialize.cpp */; };
+		D375324C117B759E001187B3 /* eapProperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3753247117B759E001187B3 /* eapProperties.cpp */; };
+		D375324D117B759E001187B3 /* eapPropertiesFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3753249117B759E001187B3 /* eapPropertiesFile.cpp */; };
+		D396ABA20D173ED100B103DB /* BinaryData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396AB880D173ED100B103DB /* BinaryData.cpp */; };
+		D396ABA30D173ED100B103DB /* BusGeneralComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396AB8A0D173ED100B103DB /* BusGeneralComponent.cpp */; };
+		D396ABA40D173ED100B103DB /* BusWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396AB8C0D173ED100B103DB /* BusWindow.cpp */; };
+		D396ABA50D173ED100B103DB /* cplApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396AB8E0D173ED100B103DB /* cplApplication.cpp */; };
+		D396ABA60D173ED100B103DB /* DeviceFirmwareComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396AB900D173ED100B103DB /* DeviceFirmwareComponent.cpp */; };
+		D396ABA70D173ED100B103DB /* DeviceGeneralComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396AB920D173ED100B103DB /* DeviceGeneralComponent.cpp */; };
+		D396ABA80D173ED100B103DB /* DeviceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396AB940D173ED100B103DB /* DeviceList.cpp */; };
+		D396ABA90D173ED100B103DB /* DeviceWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396AB960D173ED100B103DB /* DeviceWindow.cpp */; };
+		D396ABAA0D173ED100B103DB /* events.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396AB980D173ED100B103DB /* events.cpp */; };
+		D396ABAB0D173ED100B103DB /* FirmwareProgress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396AB9A0D173ED100B103DB /* FirmwareProgress.cpp */; };
+		D396ABAC0D173ED100B103DB /* juce_TCATLookAndFeel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396AB9C0D173ED100B103DB /* juce_TCATLookAndFeel.cpp */; };
+		D396ABAD0D173ED100B103DB /* listener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396AB9E0D173ED100B103DB /* listener.cpp */; };
+		D396ABAE0D173ED100B103DB /* MainCplWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D396ABA00D173ED100B103DB /* MainCplWindow.cpp */; };
+		D39C26530FC1DE9300671FBD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39C26520FC1DE9300671FBD /* Cocoa.framework */; };
+		D3B8C9E616155E5F00724E19 /* BusOhciCheckComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3B8C9E416155E5F00724E19 /* BusOhciCheckComponent.cpp */; };
+		D3BF15681154E5C80035F661 /* DeviceMixerComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3BF15641154E5C80035F661 /* DeviceMixerComponent.cpp */; };
+		D3BF15691154E5C80035F661 /* DeviceTestComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3BF15661154E5C80035F661 /* DeviceTestComponent.cpp */; };
+		D3BF16891154F6BA0035F661 /* ChannelStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3BF16871154F6BA0035F661 /* ChannelStrip.cpp */; };
+		D3BF16E1115EED9A0035F661 /* Blender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3BF16DF115EED9A0035F661 /* Blender.cpp */; };
+		D3FF7F341587B70300104335 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FF7F331587B70200104335 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD4037250D47BF4E00CC9839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD40371E0D47BF4E00CC9839 /* tcat_dice_pal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC06F0554671400DB518D;
+			remoteInfo = tcat_dice_pal;
+		};
+		CD8EE4D30DFF1E290012FE03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD40371E0D47BF4E00CC9839 /* tcat_dice_pal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC06E0554671400DB518D;
+			remoteInfo = tcat_dice_pal;
+		};
+		D33AF2BD16156A2F00DFE601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3B8C9E71615643F00724E19 /* fwi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D369B413155F61BC00B891CC;
+			remoteInfo = fwi;
+		};
+		D3B8C9EB1615643F00724E19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3B8C9E71615643F00724E19 /* fwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D369B414155F61BC00B891CC;
+			remoteInfo = fwi;
+		};
+		D3C5E1840E351C1900C3B1F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD40371E0D47BF4E00CC9839 /* tcat_dice_pal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD97016E0E2D2E330088B1A6;
+			remoteInfo = tcat_dice_avc_pal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		6B896E0C0DF896F200B95EA4 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../../../resource/icon.icns; sourceTree = SOURCE_ROOT; };
+		6BDC5F3011DFFA2C00C5E8D2 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		84078F3D09E6B42E004E7BCD /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		8407902A09E6B5BD004E7BCD /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		84F30CEC08FEAD7A0087E26C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D0C4E970486CD37000505A6 /* TcatDice Control Panel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TcatDice Control Panel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD241EB90C70D18900BA7ECB /* cpl.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = cpl.xcconfig; sourceTree = "<group>"; };
+		CD40371E0D47BF4E00CC9839 /* tcat_dice_pal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tcat_dice_pal.xcodeproj; path = ../../pal/tcat_dice_pal.xcodeproj; sourceTree = SOURCE_ROOT; };
+		CDEBA73C0C70CA4E001D321B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		D306E2750D8C574D00D604F6 /* DeviceSimpleFirmwareComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceSimpleFirmwareComponent.cpp; sourceTree = "<group>"; };
+		D306E2760D8C574D00D604F6 /* DeviceSimpleFirmwareComponent.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DeviceSimpleFirmwareComponent.h; sourceTree = "<group>"; };
+		D306E2770D8C574D00D604F6 /* dice_eap_device.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = dice_eap_device.cpp; path = ../pal_notify/dice_eap_device.cpp; sourceTree = "<group>"; };
+		D306E2780D8C574D00D604F6 /* dice_eap_device.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = dice_eap_device.h; path = ../pal_notify/dice_eap_device.h; sourceTree = "<group>"; };
+		D306E2790D8C574D00D604F6 /* VMeter.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = VMeter.cpp; sourceTree = "<group>"; };
+		D306E27A0D8C574D00D604F6 /* Vmeter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Vmeter.h; sourceTree = "<group>"; };
+		D30D10A11365DBC00038BD19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		D31C6E420E6888D0003F21DF /* HMeter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HMeter.cpp; sourceTree = "<group>"; };
+		D31C6E430E6888D0003F21DF /* Hmeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hmeter.h; sourceTree = "<group>"; };
+		D33AF2C016156A8B00DFE601 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
+		D33AF2C216156AC600DFE601 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		D3470C750DFC7B05007A0EB5 /* appDefaults.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = appDefaults.cpp; sourceTree = "<group>"; };
+		D3470C760DFC7B05007A0EB5 /* appDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appDefaults.h; sourceTree = "<group>"; };
+		D3470C770DFC7B05007A0EB5 /* DefaultsFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DefaultsFile.cpp; sourceTree = "<group>"; };
+		D3470C780DFC7B05007A0EB5 /* DefaultsFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultsFile.h; sourceTree = "<group>"; };
+		D366BC440E5C7F4100E73C36 /* EventLogComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventLogComponent.cpp; sourceTree = "<group>"; };
+		D366BC450E5C7F4100E73C36 /* EventLogComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLogComponent.h; sourceTree = "<group>"; };
+		D366BC460E5C7F4100E73C36 /* EventLogger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventLogger.cpp; sourceTree = "<group>"; };
+		D366BC470E5C7F4100E73C36 /* EventLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLogger.h; sourceTree = "<group>"; };
+		D366BC500E5C808100E73C36 /* BusInfoComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BusInfoComponent.cpp; sourceTree = "<group>"; };
+		D366BC510E5C808100E73C36 /* BusInfoComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusInfoComponent.h; sourceTree = "<group>"; };
+		D3753246117B759E001187B3 /* BlenderSerialize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlenderSerialize.cpp; sourceTree = "<group>"; };
+		D3753247117B759E001187B3 /* eapProperties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eapProperties.cpp; sourceTree = "<group>"; };
+		D3753248117B759E001187B3 /* eapProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eapProperties.h; sourceTree = "<group>"; };
+		D3753249117B759E001187B3 /* eapPropertiesFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eapPropertiesFile.cpp; sourceTree = "<group>"; };
+		D375324A117B759E001187B3 /* eapPropertiesFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eapPropertiesFile.h; sourceTree = "<group>"; };
+		D396AB880D173ED100B103DB /* BinaryData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryData.cpp; sourceTree = "<group>"; };
+		D396AB890D173ED100B103DB /* BinaryData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryData.h; sourceTree = "<group>"; };
+		D396AB8A0D173ED100B103DB /* BusGeneralComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BusGeneralComponent.cpp; sourceTree = "<group>"; };
+		D396AB8B0D173ED100B103DB /* BusGeneralComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusGeneralComponent.h; sourceTree = "<group>"; };
+		D396AB8C0D173ED100B103DB /* BusWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BusWindow.cpp; sourceTree = "<group>"; };
+		D396AB8D0D173ED100B103DB /* BusWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusWindow.h; sourceTree = "<group>"; };
+		D396AB8E0D173ED100B103DB /* cplApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cplApplication.cpp; sourceTree = "<group>"; };
+		D396AB900D173ED100B103DB /* DeviceFirmwareComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceFirmwareComponent.cpp; sourceTree = "<group>"; };
+		D396AB910D173ED100B103DB /* DeviceFirmwareComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceFirmwareComponent.h; sourceTree = "<group>"; };
+		D396AB920D173ED100B103DB /* DeviceGeneralComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceGeneralComponent.cpp; sourceTree = "<group>"; };
+		D396AB930D173ED100B103DB /* DeviceGeneralComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceGeneralComponent.h; sourceTree = "<group>"; };
+		D396AB940D173ED100B103DB /* DeviceList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceList.cpp; sourceTree = "<group>"; };
+		D396AB950D173ED100B103DB /* DeviceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceList.h; sourceTree = "<group>"; };
+		D396AB960D173ED100B103DB /* DeviceWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceWindow.cpp; sourceTree = "<group>"; };
+		D396AB970D173ED100B103DB /* DeviceWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceWindow.h; sourceTree = "<group>"; };
+		D396AB980D173ED100B103DB /* events.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = events.cpp; path = ../pal_notify/events.cpp; sourceTree = "<group>"; };
+		D396AB990D173ED100B103DB /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Events.h; path = ../pal_notify/Events.h; sourceTree = "<group>"; };
+		D396AB9A0D173ED100B103DB /* FirmwareProgress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FirmwareProgress.cpp; sourceTree = "<group>"; };
+		D396AB9B0D173ED100B103DB /* FirmwareProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirmwareProgress.h; sourceTree = "<group>"; };
+		D396AB9C0D173ED100B103DB /* juce_TCATLookAndFeel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = juce_TCATLookAndFeel.cpp; sourceTree = "<group>"; };
+		D396AB9D0D173ED100B103DB /* juce_TCATLookAndFeel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = juce_TCATLookAndFeel.h; sourceTree = "<group>"; };
+		D396AB9E0D173ED100B103DB /* listener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = listener.cpp; path = ../pal_notify/listener.cpp; sourceTree = "<group>"; };
+		D396AB9F0D173ED100B103DB /* Listener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Listener.h; path = ../pal_notify/Listener.h; sourceTree = "<group>"; };
+		D396ABA00D173ED100B103DB /* MainCplWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainCplWindow.cpp; sourceTree = "<group>"; };
+		D396ABA10D173ED100B103DB /* MainCplwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCplwindow.h; sourceTree = "<group>"; };
+		D39C26520FC1DE9300671FBD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		D3B8C9E416155E5F00724E19 /* BusOhciCheckComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BusOhciCheckComponent.cpp; sourceTree = "<group>"; };
+		D3B8C9E516155E5F00724E19 /* BusOhciCheckComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusOhciCheckComponent.h; sourceTree = "<group>"; };
+		D3B8C9E71615643F00724E19 /* fwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fwi.xcodeproj; path = ../lib/fwi/fwi.xcodeproj; sourceTree = "<group>"; };
+		D3BF15641154E5C80035F661 /* DeviceMixerComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceMixerComponent.cpp; sourceTree = "<group>"; };
+		D3BF15651154E5C80035F661 /* DeviceMixerComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceMixerComponent.h; sourceTree = "<group>"; };
+		D3BF15661154E5C80035F661 /* DeviceTestComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeviceTestComponent.cpp; sourceTree = "<group>"; };
+		D3BF15671154E5C80035F661 /* DeviceTestComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTestComponent.h; sourceTree = "<group>"; };
+		D3BF16871154F6BA0035F661 /* ChannelStrip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChannelStrip.cpp; sourceTree = "<group>"; };
+		D3BF16881154F6BA0035F661 /* ChannelStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelStrip.h; sourceTree = "<group>"; };
+		D3BF16DF115EED9A0035F661 /* Blender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Blender.cpp; sourceTree = "<group>"; };
+		D3BF16E0115EED9A0035F661 /* Blender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blender.h; sourceTree = "<group>"; };
+		D3FF7F331587B70200104335 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0C4E910486CD37000505A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33AF2C316156AC600DFE601 /* libxml2.dylib in Frameworks */,
+				D33AF2C116156A8B00DFE601 /* libcurl.dylib in Frameworks */,
+				D33AF2BF16156A3700DFE601 /* libfwi.a in Frameworks */,
+				CD7DB0100DFF23C5008EBB78 /* libtcat_dice_pal.a in Frameworks */,
+				D30D10A21365DBC00038BD19 /* Foundation.framework in Frameworks */,
+				8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */,
+				84F30CED08FEAD7A0087E26C /* CoreAudio.framework in Frameworks */,
+				84078F3E09E6B42E004E7BCD /* AGL.framework in Frameworks */,
+				CDEBA73D0C70CA4E001D321B /* IOKit.framework in Frameworks */,
+				D39C26530FC1DE9300671FBD /* Cocoa.framework in Frameworks */,
+				6BDC5F3111DFFA2C00C5E8D2 /* CoreMIDI.framework in Frameworks */,
+				D3FF7F341587B70300104335 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195DF8CFFE9D517E11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4E970486CD37000505A6 /* TcatDice Control Panel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20286C29FDCF999611CA2CEA /* cpl */ = {
+			isa = PBXGroup;
+			children = (
+				D33AF2C216156AC600DFE601 /* libxml2.dylib */,
+				D33AF2C016156A8B00DFE601 /* libcurl.dylib */,
+				CD241EB90C70D18900BA7ECB /* cpl.xcconfig */,
+				D3EF1B8811F4E29A00AF2624 /* Notifications */,
+				20286C2CFDCF999611CA2CEA /* Resource Files */,
+				20286C2AFDCF999611CA2CEA /* Source Files */,
+				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
+				195DF8CFFE9D517E11CA2CBB /* Products */,
+			);
+			name = cpl;
+			sourceTree = "<group>";
+		};
+		20286C2AFDCF999611CA2CEA /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF1B8611F4E21600AF2624 /* Device Settings */,
+				D3EF1B8311F4E1D100AF2624 /* EAP */,
+				D3EF1B8511F4E1FD00AF2624 /* Global Settings */,
+				D3EF1B8411F4E1F400AF2624 /* GUI Misc */,
+				D3EF1B8711F4E23300AF2624 /* Utils */,
+				D396AB8E0D173ED100B103DB /* cplApplication.cpp */,
+				D396ABA00D173ED100B103DB /* MainCplWindow.cpp */,
+				D396ABA10D173ED100B103DB /* MainCplwindow.h */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		20286C2CFDCF999611CA2CEA /* Resource Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B896E0C0DF896F200B95EA4 /* icon.icns */,
+				8D0C4E960486CD37000505A6 /* Info.plist */,
+			);
+			name = "Resource Files";
+			sourceTree = "<group>";
+		};
+		20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D3B8C9E71615643F00724E19 /* fwi.xcodeproj */,
+				CD40371E0D47BF4E00CC9839 /* tcat_dice_pal.xcodeproj */,
+				84078F3D09E6B42E004E7BCD /* AGL.framework */,
+				4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */,
+				D39C26520FC1DE9300671FBD /* Cocoa.framework */,
+				20286C33FDCF999611CA2CEA /* Carbon.framework */,
+				4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */,
+				84F30CEC08FEAD7A0087E26C /* CoreAudio.framework */,
+				6BDC5F3011DFFA2C00C5E8D2 /* CoreMIDI.framework */,
+				D30D10A11365DBC00038BD19 /* Foundation.framework */,
+				CDEBA73C0C70CA4E001D321B /* IOKit.framework */,
+				D3FF7F331587B70200104335 /* QuartzCore.framework */,
+				8407902A09E6B5BD004E7BCD /* QuickTime.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		CD40371F0D47BF4E00CC9839 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD4037260D47BF4E00CC9839 /* libtcat_dice_pal.a */,
+				D3C5E1850E351C1900C3B1F4 /* libtcat_dice_avc_pal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3B8C9E81615643F00724E19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3B8C9EC1615643F00724E19 /* libfwi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3EF1B8311F4E1D100AF2624 /* EAP */ = {
+			isa = PBXGroup;
+			children = (
+				D3BF16DF115EED9A0035F661 /* Blender.cpp */,
+				D3BF16E0115EED9A0035F661 /* Blender.h */,
+				D3753246117B759E001187B3 /* BlenderSerialize.cpp */,
+				D3BF16871154F6BA0035F661 /* ChannelStrip.cpp */,
+				D3BF16881154F6BA0035F661 /* ChannelStrip.h */,
+				D3BF15641154E5C80035F661 /* DeviceMixerComponent.cpp */,
+				D3BF15651154E5C80035F661 /* DeviceMixerComponent.h */,
+				D306E2770D8C574D00D604F6 /* dice_eap_device.cpp */,
+				D306E2780D8C574D00D604F6 /* dice_eap_device.h */,
+				D3753247117B759E001187B3 /* eapProperties.cpp */,
+				D3753248117B759E001187B3 /* eapProperties.h */,
+				D3753249117B759E001187B3 /* eapPropertiesFile.cpp */,
+				D375324A117B759E001187B3 /* eapPropertiesFile.h */,
+				D306E2790D8C574D00D604F6 /* VMeter.cpp */,
+				D306E27A0D8C574D00D604F6 /* Vmeter.h */,
+			);
+			name = EAP;
+			sourceTree = "<group>";
+		};
+		D3EF1B8411F4E1F400AF2624 /* GUI Misc */ = {
+			isa = PBXGroup;
+			children = (
+				D396AB880D173ED100B103DB /* BinaryData.cpp */,
+				D396AB890D173ED100B103DB /* BinaryData.h */,
+				D31C6E420E6888D0003F21DF /* HMeter.cpp */,
+				D31C6E430E6888D0003F21DF /* Hmeter.h */,
+				D396AB9D0D173ED100B103DB /* juce_TCATLookAndFeel.h */,
+				D396AB9C0D173ED100B103DB /* juce_TCATLookAndFeel.cpp */,
+			);
+			name = "GUI Misc";
+			sourceTree = "<group>";
+		};
+		D3EF1B8511F4E1FD00AF2624 /* Global Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D3B8C9E416155E5F00724E19 /* BusOhciCheckComponent.cpp */,
+				D3B8C9E516155E5F00724E19 /* BusOhciCheckComponent.h */,
+				D396AB8A0D173ED100B103DB /* BusGeneralComponent.cpp */,
+				D396AB8B0D173ED100B103DB /* BusGeneralComponent.h */,
+				D366BC500E5C808100E73C36 /* BusInfoComponent.cpp */,
+				D366BC510E5C808100E73C36 /* BusInfoComponent.h */,
+				D396AB8C0D173ED100B103DB /* BusWindow.cpp */,
+				D396AB8D0D173ED100B103DB /* BusWindow.h */,
+			);
+			name = "Global Settings";
+			sourceTree = "<group>";
+		};
+		D3EF1B8611F4E21600AF2624 /* Device Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D396AB900D173ED100B103DB /* DeviceFirmwareComponent.cpp */,
+				D396AB910D173ED100B103DB /* DeviceFirmwareComponent.h */,
+				D396AB920D173ED100B103DB /* DeviceGeneralComponent.cpp */,
+				D396AB930D173ED100B103DB /* DeviceGeneralComponent.h */,
+				D396AB940D173ED100B103DB /* DeviceList.cpp */,
+				D396AB950D173ED100B103DB /* DeviceList.h */,
+				D306E2750D8C574D00D604F6 /* DeviceSimpleFirmwareComponent.cpp */,
+				D306E2760D8C574D00D604F6 /* DeviceSimpleFirmwareComponent.h */,
+				D3BF15661154E5C80035F661 /* DeviceTestComponent.cpp */,
+				D3BF15671154E5C80035F661 /* DeviceTestComponent.h */,
+				D396AB960D173ED100B103DB /* DeviceWindow.cpp */,
+				D396AB970D173ED100B103DB /* DeviceWindow.h */,
+				D396AB9A0D173ED100B103DB /* FirmwareProgress.cpp */,
+				D396AB9B0D173ED100B103DB /* FirmwareProgress.h */,
+			);
+			name = "Device Settings";
+			sourceTree = "<group>";
+		};
+		D3EF1B8711F4E23300AF2624 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D3470C750DFC7B05007A0EB5 /* appDefaults.cpp */,
+				D3470C760DFC7B05007A0EB5 /* appDefaults.h */,
+				D3470C770DFC7B05007A0EB5 /* DefaultsFile.cpp */,
+				D3470C780DFC7B05007A0EB5 /* DefaultsFile.h */,
+				D366BC440E5C7F4100E73C36 /* EventLogComponent.cpp */,
+				D366BC450E5C7F4100E73C36 /* EventLogComponent.h */,
+				D366BC460E5C7F4100E73C36 /* EventLogger.cpp */,
+				D366BC470E5C7F4100E73C36 /* EventLogger.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		D3EF1B8811F4E29A00AF2624 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				D396AB9F0D173ED100B103DB /* Listener.h */,
+				D396AB9E0D173ED100B103DB /* listener.cpp */,
+				D396AB980D173ED100B103DB /* events.cpp */,
+				D396AB990D173ED100B103DB /* Events.h */,
+			);
+			name = Notifications;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0C4E890486CD37000505A6 /* cpl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F30CBF08FEAA620087E26C /* Build configuration list for PBXNativeTarget "cpl" */;
+			buildPhases = (
+				8D0C4E8C0486CD37000505A6 /* Resources */,
+				8D0C4E8F0486CD37000505A6 /* Sources */,
+				8D0C4E910486CD37000505A6 /* Frameworks */,
+				6B197D360ED2A10D008BCD2D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D33AF2BE16156A2F00DFE601 /* PBXTargetDependency */,
+				CD8EE4D40DFF1E290012FE03 /* PBXTargetDependency */,
+			);
+			name = cpl;
+			productInstallPath = "$(HOME)/Applications";
+			productName = cpl;
+			productReference = 8D0C4E970486CD37000505A6 /* TcatDice Control Panel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20286C28FDCF999611CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 84F30CC308FEAA620087E26C /* Build configuration list for PBXProject "cpl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 20286C29FDCF999611CA2CEA /* cpl */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D3B8C9E81615643F00724E19 /* Products */;
+					ProjectRef = D3B8C9E71615643F00724E19 /* fwi.xcodeproj */;
+				},
+				{
+					ProductGroup = CD40371F0D47BF4E00CC9839 /* Products */;
+					ProjectRef = CD40371E0D47BF4E00CC9839 /* tcat_dice_pal.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D0C4E890486CD37000505A6 /* cpl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CD4037260D47BF4E00CC9839 /* libtcat_dice_pal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtcat_dice_pal.a;
+			remoteRef = CD4037250D47BF4E00CC9839 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3B8C9EC1615643F00724E19 /* libfwi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfwi.a;
+			remoteRef = D3B8C9EB1615643F00724E19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3C5E1850E351C1900C3B1F4 /* libtcat_dice_avc_pal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtcat_dice_avc_pal.a;
+			remoteRef = D3C5E1840E351C1900C3B1F4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0C4E8C0486CD37000505A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B896E0D0DF896F200B95EA4 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B197D360ED2A10D008BCD2D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../../../resource/cpl.defs",
+				"$(SRCROOT)/../../../resource/logo.png",
+				"$(SRCROOT)/../../../resource/eap_mixer.xml",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# copy the cpl.defs file, if it exists, into the app's resources directory\nif [ -f \"${SCRIPT_INPUT_FILE_0}\" ]; then\n\tcp -fv \"${SCRIPT_INPUT_FILE_0}\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\nfi\n\n# copy the logo.png file, if it exists, into the app's resources directory\nif [ -f \"${SCRIPT_INPUT_FILE_1}\" ]; then\ncp -fv \"${SCRIPT_INPUT_FILE_1}\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\nfi\n\n# copy the eap_mixer.xml file, if it exists, into the app's resources directory\nif [ -f \"${SCRIPT_INPUT_FILE_2}\" ]; then\ncp -fv \"${SCRIPT_INPUT_FILE_2}\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0C4E8F0486CD37000505A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D396ABA20D173ED100B103DB /* BinaryData.cpp in Sources */,
+				D396ABA30D173ED100B103DB /* BusGeneralComponent.cpp in Sources */,
+				D396ABA40D173ED100B103DB /* BusWindow.cpp in Sources */,
+				D396ABA50D173ED100B103DB /* cplApplication.cpp in Sources */,
+				D396ABA60D173ED100B103DB /* DeviceFirmwareComponent.cpp in Sources */,
+				D396ABA70D173ED100B103DB /* DeviceGeneralComponent.cpp in Sources */,
+				D396ABA80D173ED100B103DB /* DeviceList.cpp in Sources */,
+				D396ABA90D173ED100B103DB /* DeviceWindow.cpp in Sources */,
+				D396ABAA0D173ED100B103DB /* events.cpp in Sources */,
+				D396ABAB0D173ED100B103DB /* FirmwareProgress.cpp in Sources */,
+				D396ABAC0D173ED100B103DB /* juce_TCATLookAndFeel.cpp in Sources */,
+				D396ABAD0D173ED100B103DB /* listener.cpp in Sources */,
+				D396ABAE0D173ED100B103DB /* MainCplWindow.cpp in Sources */,
+				D306E27C0D8C574D00D604F6 /* DeviceSimpleFirmwareComponent.cpp in Sources */,
+				D306E27D0D8C574D00D604F6 /* dice_eap_device.cpp in Sources */,
+				D306E27E0D8C574D00D604F6 /* VMeter.cpp in Sources */,
+				D3470C790DFC7B05007A0EB5 /* appDefaults.cpp in Sources */,
+				D3470C7A0DFC7B05007A0EB5 /* DefaultsFile.cpp in Sources */,
+				D366BC480E5C7F4100E73C36 /* EventLogComponent.cpp in Sources */,
+				D366BC490E5C7F4100E73C36 /* EventLogger.cpp in Sources */,
+				D366BC520E5C808100E73C36 /* BusInfoComponent.cpp in Sources */,
+				D31C6E440E6888D0003F21DF /* HMeter.cpp in Sources */,
+				D3BF15681154E5C80035F661 /* DeviceMixerComponent.cpp in Sources */,
+				D3BF15691154E5C80035F661 /* DeviceTestComponent.cpp in Sources */,
+				D3BF16891154F6BA0035F661 /* ChannelStrip.cpp in Sources */,
+				D3BF16E1115EED9A0035F661 /* Blender.cpp in Sources */,
+				D375324B117B759E001187B3 /* BlenderSerialize.cpp in Sources */,
+				D375324C117B759E001187B3 /* eapProperties.cpp in Sources */,
+				D375324D117B759E001187B3 /* eapPropertiesFile.cpp in Sources */,
+				D3B8C9E616155E5F00724E19 /* BusOhciCheckComponent.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD8EE4D40DFF1E290012FE03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tcat_dice_pal;
+			targetProxy = CD8EE4D30DFF1E290012FE03 /* PBXContainerItemProxy */;
+		};
+		D33AF2BE16156A2F00DFE601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fwi;
+			targetProxy = D33AF2BD16156A2F00DFE601 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84F30CC008FEAA620087E26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_LDFLAGS = "-ljucedebug";
+			};
+			name = Debug;
+		};
+		84F30CC108FEAA620087E26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				OTHER_LDFLAGS = "-ljuce";
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F30CC408FEAA620087E26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD241EB90C70D18900BA7ECB /* cpl.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					_DEBUG,
+				);
+				RUN_CLANG_STATIC_ANALYZER = YES;
+			};
+			name = Debug;
+		};
+		84F30CC508FEAA620087E26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD241EB90C70D18900BA7ECB /* cpl.xcconfig */;
+			buildSettings = {
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					_NDEBUG,
+				);
+				RUN_CLANG_STATIC_ANALYZER = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F30CBF08FEAA620087E26C /* Build configuration list for PBXNativeTarget "cpl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F30CC008FEAA620087E26C /* Debug */,
+				84F30CC108FEAA620087E26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		84F30CC308FEAA620087E26C /* Build configuration list for PBXProject "cpl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F30CC408FEAA620087E26C /* Debug */,
+				84F30CC508FEAA620087E26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20286C28FDCF999611CA2CEA /* Project object */;
+}

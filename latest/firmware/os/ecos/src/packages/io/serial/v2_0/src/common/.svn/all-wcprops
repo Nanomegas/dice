@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/serial/v2_0/src/common
+END
+serial.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/serial/v2_0/src/common/serial.c
+END
+tty.c
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/serial/v2_0/src/common/tty.c
+END
+termios.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/serial/v2_0/src/common/termios.c
+END
+termiostty.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/serial/v2_0/src/common/termiostty.c
+END
+haldiag.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/serial/v2_0/src/common/haldiag.c
+END

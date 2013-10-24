@@ -1,0 +1,5639 @@
+# eCos saved configuration
+
+# ---- commands --------------------------------------------------------
+# This section contains information about the savefile format.
+# It should not be edited. Any modifications made to this section
+# may make it impossible for the configuration tools to read
+# the savefile.
+
+cdl_savefile_version 1;
+cdl_savefile_command cdl_savefile_version {};
+cdl_savefile_command cdl_savefile_command {};
+cdl_savefile_command cdl_configuration { description hardware template package };
+cdl_savefile_command cdl_package { value_source user_value wizard_value inferred_value };
+cdl_savefile_command cdl_component { value_source user_value wizard_value inferred_value };
+cdl_savefile_command cdl_option { value_source user_value wizard_value inferred_value };
+cdl_savefile_command cdl_interface { value_source user_value wizard_value inferred_value };
+
+# ---- toplevel --------------------------------------------------------
+# This section defines the toplevel configuration object. The only
+# values that can be changed are the name of the configuration and
+# the description field. It is not possible to modify the target,
+# the template or the set of packages simply by editing the lines
+# below because these changes have wide-ranging effects. Instead
+# the appropriate tools should be used to make such modifications.
+
+cdl_configuration eCos {
+    description "" ;
+
+    # These fields should not be modified.
+    hardware    dice ;
+    template    minimal ;
+    package -hardware CYGPKG_HAL_ARM v2_0 ;
+    package -hardware CYGPKG_HAL_ARM_DICE v2_0 ;
+    package -hardware CYGPKG_DEVS_FLASH_ARM_DICE v2_0 ;
+    package -hardware CYGPKG_DEVS_FLASH_AMD_AM29XXXXX v2_0 ;
+    package -hardware CYGPKG_IO_SERIAL_ARM_DICE v2_0 ;
+    package -template CYGPKG_HAL v2_0 ;
+    package -template CYGPKG_IO v2_0 ;
+    package -template CYGPKG_INFRA v2_0 ;
+    package -template CYGPKG_ERROR v2_0 ;
+    package -template CYGPKG_ISOINFRA v2_0 ;
+};
+
+# ---- conflicts -------------------------------------------------------
+# There are no conflicts.
+
+# ---- contents --------------------------------------------------------
+# >
+# >
+# Redboot for ARM options
+# This option lists the target's requirements for a valid Redboot
+# configuration.
+#
+cdl_component CYGPKG_REDBOOT_ARM_OPTIONS {
+    # This option is not active
+    # ActiveIf constraint: CYGPKG_REDBOOT
+    #     CYGPKG_REDBOOT (unknown) == 0
+    #   --> 0
+
+    # There is no associated value.
+
+    # The following properties are affected by this value
+};
+
+# >
+# Provide the exec command in RedBoot
+# This option contains requirements for booting linux
+# from RedBoot. The component is enabled/disabled from
+# RedBoots CDL.
+#
+cdl_component CYGPKG_REDBOOT_ARM_LINUX_EXEC {
+    # This option is not active
+    # The parent CYGPKG_REDBOOT_ARM_OPTIONS is not active
+    # ActiveIf constraint: CYGBLD_BUILD_REDBOOT_WITH_EXEC
+    #     CYGBLD_BUILD_REDBOOT_WITH_EXEC (unknown) == 0
+    #   --> 0
+
+    # There is no associated value.
+};
+
+# >
+# Physical base address of linux kernel
+# This is the physical address of the base of the 
+# Linux kernel image.
+#
+cdl_option CYGHWR_REDBOOT_ARM_LINUX_EXEC_ADDRESS {
+    # This option is not active
+    # The parent CYGPKG_REDBOOT_ARM_LINUX_EXEC is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: CYGHWR_REDBOOT_ARM_LINUX_EXEC_ADDRESS_DEFAULT
+    #     CYGHWR_REDBOOT_ARM_LINUX_EXEC_ADDRESS_DEFAULT == 0
+    #   --> 0
+};
+
+# Default physical base address of linux kernel
+# This is the physical address of the base of the 
+# Linux kernel image. This option gets set by the 
+# platform CDL.
+#
+cdl_option CYGHWR_REDBOOT_ARM_LINUX_EXEC_ADDRESS_DEFAULT {
+    # This option is not active
+    # The parent CYGPKG_REDBOOT_ARM_LINUX_EXEC is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 0x00008000
+    # value_source default
+    # Default value: 0x00008000
+
+    # The following properties are affected by this value
+    # option CYGHWR_REDBOOT_ARM_LINUX_EXEC_ADDRESS
+    #     DefaultValue: CYGHWR_REDBOOT_ARM_LINUX_EXEC_ADDRESS_DEFAULT
+};
+
+# Base address of linux kernel parameter tags
+# This is the base address of the area of memory used to
+# pass parameters to the Linux kernel. This should be chosen
+# to avoid overlap with the kernel and any ramdisk image.
+#
+cdl_option CYGHWR_REDBOOT_ARM_LINUX_TAGS_ADDRESS {
+    # This option is not active
+    # The parent CYGPKG_REDBOOT_ARM_LINUX_EXEC is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 0x00000100
+    # value_source default
+    # Default value: 0x00000100
+};
+
+# <
+# <
+# Global build options
+# Global build options including control over
+# compiler flags, linker flags and choice of toolchain.
+#
+cdl_component CYGBLD_GLOBAL_OPTIONS {
+    # There is no associated value.
+
+    # The following properties are affected by this value
+};
+
+# >
+# Global command prefix
+# This option specifies the command prefix used when
+# invoking the build tools.
+#
+cdl_option CYGBLD_GLOBAL_COMMAND_PREFIX {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value arm-elf
+    # value_source default
+    # Default value: arm-elf
+};
+
+# Global compiler flags
+# This option controls the global compiler flags which are used to
+# compile all packages by default. Individual packages may define
+# options which override these global flags.
+#
+cdl_option CYGBLD_GLOBAL_CFLAGS {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value "-mcpu=arm7tdmi -mlittle-endian -mno-short-load-words -Wall -Wpointer-arith -Wstrict-prototypes -Wno-inline -Wundef -Woverloaded-virtual -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fvtable-gc -finit-priority"
+    # value_source default
+    # Default value: "-mcpu=arm7tdmi -mlittle-endian -mno-short-load-words -Wall -Wpointer-arith -Wstrict-prototypes -Wno-inline -Wundef -Woverloaded-virtual -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fvtable-gc -finit-priority"
+
+    # The following properties are affected by this value
+    # option CYGBLD_INFRA_CFLAGS_WARNINGS_AS_ERRORS
+    #     Requires:  is_substr(CYGBLD_GLOBAL_CFLAGS, " -Werror") 
+    # option CYGBLD_INFRA_CFLAGS_PIPE
+    #     Requires:  is_substr(CYGBLD_GLOBAL_CFLAGS, " -pipe") 
+};
+
+# Global linker flags
+# This option controls the global linker flags. Individual
+# packages may define options which override these global flags.
+#
+cdl_option CYGBLD_GLOBAL_LDFLAGS {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value "-mcpu=arm7tdmi -mlittle-endian -mno-short-load-words -Wl,--gc-sections -Wl,-static -g -nostdlib"
+    # value_source default
+    # Default value: "-mcpu=arm7tdmi -mlittle-endian -mno-short-load-words -Wl,--gc-sections -Wl,-static -g -nostdlib"
+};
+
+# Build common GDB stub ROM image
+# Unless a target board has specific requirements to the
+# stub implementation, it can use a simple common stub.
+# This option, which gets enabled by platform HALs as
+# appropriate, controls the building of the common stub.
+#
+cdl_option CYGBLD_BUILD_COMMON_GDB_STUBS {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Requires: CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    #     CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS == 0
+    #   --> 0
+};
+
+# <
+# Redboot HAL options
+# This option lists the target's requirements for a valid Redboot
+# configuration.
+#
+cdl_component CYGPKG_REDBOOT_HAL_OPTIONS {
+    # This option is not active
+    # ActiveIf constraint: CYGPKG_REDBOOT
+    #     CYGPKG_REDBOOT (unknown) == 0
+    #   --> 0
+
+    # There is no associated value.
+};
+
+# >
+# Build Redboot ROM binary image
+# This option enables the conversion of the Redboot ELF
+# image to a binary image suitable for ROM programming.
+#
+cdl_option CYGBLD_BUILD_REDBOOT_BIN {
+    # This option is not active
+    # The parent CYGPKG_REDBOOT_HAL_OPTIONS is not active
+    # ActiveIf constraint: CYGBLD_BUILD_REDBOOT
+    #     CYGBLD_BUILD_REDBOOT (unknown) == 0
+    #   --> 0
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# <
+# TCAT DICE Verification Board (VB) FLASH memory support
+#
+cdl_package CYGPKG_DEVS_FLASH_ARM_DICE {
+    # Packages cannot be added or removed, nor can their version be changed,
+    # simply by editing their value. Instead the appropriate configuration
+    # should be used to perform these actions.
+
+    # This option is not active
+    # ActiveIf constraint: CYGPKG_IO_FLASH_NONBLOCK
+    #     CYGPKG_IO_FLASH_NONBLOCK (unknown) == 0
+    #   --> 0
+
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 1 v2_0
+    # Requires: CYGPKG_HAL_ARM_DICE
+    #     CYGPKG_HAL_ARM_DICE == v2_0
+    #   --> 1
+    # Requires: CYGPKG_DEVS_FLASH_AMD_AM29XXXXX
+    #     CYGPKG_DEVS_FLASH_AMD_AM29XXXXX == 0
+    #   --> 0
+};
+
+# >
+# Generic Intel FlashFile driver required
+#
+cdl_interface CYGINT_DEVS_FLASH_AMD_AM29XXXXX_REQUIRED {
+    # Implemented by CYGPKG_DEVS_FLASH_ARM_DICE, inactive, enabled
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_ARM_DICE is not active
+
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+
+    # The following properties are affected by this value
+    # package CYGPKG_DEVS_FLASH_AMD_AM29XXXXX
+    #     ActiveIf: CYGINT_DEVS_FLASH_AMD_AM29XXXXX_REQUIRED
+};
+
+# <
+# AMD AM29XXXXX FLASH memory support
+# FLASH memory device support for AMD AM29XXXXX
+#
+cdl_package CYGPKG_DEVS_FLASH_AMD_AM29XXXXX {
+    # Packages cannot be added or removed, nor can their version be changed,
+    # simply by editing their value. Instead the appropriate configuration
+    # should be used to perform these actions.
+
+    # This option is not active
+    # ActiveIf constraint: CYGPKG_IO_FLASH_NONBLOCK
+    #     CYGPKG_IO_FLASH_NONBLOCK (unknown) == 0
+    #   --> 0
+    # ActiveIf constraint: CYGINT_DEVS_FLASH_AMD_AM29XXXXX_REQUIRED
+    #     CYGINT_DEVS_FLASH_AMD_AM29XXXXX_REQUIRED == 0
+    #   --> 0
+
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 1 v2_0
+    # Requires:  CYGINT_DEVS_FLASH_AMD_VARIANTS != 0 
+    #     CYGINT_DEVS_FLASH_AMD_VARIANTS == 0
+    #   --> 0
+
+    # The following properties are affected by this value
+    # package CYGPKG_DEVS_FLASH_ARM_DICE
+    #     Requires: CYGPKG_DEVS_FLASH_AMD_AM29XXXXX
+};
+
+# >
+# Number of included variants
+#
+cdl_interface CYGINT_DEVS_FLASH_AMD_VARIANTS {
+    # Implemented by CYGHWR_DEVS_FLASH_AMD_AM29F040B, inactive, disabled
+    # Implemented by CYGHWR_DEVS_FLASH_AMD_AM29LV160, inactive, enabled
+    # Implemented by CYGHWR_DEVS_FLASH_AMD_AM29LV320D, inactive, disabled
+    # Implemented by CYGHWR_DEVS_FLASH_AMD_AM29LV200, inactive, disabled
+    # Implemented by CYGHWR_DEVS_FLASH_ST_M29W200B, inactive, disabled
+    # Implemented by CYGHWR_DEVS_FLASH_AMD_AM29LV640, inactive, disabled
+    # Implemented by CYGHWR_DEVS_FLASH_AMD_AM29DL322D, inactive, disabled
+    # Implemented by CYGHWR_DEVS_FLASH_AMD_AM29DL323D, inactive, disabled
+    # Implemented by CYGHWR_DEVS_FLASH_AMD_AM29DL324D, inactive, disabled
+    # Implemented by CYGHWR_DEVS_FLASH_AMD_AM29DL640D, inactive, disabled
+    # Implemented by CYGHWR_DEVS_FLASH_AMD_AM29F800, inactive, disabled
+    # Implemented by CYGHWR_DEVS_FLASH_AMD_AM29LV800, inactive, disabled
+    # Implemented by CYGHWR_DEVS_FLASH_AMD_TC58FVB800, inactive, disabled
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+
+    # The following properties are affected by this value
+    # package CYGPKG_DEVS_FLASH_AMD_AM29XXXXX
+    #     Requires:  CYGINT_DEVS_FLASH_AMD_VARIANTS != 0 
+};
+
+# AMD AM29F040B flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the AMD29F040B
+# part in the family.
+#
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29F040B {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# AMD AM29LV160 flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the AMD29LV160
+# part in the family.
+#
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29LV160 {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# AMD AM29LV320 flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the AMD29LV320
+# part in the family.
+#
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29LV320D {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# AMD AM29LV200 flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the AMD29LV200
+# part in the family.
+#
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29LV200 {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# ST M29W200B flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the ST M29W200B part. This
+# memory device is pin- and software compatible with the
+# AMD AM29LV200 device.
+#
+cdl_option CYGHWR_DEVS_FLASH_ST_M29W200B {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# AMD AM29LV640 flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the AMD29LV640
+# part in the family.
+#
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29LV640 {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# AMD AM29DL322D flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the AM29DL322D
+# part in the family.
+#
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29DL322D {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# AMD AM29DL323D flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the AM29DL323D
+# part in the family.
+#
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29DL323D {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# AMD AM29DL324D flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the AM29DL324D
+# part in the family.
+#
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29DL324D {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# AMD AM29DL640D flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the AM29DL640D
+# part in the family.
+#
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29DL640D {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# AMD AM29F800 flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the AM29F800
+# part in the family.
+#
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29F800 {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# AMD AM29LV800 flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the AM29LV800
+# part in the family.
+#
+cdl_option CYGHWR_DEVS_FLASH_AMD_AM29LV800 {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Toshiba TC58FVB800 flash memory support
+# When this option is enabled, the AMD flash driver will be
+# able to recognize and handle the Toshiba TC58FVB800.
+#
+cdl_option CYGHWR_DEVS_FLASH_AMD_TC58FVB800 {
+    # This option is not active
+    # The parent CYGPKG_DEVS_FLASH_AMD_AM29XXXXX is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# <
+# TCAT DICE serial device drivers
+# This option enables the serial device drivers for the
+# TCAT DICE (VB).
+#
+cdl_package CYGPKG_IO_SERIAL_ARM_DICE {
+    # Packages cannot be added or removed, nor can their version be changed,
+    # simply by editing their value. Instead the appropriate configuration
+    # should be used to perform these actions.
+
+    # This option is not active
+    # ActiveIf constraint: CYGPKG_IO_SERIAL
+    #     CYGPKG_IO_SERIAL (unknown) == 0
+    #   --> 0
+    # ActiveIf constraint: CYGPKG_HAL_ARM_DICE
+    #     CYGPKG_HAL_ARM_DICE == v2_0
+    #   --> 1
+
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 1 v2_0
+    # Requires: CYGPKG_ERROR
+    #     CYGPKG_ERROR == v2_0
+    #   --> 1
+};
+
+# >
+# TCAT DICE serial port 0 driver
+# This option includes the serial device driver for the TCAT DICE 
+# port 0 (serial A).
+#
+cdl_component CYGPKG_IO_SERIAL_ARM_DICE_SERIAL0 {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# >
+# Device name for TCAT DICE serial port 0 driver
+# This option specifies the name of the serial device for the 
+# TCAT DICE port 0.
+#
+cdl_option CYGDAT_IO_SERIAL_ARM_DICE_SERIAL0_NAME {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE_SERIAL0 is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value "\"/dev/ser0\""
+    # value_source default
+    # Default value: "\"/dev/ser0\""
+};
+
+# Baud rate for the TCAT DICE serial port 0 driver
+# This option specifies the default baud rate (speed) for the 
+# TCAT DICE port 0.
+#
+cdl_option CYGNUM_IO_SERIAL_ARM_DICE_SERIAL0_BAUD {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE_SERIAL0 is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 57600
+    # value_source default
+    # Default value: 57600
+    # Legal values:  50 75 110 "134_5" 150 200 300 600 1200 1800 2400 3600
+    #                           4800 7200 9600 14400 19200 38400 57600 115200 230400
+    #             
+};
+
+# Buffer size for the TCAT DICE serial port 0 driver
+# This option specifies the size of the internal buffers used 
+# for the TCAT DICE port 0.
+#
+cdl_option CYGNUM_IO_SERIAL_ARM_DICE_SERIAL0_BUFSIZE {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE_SERIAL0 is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 128
+    # value_source default
+    # Default value: 128
+    # Legal values: 0 to 8192
+};
+
+# <
+# TCAT DICE serial port 1 driver
+# This option includes the serial device driver for the TCAT DICE 
+# port 1 (serial B).
+#
+cdl_component CYGPKG_IO_SERIAL_ARM_DICE_SERIAL1 {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+
+    # The following properties are affected by this value
+    # component CYGPKG_IO_SERIAL_ARM_DICE_TESTING
+    #     ActiveIf: CYGPKG_IO_SERIAL_ARM_DICE_SERIAL1
+};
+
+# >
+# Device name for TCAT DICE serial port 1 driver
+# This option specifies the name of the serial device for the 
+# TCAT DICE port 1.
+#
+cdl_option CYGDAT_IO_SERIAL_ARM_DICE_SERIAL1_NAME {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE_SERIAL1 is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value "\"/dev/ser1\""
+    # value_source default
+    # Default value: "\"/dev/ser1\""
+
+    # The following properties are affected by this value
+    # option CYGPRI_SER_TEST_SER_DEV
+    #     DefaultValue:  CYGDAT_IO_SERIAL_ARM_DICE_SERIAL1_NAME 
+};
+
+# Baud rate for the TCAT DICE serial port 1 driver
+# This option specifies the default baud rate (speed) for the
+# TCAT DICE port 1.
+#
+cdl_option CYGNUM_IO_SERIAL_ARM_DICE_SERIAL1_BAUD {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE_SERIAL1 is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 57600
+    # value_source default
+    # Default value: 57600
+    # Legal values:  50 75 110 "134_5" 150 200 300 600 1200 1800 2400 3600
+    #                           4800 7200 9600 14400 19200 38400 57600 115200 230400
+    #             
+};
+
+# Buffer size for the TCAT DICE serial port 1 driver
+# This option specifies the size of the internal buffers used 
+# for the TCAT DICE port 1.
+#
+cdl_option CYGNUM_IO_SERIAL_ARM_DICE_SERIAL1_BUFSIZE {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE_SERIAL1 is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 128
+    # value_source default
+    # Default value: 128
+    # Legal values: 0 to 8192
+};
+
+# <
+# Serial device driver build options
+# Package specific build options including control over
+# compiler flags used only in building this package,
+# and details of which tests are built.
+#
+cdl_component CYGPKG_IO_SERIAL_ARM_DICE_OPTIONS {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE is not active
+
+    # There is no associated value.
+};
+
+# >
+# Additional compiler flags
+# This option modifies the set of compiler flags for
+# building these serial device drivers. These flags are used in addition
+# to the set of global flags.
+#
+cdl_option CYGPKG_IO_SERIAL_ARM_DICE_CFLAGS_ADD {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE_OPTIONS is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value ""
+    # value_source default
+    # Default value: ""
+};
+
+# Suppressed compiler flags
+# This option modifies the set of compiler flags for
+# building these serial device drivers. These flags are removed from
+# the set of global flags if present.
+#
+cdl_option CYGPKG_IO_SERIAL_ARM_DICE_CFLAGS_REMOVE {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE_OPTIONS is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value ""
+    # value_source default
+    # Default value: ""
+};
+
+# <
+# Testing parameters
+#
+cdl_component CYGPKG_IO_SERIAL_ARM_DICE_TESTING {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE is not active
+    # ActiveIf constraint: CYGPKG_IO_SERIAL_ARM_DICE_SERIAL1
+    #     CYGPKG_IO_SERIAL_ARM_DICE_SERIAL1 == 0
+    #   --> 0
+
+    # Calculated value: 1
+    # Flavor: bool
+    # Current value: 1
+};
+
+# >
+# Serial device used for testing
+#
+cdl_option CYGPRI_SER_TEST_SER_DEV {
+    # This option is not active
+    # The parent CYGPKG_IO_SERIAL_ARM_DICE_TESTING is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value:  CYGDAT_IO_SERIAL_ARM_DICE_SERIAL1_NAME 
+    #     CYGDAT_IO_SERIAL_ARM_DICE_SERIAL1_NAME == 0
+    #   --> 0
+};
+
+# <
+# <
+# <
+# eCos HAL
+# doc: ref/the-ecos-hardware-abstraction-layer.html
+# The eCos HAL package provide a porting layer for
+# higher-level parts of the system such as the kernel and the
+# C library. Each installation should have HAL packages for
+# one or more architectures, and for each architecture there
+# may be one or more supported platforms. It is necessary to
+# select one target architecture and one platform for that
+# architecture. There are also a number of configuration
+# options that are common to all HAL packages.
+#
+cdl_package CYGPKG_HAL {
+    # Packages cannot be added or removed, nor can their version be changed,
+    # simply by editing their value. Instead the appropriate configuration
+    # should be used to perform these actions.
+
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 1 v2_0
+    # Requires: CYGPKG_INFRA
+    #     CYGPKG_INFRA == v2_0
+    #   --> 1
+
+    # The following properties are affected by this value
+};
+
+# >
+# Platform-independent HAL options
+# A number of configuration options are common to most or all
+# HAL packages, for example options controlling how much state
+# should be saved during a context switch. The implementations
+# of these options will vary from architecture to architecture.
+#
+cdl_component CYGPKG_HAL_COMMON {
+    # There is no associated value.
+};
+
+# >
+# Provide eCos kernel support
+# The HAL can be configured to either support the full eCos
+# kernel, or to support only very simple applications which do
+# not require a full kernel. If kernel support is not required
+# then some of the startup, exception, and interrupt handling
+# code can be eliminated.
+#
+cdl_option CYGFUN_HAL_COMMON_KERNEL_SUPPORT {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: CYGPKG_KERNEL
+    #     CYGPKG_KERNEL (unknown) == 0
+    #   --> 0
+    # Requires: CYGPKG_KERNEL
+    #     CYGPKG_KERNEL (unknown) == 0
+    #   --> 0
+};
+
+# HAL exception support
+# When a processor exception occurs, for example an attempt to
+# execute an illegal instruction or to perform a divide by
+# zero, this exception may be handled in a number of different
+# ways. If the target system has gdb support then typically
+# the exception will be handled by gdb code. Otherwise if the
+# HAL exception support is enabled then the HAL will invoke a
+# routine deliver_exception(). Typically this routine will be
+# provided by the eCos kernel, but it is possible for
+# application code to provide its own implementation. If the
+# HAL exception support is not enabled and a processor
+# exception occurs then the behaviour of the system is
+# undefined.
+#
+cdl_option CYGPKG_HAL_EXCEPTIONS {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: CYGPKG_KERNEL_EXCEPTIONS
+    #     CYGPKG_KERNEL_EXCEPTIONS (unknown) == 0
+    #   --> 0
+    # Requires: CYGPKG_KERNEL_EXCEPTIONS
+    #     CYGPKG_KERNEL_EXCEPTIONS (unknown) == 0
+    #   --> 0
+};
+
+# Stop calling constructors early
+# This option supports environments where some constructors
+# must be run in the context of a thread rather than at
+# simple system startup time. A boolean flag named
+# cyg_hal_stop_constructors is set to 1 when constructors
+# should no longer be invoked. It is up to some other
+# package to deal with the rest of the constructors.
+# In the current version this is only possible with the
+# C library.
+#
+cdl_option CYGSEM_HAL_STOP_CONSTRUCTORS_ON_FLAG {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Requires: CYGSEM_LIBC_INVOKE_DEFAULT_STATIC_CONSTRUCTORS
+    #     CYGSEM_LIBC_INVOKE_DEFAULT_STATIC_CONSTRUCTORS (unknown) == 0
+    #   --> 0
+};
+
+# HAL uses the MMU and allows for CDL manipulation of it's use
+#
+cdl_interface CYGINT_HAL_SUPPORTS_MMU_TABLES {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+
+    # The following properties are affected by this value
+    # option CYGSEM_HAL_INSTALL_MMU_TABLES
+    #     ActiveIf: CYGINT_HAL_SUPPORTS_MMU_TABLES
+};
+
+# Install MMU tables.
+# This option controls whether this application installs
+# its own Memory Management Unit (MMU) tables, or relies on the
+# existing environment to run.
+#
+cdl_option CYGSEM_HAL_INSTALL_MMU_TABLES {
+    # This option is not active
+    # ActiveIf constraint: CYGINT_HAL_SUPPORTS_MMU_TABLES
+    #     CYGINT_HAL_SUPPORTS_MMU_TABLES == 0
+    #   --> 0
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value:  CYG_HAL_STARTUP != "RAM" 
+    #     CYG_HAL_STARTUP == RAM
+    #   --> 0
+
+    # The following properties are affected by this value
+    # option CYGSEM_HAL_STATIC_MMU_TABLES
+    #     Requires: CYGSEM_HAL_INSTALL_MMU_TABLES
+};
+
+# Use static MMU tables.
+# This option defines an environment where any Memory
+# Management Unit (MMU) tables are constant.  Normally used by ROM
+# based environments, this provides a way to save RAM usage which
+# would otherwise be required for these tables.
+#
+cdl_option CYGSEM_HAL_STATIC_MMU_TABLES {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Requires: CYGSEM_HAL_INSTALL_MMU_TABLES
+    #     CYGSEM_HAL_INSTALL_MMU_TABLES == 0
+    #   --> 0
+};
+
+# Route diagnostic output to debug channel
+# If not inheriting the console setup from the ROM monitor,
+# it is possible to redirect diagnostic output to the debug
+# channel by enabling this option. Depending on the debugger
+# used it may also be necessary to select a mangler for the
+# output to be displayed by the debugger.
+#
+cdl_component CYGDBG_HAL_DIAG_TO_DEBUG_CHAN {
+    # This option is not active
+    # ActiveIf constraint: !CYGSEM_HAL_VIRTUAL_VECTOR_INHERIT_CONSOLE
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_INHERIT_CONSOLE == 1
+    #   --> 0
+    # ActiveIf constraint:  CYGPKG_HAL_ARM || CYGPKG_HAL_POWERPC_MPC8xx  || CYGPKG_HAL_V85X_V850 || CYGSEM_HAL_VIRTUAL_VECTOR_DIAG 
+    #     CYGPKG_HAL_ARM == v2_0
+    #     CYGPKG_HAL_POWERPC_MPC8xx (unknown) == 0
+    #     CYGPKG_HAL_V85X_V850 (unknown) == 0
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_DIAG == 1
+    #   --> 1
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value:  (CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS  || CYG_HAL_STARTUP == "RAM") ? 1 : 0
+    #     CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS == 0
+    #     CYG_HAL_STARTUP == RAM
+    #   --> 1
+
+    # The following properties are affected by this value
+    # option CYGPRI_HAL_VIRTUAL_VECTOR_CONSOLE_CHANNEL_CONFIGURABLE
+    #     Calculated:  !CYGSEM_HAL_VIRTUAL_VECTOR_INHERIT_CONSOLE  && !CYGDBG_HAL_DIAG_TO_DEBUG_CHAN 
+};
+
+# >
+# Mangler used on diag output
+# It is sometimes necessary to mangle (encode) the
+# diag ASCII text output in order for it to show up at the
+# other end. In particular, GDB may silently ignore raw
+# ASCII text.
+#
+cdl_option CYGSEM_HAL_DIAG_MANGLER {
+    # This option is not active
+    # The parent CYGDBG_HAL_DIAG_TO_DEBUG_CHAN is not active
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value GDB
+    # value_source default
+    # Default value: GDB
+    # Legal values: "GDB" "None"
+};
+
+# <
+# <
+# HAL interrupt handling
+# A number of configuration options related to interrupt
+# handling are common to most or all HAL packages, even though
+# the implementations will vary from architecture to
+# architecture.
+#
+cdl_component CYGPKG_HAL_COMMON_INTERRUPTS {
+    # There is no associated value.
+};
+
+# >
+# Use separate stack for interrupts
+# When an interrupt occurs this interrupt can be handled either
+# on the current stack or on a separate stack maintained by the
+# HAL. Using a separate stack requires a small number of extra
+# instructions in the interrupt handling code, but it has the
+# advantage that it is no longer necessary to allow extra space
+# in every thread stack for the interrupt handlers. The amount
+# of extra space required depends on the interrupt handlers
+# that are being used.
+#
+cdl_option CYGIMP_HAL_COMMON_INTERRUPTS_USE_INTERRUPT_STACK {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# Interrupt stack size
+# This configuration option specifies the stack size in bytes
+# for the interrupt stack. Typically this should be a multiple
+# of 16, but the exact requirements will vary from architecture
+# to architecture. The interrupt stack serves two separate
+# purposes. It is used as the stack during system
+# initialization. In addition, if the interrupt system is
+# configured to use a separate stack then all interrupts will
+# be processed on this stack. The exact memory requirements
+# will vary from application to application, and will depend
+# heavily on whether or not other interrupt-related options,
+# for example nested interrupts, are enabled. On most targets,
+# in a configuration with no kernel this stack will also be
+# the stack used to invoke the application, and must obviously
+# be appropriately large in that case.
+#
+cdl_option CYGNUM_HAL_COMMON_INTERRUPTS_STACK_SIZE {
+    # Flavor: data
+    user_value 1024
+    # value_source user
+    # Default value:  CYGPKG_KERNEL ? 4096 : 32768 
+    #     CYGPKG_KERNEL (unknown) == 0
+    #   --> 32768
+    # Legal values: 1024 to 1048576
+};
+
+# Allow nested interrupts
+# When an interrupt occurs the HAL interrupt handling code can
+# either leave interrupts disabled for the duration of the
+# interrupt handling code, or by doing some extra work it can
+# reenable interrupts before invoking the interrupt handler and
+# thus allow nested interrupts to happen. If all the interrupt
+# handlers being used are small and do not involve any loops
+# then it is usually better to disallow nested interrupts.
+# However if any of the interrupt handlers are more complicated
+# than nested interrupts will usually be required.
+#
+cdl_option CYGSEM_HAL_COMMON_INTERRUPTS_ALLOW_NESTING {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Save minimum context on interrupt
+# The HAL interrupt handling code can exploit the calling conventions
+# defined for a given architecture to reduce the amount of state
+# that has to be saved. Generally this improves performance and
+# reduces code size. However it can make source-level debugging
+# more difficult.
+#
+cdl_option CYGDBG_HAL_COMMON_INTERRUPTS_SAVE_MINIMUM_CONTEXT {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# Chain all interrupts together
+# Interrupts can be attached to vectors either singly, or be
+# chained together. The latter is necessary if there is no way
+# of discovering which device has interrupted without
+# inspecting the device itself. It can also reduce the amount
+# of RAM needed for interrupt decoding tables and code.
+#
+cdl_option CYGIMP_HAL_COMMON_INTERRUPTS_CHAIN {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Ignore spurious [fleeting] interrupts
+# On some hardware, interrupt sources may not be de-bounced or
+# de-glitched.  Rather than try to handle these interrupts (no
+# handling may be possible), this option allows the HAL to simply
+# ignore them.  In most cases, if the interrupt is real it will
+# reoccur in a detectable form.
+#
+cdl_option CYGIMP_HAL_COMMON_INTERRUPTS_IGNORE_SPURIOUS {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# <
+# HAL context switch support
+# A number of configuration options related to thread contexts
+# are common to most or all HAL packages, even though the
+# implementations will vary from architecture to architecture.
+#
+cdl_component CYGPKG_HAL_COMMON_CONTEXT {
+    # There is no associated value.
+
+    # The following properties are affected by this value
+};
+
+# >
+# Use minimum thread context
+# The thread context switch code can exploit the calling
+# conventions defined for a given architecture to reduce the
+# amount of state that has to be saved during a context
+# switch. Generally this improves performance and reduces
+# code size. However it can make source-level debugging more
+# difficult.
+#
+cdl_option CYGDBG_HAL_COMMON_CONTEXT_SAVE_MINIMUM {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# <
+# Explicit control over cache behaviour
+# These options let the default behaviour of the caches 
+# be easily configurable.
+#
+cdl_component CYGPKG_HAL_CACHE_CONTROL {
+    # There is no associated value.
+};
+
+# >
+# Enable DATA cache on startup
+# Enabling this option will cause the data cache to be enabled
+# as soon as practicable when eCos starts up.  One would choose
+# to disable this if the data cache cannot safely be turned on,
+# such as a case where the cache(s) require additional platform
+# specific setup.
+#
+cdl_component CYGSEM_HAL_ENABLE_DCACHE_ON_STARTUP {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# >
+# DATA cache mode on startup
+# This option controls the mode the cache will be set to
+# when enabled on startup.
+#
+cdl_option CYGSEM_HAL_DCACHE_STARTUP_MODE {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value COPYBACK
+    # value_source default
+    # Default value: COPYBACK
+    # Legal values:  "COPYBACK" "WRITETHRU" 
+};
+
+# <
+# Enable INSTRUCTION cache on startup
+# Enabling this option will cause the instruction cache to be enabled
+# as soon as practicable when eCos starts up.  One would choose
+# to disable this if the instruction cache cannot safely be turned on,
+# such as a case where the cache(s) require additional platform
+# specific setup.
+#
+cdl_option CYGSEM_HAL_ENABLE_ICACHE_ON_STARTUP {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# <
+# Source-level debugging support
+# If the source level debugger gdb is to be used for debugging
+# application code then it may be necessary to configure in support
+# for this in the HAL.
+#
+cdl_component CYGPKG_HAL_DEBUG {
+    # There is no associated value.
+};
+
+# >
+# Support for GDB stubs
+# The HAL implements GDB stubs for the target.
+#
+cdl_interface CYGINT_HAL_DEBUG_GDB_STUBS {
+    # Implemented by CYGPKG_HAL_ARM_DICE, active, enabled
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 1
+
+    # The following properties are affected by this value
+    # option CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    #     ActiveIf: CYGINT_HAL_DEBUG_GDB_STUBS
+};
+
+# Include GDB stubs in HAL
+# This option causes a set of GDB stubs to be included into the
+# system. On some target systems the GDB support will be
+# provided by other means, for example by a ROM monitor. On
+# other targets, especially when building a ROM-booting system,
+# the necessary support has to go into the target library
+# itself. When GDB stubs are include in a configuration, HAL
+# serial drivers must also be included.
+#
+cdl_option CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS {
+    # ActiveIf constraint: CYGINT_HAL_DEBUG_GDB_STUBS
+    #     CYGINT_HAL_DEBUG_GDB_STUBS == 1
+    #   --> 1
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Requires: ! CYGSEM_HAL_USE_ROM_MONITOR
+    #     CYGSEM_HAL_USE_ROM_MONITOR == GDB_stubs
+    #   --> 0
+    # Requires:  !CYGSEM_HAL_VIRTUAL_VECTOR_DIAG  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS 
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_DIAG == 1
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS == 0
+    #   --> 0
+
+    # The following properties are affected by this value
+    # component CYGDBG_HAL_DIAG_TO_DEBUG_CHAN
+    #     DefaultValue:  (CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS  || CYG_HAL_STARTUP == "RAM") ? 1 : 0
+    # option CYGDBG_HAL_DEBUG_GDB_BREAK_SUPPORT
+    #     Requires: CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    # option CYGDBG_HAL_DEBUG_GDB_BREAK_SUPPORT
+    #     DefaultValue: CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    # option CYGDBG_HAL_DEBUG_GDB_CTRLC_SUPPORT
+    #     ActiveIf:  CYGSEM_HAL_USE_ROM_MONITOR || CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS 
+    # option CYGDBG_HAL_DEBUG_GDB_CTRLC_SUPPORT
+    #     DefaultValue:  !CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS 
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS
+    #     DefaultValue:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS 
+    # option CYGBLD_BUILD_COMMON_GDB_STUBS
+    #     Requires: CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    # option CYGPKG_HAL_GDB_FILEIO
+    #     Requires: CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    # option CYGHWR_HAL_ARM_DUMP_EXCEPTIONS
+    #     Requires: !CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    # option CYGHWR_HAL_ARM_ICE_THREAD_SUPPORT
+    #     Requires: CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+};
+
+# Support for external break support in GDB stubs
+# The HAL implements external break (or asynchronous interrupt)
+# in the GDB stubs for the target.
+#
+cdl_interface CYGINT_HAL_DEBUG_GDB_STUBS_BREAK {
+    # Implemented by CYGPKG_HAL_ARM_DICE, active, enabled
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 1
+
+    # The following properties are affected by this value
+    # option CYGDBG_HAL_DEBUG_GDB_BREAK_SUPPORT
+    #     ActiveIf: CYGINT_HAL_DEBUG_GDB_STUBS_BREAK
+};
+
+# Include GDB external break support for stubs
+# This option causes the GDB stub to add a serial interrupt handler
+# which will listen for GDB break packets. This lets you stop the
+# target asynchronously when using GDB, usually by hitting Control+C
+# or pressing the STOP button. This option differs from
+# CYGDBG_HAL_DEBUG_GDB_CTRLC_SUPPORT in that it is used when
+# GDB stubs are present.
+#
+cdl_option CYGDBG_HAL_DEBUG_GDB_BREAK_SUPPORT {
+    # ActiveIf constraint: CYGINT_HAL_DEBUG_GDB_STUBS_BREAK
+    #     CYGINT_HAL_DEBUG_GDB_STUBS_BREAK == 1
+    #   --> 1
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    #     CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS == 0
+    #   --> 0
+    # Requires: CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    #     CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS == 0
+    #   --> 0
+
+    # The following properties are affected by this value
+    # option CYGDBG_HAL_DEBUG_GDB_CTRLC_SUPPORT
+    #     Requires: !CYGDBG_HAL_DEBUG_GDB_BREAK_SUPPORT
+    # option CYGOPT_HAL_ARM_SYSCALL_GPROF_SUPPORT
+    #     ActiveIf:  CYGDBG_HAL_DEBUG_GDB_CTRLC_SUPPORT || CYGDBG_HAL_DEBUG_GDB_BREAK_SUPPORT 
+};
+
+# Platform does not support CTRLC
+#
+cdl_interface CYGINT_HAL_DEBUG_GDB_CTRLC_UNSUPPORTED {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+
+    # The following properties are affected by this value
+    # option CYGDBG_HAL_DEBUG_GDB_CTRLC_SUPPORT
+    #     ActiveIf:  CYGINT_HAL_DEBUG_GDB_CTRLC_UNSUPPORTED == 0 
+};
+
+# Include GDB external break support when no stubs
+# This option adds an interrupt handler for the GDB serial line
+# which will listen for GDB break packets. This lets you stop the
+# target asynchronously when using GDB, usually by hitting Control+C
+# or pressing the STOP button. This option differs from
+# CYGDBG_HAL_DEBUG_GDB_BREAK_SUPPORT in that it is used when the GDB
+# stubs are NOT present.
+#
+cdl_option CYGDBG_HAL_DEBUG_GDB_CTRLC_SUPPORT {
+    # ActiveIf constraint:  CYGSEM_HAL_USE_ROM_MONITOR || CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS 
+    #     CYGSEM_HAL_USE_ROM_MONITOR == GDB_stubs
+    #     CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS == 0
+    #   --> 1
+    # ActiveIf constraint:  CYGINT_HAL_DEBUG_GDB_CTRLC_UNSUPPORTED == 0 
+    #     CYGINT_HAL_DEBUG_GDB_CTRLC_UNSUPPORTED == 0
+    #   --> 1
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value:  !CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS 
+    #     CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS == 0
+    #   --> 1
+    # Requires: !CYGDBG_HAL_DEBUG_GDB_BREAK_SUPPORT
+    #     CYGDBG_HAL_DEBUG_GDB_BREAK_SUPPORT == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # option CYGOPT_HAL_ARM_SYSCALL_GPROF_SUPPORT
+    #     ActiveIf:  CYGDBG_HAL_DEBUG_GDB_CTRLC_SUPPORT || CYGDBG_HAL_DEBUG_GDB_BREAK_SUPPORT 
+};
+
+# Include GDB multi-threading debug support
+# This option enables some extra HAL code which is needed
+# to support multi-threaded source level debugging.
+#
+cdl_option CYGDBG_HAL_DEBUG_GDB_THREAD_SUPPORT {
+    # This option is not active
+    # ActiveIf constraint:  CYGSEM_HAL_ROM_MONITOR || CYGDBG_KERNEL_DEBUG_GDB_THREAD_SUPPORT 
+    #     CYGSEM_HAL_ROM_MONITOR == 0
+    #     CYGDBG_KERNEL_DEBUG_GDB_THREAD_SUPPORT (unknown) == 0
+    #   --> 0
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+
+    # The following properties are affected by this value
+    # option CYGHWR_HAL_ARM_ICE_THREAD_SUPPORT
+    #     Requires: CYGDBG_HAL_DEBUG_GDB_THREAD_SUPPORT
+};
+
+# Number of times to retry sending a $O packet
+# This option controls the number of attempts that eCos programs
+# will make to send a $O packet to a host GDB process.  If it is
+# set non-zero, then the target process will attempt to resend the
+# $O packet data up to this number of retries.  Caution: use of
+# this option is not recommended as it can thoroughly confuse the
+# host GDB process.
+#
+cdl_option CYGNUM_HAL_DEBUG_GDB_PROTOCOL_RETRIES {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Timeout period for GDB packets
+# This option controls the time (in milliseconds) that eCos programs
+# will wait for a response when sending packets to a host GDB process.
+# If this time elapses, then the packet will be resent, up to some
+# maximum number of times (CYGNUM_HAL_DEBUG_GDB_PROTOCOL_RETRIES).
+#
+cdl_option CYGNUM_HAL_DEBUG_GDB_PROTOCOL_TIMEOUT {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 500
+    # value_source default
+    # Default value: 500
+};
+
+# <
+# ROM monitor support
+# Support for ROM monitors can be built in to your application. 
+# It may also be relevant to build your application as a ROM monitor
+# itself. Such options are contained here if relevant for your chosen
+# platform. The options and ROM monitors available to choose are
+# platform-dependent.
+#
+cdl_component CYGPKG_HAL_ROM_MONITOR {
+    # There is no associated value.
+
+    # The following properties are affected by this value
+};
+
+# >
+# Target has virtual vector support
+#
+cdl_interface CYGINT_HAL_VIRTUAL_VECTOR_SUPPORT {
+    # Implemented by CYGPKG_HAL_ARM_DICE, active, enabled
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 1
+
+    # The following properties are affected by this value
+    # component CYGSEM_HAL_VIRTUAL_VECTOR_SUPPORT
+    #     ActiveIf: CYGINT_HAL_VIRTUAL_VECTOR_SUPPORT
+};
+
+# Target supports baud rate control via vectors
+# Whether this target supports the __COMMCTL_GETBAUD
+# and __COMMCTL_SETBAUD virtual vector comm control operations.
+#
+cdl_interface CYGINT_HAL_VIRTUAL_VECTOR_COMM_BAUD_SUPPORT {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+};
+
+# Enable use of virtual vector calling interface
+# Virtual vector support allows the HAL to let the ROM
+# monitor handle certain operations. The virtual vector table
+# defines a calling interface between applications running in
+# RAM and the ROM monitor.
+#
+cdl_component CYGSEM_HAL_VIRTUAL_VECTOR_SUPPORT {
+    # ActiveIf constraint: CYGINT_HAL_VIRTUAL_VECTOR_SUPPORT
+    #     CYGINT_HAL_VIRTUAL_VECTOR_SUPPORT == 1
+    #   --> 1
+
+    # Calculated value: 1
+    # Flavor: bool
+    # Current value: 1
+};
+
+# >
+# Inherit console settings from ROM monitor
+# When this option is set, the application will inherit
+# the console as set up by the ROM monitor. This means
+# that the application will use whatever channel and
+# mangling style was used by the ROM monitor when
+# the application was launched.
+#
+cdl_option CYGSEM_HAL_VIRTUAL_VECTOR_INHERIT_CONSOLE {
+    # ActiveIf constraint: CYGSEM_HAL_USE_ROM_MONITOR
+    #     CYGSEM_HAL_USE_ROM_MONITOR == GDB_stubs
+    #   --> 1
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value:  !CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS 
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # component CYGDBG_HAL_DIAG_TO_DEBUG_CHAN
+    #     ActiveIf: !CYGSEM_HAL_VIRTUAL_VECTOR_INHERIT_CONSOLE
+    # option CYGPRI_HAL_VIRTUAL_VECTOR_CONSOLE_CHANNEL_CONFIGURABLE
+    #     Calculated:  !CYGSEM_HAL_VIRTUAL_VECTOR_INHERIT_CONSOLE  && !CYGDBG_HAL_DIAG_TO_DEBUG_CHAN 
+};
+
+# Debug channel is configurable
+# This option is a configuration hint - it is enabled
+# when the HAL initialization code will make use
+# of the debug channel configuration option.
+#
+cdl_option CYGPRI_HAL_VIRTUAL_VECTOR_DEBUG_CHANNEL_CONFIGURABLE {
+    # Calculated value:  CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS 
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS == 0
+    # Flavor: bool
+    # Current value: 0
+
+    # The following properties are affected by this value
+    # option CYGNUM_HAL_VIRTUAL_VECTOR_DEBUG_CHANNEL
+    #     ActiveIf: CYGPRI_HAL_VIRTUAL_VECTOR_DEBUG_CHANNEL_CONFIGURABLE
+};
+
+# Console channel is configurable
+# This option is a configuration hint - it is enabled
+# when the HAL initialization code will make use
+# of the console channel configuration option.
+#
+cdl_option CYGPRI_HAL_VIRTUAL_VECTOR_CONSOLE_CHANNEL_CONFIGURABLE {
+    # Calculated value:  !CYGSEM_HAL_VIRTUAL_VECTOR_INHERIT_CONSOLE  && !CYGDBG_HAL_DIAG_TO_DEBUG_CHAN 
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_INHERIT_CONSOLE == 1
+    #     CYGDBG_HAL_DIAG_TO_DEBUG_CHAN == 0
+    # Flavor: bool
+    # Current value: 0
+
+    # The following properties are affected by this value
+    # option CYGNUM_HAL_VIRTUAL_VECTOR_CONSOLE_CHANNEL
+    #     ActiveIf: CYGPRI_HAL_VIRTUAL_VECTOR_CONSOLE_CHANNEL_CONFIGURABLE
+};
+
+# Initialize whole of virtual vector table
+# This option will cause the whole of the virtual
+# vector table to be initialized with dummy values on
+# startup. When this option is enabled, all the
+# options below must also be enabled - or the
+# table would be empty when the application
+# launches.
+# On targets where older ROM monitors without
+# virtual vector support may still be in use, it is
+# necessary for RAM applictions to initialize the
+# table (since all HAL diagnostics and debug IO
+# happens via the table).
+#
+cdl_option CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value:  CYG_HAL_STARTUP != "RAM" || !CYGSEM_HAL_USE_ROM_MONITOR 
+    #     CYG_HAL_STARTUP == RAM
+    #     CYGSEM_HAL_USE_ROM_MONITOR == GDB_stubs
+    #   --> 0
+    # Requires: CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_RESET
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_RESET == 1
+    #   --> 1
+    # Requires: CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DELAY_US
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DELAY_US == 1
+    #   --> 1
+    # Requires: CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_CACHE
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_CACHE == 1
+    #   --> 1
+    # Requires: CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DATA
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DATA == 1
+    #   --> 1
+    # Requires: CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS == 0
+    #   --> 0
+
+    # The following properties are affected by this value
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT
+    #     ActiveIf: !CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_RESET
+    #     DefaultValue:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT 
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_VERSION
+    #     DefaultValue:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE 
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DELAY_US
+    #     DefaultValue:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT 
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_CACHE
+    #     DefaultValue:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT 
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DATA
+    #     DefaultValue:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT 
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS
+    #     DefaultValue:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS 
+};
+
+# Claim virtual vector table entries by default
+# By default most virtual vectors will be claimed by
+# RAM startup configurations, meaning that the RAM
+# application will provide the services. The
+# exception is COMMS support (HAL
+# diagnostics/debugging IO) which is left in the
+# control of the ROM monitor.
+# The reasoning behind this is to get as much of the
+# code exercised during regular development so it
+# is known to be working the few times a new ROM
+# monitor or a ROM production configuration is used
+# - COMMS are excluded only by necessity in order to
+# avoid breaking an existing debugger connections
+# (there may be ways around this).
+# For production RAM configurations this option can
+# be switched off, causing the appliction to rely on
+# the ROM monitor for these services, thus
+# saving some space.
+# Individual vectors may also be left unclaimed,
+# controlled by the below options (meaning that the
+# associated service provided by the ROM monitor
+# will be used).
+#
+cdl_option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT {
+    # ActiveIf constraint: !CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE == 0
+    #   --> 1
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+
+    # The following properties are affected by this value
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_RESET
+    #     DefaultValue:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT 
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DELAY_US
+    #     DefaultValue:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT 
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_CACHE
+    #     DefaultValue:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT 
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DATA
+    #     DefaultValue:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT 
+};
+
+# Claim reset virtual vectors
+# This option will cause the reset and kill_by_reset
+# virtual vectors to be claimed.
+#
+cdl_option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_RESET {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT 
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE == 0
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT == 1
+    #   --> 1
+
+    # The following properties are affected by this value
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE
+    #     Requires: CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_RESET
+};
+
+# Claim version virtual vectors
+# This option will cause the version
+# virtual vectors to be claimed.
+#
+cdl_option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_VERSION {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE 
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE == 0
+    #   --> 0
+};
+
+# Claim delay_us virtual vector
+# This option will cause the delay_us
+# virtual vector to be claimed.
+#
+cdl_option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DELAY_US {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT 
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE == 0
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT == 1
+    #   --> 1
+
+    # The following properties are affected by this value
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE
+    #     Requires: CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DELAY_US
+};
+
+# Claim cache virtual vectors
+# This option will cause the cache virtual vectors
+# to be claimed.
+#
+cdl_option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_CACHE {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT 
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE == 0
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT == 1
+    #   --> 1
+
+    # The following properties are affected by this value
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE
+    #     Requires: CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_CACHE
+};
+
+# Claim data virtual vectors
+# This option will cause the data virtual vectors
+# to be claimed. At present there is only one, used
+# by the RedBoot ethernet driver to share diag output.
+#
+cdl_option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DATA {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT 
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE == 0
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DEFAULT == 1
+    #   --> 1
+
+    # The following properties are affected by this value
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE
+    #     Requires: CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_DATA
+};
+
+# Claim comms virtual vectors
+# This option will cause the communication tables
+# that are part of the virtual vectors mechanism to
+# be claimed. Note that doing this may cause an
+# existing ROM monitor communication connection to
+# be closed. For this reason, the option is disabled
+# per default for normal application
+# configurations.
+#
+cdl_option CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value:  CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE  || CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS 
+    #     CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE == 0
+    #     CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS == 0
+    #   --> 0
+
+    # The following properties are affected by this value
+    # option CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    #     Requires:  !CYGSEM_HAL_VIRTUAL_VECTOR_DIAG  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS 
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_INHERIT_CONSOLE
+    #     DefaultValue:  !CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS 
+    # option CYGPRI_HAL_VIRTUAL_VECTOR_DEBUG_CHANNEL_CONFIGURABLE
+    #     Calculated:  CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS 
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE
+    #     Requires: CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS
+};
+
+# Do diagnostic IO via virtual vector table
+# All HAL IO happens via the virtual vector table / comm
+# tables when those tables are supported by the HAL.
+# If so desired, the low-level IO functions can
+# still be provided by the RAM application by
+# enabling the CLAIM_COMMS option.
+#
+cdl_option CYGSEM_HAL_VIRTUAL_VECTOR_DIAG {
+    # Calculated value: 1
+    # Flavor: bool
+    # Current value: 1
+
+    # The following properties are affected by this value
+    # component CYGDBG_HAL_DIAG_TO_DEBUG_CHAN
+    #     ActiveIf:  CYGPKG_HAL_ARM || CYGPKG_HAL_POWERPC_MPC8xx  || CYGPKG_HAL_V85X_V850 || CYGSEM_HAL_VIRTUAL_VECTOR_DIAG 
+    # option CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    #     Requires:  !CYGSEM_HAL_VIRTUAL_VECTOR_DIAG  || CYGSEM_HAL_VIRTUAL_VECTOR_CLAIM_COMMS 
+};
+
+# <
+# Behave as a ROM monitor
+# Enable this option if this program is to be used as a ROM monitor,
+# i.e. applications will be loaded into RAM on the board, and this
+# ROM monitor may process exceptions or interrupts generated from the
+# application. This enables features such as utilizing a separate
+# interrupt stack when exceptions are generated.
+#
+cdl_option CYGSEM_HAL_ROM_MONITOR {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Requires:  CYG_HAL_STARTUP == "ROM" || CYG_HAL_STARTUP == "ROMRAM" 
+    #     CYG_HAL_STARTUP == RAM
+    #     CYG_HAL_STARTUP == RAM
+    #   --> 0
+
+    # The following properties are affected by this value
+    # option CYGBLD_ARM_ENABLE_THUMB_INTERWORK
+    #     DefaultValue:  (CYGHWR_THUMB || CYGSEM_HAL_ROM_MONITOR) 
+    # option CYGDBG_HAL_DEBUG_GDB_THREAD_SUPPORT
+    #     ActiveIf:  CYGSEM_HAL_ROM_MONITOR || CYGDBG_KERNEL_DEBUG_GDB_THREAD_SUPPORT 
+};
+
+# Work with a ROM monitor
+# Support can be enabled for different varieties of ROM monitor.
+# This support changes various eCos semantics such as the encoding
+# of diagnostic output, or the overriding of hardware interrupt
+# vectors.
+# Firstly there is "Generic" support which prevents the HAL
+# from overriding the hardware vectors that it does not use, to
+# instead allow an installed ROM monitor to handle them. This is
+# the most basic support which is likely to be common to most
+# implementations of ROM monitor.
+# "GDB_stubs" provides support when GDB stubs are included in
+# the ROM monitor or boot ROM.
+#
+cdl_option CYGSEM_HAL_USE_ROM_MONITOR {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 1 GDB_stubs
+    # value_source default
+    # Default value:  CYG_HAL_STARTUP == "RAM" ? "GDB_stubs" : 0 
+    #     CYG_HAL_STARTUP == RAM
+    #   --> 1 GDB_stubs
+    # Legal values:  "Generic" "GDB_stubs" 
+    # Requires:  CYG_HAL_STARTUP == "RAM" 
+    #     CYG_HAL_STARTUP == RAM
+    #   --> 1
+
+    # The following properties are affected by this value
+    # option CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    #     Requires: ! CYGSEM_HAL_USE_ROM_MONITOR
+    # option CYGDBG_HAL_DEBUG_GDB_CTRLC_SUPPORT
+    #     ActiveIf:  CYGSEM_HAL_USE_ROM_MONITOR || CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS 
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_INHERIT_CONSOLE
+    #     ActiveIf: CYGSEM_HAL_USE_ROM_MONITOR
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE
+    #     DefaultValue:  CYG_HAL_STARTUP != "RAM" || !CYGSEM_HAL_USE_ROM_MONITOR 
+};
+
+# <
+# Platform defined I/O channels.
+# Platforms which provide additional I/O channels can implement
+# this interface, indicating that the function plf_if_init()
+# needs to be called.
+#
+cdl_interface CYGINT_HAL_PLF_IF_INIT {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+};
+
+# Platform IDE I/O support.
+# Platforms which provide IDE controllers can implement
+# this interface, indicating that IDE I/O macros are
+# available.
+#
+cdl_interface CYGINT_HAL_PLF_IF_IDE {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+};
+
+# File I/O operations via GDB
+# This option enables support for various file I/O
+# operations using the GDB remote protocol to communicate
+# with GDB. The operations are then performed on the
+# debugging host by proxy. These operations are only
+# currently available by using a system call interface
+# to RedBoot. This may change in the future.
+#
+cdl_option CYGPKG_HAL_GDB_FILEIO {
+    # This option is not active
+    # ActiveIf constraint: CYGSEM_REDBOOT_BSP_SYSCALLS
+    #     CYGSEM_REDBOOT_BSP_SYSCALLS (unknown) == 0
+    #   --> 0
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Requires: CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    #     CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS == 0
+    #   --> 0
+};
+
+# Build Compiler sanity checking tests
+# Enabling this option causes compiler tests to be built.
+#
+cdl_option CYGPKG_HAL_BUILD_COMPILER_TESTS {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+
+    # The following properties are affected by this value
+    # component CYGPKG_HAL_TESTS
+    #     Calculated:   "tests/context tests/basic"
+    #                           . ((!CYGINT_HAL_TESTS_NO_CACHES) ? " tests/cache" : "")
+    #                           . ((CYGPKG_HAL_BUILD_COMPILER_TESTS) ? " tests/cpp1 tests/vaargs" : "")
+    #                           . ((!CYGVAR_KERNEL_COUNTERS_CLOCK) ?   " tests/intr" : "") 
+};
+
+# Common HAL tests
+# This option specifies the set of tests for the common HAL.
+#
+cdl_component CYGPKG_HAL_TESTS {
+    # Calculated value:   "tests/context tests/basic"
+    #                           . ((!CYGINT_HAL_TESTS_NO_CACHES) ? " tests/cache" : "")
+    #                           . ((CYGPKG_HAL_BUILD_COMPILER_TESTS) ? " tests/cpp1 tests/vaargs" : "")
+    #                           . ((!CYGVAR_KERNEL_COUNTERS_CLOCK) ?   " tests/intr" : "") 
+    #     CYGINT_HAL_TESTS_NO_CACHES == 0
+    #     CYGPKG_HAL_BUILD_COMPILER_TESTS == 0
+    #     CYGVAR_KERNEL_COUNTERS_CLOCK (unknown) == 0
+    # Flavor: data
+    # Current_value: tests/context tests/basic tests/cache tests/intr
+};
+
+# >
+# Interface for cache presence
+# Some architectures and/or platforms do not have caches. By
+# implementing this interface, these can disable the various
+# cache-related tests.
+#
+cdl_interface CYGINT_HAL_TESTS_NO_CACHES {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+
+    # The following properties are affected by this value
+    # component CYGPKG_HAL_TESTS
+    #     Calculated:   "tests/context tests/basic"
+    #                           . ((!CYGINT_HAL_TESTS_NO_CACHES) ? " tests/cache" : "")
+    #                           . ((CYGPKG_HAL_BUILD_COMPILER_TESTS) ? " tests/cpp1 tests/vaargs" : "")
+    #                           . ((!CYGVAR_KERNEL_COUNTERS_CLOCK) ?   " tests/intr" : "") 
+};
+
+# <
+# ARM architecture
+# The ARM architecture HAL package provides generic
+# support for this processor architecture. It is also
+# necessary to select a specific target platform HAL
+# package.
+#
+cdl_package CYGPKG_HAL_ARM {
+    # Packages cannot be added or removed, nor can their version be changed,
+    # simply by editing their value. Instead the appropriate configuration
+    # should be used to perform these actions.
+
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 1 v2_0
+
+    # The following properties are affected by this value
+    # component CYGDBG_HAL_DIAG_TO_DEBUG_CHAN
+    #     ActiveIf:  CYGPKG_HAL_ARM || CYGPKG_HAL_POWERPC_MPC8xx  || CYGPKG_HAL_V85X_V850 || CYGSEM_HAL_VIRTUAL_VECTOR_DIAG 
+};
+
+# >
+# The CPU architecture supports THUMB mode
+#
+cdl_interface CYGINT_HAL_ARM_THUMB_ARCH {
+    # Implemented by CYGPKG_HAL_ARM_DICE, active, enabled
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 1
+
+    # The following properties are affected by this value
+    # option CYGHWR_THUMB
+    #     ActiveIf:  CYGINT_HAL_ARM_THUMB_ARCH != 0 
+    # option CYGBLD_ARM_ENABLE_THUMB_INTERWORK
+    #     ActiveIf:  CYGINT_HAL_ARM_THUMB_ARCH != 0 
+};
+
+# Enable Thumb instruction set
+# Enable use of the Thumb instruction set.
+#
+cdl_option CYGHWR_THUMB {
+    # ActiveIf constraint:  CYGINT_HAL_ARM_THUMB_ARCH != 0 
+    #     CYGINT_HAL_ARM_THUMB_ARCH == 1
+    #   --> 1
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+
+    # The following properties are affected by this value
+    # option CYGBLD_ARM_ENABLE_THUMB_INTERWORK
+    #     DefaultValue:  (CYGHWR_THUMB || CYGSEM_HAL_ROM_MONITOR) 
+};
+
+# Enable Thumb interworking compiler option
+# This option controls the use of -mthumb-interwork in the
+# compiler flags. It defaults enabled in Thumb or ROM monitor
+# configurations, but can be overridden for reduced memory
+# footprint where interworking is not a requirement.
+#
+cdl_option CYGBLD_ARM_ENABLE_THUMB_INTERWORK {
+    # ActiveIf constraint:  CYGINT_HAL_ARM_THUMB_ARCH != 0 
+    #     CYGINT_HAL_ARM_THUMB_ARCH == 1
+    #   --> 1
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value:  (CYGHWR_THUMB || CYGSEM_HAL_ROM_MONITOR) 
+    #     CYGHWR_THUMB == 0
+    #     CYGSEM_HAL_ROM_MONITOR == 0
+    #   --> 0
+};
+
+# The platform and architecture supports Big Endian operation
+#
+cdl_interface CYGINT_HAL_ARM_BIGENDIAN {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+
+    # The following properties are affected by this value
+    # option CYGHWR_HAL_ARM_BIGENDIAN
+    #     ActiveIf:  CYGINT_HAL_ARM_BIGENDIAN != 0 
+};
+
+# Use big-endian mode
+# Use the CPU in big-endian mode.
+#
+cdl_option CYGHWR_HAL_ARM_BIGENDIAN {
+    # This option is not active
+    # ActiveIf constraint:  CYGINT_HAL_ARM_BIGENDIAN != 0 
+    #     CYGINT_HAL_ARM_BIGENDIAN == 0
+    #   --> 0
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# The platform uses a processor with an ARM7 core
+#
+cdl_interface CYGINT_HAL_ARM_ARCH_ARM7 {
+    # Implemented by CYGPKG_HAL_ARM_DICE, active, enabled
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 1
+
+    # The following properties are affected by this value
+    # option CYGHWR_HAL_ARM_CPU_FAMILY
+    #     LegalValues:  (CYGINT_HAL_ARM_ARCH_ARM7 != 0) ? "ARM7" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_ARM9 != 0) ? "ARM9" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_STRONGARM != 0) ? "StrongARM" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_XSCALE != 0) ? "XScale" : ""
+    #                             "" 
+    # option CYGHWR_HAL_ARM_CPU_FAMILY
+    #     DefaultValue:  (CYGINT_HAL_ARM_ARCH_ARM7 != 0) ? "ARM7" : 
+    #                              (CYGINT_HAL_ARM_ARCH_ARM9 != 0) ? "ARM9" : 
+    #                              (CYGINT_HAL_ARM_ARCH_STRONGARM != 0) ? "StrongARM" : 
+    #                              (CYGINT_HAL_ARM_ARCH_XSCALE != 0) ? "XScale" :
+    #                              "unknown" 
+};
+
+# The platform uses a processor with an ARM9 core
+#
+cdl_interface CYGINT_HAL_ARM_ARCH_ARM9 {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+
+    # The following properties are affected by this value
+    # option CYGHWR_HAL_ARM_CPU_FAMILY
+    #     LegalValues:  (CYGINT_HAL_ARM_ARCH_ARM7 != 0) ? "ARM7" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_ARM9 != 0) ? "ARM9" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_STRONGARM != 0) ? "StrongARM" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_XSCALE != 0) ? "XScale" : ""
+    #                             "" 
+    # option CYGHWR_HAL_ARM_CPU_FAMILY
+    #     DefaultValue:  (CYGINT_HAL_ARM_ARCH_ARM7 != 0) ? "ARM7" : 
+    #                              (CYGINT_HAL_ARM_ARCH_ARM9 != 0) ? "ARM9" : 
+    #                              (CYGINT_HAL_ARM_ARCH_STRONGARM != 0) ? "StrongARM" : 
+    #                              (CYGINT_HAL_ARM_ARCH_XSCALE != 0) ? "XScale" :
+    #                              "unknown" 
+};
+
+# The platform uses a processor with a StrongARM core
+#
+cdl_interface CYGINT_HAL_ARM_ARCH_STRONGARM {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+
+    # The following properties are affected by this value
+    # option CYGHWR_HAL_ARM_CPU_FAMILY
+    #     LegalValues:  (CYGINT_HAL_ARM_ARCH_ARM7 != 0) ? "ARM7" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_ARM9 != 0) ? "ARM9" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_STRONGARM != 0) ? "StrongARM" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_XSCALE != 0) ? "XScale" : ""
+    #                             "" 
+    # option CYGHWR_HAL_ARM_CPU_FAMILY
+    #     DefaultValue:  (CYGINT_HAL_ARM_ARCH_ARM7 != 0) ? "ARM7" : 
+    #                              (CYGINT_HAL_ARM_ARCH_ARM9 != 0) ? "ARM9" : 
+    #                              (CYGINT_HAL_ARM_ARCH_STRONGARM != 0) ? "StrongARM" : 
+    #                              (CYGINT_HAL_ARM_ARCH_XSCALE != 0) ? "XScale" :
+    #                              "unknown" 
+};
+
+# The platform uses a processor with a XScale core
+#
+cdl_interface CYGINT_HAL_ARM_ARCH_XSCALE {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+
+    # The following properties are affected by this value
+    # option CYGHWR_HAL_ARM_CPU_FAMILY
+    #     LegalValues:  (CYGINT_HAL_ARM_ARCH_ARM7 != 0) ? "ARM7" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_ARM9 != 0) ? "ARM9" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_STRONGARM != 0) ? "StrongARM" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_XSCALE != 0) ? "XScale" : ""
+    #                             "" 
+    # option CYGHWR_HAL_ARM_CPU_FAMILY
+    #     DefaultValue:  (CYGINT_HAL_ARM_ARCH_ARM7 != 0) ? "ARM7" : 
+    #                              (CYGINT_HAL_ARM_ARCH_ARM9 != 0) ? "ARM9" : 
+    #                              (CYGINT_HAL_ARM_ARCH_STRONGARM != 0) ? "StrongARM" : 
+    #                              (CYGINT_HAL_ARM_ARCH_XSCALE != 0) ? "XScale" :
+    #                              "unknown" 
+};
+
+# ARM CPU family
+# It is possible to optimize code for different
+# ARM CPU families. This option selects which CPU to
+# optimize for on boards that support multiple CPU types.
+#
+cdl_option CYGHWR_HAL_ARM_CPU_FAMILY {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value ARM7
+    # value_source default
+    # Default value:  (CYGINT_HAL_ARM_ARCH_ARM7 != 0) ? "ARM7" : 
+    #                              (CYGINT_HAL_ARM_ARCH_ARM9 != 0) ? "ARM9" : 
+    #                              (CYGINT_HAL_ARM_ARCH_STRONGARM != 0) ? "StrongARM" : 
+    #                              (CYGINT_HAL_ARM_ARCH_XSCALE != 0) ? "XScale" :
+    #                              "unknown" 
+    #     CYGINT_HAL_ARM_ARCH_ARM7 == 1
+    #     CYGINT_HAL_ARM_ARCH_ARM9 == 0
+    #     CYGINT_HAL_ARM_ARCH_STRONGARM == 0
+    #     CYGINT_HAL_ARM_ARCH_XSCALE == 0
+    #   --> ARM7
+    # Legal values:  (CYGINT_HAL_ARM_ARCH_ARM7 != 0) ? "ARM7" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_ARM9 != 0) ? "ARM9" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_STRONGARM != 0) ? "StrongARM" : ""
+    #                             (CYGINT_HAL_ARM_ARCH_XSCALE != 0) ? "XScale" : ""
+    #                             "" 
+    #     CYGINT_HAL_ARM_ARCH_ARM7 == 1
+    #     CYGINT_HAL_ARM_ARCH_ARM9 == 0
+    #     CYGINT_HAL_ARM_ARCH_STRONGARM == 0
+    #     CYGINT_HAL_ARM_ARCH_XSCALE == 0
+};
+
+# Provide diagnostic dump for exceptions
+# Print messages about hardware exceptions, including
+# raw exception frame dump and register contents.
+#
+cdl_option CYGHWR_HAL_ARM_DUMP_EXCEPTIONS {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Requires: !CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    #     CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS == 0
+    #   --> 1
+};
+
+# Process all exceptions with the eCos application
+# Normal RAM-based programs which do not include GDB stubs 
+# defer processing of the illegal instruction exception to GDB.
+# Setting this options allows the program to explicitly handle
+# the illegal instruction exception itself.  Note: this will
+# prevent the use of GDB to debug the application as breakpoints
+# will no longer work.
+#
+cdl_option CYGIMP_HAL_PROCESS_ALL_EXCEPTIONS {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Support GDB thread operations via ICE/Multi-ICE
+# Allow GDB to get thread information via the ICE/Multi-ICE
+# connection.
+#
+cdl_option CYGHWR_HAL_ARM_ICE_THREAD_SUPPORT {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Requires: CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS
+    #     CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS == 0
+    #   --> 0
+    # Requires: CYGDBG_HAL_DEBUG_GDB_THREAD_SUPPORT
+    #     CYGDBG_HAL_DEBUG_GDB_THREAD_SUPPORT == 0
+    #   --> 0
+    # Requires: CYGDBG_KERNEL_DEBUG_GDB_THREAD_SUPPORT
+    #     CYGDBG_KERNEL_DEBUG_GDB_THREAD_SUPPORT (unknown) == 0
+    #   --> 0
+};
+
+# Support for 'gprof' callbacks
+# The ARM HAL provides the macro for 'gprof' callbacks from RedBoot
+# to acquire the interrupt-context PC and SP, when this option is
+# active.
+#
+cdl_option CYGOPT_HAL_ARM_SYSCALL_GPROF_SUPPORT {
+    # This option is not active
+    # ActiveIf constraint: CYGSEM_REDBOOT_BSP_SYSCALLS
+    #     CYGSEM_REDBOOT_BSP_SYSCALLS (unknown) == 0
+    #   --> 0
+    # ActiveIf constraint:  CYGDBG_HAL_DEBUG_GDB_CTRLC_SUPPORT || CYGDBG_HAL_DEBUG_GDB_BREAK_SUPPORT 
+    #     CYGDBG_HAL_DEBUG_GDB_CTRLC_SUPPORT == 1
+    #     CYGDBG_HAL_DEBUG_GDB_BREAK_SUPPORT == 0
+    #   --> 1
+
+    # Calculated value: 1
+    # Flavor: bool
+    # Current value: 1
+};
+
+# Linker script
+#
+cdl_option CYGBLD_LINKER_SCRIPT {
+    # Calculated value:  "src/arm.ld" 
+    # Flavor: data
+    # Current_value: src/arm.ld
+};
+
+# Implementations of hal_arm_mem_real_region_top()
+#
+cdl_interface CYGINT_HAL_ARM_MEM_REAL_REGION_TOP {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+};
+
+# TCAT verification board (VB)
+# The DICE HAL package provides the support needed to run
+# eCos on an TCAT DICE/VB eval board.
+#
+cdl_package CYGPKG_HAL_ARM_DICE {
+    # Packages cannot be added or removed, nor can their version be changed,
+    # simply by editing their value. Instead the appropriate configuration
+    # should be used to perform these actions.
+
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 1 v2_0
+
+    # The following properties are affected by this value
+    # package CYGPKG_DEVS_FLASH_ARM_DICE
+    #     Requires: CYGPKG_HAL_ARM_DICE
+    # package CYGPKG_IO_SERIAL_ARM_DICE
+    #     ActiveIf: CYGPKG_HAL_ARM_DICE
+};
+
+# >
+# Startup type
+# When targetting the DICE eval board it is possible to build
+# the system for either RAM bootstrap or ROM bootstrap(s). Select
+# 'ram' when building programs to load into RAM using onboard
+# debug software such as Angel or eCos GDB stubs.  Select 'rom'
+# when building a stand-alone application which will be put
+# into ROM.  Using ROMRAM will allow the program to exist in
+# ROM, but be copied to RAM during startup.
+#
+cdl_component CYG_HAL_STARTUP {
+    # Flavor: data
+    user_value RAM
+    # value_source user
+    # Default value: RAM
+    # Legal values: "RAM" "ROM" "ROMRAM"
+
+    # The following properties are affected by this value
+    # component CYGHWR_MEMORY_LAYOUT
+    #     Calculated:  (CYG_HAL_STARTUP == "RAM") ?    "arm_dice_VB_ram" :
+    #                          (CYG_HAL_STARTUP == "ROMRAM") ? "arm_dice_VB_romram" :
+    #                                                          "arm_dice_VB_rom" 
+    # component CYGHWR_MEMORY_LAYOUT
+    #     Calculated:  (CYG_HAL_STARTUP == "RAM") ?    "arm_dice_VB_ram" :
+    #                          (CYG_HAL_STARTUP == "ROMRAM") ? "arm_dice_VB_romram" :
+    #                                                          "arm_dice_VB_rom" 
+    # option CYGHWR_MEMORY_LAYOUT_LDI
+    #     Calculated:  (CYG_HAL_STARTUP == "RAM") ? "<pkgconf/mlt_arm_dice_VB_ram.ldi>" : 
+    #                              (CYG_HAL_STARTUP == "ROMRAM") ? "<pkgconf/mlt_arm_dice_VB_romram.ldi>" :  
+    #                                                           "<pkgconf/mlt_arm_dice_VB_rom.ldi>" 
+    # option CYGHWR_MEMORY_LAYOUT_LDI
+    #     Calculated:  (CYG_HAL_STARTUP == "RAM") ? "<pkgconf/mlt_arm_dice_VB_ram.ldi>" : 
+    #                              (CYG_HAL_STARTUP == "ROMRAM") ? "<pkgconf/mlt_arm_dice_VB_romram.ldi>" :  
+    #                                                           "<pkgconf/mlt_arm_dice_VB_rom.ldi>" 
+    # option CYGHWR_MEMORY_LAYOUT_H
+    #     Calculated:  (CYG_HAL_STARTUP == "RAM") ? "<pkgconf/mlt_arm_dice_VB_ram.h>" :     
+    #                              (CYG_HAL_STARTUP == "ROMRAM") ? "<pkgconf/mlt_arm_dice_VB_romram.h>" :  
+    #                                                           "<pkgconf/mlt_arm_dice_VB_rom.h>" 
+    # option CYGHWR_MEMORY_LAYOUT_H
+    #     Calculated:  (CYG_HAL_STARTUP == "RAM") ? "<pkgconf/mlt_arm_dice_VB_ram.h>" :     
+    #                              (CYG_HAL_STARTUP == "ROMRAM") ? "<pkgconf/mlt_arm_dice_VB_romram.h>" :  
+    #                                                           "<pkgconf/mlt_arm_dice_VB_rom.h>" 
+    # option CYGSEM_HAL_ROM_MONITOR
+    #     Requires:  CYG_HAL_STARTUP == "ROM" || CYG_HAL_STARTUP == "ROMRAM" 
+    # option CYGSEM_HAL_ROM_MONITOR
+    #     Requires:  CYG_HAL_STARTUP == "ROM" || CYG_HAL_STARTUP == "ROMRAM" 
+    # option CYGSEM_HAL_USE_ROM_MONITOR
+    #     DefaultValue:  CYG_HAL_STARTUP == "RAM" ? "GDB_stubs" : 0 
+    # option CYGSEM_HAL_USE_ROM_MONITOR
+    #     Requires:  CYG_HAL_STARTUP == "RAM" 
+    # option CYGSEM_HAL_INSTALL_MMU_TABLES
+    #     DefaultValue:  CYG_HAL_STARTUP != "RAM" 
+    # component CYGDBG_HAL_DIAG_TO_DEBUG_CHAN
+    #     DefaultValue:  (CYGDBG_HAL_DEBUG_GDB_INCLUDE_STUBS  || CYG_HAL_STARTUP == "RAM") ? 1 : 0
+    # option CYGSEM_HAL_VIRTUAL_VECTOR_INIT_WHOLE_TABLE
+    #     DefaultValue:  CYG_HAL_STARTUP != "RAM" || !CYGSEM_HAL_USE_ROM_MONITOR 
+};
+
+# Number of communication channels on the board
+#
+cdl_option CYGNUM_HAL_VIRTUAL_VECTOR_COMM_CHANNELS {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 2
+    # value_source default
+    # Default value: 2
+    # Legal values: 1 to 2
+
+    # The following properties are affected by this value
+    # option CYGNUM_HAL_VIRTUAL_VECTOR_DEBUG_CHANNEL
+    #     LegalValues: 0 to CYGNUM_HAL_VIRTUAL_VECTOR_COMM_CHANNELS-1
+    # option CYGNUM_HAL_VIRTUAL_VECTOR_DEBUG_CHANNEL
+    #     Calculated: (CYGNUM_HAL_VIRTUAL_VECTOR_COMM_CHANNELS-1)
+    # option CYGNUM_HAL_VIRTUAL_VECTOR_CONSOLE_CHANNEL
+    #     LegalValues: 0 to CYGNUM_HAL_VIRTUAL_VECTOR_COMM_CHANNELS-1
+};
+
+# Debug serial port
+# The DICE board has two serial ports. This option
+# chooses which port will be used to connect to a host
+# running GDB.
+#
+cdl_option CYGNUM_HAL_VIRTUAL_VECTOR_DEBUG_CHANNEL {
+    # This option is not active
+    # ActiveIf constraint: CYGPRI_HAL_VIRTUAL_VECTOR_DEBUG_CHANNEL_CONFIGURABLE
+    #     CYGPRI_HAL_VIRTUAL_VECTOR_DEBUG_CHANNEL_CONFIGURABLE == 0
+    #   --> 0
+
+    # Calculated value: (CYGNUM_HAL_VIRTUAL_VECTOR_COMM_CHANNELS-1)
+    #     CYGNUM_HAL_VIRTUAL_VECTOR_COMM_CHANNELS == 2
+    # Flavor: data
+    # Current_value: 1
+    # Legal values: 0 to CYGNUM_HAL_VIRTUAL_VECTOR_COMM_CHANNELS-1
+    #     CYGNUM_HAL_VIRTUAL_VECTOR_COMM_CHANNELS == 2
+};
+
+# Diagnostic serial port
+# The DICE board has two serial ports. This option
+# chooses which port will be used for diagnostic output.
+#
+cdl_option CYGNUM_HAL_VIRTUAL_VECTOR_CONSOLE_CHANNEL {
+    # This option is not active
+    # ActiveIf constraint: CYGPRI_HAL_VIRTUAL_VECTOR_CONSOLE_CHANNEL_CONFIGURABLE
+    #     CYGPRI_HAL_VIRTUAL_VECTOR_CONSOLE_CHANNEL_CONFIGURABLE == 0
+    #   --> 0
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Legal values: 0 to CYGNUM_HAL_VIRTUAL_VECTOR_COMM_CHANNELS-1
+    #     CYGNUM_HAL_VIRTUAL_VECTOR_COMM_CHANNELS == 2
+};
+
+# Console/GDB serial port baud rate
+# This option controls the default baud rate used for the
+# Console/GDB connection.
+#
+cdl_option CYGNUM_HAL_VIRTUAL_VECTOR_CHANNELS_DEFAULT_BAUD {
+    # Flavor: data
+    user_value 115200
+    # value_source user
+    # Default value: 57600
+    # Legal values: 9600 19200 38400 57600 115200
+};
+
+# CPU clock speed
+# System clock is 49.152M Hz
+#
+cdl_option CYGNUM_HAL_ARM_DICE_CLOCK_SPEED {
+    # Calculated value: 49152000
+    # Flavor: data
+    # Current_value: 49152000
+
+    # The following properties are affected by this value
+    # option CYGNUM_HAL_RTC_PERIOD
+    #     Calculated: (CYGNUM_HAL_ARM_DICE_CLOCK_SPEED/ CYGNUM_HAL_RTC_DENOMINATOR )
+};
+
+# Real-time clock constants
+#
+cdl_component CYGNUM_HAL_RTC_CONSTANTS {
+    # There is no associated value.
+};
+
+# >
+# Real-time clock numerator
+#
+cdl_option CYGNUM_HAL_RTC_NUMERATOR {
+    # Calculated value: 1000000000
+    # Flavor: data
+    # Current_value: 1000000000
+};
+
+# Real-time clock denominator
+#
+cdl_option CYGNUM_HAL_RTC_DENOMINATOR {
+    # Calculated value: 100
+    # Flavor: data
+    # Current_value: 100
+
+    # The following properties are affected by this value
+    # option CYGNUM_HAL_RTC_PERIOD
+    #     Calculated: (CYGNUM_HAL_ARM_DICE_CLOCK_SPEED/ CYGNUM_HAL_RTC_DENOMINATOR )
+};
+
+# Real-time clock period
+#
+cdl_option CYGNUM_HAL_RTC_PERIOD {
+    # Calculated value: (CYGNUM_HAL_ARM_DICE_CLOCK_SPEED/ CYGNUM_HAL_RTC_DENOMINATOR )
+    #     CYGNUM_HAL_ARM_DICE_CLOCK_SPEED == 49152000
+    #     CYGNUM_HAL_RTC_DENOMINATOR == 100
+    # Flavor: data
+    # Current_value: 491520
+};
+
+# <
+# Memory layout
+#
+cdl_component CYGHWR_MEMORY_LAYOUT {
+    # Calculated value:  (CYG_HAL_STARTUP == "RAM") ?    "arm_dice_VB_ram" :
+    #                          (CYG_HAL_STARTUP == "ROMRAM") ? "arm_dice_VB_romram" :
+    #                                                          "arm_dice_VB_rom" 
+    #     CYG_HAL_STARTUP == RAM
+    #     CYG_HAL_STARTUP == RAM
+    # Flavor: data
+    # Current_value: arm_dice_VB_ram
+};
+
+# >
+# Memory layout linker script fragment
+#
+cdl_option CYGHWR_MEMORY_LAYOUT_LDI {
+    # Calculated value:  (CYG_HAL_STARTUP == "RAM") ? "<pkgconf/mlt_arm_dice_VB_ram.ldi>" : 
+    #                              (CYG_HAL_STARTUP == "ROMRAM") ? "<pkgconf/mlt_arm_dice_VB_romram.ldi>" :  
+    #                                                           "<pkgconf/mlt_arm_dice_VB_rom.ldi>" 
+    #     CYG_HAL_STARTUP == RAM
+    #     CYG_HAL_STARTUP == RAM
+    # Flavor: data
+    # Current_value: <pkgconf/mlt_arm_dice_VB_ram.ldi>
+};
+
+# Memory layout header file
+#
+cdl_option CYGHWR_MEMORY_LAYOUT_H {
+    # Calculated value:  (CYG_HAL_STARTUP == "RAM") ? "<pkgconf/mlt_arm_dice_VB_ram.h>" :     
+    #                              (CYG_HAL_STARTUP == "ROMRAM") ? "<pkgconf/mlt_arm_dice_VB_romram.h>" :  
+    #                                                           "<pkgconf/mlt_arm_dice_VB_rom.h>" 
+    #     CYG_HAL_STARTUP == RAM
+    #     CYG_HAL_STARTUP == RAM
+    # Flavor: data
+    # Current_value: <pkgconf/mlt_arm_dice_VB_ram.h>
+};
+
+# <
+# <
+# <
+# <
+# I/O sub-system
+# doc: ref/io.html
+# The eCos system is supplied with a number of different
+# device drivers.  This option enables the basic I/O system
+# support which is the basis for all drivers.
+#
+cdl_package CYGPKG_IO {
+    # Packages cannot be added or removed, nor can their version be changed,
+    # simply by editing their value. Instead the appropriate configuration
+    # should be used to perform these actions.
+
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 1 v2_0
+    # Requires: CYGPKG_ERROR
+    #     CYGPKG_ERROR == v2_0
+    #   --> 1
+};
+
+# >
+# Debug I/O sub-system
+# This option enables verbose messages to be displayed on the
+# system 'diag' device during I/O system initialization.
+#
+cdl_option CYGDBG_IO_INIT {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Basic support for file based I/O
+# This option control support for simple file I/O primitives. It is only
+# present if the FILEIO package is not included.
+#
+cdl_component CYGPKG_IO_FILE_SUPPORT {
+    # ActiveIf constraint: !CYGPKG_IO_FILEIO
+    #     CYGPKG_IO_FILEIO (unknown) == 0
+    #   --> 1
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# >
+# Number of open files
+# This option controls the number of open files.
+#
+cdl_option CYGPKG_IO_NFILE {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 16
+    # value_source default
+    # Default value: 16
+};
+
+# <
+# <
+# Infrastructure
+# Common types and useful macros.
+# Tracing and assertion facilities.
+# Package startup options.
+#
+cdl_package CYGPKG_INFRA {
+    # Packages cannot be added or removed, nor can their version be changed,
+    # simply by editing their value. Instead the appropriate configuration
+    # should be used to perform these actions.
+
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 1 v2_0
+
+    # The following properties are affected by this value
+    # package CYGPKG_HAL
+    #     Requires: CYGPKG_INFRA
+};
+
+# >
+# Asserts & Tracing
+# The eCos source code contains a significant amount of
+# internal debugging support, in the form of assertions and
+# tracing.
+# Assertions check at runtime that various conditions are as
+# expected; if not, execution is halted.
+# Tracing takes the form of text messages that are output
+# whenever certain events occur, or whenever functions are
+# called or return.
+# The most important property of these checks and messages is
+# that they are not required for the program to run.
+# It is prudent to develop software with assertions enabled,
+# but disable them when making a product release, thus
+# removing the overhead of that checking.
+# It is possible to enable assertions and tracing
+# independently.
+# There are also options controlling the exact behaviour of
+# the assertion and tracing facilities, thus giving users
+# finer control over the code and data size requirements.
+#
+cdl_component CYGPKG_INFRA_DEBUG {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# >
+# Use asserts
+# If this option is defined, asserts in the code are tested.
+# Assert functions (CYG_ASSERT()) are defined in
+# 'include/cyg/infra/cyg_ass.h' within the 'install' tree.
+# If it is not defined, these result in no additional
+# object code and no checking of the asserted conditions.
+#
+cdl_component CYGDBG_USE_ASSERTS {
+    # This option is not active
+    # The parent CYGPKG_INFRA_DEBUG is disabled
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+    # Requires:  1 == CYGINT_INFRA_DEBUG_TRACE_IMPL 
+    #     CYGINT_INFRA_DEBUG_TRACE_IMPL == 0
+    #   --> 0
+};
+
+# >
+# Preconditions
+# This option allows individual control of preconditions.
+# A precondition is one type of assert, which it is
+# useful to control separately from more general asserts.
+# The function is CYG_PRECONDITION(condition,msg).
+#
+cdl_option CYGDBG_INFRA_DEBUG_PRECONDITIONS {
+    # This option is not active
+    # The parent CYGDBG_USE_ASSERTS is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# Postconditions
+# This option allows individual control of postconditions.
+# A postcondition is one type of assert, which it is
+# useful to control separately from more general asserts.
+# The function is CYG_POSTCONDITION(condition,msg).
+#
+cdl_option CYGDBG_INFRA_DEBUG_POSTCONDITIONS {
+    # This option is not active
+    # The parent CYGDBG_USE_ASSERTS is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# Loop invariants
+# This option allows individual control of loop invariants.
+# A loop invariant is one type of assert, which it is
+# useful to control separately from more general asserts,
+# particularly since a loop invariant is typically evaluated
+# a great many times when used correctly.
+# The function is CYG_LOOP_INVARIANT(condition,msg).
+#
+cdl_option CYGDBG_INFRA_DEBUG_LOOP_INVARIANTS {
+    # This option is not active
+    # The parent CYGDBG_USE_ASSERTS is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# Use assert text
+# All assertions within eCos contain a text message
+# which should give some information about the condition
+# being tested.
+# These text messages will end up being embedded in the
+# application image and hence there is a significant penalty
+# in terms of image size.
+# It is possible to suppress the use of these messages by
+# disabling this option.
+# This results in smaller code size, but there is less
+# human-readable information if an assertion actually gets
+# triggered.
+#
+cdl_option CYGDBG_INFRA_DEBUG_ASSERT_MESSAGE {
+    # This option is not active
+    # The parent CYGDBG_USE_ASSERTS is not active
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# <
+# Use tracing
+# If this option is defined, tracing operations
+# result in output or logging, depending on other options.
+# This may have adverse effects on performance, if the time
+# taken to output message overwhelms the available CPU
+# power or output bandwidth.
+# Trace functions (CYG_TRACE()) are defined in
+# 'include/cyg/infra/cyg_trac.h' within the 'install' tree.
+# If it is not defined, these result in no additional
+# object code and no trace information.
+#
+cdl_component CYGDBG_USE_TRACING {
+    # This option is not active
+    # The parent CYGPKG_INFRA_DEBUG is disabled
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Requires:  1 == CYGINT_INFRA_DEBUG_TRACE_IMPL 
+    #     CYGINT_INFRA_DEBUG_TRACE_IMPL == 0
+    #   --> 0
+
+    # The following properties are affected by this value
+    # option CYGDBG_INFRA_DEBUG_TRACE_BUFFER_SIZE
+    #     ActiveIf: CYGDBG_USE_TRACING
+    # option CYGDBG_INFRA_DEBUG_TRACE_BUFFER_WRAP
+    #     ActiveIf: CYGDBG_USE_TRACING
+    # option CYGDBG_INFRA_DEBUG_TRACE_BUFFER_HALT
+    #     ActiveIf: CYGDBG_USE_TRACING
+    # option CYGDBG_INFRA_DEBUG_TRACE_BUFFER_PRINT
+    #     ActiveIf: CYGDBG_USE_TRACING
+    # option CYGDBG_INFRA_DEBUG_TRACE_BUFFER_PRINT_ON_ASSERT
+    #     ActiveIf: CYGDBG_USE_TRACING
+};
+
+# >
+# Trace function reports
+# This option allows individual control of
+# function entry/exit tracing, independent of
+# more general tracing output.
+# This may be useful to remove clutter from a
+# trace log.
+#
+cdl_option CYGDBG_INFRA_DEBUG_FUNCTION_REPORTS {
+    # This option is not active
+    # The parent CYGDBG_USE_TRACING is not active
+    # The parent CYGDBG_USE_TRACING is disabled
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# Use trace text
+# All trace calls within eCos contain a text message
+# which should give some information about the circumstances.
+# These text messages will end up being embedded in the
+# application image and hence there is a significant penalty
+# in terms of image size.
+# It is possible to suppress the use of these messages by
+# disabling this option.
+# This results in smaller code size, but there is less
+# human-readable information available in the trace output,
+# possibly only filenames and line numbers.
+#
+cdl_option CYGDBG_INFRA_DEBUG_TRACE_MESSAGE {
+    # This option is not active
+    # The parent CYGDBG_USE_TRACING is not active
+    # The parent CYGDBG_USE_TRACING is disabled
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# <
+# Trace output implementations
+#
+cdl_interface CYGINT_INFRA_DEBUG_TRACE_IMPL {
+    # Implemented by CYGDBG_INFRA_DEBUG_TRACE_ASSERT_NULL, inactive, disabled
+    # Implemented by CYGDBG_INFRA_DEBUG_TRACE_ASSERT_SIMPLE, inactive, disabled
+    # Implemented by CYGDBG_INFRA_DEBUG_TRACE_ASSERT_FANCY, inactive, disabled
+    # Implemented by CYGDBG_INFRA_DEBUG_TRACE_ASSERT_BUFFER, inactive, enabled
+    # This option is not active
+    # The parent CYGPKG_INFRA_DEBUG is disabled
+
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+
+    # The following properties are affected by this value
+    # component CYGDBG_USE_ASSERTS
+    #     Requires:  1 == CYGINT_INFRA_DEBUG_TRACE_IMPL 
+    # component CYGDBG_USE_TRACING
+    #     Requires:  1 == CYGINT_INFRA_DEBUG_TRACE_IMPL 
+};
+
+# Null output
+# A null output module which is useful when
+# debugging interactively; the output routines
+# can be breakpointed rather than have them actually
+# 'print' something.
+#
+cdl_option CYGDBG_INFRA_DEBUG_TRACE_ASSERT_NULL {
+    # This option is not active
+    # The parent CYGPKG_INFRA_DEBUG is disabled
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Simple output
+# An output module which produces simple output
+# from tracing and assertion events.
+#
+cdl_option CYGDBG_INFRA_DEBUG_TRACE_ASSERT_SIMPLE {
+    # This option is not active
+    # The parent CYGPKG_INFRA_DEBUG is disabled
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Fancy output
+# An output module which produces fancy output
+# from tracing and assertion events.
+#
+cdl_option CYGDBG_INFRA_DEBUG_TRACE_ASSERT_FANCY {
+    # This option is not active
+    # The parent CYGPKG_INFRA_DEBUG is disabled
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Buffered tracing
+# An output module which buffers output
+# from tracing and assertion events. The stored
+# messages are output when an assert fires, or
+# CYG_TRACE_PRINT() (defined in <cyg/infra/cyg_trac.h>)
+# is called.
+# Of course, there will only be stored messages
+# if tracing per se (CYGDBG_USE_TRACING)
+# is enabled above.
+#
+cdl_component CYGDBG_INFRA_DEBUG_TRACE_ASSERT_BUFFER {
+    # This option is not active
+    # The parent CYGPKG_INFRA_DEBUG is disabled
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# >
+# Trace buffer size
+# The size of the trace buffer. This counts the number
+# of trace records stored. When the buffer fills it
+# either wraps, stops recording, or generates output.
+#
+cdl_option CYGDBG_INFRA_DEBUG_TRACE_BUFFER_SIZE {
+    # This option is not active
+    # The parent CYGDBG_INFRA_DEBUG_TRACE_ASSERT_BUFFER is not active
+    # ActiveIf constraint: CYGDBG_USE_TRACING
+    #     CYGDBG_USE_TRACING == 0
+    #   --> 0
+
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 32
+    # value_source default
+    # Default value: 32
+    # Legal values: 5 to 65535
+};
+
+# Wrap trace buffer when full
+# When the trace buffer has filled with records it
+# starts again at the beginning. Hence only the last
+# CYGDBG_INFRA_DEBUG_TRACE_BUFFER_SIZE messages will
+# be recorded.
+#
+cdl_option CYGDBG_INFRA_DEBUG_TRACE_BUFFER_WRAP {
+    # This option is not active
+    # The parent CYGDBG_INFRA_DEBUG_TRACE_ASSERT_BUFFER is not active
+    # ActiveIf constraint: CYGDBG_USE_TRACING
+    #     CYGDBG_USE_TRACING == 0
+    #   --> 0
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# Halt trace buffer when full
+# When the trace buffer has filled with records it
+# stops recording. Hence only the first
+# CYGDBG_INFRA_DEBUG_TRACE_BUFFER_SIZE messages will
+# be recorded.
+#
+cdl_option CYGDBG_INFRA_DEBUG_TRACE_BUFFER_HALT {
+    # This option is not active
+    # The parent CYGDBG_INFRA_DEBUG_TRACE_ASSERT_BUFFER is not active
+    # ActiveIf constraint: CYGDBG_USE_TRACING
+    #     CYGDBG_USE_TRACING == 0
+    #   --> 0
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Print trace buffer when full
+# When the trace buffer has filled with records it
+# prints the contents of the buffer. The buffer is then
+# emptied and the system continues.
+#
+cdl_option CYGDBG_INFRA_DEBUG_TRACE_BUFFER_PRINT {
+    # This option is not active
+    # The parent CYGDBG_INFRA_DEBUG_TRACE_ASSERT_BUFFER is not active
+    # ActiveIf constraint: CYGDBG_USE_TRACING
+    #     CYGDBG_USE_TRACING == 0
+    #   --> 0
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Print trace buffer on assert fail
+# When an assertion fails the trace buffer will be 
+# printed to the default diagnostic device.
+#
+cdl_option CYGDBG_INFRA_DEBUG_TRACE_BUFFER_PRINT_ON_ASSERT {
+    # This option is not active
+    # The parent CYGDBG_INFRA_DEBUG_TRACE_ASSERT_BUFFER is not active
+    # ActiveIf constraint: CYGDBG_USE_TRACING
+    #     CYGDBG_USE_TRACING == 0
+    #   --> 0
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# <
+# Use function names
+# All trace and assert calls within eCos contain a
+# reference to the builtin macro '__PRETTY_FUNCTION__',
+# which evaluates to a string containing
+# the name of the current function.
+# This is useful when reading a trace log.
+# It is possible to suppress the use of the function name
+# by disabling this option.
+# This results in smaller code size, but there is less
+# human-readable information available in the trace output,
+# possibly only filenames and line numbers.
+#
+cdl_option CYGDBG_INFRA_DEBUG_FUNCTION_PSEUDOMACRO {
+    # This option is not active
+    # The parent CYGPKG_INFRA_DEBUG is disabled
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# <
+# Startup options
+# Some packages require a startup routine to be called.
+# This can be carried out by application code, by supplying
+# a routine called cyg_package_start() which calls the
+# appropriate package startup routine(s).
+# Alternatively, this routine can be constructed automatically
+# and configured to call the startup routines of your choice.
+#
+cdl_component CYGPKG_INFRA_STARTUP {
+    # There is no associated value.
+};
+
+# >
+# Start uITRON subsystem
+# Generate a call to initialize the
+# uITRON compatibility subsystem
+# within the system version of cyg_package_start().
+# This enables compatibility with uITRON.
+# You must configure uITRON with the correct tasks before
+# starting the uItron subsystem.
+# If this is disabled, and you want to use uITRON,
+# you must call cyg_uitron_start() from your own
+# cyg_package_start() or cyg_userstart().
+#
+cdl_option CYGSEM_START_UITRON_COMPATIBILITY {
+    # This option is not active
+    # ActiveIf constraint: CYGPKG_UITRON
+    #     CYGPKG_UITRON (unknown) == 0
+    #   --> 0
+
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Requires: CYGPKG_UITRON
+    #     CYGPKG_UITRON (unknown) == 0
+    #   --> 0
+};
+
+# <
+# Smaller slower memcpy()
+# Enabling this option causes the implementation of
+# the standard memcpy() routine to reduce code
+# size at the expense of execution speed. This
+# option is automatically enabled with the use of
+# the -Os option to the compiler. Also note that
+# the compiler will try to use its own builtin
+# version of memcpy() if possible, ignoring the
+# implementation in this package, unless given
+# the -fno-builtin compiler option.
+#
+cdl_option CYGIMP_INFRA_PREFER_SMALL_TO_FAST_MEMCPY {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Smaller slower memset()
+# Enabling this option causes the implementation of
+# the standard memset() routine to reduce code
+# size at the expense of execution speed. This
+# option is automatically enabled with the use of
+# the -Os option to the compiler. Also note that
+# the compiler will try to use its own builtin
+# version of memset() if possible, ignoring the
+# implementation in this package, unless given
+# the -fno-builtin compiler option.
+#
+cdl_option CYGIMP_INFRA_PREFER_SMALL_TO_FAST_MEMSET {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+};
+
+# Provide empty C++ delete functions
+# To deal with virtual destructors, where the correct delete()
+# function must be called for the derived class in question, the
+# underlying delete is called when needed, from destructors.  This
+# is regardless of whether the destructor is called by delete itself.
+# So there is a reference to delete() from all destructors.  The
+# default builtin delete() attempts to call free() if there is
+# one defined.  So, if you have destructors, and you have free(),
+# as in malloc() and free(), any destructor counts as a reference
+# to free().  So the dynamic memory allocation code is linked
+# in regardless of whether it gets explicitly called. This
+# increases code and data size needlessly.
+# To defeat this undesirable behaviour, we define empty versions
+# of delete and delete.  But doing this prevents proper use
+# of dynamic memory in C++ programs via C++'s new and delete
+# operators.
+# Therefore, this option is provided
+# for explicitly disabling the provision of these empty functions,
+# so that new and delete can be used, if that is what is required.
+#
+cdl_option CYGFUN_INFRA_EMPTY_DELETE_FUNCTIONS {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+};
+
+# Provide dummy abort() function
+# This option controls the inclusion of a dummy abort() function.
+# Parts of the C and C++ compiler runtime systems contain references
+# to abort(), particulary in the C++ exception handling code. It is
+# not possible to eliminate these references, so this dummy function
+# in included to satisfy them. It is not expected that this function
+# will ever be called, so its current behaviour is to simply loop.
+#
+cdl_option CYGFUN_INFRA_DUMMY_ABORT {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value:  CYGINT_ISO_EXIT == 0 
+    #     CYGINT_ISO_EXIT == 0
+    #   --> 1
+    # Requires: !CYGINT_ISO_EXIT
+    #     CYGINT_ISO_EXIT == 0
+    #   --> 1
+};
+
+# Provide dummy strlen() function
+# This option controls the inclusion of a dummy strlen() function.
+# Parts of the C and C++ compiler runtime systems contain references
+# to strlen(), particulary in the C++ exception handling code. It is
+# not possible to eliminate these references, so this dummy function
+# in included to satisfy them. While it is not expected that this function
+# will ever be called, it is functional but uses the simplest, smallest
+# algorithm. There is a faster version of strlen() in the C library.
+#
+cdl_option CYGFUN_INFRA_DUMMY_STRLEN {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value:  CYGINT_ISO_STRING_STRFUNCS == 0 
+    #     CYGINT_ISO_STRING_STRFUNCS == 0
+    #   --> 1
+    # Requires: !CYGINT_ISO_STRING_STRFUNCS
+    #     CYGINT_ISO_STRING_STRFUNCS == 0
+    #   --> 1
+};
+
+# Make all compiler warnings show as errors
+# Enabling this option will cause all compiler warnings to show
+# as errors and bring the library build to a halt. This is used
+# to ensure that the code base is warning free, and thus ensure
+# that newly introduced warnings stand out and get fixed before
+# they show up as weird run-time behavior.
+#
+cdl_option CYGBLD_INFRA_CFLAGS_WARNINGS_AS_ERRORS {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Requires:  is_substr(CYGBLD_GLOBAL_CFLAGS, " -Werror") 
+    #     CYGBLD_GLOBAL_CFLAGS == "-mcpu=arm7tdmi -mlittle-endian -mno-short-load-words -Wall -Wpointer-arith -Wstrict-prototypes -Wno-inline -Wundef -Woverloaded-virtual -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fvtable-gc -finit-priority"
+    #   --> 0
+};
+
+# Make compiler and assembler communicate by pipe
+# Enabling this option will cause the compiler to feed the
+# assembly output the the assembler via a pipe instead of
+# via a temporary file. This normally reduces the build
+# time.
+#
+cdl_option CYGBLD_INFRA_CFLAGS_PIPE {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Requires:  is_substr(CYGBLD_GLOBAL_CFLAGS, " -pipe") 
+    #     CYGBLD_GLOBAL_CFLAGS == "-mcpu=arm7tdmi -mlittle-endian -mno-short-load-words -Wall -Wpointer-arith -Wstrict-prototypes -Wno-inline -Wundef -Woverloaded-virtual -g -O2 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fvtable-gc -finit-priority"
+    #   --> 0
+};
+
+# Infra build options
+# Package specific build options including control over
+# compiler flags used only in building this package.
+#
+cdl_component CYGPKG_INFRA_OPTIONS {
+    # There is no associated value.
+};
+
+# >
+# Additional compiler flags
+# This option modifies the set of compiler flags for
+# building the eCos infra package. These flags are used
+# in addition to the set of global flags.
+#
+cdl_option CYGPKG_INFRA_CFLAGS_ADD {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value ""
+    # value_source default
+    # Default value: ""
+};
+
+# Suppressed compiler flags
+# This option modifies the set of compiler flags for
+# building the eCos infra package. These flags are removed from
+# the set of global flags if present.
+#
+cdl_option CYGPKG_INFRA_CFLAGS_REMOVE {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value ""
+    # value_source default
+    # Default value: ""
+};
+
+# Suppressed linker flags
+# This option modifies the set of linker flags for
+# building the eCos infra package tests. These flags are removed from
+# the set of global flags if present.
+#
+cdl_option CYGPKG_INFRA_LDFLAGS_REMOVE {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value -Wl,--gc-sections
+    # value_source default
+    # Default value: -Wl,--gc-sections
+};
+
+# Additional linker flags
+# This option modifies the set of linker flags for
+# building the eCos infra package tests. These flags are added to
+# the set of global flags if present.
+#
+cdl_option CYGPKG_INFRA_LDFLAGS_ADD {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value -Wl,--fatal-warnings
+    # value_source default
+    # Default value: -Wl,--fatal-warnings
+};
+
+# Infra package tests
+#
+cdl_option CYGPKG_INFRA_TESTS {
+    # Calculated value:  "tests/cxxsupp" 
+    # Flavor: data
+    # Current_value: tests/cxxsupp
+};
+
+# <
+# <
+# Common error code support
+# This package contains the common list of error and
+# status codes. It is held centrally to allow
+# packages to interchange error codes and status
+# codes in a common way, rather than each package
+# having its own conventions for error/status
+# reporting. The error codes are modelled on the
+# POSIX style naming e.g. EINVAL etc. This package
+# also provides the standard strerror() function to
+# convert error codes to textual representation, as
+# well as an implementation of the errno idiom.
+#
+cdl_package CYGPKG_ERROR {
+    # Packages cannot be added or removed, nor can their version be changed,
+    # simply by editing their value. Instead the appropriate configuration
+    # should be used to perform these actions.
+
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 1 v2_0
+    # Requires:  CYGBLD_ISO_ERRNO_CODES_HEADER == "<cyg/error/codes.h>" 
+    #     CYGBLD_ISO_ERRNO_CODES_HEADER == <cyg/error/codes.h>
+    #   --> 1
+
+    # The following properties are affected by this value
+    # package CYGPKG_IO_SERIAL_ARM_DICE
+    #     Requires: CYGPKG_ERROR
+    # package CYGPKG_IO
+    #     Requires: CYGPKG_ERROR
+};
+
+# >
+# errno variable
+# This package controls the behaviour of the
+# errno variable (or more strictly, expression)
+# from <errno.h>.
+#
+cdl_component CYGPKG_ERROR_ERRNO {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+    # Requires:  CYGBLD_ISO_ERRNO_HEADER == "<cyg/error/errno.h>" 
+    #     CYGBLD_ISO_ERRNO_HEADER == <cyg/error/errno.h>
+    #   --> 1
+};
+
+# >
+# Per-thread errno
+# This option controls whether the standard error
+# code reporting variable errno is a per-thread
+# variable, rather than global.
+#
+cdl_option CYGSEM_ERROR_PER_THREAD_ERRNO {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # The inferred value should not be edited directly.
+    inferred_value 0
+    # value_source inferred
+    # Default value: 1
+    # Requires: CYGVAR_KERNEL_THREADS_DATA
+    #     CYGVAR_KERNEL_THREADS_DATA (unknown) == 0
+    #   --> 0
+};
+
+# Tracing level
+# Trace verbosity level for debugging the errno
+# retrieval mechanism in errno.cxx. Increase this
+# value to get additional trace output.
+#
+cdl_option CYGNUM_ERROR_ERRNO_TRACE_LEVEL {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value 0
+    # value_source default
+    # Default value: 0
+    # Legal values: 0 to 1
+};
+
+# <
+# strerror function
+# This package controls the presence and behaviour of the
+# strerror() function from <string.h>
+#
+cdl_option CYGPKG_ERROR_STRERROR {
+    # Flavor: bool
+    # No user value, uncomment the following line to provide one.
+    # user_value 1
+    # value_source default
+    # Default value: 1
+    # Requires:  CYGBLD_ISO_STRERROR_HEADER == "<cyg/error/strerror.h>" 
+    #     CYGBLD_ISO_STRERROR_HEADER == <cyg/error/strerror.h>
+    #   --> 1
+};
+
+# Error package build options
+# Package specific build options including control over
+# compiler flags used only in building this package,
+# and details of which tests are built.
+#
+cdl_component CYGPKG_ERROR_OPTIONS {
+    # There is no associated value.
+};
+
+# >
+# Additional compiler flags
+# This option modifies the set of compiler flags for
+# building the error package. These flags are used in addition
+# to the set of global flags.
+#
+cdl_option CYGPKG_ERROR_CFLAGS_ADD {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value ""
+    # value_source default
+    # Default value: ""
+};
+
+# Suppressed compiler flags
+# This option modifies the set of compiler flags for
+# building the error package. These flags are removed from
+# the set of global flags if present.
+#
+cdl_option CYGPKG_ERROR_CFLAGS_REMOVE {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value ""
+    # value_source default
+    # Default value: ""
+};
+
+# <
+# <
+# ISO C and POSIX infrastructure
+# eCos supports implementations of ISO C libraries and POSIX
+# implementations. This package provides infrastructure used by
+# all such implementations.
+#
+cdl_package CYGPKG_ISOINFRA {
+    # Packages cannot be added or removed, nor can their version be changed,
+    # simply by editing their value. Instead the appropriate configuration
+    # should be used to perform these actions.
+
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 1 v2_0
+};
+
+# >
+# Startup and termination
+#
+cdl_component CYGPKG_ISO_STARTUP {
+    # There is no associated value.
+};
+
+# >
+# main() startup implementations
+# Implementations of this interface arrange for a user-supplied
+# main() to be called in an ISO compatible environment.
+#
+cdl_interface CYGINT_ISO_MAIN_STARTUP {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_MAIN_STARTUP 
+    #     CYGINT_ISO_MAIN_STARTUP == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_MAIN_STARTUP
+    #     Requires:  1 >= CYGINT_ISO_MAIN_STARTUP 
+};
+
+# environ implementations
+# Implementations of this interface provide the environ
+# variable required by POSIX.
+#
+cdl_interface CYGINT_ISO_ENVIRON {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_ENVIRON 
+    #     CYGINT_ISO_ENVIRON == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_ENVIRON
+    #     Requires:  1 >= CYGINT_ISO_ENVIRON 
+};
+
+# <
+# ctype.h functions
+#
+cdl_component CYGPKG_ISO_CTYPE_H {
+    # There is no associated value.
+};
+
+# >
+# Number of implementations of ctype functions
+#
+cdl_interface CYGINT_ISO_CTYPE {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_CTYPE 
+    #     CYGINT_ISO_CTYPE == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_CTYPE
+    #     Requires:  1 >= CYGINT_ISO_CTYPE 
+};
+
+# Ctype implementation header
+#
+cdl_option CYGBLD_ISO_CTYPE_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# Error handling
+#
+cdl_component CYGPKG_ISO_ERRNO {
+    # There is no associated value.
+};
+
+# >
+# Number of implementations of error codes
+#
+cdl_interface CYGINT_ISO_ERRNO_CODES {
+    # Implemented by CYGPKG_ERROR, active, enabled
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 1
+    # Requires:  1 >= CYGINT_ISO_ERRNO_CODES 
+    #     CYGINT_ISO_ERRNO_CODES == 1
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_ERRNO_CODES
+    #     Requires:  1 >= CYGINT_ISO_ERRNO_CODES 
+};
+
+# Error codes implementation header
+#
+cdl_option CYGBLD_ISO_ERRNO_CODES_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # The inferred value should not be edited directly.
+    inferred_value 1 <cyg/error/codes.h>
+    # value_source inferred
+    # Default value: 0 0
+
+    # The following properties are affected by this value
+    # package CYGPKG_ERROR
+    #     Requires:  CYGBLD_ISO_ERRNO_CODES_HEADER == "<cyg/error/codes.h>" 
+};
+
+# Number of implementations of errno variable
+#
+cdl_interface CYGINT_ISO_ERRNO {
+    # Implemented by CYGPKG_ERROR_ERRNO, active, enabled
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 1
+    # Requires:  1 >= CYGINT_ISO_ERRNO 
+    #     CYGINT_ISO_ERRNO == 1
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_ERRNO
+    #     Requires:  1 >= CYGINT_ISO_ERRNO 
+};
+
+# errno variable implementation header
+#
+cdl_option CYGBLD_ISO_ERRNO_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # The inferred value should not be edited directly.
+    inferred_value 1 <cyg/error/errno.h>
+    # value_source inferred
+    # Default value: 0 0
+
+    # The following properties are affected by this value
+    # component CYGPKG_ERROR_ERRNO
+    #     Requires:  CYGBLD_ISO_ERRNO_HEADER == "<cyg/error/errno.h>" 
+};
+
+# <
+# Locale-related functions
+#
+cdl_component CYGPKG_ISO_LOCALE {
+    # There is no associated value.
+};
+
+# >
+# Number of implementations of locale functions
+#
+cdl_interface CYGINT_ISO_LOCALE {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_LOCALE 
+    #     CYGINT_ISO_LOCALE == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_LOCALE
+    #     Requires:  1 >= CYGINT_ISO_LOCALE 
+};
+
+# Locale implementation header
+#
+cdl_option CYGBLD_ISO_LOCALE_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# Standard I/O-related functionality
+#
+cdl_component CYGPKG_ISO_STDIO {
+    # There is no associated value.
+};
+
+# >
+# Number of implementations of stdio file types
+#
+cdl_interface CYGINT_ISO_STDIO_FILETYPES {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STDIO_FILETYPES 
+    #     CYGINT_ISO_STDIO_FILETYPES == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDIO_FILETYPES
+    #     Requires:  1 >= CYGINT_ISO_STDIO_FILETYPES 
+};
+
+# Stdio file types implementation header
+#
+cdl_option CYGBLD_ISO_STDIO_FILETYPES_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Stdio standard streams implementations
+#
+cdl_interface CYGINT_ISO_STDIO_STREAMS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STDIO_STREAMS 
+    #     CYGINT_ISO_STDIO_STREAMS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDIO_STREAMS
+    #     Requires:  1 >= CYGINT_ISO_STDIO_STREAMS 
+};
+
+# Stdio standard streams implementation header
+# This header file must define stdin, stdout
+# and stderr.
+#
+cdl_option CYGBLD_ISO_STDIO_STREAMS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of stdio file operations
+#
+cdl_interface CYGINT_ISO_STDIO_FILEOPS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STDIO_FILEOPS 
+    #     CYGINT_ISO_STDIO_FILEOPS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDIO_FILEOPS
+    #     Requires:  1 >= CYGINT_ISO_STDIO_FILEOPS 
+};
+
+# Stdio file operations implementation header
+# This header controls the file system operations on a file
+# such as remove(), rename(), tmpfile(), tmpnam() and associated
+# constants.
+#
+cdl_option CYGBLD_ISO_STDIO_FILEOPS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of stdio file access  functionals
+#
+cdl_interface CYGINT_ISO_STDIO_FILEACCESS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STDIO_FILEACCESS 
+    #     CYGINT_ISO_STDIO_FILEACCESS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDIO_FILEACCESS
+    #     Requires:  1 >= CYGINT_ISO_STDIO_FILEACCESS 
+};
+
+# Stdio file access implementation header
+# This header controls the file access operations
+# such as fclose(), fflush(), fopen(), freopen(), setbuf(),
+# setvbuf(), and associated constants.
+#
+cdl_option CYGBLD_ISO_STDIO_FILEACCESS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of stdio formatted I/O
+#
+cdl_interface CYGINT_ISO_STDIO_FORMATTED_IO {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STDIO_FORMATTED_IO 
+    #     CYGINT_ISO_STDIO_FORMATTED_IO == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDIO_FORMATTED_IO
+    #     Requires:  1 >= CYGINT_ISO_STDIO_FORMATTED_IO 
+};
+
+# Stdio formatted I/O implementation header
+#
+cdl_option CYGBLD_ISO_STDIO_FORMATTED_IO_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of stdio character I/O
+#
+cdl_interface CYGINT_ISO_STDIO_CHAR_IO {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STDIO_CHAR_IO 
+    #     CYGINT_ISO_STDIO_CHAR_IO == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDIO_CHAR_IO
+    #     Requires:  1 >= CYGINT_ISO_STDIO_CHAR_IO 
+};
+
+# Stdio character I/O implementation header
+#
+cdl_option CYGBLD_ISO_STDIO_CHAR_IO_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of stdio direct I/O
+#
+cdl_interface CYGINT_ISO_STDIO_DIRECT_IO {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STDIO_DIRECT_IO 
+    #     CYGINT_ISO_STDIO_DIRECT_IO == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDIO_DIRECT_IO
+    #     Requires:  1 >= CYGINT_ISO_STDIO_DIRECT_IO 
+};
+
+# Stdio direct I/O implementation header
+#
+cdl_option CYGBLD_ISO_STDIO_DIRECT_IO_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of stdio file positioning
+#
+cdl_interface CYGINT_ISO_STDIO_FILEPOS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STDIO_FILEPOS 
+    #     CYGINT_ISO_STDIO_FILEPOS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDIO_FILEPOS
+    #     Requires:  1 >= CYGINT_ISO_STDIO_FILEPOS 
+};
+
+# Stdio file positioning implementation header
+#
+cdl_option CYGBLD_ISO_STDIO_FILEPOS {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of stdio error handling
+#
+cdl_interface CYGINT_ISO_STDIO_ERROR {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STDIO_ERROR 
+    #     CYGINT_ISO_STDIO_ERROR == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDIO_ERROR
+    #     Requires:  1 >= CYGINT_ISO_STDIO_ERROR 
+};
+
+# Stdio error handling implementation header
+#
+cdl_option CYGBLD_ISO_STDIO_ERROR_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# POSIX fd-related function implementations
+#
+cdl_interface CYGINT_ISO_STDIO_POSIX_FDFUNCS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >=  CYGINT_ISO_STDIO_POSIX_FDFUNCS 
+    #     CYGINT_ISO_STDIO_POSIX_FDFUNCS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDIO_POSIX_FDFUNCS
+    #     Requires:  1 >=  CYGINT_ISO_STDIO_POSIX_FDFUNCS 
+};
+
+# POSIX fd-related function implementation header
+#
+cdl_option CYGBLD_ISO_STDIO_POSIX_FDFUNCS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# Standard general utility functions
+#
+cdl_component CYGPKG_ISO_STDLIB {
+    # There is no associated value.
+};
+
+# >
+# String conversion function implementations
+#
+cdl_interface CYGINT_ISO_STDLIB_STRCONV {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_STDLIB_STRCONV 
+    #     CYGINT_ISO_STDLIB_STRCONV == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDLIB_STRCONV
+    #     Requires:  1 >= CYGINT_ISO_STDLIB_STRCONV 
+};
+
+# String conversion function implementation header
+#
+cdl_option CYGBLD_ISO_STDLIB_STRCONV_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# String to FP conversion function implementations
+#
+cdl_interface CYGINT_ISO_STDLIB_STRCONV_FLOAT {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_STDLIB_STRCONV_FLOAT 
+    #     CYGINT_ISO_STDLIB_STRCONV_FLOAT == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDLIB_STRCONV_FLOAT
+    #     Requires:  1 >= CYGINT_ISO_STDLIB_STRCONV_FLOAT 
+};
+
+# String to FP conversion function implementation header
+#
+cdl_option CYGBLD_ISO_STDLIB_STRCONV_FLOAT_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Random number generator implementations
+#
+cdl_interface CYGINT_ISO_RAND {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_RAND 
+    #     CYGINT_ISO_RAND == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_RAND
+    #     Requires:  1 >= CYGINT_ISO_RAND 
+};
+
+# Random number generator implementation header
+#
+cdl_option CYGBLD_ISO_RAND_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Malloc implementations
+#
+cdl_interface CYGINT_ISO_MALLOC {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_MALLOC 
+    #     CYGINT_ISO_MALLOC == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_MALLOC
+    #     Requires:  1 >= CYGINT_ISO_MALLOC 
+};
+
+# Malloc implementation header
+#
+cdl_option CYGBLD_ISO_MALLOC_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Mallinfo() implementations
+#
+cdl_interface CYGINT_ISO_MALLINFO {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_MALLINFO 
+    #     CYGINT_ISO_MALLINFO == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_MALLINFO
+    #     Requires:  1 >= CYGINT_ISO_MALLINFO 
+};
+
+# Mallinfo() implementation header
+#
+cdl_option CYGBLD_ISO_MALLINFO_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Program exit functionality implementations
+#
+cdl_interface CYGINT_ISO_EXIT {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_EXIT 
+    #     CYGINT_ISO_EXIT == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_EXIT
+    #     Requires:  1 >= CYGINT_ISO_EXIT 
+    # option CYGFUN_INFRA_DUMMY_ABORT
+    #     Requires: !CYGINT_ISO_EXIT
+    # option CYGFUN_INFRA_DUMMY_ABORT
+    #     DefaultValue:  CYGINT_ISO_EXIT == 0 
+};
+
+# Program exit functionality implementation header
+#
+cdl_option CYGBLD_ISO_EXIT_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Program environment implementations
+#
+cdl_interface CYGINT_ISO_STDLIB_ENVIRON {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_STDLIB_ENVIRON 
+    #     CYGINT_ISO_STDLIB_ENVIRON == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDLIB_ENVIRON
+    #     Requires:  1 >= CYGINT_ISO_STDLIB_ENVIRON 
+};
+
+# Program environment implementation header
+#
+cdl_option CYGBLD_ISO_STDLIB_ENVIRON_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# system() implementations
+#
+cdl_interface CYGINT_ISO_STDLIB_SYSTEM {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_STDLIB_SYSTEM 
+    #     CYGINT_ISO_STDLIB_SYSTEM == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDLIB_SYSTEM
+    #     Requires:  1 >= CYGINT_ISO_STDLIB_SYSTEM 
+};
+
+# system() implementation header
+#
+cdl_option CYGBLD_ISO_STDLIB_SYSTEM_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# bsearch() implementations
+#
+cdl_interface CYGINT_ISO_BSEARCH {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_BSEARCH 
+    #     CYGINT_ISO_BSEARCH == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_BSEARCH
+    #     Requires:  1 >= CYGINT_ISO_BSEARCH 
+};
+
+# bsearch() implementation header
+#
+cdl_option CYGBLD_ISO_BSEARCH_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# qsort() implementations
+#
+cdl_interface CYGINT_ISO_QSORT {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_STDLIB_QSORT 
+    #     CYGINT_ISO_STDLIB_QSORT (unknown) == 0
+    #   --> 1
+};
+
+# qsort() implementation header
+#
+cdl_option CYGBLD_ISO_QSORT_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# abs()/labs() implementations
+#
+cdl_interface CYGINT_ISO_ABS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_STDLIB_ABS 
+    #     CYGINT_ISO_STDLIB_ABS (unknown) == 0
+    #   --> 1
+};
+
+# abs()/labs() implementation header
+#
+cdl_option CYGBLD_ISO_STDLIB_ABS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# div()/ldiv() implementations
+#
+cdl_interface CYGINT_ISO_DIV {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_STDLIB_DIV 
+    #     CYGINT_ISO_STDLIB_DIV (unknown) == 0
+    #   --> 1
+};
+
+# div()/ldiv() implementation header
+#
+cdl_option CYGBLD_ISO_STDLIB_DIV_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Header defining the implementation's MB_CUR_MAX
+#
+cdl_option CYGBLD_ISO_STDLIB_MB_CUR_MAX_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Multibyte character implementations
+#
+cdl_interface CYGINT_ISO_STDLIB_MULTIBYTE {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_STDLIB_MULTIBYTE 
+    #     CYGINT_ISO_STDLIB_MULTIBYTE == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STDLIB_MULTIBYTE
+    #     Requires:  1 >= CYGINT_ISO_STDLIB_MULTIBYTE 
+};
+
+# Multibyte character implementation header
+#
+cdl_option CYGBLD_ISO_STDLIB_MULTIBYTE_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# String functions
+#
+cdl_component CYGPKG_ISO_STRING {
+    # There is no associated value.
+};
+
+# >
+# Number of implementations of strerror() function
+#
+cdl_interface CYGINT_ISO_STRERROR {
+    # Implemented by CYGPKG_ERROR_STRERROR, active, enabled
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 1 1
+    # Requires:  1 >= CYGINT_ISO_STRERROR 
+    #     CYGINT_ISO_STRERROR == 1
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STRERROR
+    #     Requires:  1 >= CYGINT_ISO_STRERROR 
+};
+
+# strerror() implementation header
+#
+cdl_option CYGBLD_ISO_STRERROR_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # The inferred value should not be edited directly.
+    inferred_value 1 <cyg/error/strerror.h>
+    # value_source inferred
+    # Default value: 0 0
+
+    # The following properties are affected by this value
+    # option CYGPKG_ERROR_STRERROR
+    #     Requires:  CYGBLD_ISO_STRERROR_HEADER == "<cyg/error/strerror.h>" 
+};
+
+# memcpy() implementation header
+#
+cdl_option CYGBLD_ISO_MEMCPY_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# memset() implementation header
+#
+cdl_option CYGBLD_ISO_MEMSET_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of strtok_r() function
+#
+cdl_interface CYGINT_ISO_STRTOK_R {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STRTOK_R 
+    #     CYGINT_ISO_STRTOK_R == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STRTOK_R
+    #     Requires:  1 >= CYGINT_ISO_STRTOK_R 
+};
+
+# strtok_r() implementation header
+#
+cdl_option CYGBLD_ISO_STRTOK_R_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of locale-specific string  functions
+# This covers locale-dependent string functions such as strcoll()
+# and strxfrm().
+#
+cdl_interface CYGINT_ISO_STRING_LOCALE_FUNCS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STRING_LOCALE_FUNCS 
+    #     CYGINT_ISO_STRING_LOCALE_FUNCS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STRING_LOCALE_FUNCS
+    #     Requires:  1 >= CYGINT_ISO_STRING_LOCALE_FUNCS 
+};
+
+# Locale-specific string functions' implementation  header
+# This covers locale-dependent string functions such as strcoll()
+# and strxfrm().
+#
+cdl_option CYGBLD_ISO_STRING_LOCALE_FUNCS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of BSD string functions
+#
+cdl_interface CYGINT_ISO_STRING_BSD_FUNCS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STRING_BSD_FUNCS 
+    #     CYGINT_ISO_STRING_BSD_FUNCS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STRING_BSD_FUNCS
+    #     Requires:  1 >= CYGINT_ISO_STRING_BSD_FUNCS 
+};
+
+# BSD string functions' implementation header
+#
+cdl_option CYGBLD_ISO_STRING_BSD_FUNCS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of other mem*() functions
+#
+cdl_interface CYGINT_ISO_STRING_MEMFUNCS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STRING_MEMFUNCS 
+    #     CYGINT_ISO_STRING_MEMFUNCS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STRING_MEMFUNCS
+    #     Requires:  1 >= CYGINT_ISO_STRING_MEMFUNCS 
+};
+
+# Other mem*() functions' implementation header
+#
+cdl_option CYGBLD_ISO_STRING_MEMFUNCS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of other ISO C str*()  functions
+# This covers the other str*() functions defined by ISO C.
+#
+cdl_interface CYGINT_ISO_STRING_STRFUNCS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_STRING_STRFUNCS 
+    #     CYGINT_ISO_STRING_STRFUNCS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_STRING_STRFUNCS
+    #     Requires:  1 >= CYGINT_ISO_STRING_STRFUNCS 
+    # option CYGFUN_INFRA_DUMMY_STRLEN
+    #     Requires: !CYGINT_ISO_STRING_STRFUNCS
+    # option CYGFUN_INFRA_DUMMY_STRLEN
+    #     DefaultValue:  CYGINT_ISO_STRING_STRFUNCS == 0 
+};
+
+# Other ISO C str*() functions' implementation  header
+# This covers the other str*() functions defined by ISO C.
+#
+cdl_option CYGBLD_ISO_STRING_STRFUNCS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# Clock and time functionality
+#
+cdl_component CYGPKG_ISO_TIME {
+    # There is no associated value.
+};
+
+# >
+# time_t implementation header
+#
+cdl_option CYGBLD_ISO_TIME_T_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# clock_t implementation header
+#
+cdl_option CYGBLD_ISO_CLOCK_T_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# struct timeval implementation header
+#
+cdl_option CYGBLD_ISO_STRUCTTIMEVAL_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of POSIX timer types
+#
+cdl_interface CYGINT_ISO_POSIX_TIMER_TYPES {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_POSIX_TIMER_TYPES 
+    #     CYGINT_ISO_POSIX_TIMER_TYPES == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_POSIX_TIMER_TYPES
+    #     Requires:  1 >= CYGINT_ISO_POSIX_TIMER_TYPES 
+};
+
+# POSIX timer types implementation header
+#
+cdl_option CYGBLD_ISO_POSIX_TIMER_TYPES_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of POSIX clock types
+#
+cdl_interface CYGINT_ISO_POSIX_CLOCK_TYPES {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_POSIX_CLOCK_TYPES 
+    #     CYGINT_ISO_POSIX_CLOCK_TYPES == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_POSIX_CLOCK_TYPES
+    #     Requires:  1 >= CYGINT_ISO_POSIX_CLOCK_TYPES 
+};
+
+# POSIX clock types implementation header
+#
+cdl_option CYGBLD_ISO_POSIX_CLOCK_TYPES_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of ISO C types
+#
+cdl_interface CYGINT_ISO_C_TIME_TYPES {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_C_TIME_TYPES 
+    #     CYGINT_ISO_C_TIME_TYPES == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_C_TIME_TYPES
+    #     Requires:  1 >= CYGINT_ISO_C_TIME_TYPES 
+};
+
+# ISO C time types implementation header
+#
+cdl_option CYGBLD_ISO_C_TIME_TYPES_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of POSIX timers
+#
+cdl_interface CYGINT_ISO_POSIX_TIMERS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_POSIX_TIMERS 
+    #     CYGINT_ISO_POSIX_TIMERS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_POSIX_TIMERS
+    #     Requires:  1 >= CYGINT_ISO_POSIX_TIMERS 
+};
+
+# POSIX timer implementation header
+#
+cdl_option CYGBLD_ISO_POSIX_TIMERS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of POSIX clocks
+#
+cdl_interface CYGINT_ISO_POSIX_CLOCKS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_POSIX_CLOCKS 
+    #     CYGINT_ISO_POSIX_CLOCKS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_POSIX_CLOCKS
+    #     Requires:  1 >= CYGINT_ISO_POSIX_CLOCKS 
+};
+
+# POSIX clocks implementation header
+#
+cdl_option CYGBLD_ISO_POSIX_CLOCKS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of ISO C clock functions
+#
+cdl_interface CYGINT_ISO_C_CLOCK_FUNCS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_C_CLOCK_FUNCS 
+    #     CYGINT_ISO_C_CLOCK_FUNCS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_C_CLOCK_FUNCS
+    #     Requires:  1 >= CYGINT_ISO_C_CLOCK_FUNCS 
+};
+
+# ISO C clock functions' implementation header
+#
+cdl_option CYGBLD_ISO_C_CLOCK_FUNCS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of implementations of tzset() function
+#
+cdl_interface CYGINT_ISO_TZSET {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_TZSET 
+    #     CYGINT_ISO_TZSET == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_TZSET
+    #     Requires:  1 >= CYGINT_ISO_TZSET 
+};
+
+# tzset() implementation header
+#
+cdl_option CYGBLD_ISO_TZSET_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# Signal functionality
+#
+cdl_component CYGPKG_ISO_SIGNAL {
+    # There is no associated value.
+};
+
+# >
+# Number of implementations of signal numbers
+#
+cdl_interface CYGINT_ISO_SIGNAL_NUMBERS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_SIGNAL_NUMBERS 
+    #     CYGINT_ISO_SIGNAL_NUMBERS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_SIGNAL_NUMBERS
+    #     Requires:  1 >= CYGINT_ISO_SIGNAL_NUMBERS 
+};
+
+# Signal numbering implementation header
+# This header provides the mapping of signal
+# names (e.g. SIGBUS) to numbers.
+#
+cdl_option CYGBLD_ISO_SIGNAL_NUMBERS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Number of signal implementations
+#
+cdl_interface CYGINT_ISO_SIGNAL_IMPL {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_SIGNAL_IMPL 
+    #     CYGINT_ISO_SIGNAL_IMPL == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_SIGNAL_IMPL
+    #     Requires:  1 >= CYGINT_ISO_SIGNAL_IMPL 
+};
+
+# Signals implementation header
+#
+cdl_option CYGBLD_ISO_SIGNAL_IMPL_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# POSIX real time signals feature test macro
+# This defines the POSIX feature test macro
+# that indicates that the POSIX real time signals
+# are present.
+#
+cdl_interface CYGINT_POSIX_REALTIME_SIGNALS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_POSIX_REALTIME_SIGNALS 
+    #     CYGINT_POSIX_REALTIME_SIGNALS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_POSIX_REALTIME_SIGNALS
+    #     Requires:  1 >= CYGINT_POSIX_REALTIME_SIGNALS 
+};
+
+# <
+# Non-local jumps functionality
+#
+cdl_component CYGPKG_ISO_SETJMP {
+    # There is no associated value.
+};
+
+# >
+# setjmp() / longjmp() implementations
+#
+cdl_interface CYGINT_ISO_SETJMP {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_SETJMP 
+    #     CYGINT_ISO_SETJMP == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_SETJMP
+    #     Requires:  1 >= CYGINT_ISO_SETJMP 
+};
+
+# setjmp() / longjmp() implementation header
+#
+cdl_option CYGBLD_ISO_SETJMP_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# sigsetjmp() / siglongjmp() implementations
+#
+cdl_interface CYGINT_ISO_SIGSETJMP {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_SIGSETJMP 
+    #     CYGINT_ISO_SIGSETJMP == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_SIGSETJMP
+    #     Requires:  1 >= CYGINT_ISO_SIGSETJMP 
+};
+
+# sigsetjmp() / siglongjmp() implementation header
+#
+cdl_option CYGBLD_ISO_SIGSETJMP_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# Assertions implementation header
+#
+cdl_option CYGBLD_ISO_ASSERT_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# POSIX file control
+# This covers the POSIX file control definitions,
+# normally found in <fcntl.h>
+#
+cdl_component CYGPKG_ISO_POSIX_FCNTL {
+    # There is no associated value.
+};
+
+# >
+# POSIX open flags implementation header
+#
+cdl_option CYGBLD_ISO_OFLAG_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# POSIX fcntl() implementations
+#
+cdl_interface CYGINT_ISO_FCNTL {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_FCNTL 
+    #     CYGINT_ISO_FCNTL == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_FCNTL
+    #     Requires:  1 >= CYGINT_ISO_FCNTL 
+};
+
+# POSIX fcntl() implementation header
+#
+cdl_option CYGBLD_ISO_FCNTL_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# POSIX file open implementations
+#
+cdl_interface CYGINT_ISO_OPEN {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_OPEN 
+    #     CYGINT_ISO_OPEN == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_OPEN
+    #     Requires:  1 >= CYGINT_ISO_OPEN 
+};
+
+# POSIX file open implementation header
+#
+cdl_option CYGBLD_ISO_OPEN_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# <sys/stat.h> definitions implementation header
+#
+cdl_option CYGBLD_ISO_STAT_DEFS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# POSIX directory reading implementation
+#
+cdl_interface CYGINT_ISO_DIRENT {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_DIRENT 
+    #     CYGINT_ISO_DIRENT == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_DIRENT
+    #     Requires:  1 >= CYGINT_ISO_DIRENT 
+};
+
+# <dirent.h> definitions implementation header
+#
+cdl_option CYGBLD_ISO_DIRENT_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# POSIX <sys/types.h> contents
+# This covers the types required by POSIX to be in
+# <sys/types.h>
+#
+cdl_component CYGPKG_ISO_POSIX_TYPES {
+    # There is no associated value.
+};
+
+# >
+# POSIX thread types implementations
+#
+cdl_interface CYGINT_ISO_PTHREADTYPES {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_PTHREADTYPES 
+    #     CYGINT_ISO_PTHREADTYPES == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_PTHREADTYPES
+    #     Requires:  1 >= CYGINT_ISO_PTHREADTYPES 
+    # interface CYGINT_ISO_PMUTEXTYPES
+    #     Requires:  1 >= CYGINT_ISO_PTHREADTYPES 
+};
+
+# POSIX thread types implementation header
+#
+cdl_option CYGBLD_ISO_PTHREADTYPES_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# POSIX mutex types implementations
+#
+cdl_interface CYGINT_ISO_PMUTEXTYPES {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_PTHREADTYPES 
+    #     CYGINT_ISO_PTHREADTYPES == 0
+    #   --> 1
+};
+
+# POSIX mutex types implementation header
+#
+cdl_option CYGBLD_ISO_PMUTEXTYPES_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# ssize_t implementation header
+#
+cdl_option CYGBLD_ISO_SSIZE_T_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Filesystem types implementation header
+#
+cdl_option CYGBLD_ISO_FSTYPES_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# gid_t, pid_t, uid_t implementation header
+#
+cdl_option CYGBLD_ISO_SCHEDTYPES_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# Non-POSIX <sys/types.h> contents
+# This covers the extra types required by non-POSIX
+# packages to be in <sys/types.h>. These would normally
+# only be visible if _POSIX_SOURCE is not defined.
+#
+cdl_component CYGPKG_ISO_EXTRA_TYPES {
+    # There is no associated value.
+};
+
+# >
+# BSD compatible types
+#
+cdl_interface CYGINT_ISO_BSDTYPES {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_BSDTYPES 
+    #     CYGINT_ISO_BSDTYPES == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_BSDTYPES
+    #     Requires:  1 >= CYGINT_ISO_BSDTYPES 
+};
+
+# BSD types header
+#
+cdl_option CYGBLD_ISO_BSDTYPES_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# Utsname structure
+#
+cdl_component CYGPKG_ISO_UTSNAME {
+    # There is no associated value.
+};
+
+# >
+# Utsname header
+#
+cdl_option CYGBLD_ISO_UTSNAME_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# POSIX scheduler
+#
+cdl_component CYGPKG_ISO_SCHED {
+    # There is no associated value.
+};
+
+# >
+# POSIX scheduler implementations
+#
+cdl_interface CYGINT_ISO_SCHED_IMPL {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_SCHED_IMPL 
+    #     CYGINT_ISO_SCHED_IMPL == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_SCHED_IMPL
+    #     Requires:  1 >= CYGINT_ISO_SCHED_IMPL 
+};
+
+# POSIX scheduler implementation header
+#
+cdl_option CYGBLD_ISO_SCHED_IMPL_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# POSIX semaphores
+#
+cdl_component CYGPKG_ISO_SEMAPHORES {
+    # There is no associated value.
+};
+
+# >
+# POSIX semaphore implementations
+#
+cdl_interface CYGINT_ISO_SEMAPHORES {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_SEMAPHORES 
+    #     CYGINT_ISO_SEMAPHORES == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_SEMAPHORES
+    #     Requires:  1 >= CYGINT_ISO_SEMAPHORES 
+};
+
+# POSIX semaphore implementation header
+#
+cdl_option CYGBLD_ISO_SEMAPHORES_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# POSIX message queues
+#
+cdl_component CYGPKG_ISO_MQUEUE {
+    # There is no associated value.
+};
+
+# >
+# Implementations
+#
+cdl_interface CYGINT_ISO_MQUEUE {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_MQUEUE 
+    #     CYGINT_ISO_MQUEUE == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_MQUEUE
+    #     Requires:  1 >= CYGINT_ISO_MQUEUE 
+    # option CYGNUM_ISO_MQUEUE_OPEN_MAX
+    #     ActiveIf: CYGINT_ISO_MQUEUE
+    # option CYGNUM_ISO_MQUEUE_PRIO_MAX
+    #     ActiveIf: CYGINT_ISO_MQUEUE
+};
+
+# Implementation header
+#
+cdl_option CYGBLD_ISO_MQUEUE_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Maximum number of open message queues
+#
+cdl_option CYGNUM_ISO_MQUEUE_OPEN_MAX {
+    # This option is not active
+    # ActiveIf constraint: CYGINT_ISO_MQUEUE
+    #     CYGINT_ISO_MQUEUE == 0
+    #   --> 0
+
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value:  CYGNUM_POSIX_MQUEUE_OPEN_MAX > 0 ? CYGNUM_POSIX_MQUEUE_OPEN_MAX : 0 
+    #     CYGNUM_POSIX_MQUEUE_OPEN_MAX (unknown) == 0
+    #     CYGNUM_POSIX_MQUEUE_OPEN_MAX (unknown) == 0
+    #   --> 0 0
+};
+
+# Maximum number of message priorities
+#
+cdl_option CYGNUM_ISO_MQUEUE_PRIO_MAX {
+    # This option is not active
+    # ActiveIf constraint: CYGINT_ISO_MQUEUE
+    #     CYGINT_ISO_MQUEUE == 0
+    #   --> 0
+
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 1 65535
+    # value_source default
+    # Default value: 1 65535
+};
+
+# <
+# POSIX threads
+#
+cdl_component CYGPKG_ISO_PTHREAD {
+    # There is no associated value.
+};
+
+# >
+# POSIX pthread implementations
+#
+cdl_interface CYGINT_ISO_PTHREAD_IMPL {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_PTHREAD_IMPL 
+    #     CYGINT_ISO_PTHREAD_IMPL == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_PTHREAD_IMPL
+    #     Requires:  1 >= CYGINT_ISO_PTHREAD_IMPL 
+};
+
+# POSIX pthread implementation header
+#
+cdl_option CYGBLD_ISO_PTHREAD_IMPL_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# POSIX mutex/cond var implementations
+#
+cdl_interface CYGINT_ISO_PTHREAD_MUTEX {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_PTHREAD_MUTEX 
+    #     CYGINT_ISO_PTHREAD_MUTEX == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_PTHREAD_MUTEX
+    #     Requires:  1 >= CYGINT_ISO_PTHREAD_MUTEX 
+};
+
+# POSIX mutex/cond var implementation header
+#
+cdl_option CYGBLD_ISO_PTHREAD_MUTEX_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# Limits
+#
+cdl_component CYGPKG_ISO_LIMITS {
+    # There is no associated value.
+};
+
+# >
+# POSIX pthread limits implementations
+#
+cdl_interface CYGINT_ISO_POSIX_LIMITS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_POSIX_LIMITS 
+    #     CYGINT_ISO_POSIX_LIMITS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_POSIX_LIMITS
+    #     Requires:  1 >= CYGINT_ISO_POSIX_LIMITS 
+};
+
+# POSIX pthread limits implementation header
+#
+cdl_option CYGBLD_ISO_POSIX_LIMITS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# OPEN_MAX implementation header
+#
+cdl_option CYGBLD_ISO_OPEN_MAX_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# LINK_MAX implementation header
+#
+cdl_option CYGBLD_ISO_LINK_MAX_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# NAME_MAX implementation header
+#
+cdl_option CYGBLD_ISO_NAME_MAX_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# PATH_MAX implementation header
+#
+cdl_option CYGBLD_ISO_PATH_MAX_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# POSIX termios
+#
+cdl_component CYGPKG_ISO_TERMIOS {
+    # There is no associated value.
+};
+
+# >
+# POSIX termios implementations
+#
+cdl_interface CYGINT_ISO_TERMIOS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_TERMIOS 
+    #     CYGINT_ISO_TERMIOS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_TERMIOS
+    #     Requires:  1 >= CYGINT_ISO_TERMIOS 
+};
+
+# POSIX termios implementation header
+#
+cdl_option CYGBLD_ISO_TERMIOS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# Dynamic load API
+#
+cdl_component CYGPKG_ISO_DLFCN {
+    # There is no associated value.
+};
+
+# >
+# Dynamic load implementations
+#
+cdl_interface CYGINT_ISO_DLFCN {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: data
+    # Current_value: 0
+    # Requires:  1 >= CYGINT_ISO_DLFCN 
+    #     CYGINT_ISO_DLFCN == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_DLFCN
+    #     Requires:  1 >= CYGINT_ISO_DLFCN 
+};
+
+# Dynamic load implementation header
+#
+cdl_option CYGBLD_ISO_DLFCN_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# UNIX standard functions
+#
+cdl_component CYGPKG_ISO_UNISTD {
+    # There is no associated value.
+};
+
+# >
+# POSIX timer operations implementations
+#
+cdl_interface CYGINT_ISO_POSIX_TIMER_OPS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_POSIX_TIMER_OPS 
+    #     CYGINT_ISO_POSIX_TIMER_OPS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_POSIX_TIMER_OPS
+    #     Requires:  1 >= CYGINT_ISO_POSIX_TIMER_OPS 
+};
+
+# POSIX timer operations implementation header
+#
+cdl_option CYGBLD_ISO_POSIX_TIMER_OPS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# POSIX sleep() implementations
+#
+cdl_interface CYGINT_ISO_POSIX_SLEEP {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_POSIX_SLEEP 
+    #     CYGINT_ISO_POSIX_SLEEP == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_POSIX_SLEEP
+    #     Requires:  1 >= CYGINT_ISO_POSIX_SLEEP 
+};
+
+# POSIX sleep() implementation header
+#
+cdl_option CYGBLD_ISO_POSIX_SLEEP_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# select()/poll() functions
+#
+cdl_component CYGPKG_ISO_SELECT {
+    # There is no associated value.
+};
+
+# >
+# select() implementations
+#
+cdl_interface CYGINT_ISO_SELECT {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_SELECT 
+    #     CYGINT_ISO_SELECT == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_SELECT
+    #     Requires:  1 >= CYGINT_ISO_SELECT 
+};
+
+# select() implementation header
+#
+cdl_option CYGBLD_ISO_SELECT_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# poll() implementations
+#
+cdl_interface CYGINT_ISO_POLL {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: booldata
+    # Current value: 0 0
+    # Requires:  1 >= CYGINT_ISO_POLL 
+    #     CYGINT_ISO_POLL == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_POLL
+    #     Requires:  1 >= CYGINT_ISO_POLL 
+};
+
+# poll() implementation header
+#
+cdl_option CYGBLD_ISO_POLL_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# NetDB utility functions
+#
+cdl_component CYGPKG_ISO_NETDB {
+    # There is no associated value.
+};
+
+# >
+# DNS implementations
+#
+cdl_interface CYGINT_ISO_DNS {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: bool
+    # Current value: 0
+    # Requires:  1 >= CYGINT_ISO_DNS 
+    #     CYGINT_ISO_DNS == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_DNS
+    #     Requires:  1 >= CYGINT_ISO_DNS 
+};
+
+# DNS implementation header
+#
+cdl_option CYGBLD_ISO_DNS_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Protocol network database implementations
+#
+cdl_interface CYGINT_ISO_NETDB_PROTO {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: bool
+    # Current value: 0
+    # Requires:  1 >= CYGINT_ISO_NETDB_PROTO 
+    #     CYGINT_ISO_NETDB_PROTO == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_NETDB_PROTO
+    #     Requires:  1 >= CYGINT_ISO_NETDB_PROTO 
+};
+
+# Protocol network database implementation header
+#
+cdl_option CYGBLD_ISO_NETDB_PROTO_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# Services network database implementations
+#
+cdl_interface CYGINT_ISO_NETDB_SERV {
+    # No options implement this inferface
+    # This value cannot be modified here.
+    # Flavor: bool
+    # Current value: 0
+    # Requires:  1 >= CYGINT_ISO_NETDB_SERV 
+    #     CYGINT_ISO_NETDB_SERV == 0
+    #   --> 1
+
+    # The following properties are affected by this value
+    # interface CYGINT_ISO_NETDB_SERV
+    #     Requires:  1 >= CYGINT_ISO_NETDB_SERV 
+};
+
+# Services network database implementation header
+#
+cdl_option CYGBLD_ISO_NETDB_SERV_HEADER {
+    # Flavor: booldata
+    # No user value, uncomment the following line to provide one.
+    # user_value 0 0
+    # value_source default
+    # Default value: 0 0
+};
+
+# <
+# Build options
+# Package specific build options including control over
+# compiler flags used only in building this package,
+# and details of which tests are built.
+#
+cdl_component CYGPKG_ISOINFRA_OPTIONS {
+    # There is no associated value.
+};
+
+# >
+# Additional compiler flags
+# This option modifies the set of compiler flags for
+# building the ISO C and POSIX infrastructure package.
+# These flags are used in addition to the set of global flags.
+#
+cdl_option CYGPKG_ISOINFRA_CFLAGS_ADD {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value ""
+    # value_source default
+    # Default value: ""
+};
+
+# Suppressed compiler flags
+# This option modifies the set of compiler flags for
+# building the ISO C and POSIX infrastructure package.
+# These flags are removed from the set of global flags
+# if present.
+#
+cdl_option CYGPKG_ISOINFRA_CFLAGS_REMOVE {
+    # Flavor: data
+    # No user value, uncomment the following line to provide one.
+    # user_value ""
+    # value_source default
+    # Default value: ""
+};
+
+# <
+# <
+# <
+

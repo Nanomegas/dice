@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src
+END
+llcFIFO.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/llcFIFO.c
+END
+lhlPHY.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/lhlPHY.c
+END
+lhlService.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/lhlService.c
+END
+llcSelfID.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/llcSelfID.c
+END
+lhlLLCCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/lhlLLCCli.c
+END
+llcInt.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/llcInt.c
+END
+lhlWatch.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/lhlWatch.c
+END
+llcReg.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/llcReg.c
+END
+lhlARx.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/lhlARx.c
+END
+lhlLLC.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/lhlLLC.c
+END
+llcUtils.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/llcUtils.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/Makefile
+END
+lhlATx.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/lhlATx.c
+END
+lhlBri.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/src/lhlBri.c
+END

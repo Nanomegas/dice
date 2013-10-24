@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cli/src
+END
+cliBuiltIn.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cli/src/cliBuiltIn.c
+END
+cliSIO.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cli/src/cliSIO.c
+END
+cliCBCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cli/src/cliCBCli.c
+END
+cli.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cli/src/cli.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cli/src/Makefile
+END
+cliCB.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cli/src/cliCB.c
+END
+cliSystem.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cli/src/cliSystem.c
+END

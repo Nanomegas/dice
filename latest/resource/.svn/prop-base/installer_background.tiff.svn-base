@@ -1,0 +1,10 @@
+K 13
+svn:mime-type
+V 24
+application/octet-stream
+K 30
+tcat:DoNotCopyToCustomerBranch
+V 2
+*
+
+END

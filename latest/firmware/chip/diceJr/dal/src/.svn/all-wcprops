@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src
+END
+dalClkCtrl.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/dalClkCtrl.c
+END
+dalRates.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/dalRates.c
+END
+dal.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/dal.c
+END
+dalRouter.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/dalRouter.c
+END
+dalEvents.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/dalEvents.c
+END
+dalTDIF.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/dalTDIF.c
+END
+dalCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/dalCli.c
+END
+dalAES.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/dalAES.c
+END
+dalRouter_ml.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/dalRouter_ml.c
+END
+dalADAT.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/dalADAT.c
+END
+dalAVS.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/dalAVS.c
+END
+dalWCEXT.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/dalWCEXT.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dal/src/Makefile
+END

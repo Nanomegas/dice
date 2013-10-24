@@ -1,0 +1,398 @@
+##===========================================================================
+##
+## This confidential and proprietary software may be used only as authorised
+## by a licensing agreement from TC Applied Technologies Ltd.
+##
+## (C) COPYRIGHT 2004 TC Applied Technologies Ltd. (ALL RIGHTS RESERVED)
+##
+## Unauthorized use, duplication or distribution of this software is  
+## strictly prohibited by law.
+##
+## The entire notice above must be reproduced on all authorised copies and
+## copies may only be made to the extent permitted by a licensing agreement
+## from TC Applied Technologies Ltd.
+##
+##===========================================================================
+## $Id: Make.params,v 1.4 2007/02/14 19:19:48 zluo Exp $
+##===========================================================================
+##
+##	All possible defines are listed below as comments in logical groupings.
+##  The commented defines are then followed by a group of active defines.
+##	To add an unused define, copy the comment to the active group and delete the #
+##  To add a new define, add a commented define and add it to the active group.
+##	To remove a define from the active group, delete the define from the active group.
+##	Some active groups may be empty.
+##===========================================================================
+
+export HOST := CYGWIN
+
+##	Application and kernel names
+##
+export CHIP := diceJr
+export OS := ecos
+export BOARD := eap_tcd22x0
+
+export APPL_PROJECT_NAME := ${BOARD}
+export APPL_PRODUCT_NAME := $(BOARD)
+export KERNEL_NAME := $(OS)_$(CHIP)_$(BOARD)
+
+###############################################################################
+#                       module defines
+###############################################################################
+
+#cli debug
+BASE_MODULE := main target cli debug
+APP_MODULE := frmwload 1394lal fcp misc fis aml ftm sps crb
+CHIP_MODULE := dal gray dice avs 1394llc i2c spi eap
+
+#DRIVER_MODULE can be ONLY ONE of "dicedriver, 1394avc, ogt"
+DRIVER_MODULE := dicedriver
+#DRIVER_MODULE := 1394avc
+
+export MODULE := ${BASE_MODULE} ${APP_MODULE} ${CHIP_MODULE} ${DRIVER_MODULE}
+
+###############################################################################
+#              			directories variable   
+#------------------------------------------------------------------------------
+#Get current directory
+C_DIR= $(shell pwd)
+
+#Get realpath (without . or ..) of SDK root direcotry
+TC_DIR = $(shell realpath ../../..)
+
+CHIP_DIR := ${TC_DIR}/chip/${CHIP}
+COMMON_DIR := ${TC_DIR}/module
+
+export PROJECT_DIR := ${TC_DIR}/project/${APPL_PROJECT_NAME}
+export KERNEL_DIR := ${TC_DIR}/kernel/build
+export TCKERNEL_DIR := ${TC_DIR}/os/$(OS)/TCkernel
+export MAKE_DIR := ${PROJECT_DIR}/make
+export LIB_DIR := ${PROJECT_DIR}/lib
+export BIN_DIR := ${PROJECT_DIR}/bin
+export OBJ_DIR := ${PROJECT_DIR}/obj
+
+###############################################################################
+# Initial value for CFLAGS
+#------------------------------------------------------------------------------
+CFLAGS = -c -I. -I${TC_DIR}/interface -I${TC_DIR}/../interface -I${COMMON_DIR}/misc/interface -I${TC_DIR}/../interface
+CFLAGS += -D_CLI_TOOL_MYAPP
+CFLAGS += -D_OPTIMIZE_BUSRESET
+CFLAGS += -D_FIQ -D_MIXFIX_FIQ -D_MIXFIX_PERFECT4 -D_MIXFIX_DAL
+
+###############################################################################
+#                     ECOS variables
+#------------------------------------------------------------------------------
+ifeq (ecos, $(OS))
+	export ECOS_DIR := ${TC_DIR}/os/${OS}/src
+	export ECOS_REPOSITORY := ${ECOS_DIR}/packages
+	export ECOS_KERNEL_DIR := ${KERNEL_DIR}/${KERNEL_NAME}/install
+
+	ifeq (-D_THUMB, $(findstring -D_THUMB, $(CFLAGS_FOR_BUILD)))
+		ECOS_GLOBAL_CFLAGS_THUMB = -mthumb -mthumb-interwork 
+		ECOS_GLOBAL_LDFLAGS_THUMB = -mthumb -mthumb-interwork 
+	else
+		ECOS_GLOBAL_CFLAGS_THUMB = 
+		ECOS_GLOBAL_LDFLAGS_THUMB = 
+	endif
+
+	export ECOS_GLOBAL_CFLAGS = ${ECOS_GLOBAL_CFLAGS_THUMB} -mcpu=arm7tdmi \
+		-mlittle-endian -mno-short-load-words -Wall -Wno-missing-braces \
+		-Wpointer-arith -Wstrict-prototypes -Winline -Wundef -g -O2 \
+		-ffunction-sections -fdata-sections -fno-exceptions -finit-priority \
+		-fno-strict-aliasing -Wno-inline
+	export ECOS_GLOBAL_LDFLAGS = ${ECOS_GLOBAL_LDFLAGS_THUMB} -mcpu=arm7tdmi \
+		-mlittle-endian -mno-short-load-words -Wl,--gc-sections -Wl,-static -g \
+		-nostdlib
+
+	CFLAGS += ${ECOS_GLOBAL_CFLAGS} -Wno-multichar -Wno-format -Wno-switch -DECOS \
+			-I$(TC_DIR)/os/${OS}/TCKernel/interface -I${ECOS_KERNEL_DIR}/include
+
+	### _NO_MUTEX is for ecos TCKernel
+	CFLAGS += -D_NO_MUTEX
+
+else        #no other os yet 
+$(error "OS = ${OS}, no such operating system specified")
+endif ####ecos
+
+# standard c header, need to change with your tool chain, $GNUARM is the path to 
+# arm tools. 
+export DEP_STD_LIB_DIR := ${GNUARM}/lib/gcc-lib/arm-elf/3.3.2/include/
+###############################################################################
+#               tools
+#------------------------------------------------------------------------------
+ifeq (dice, $(findstring dice, ${CHIP})) 
+	export COMMAND_PREFIX := arm-elf-
+else
+$(error, "CHIP = $CHIP, undefined chip")
+endif
+
+export CC := $(COMMAND_PREFIX)gcc
+export OBJCOPY := $(COMMAND_PREFIX)objcopy
+export AR := $(COMMAND_PREFIX)ar
+
+###############################################################################
+#               chip specific 
+#------------------------------------------------------------------------------
+ifeq (diceJr, $(CHIP))
+
+# dice versions, in all normal cases define _DICE2 and _DICE2_ASIC
+# -D_DICEJR						for both _DICEJR ASIC
+# -D_DICE_TIMER2				enable timer2 for acurate timing
+CFLAGS += -D_DICEJR -D_LITTLE_ENDIAN -D_DICE_TIMER2 \
+	-I${CHIP_DIR}/dice/interface
+
+endif
+
+###############################################################################
+#               individual modules 
+###############################################################################
+
+
+###############################################################################
+#               frmwload module
+#------------------------------------------------------------------------------
+ifeq (frmwload, $(findstring frmwload, ${MODULE}))
+	CFLAGS += -D_FRMWLOAD -I${COMMON_DIR}/frmwload/interface
+endif
+
+###############################################################################
+#               cli module
+#------------------------------------------------------------------------------
+#    available options: 
+#	-D_CLI \
+#	-D_CLICB \
+#	-D_CLI_TOOL_SYS \
+#------------------------------------------------------------------------------
+ifeq (cli, $(findstring cli, ${MODULE}))
+	CFLAGS += -D_CLI -I${COMMON_DIR}/cli/interface
+endif
+
+###############################################################################
+#               1394lal modules 
+#------------------------------------------------------------------------------
+#    available options: 
+#	-D_1394CORE \			Include the 1394Core
+#	-D_OPTIMIZE \			Optimize some of the 1394Core calls, only effect if !_DEBUG 
+#	-D_IRMC_CAPS \			This device is Isoc. Resource Mgmt. capable
+#	-D_IRM \				Include the Isoc. Resource Mgmt. module
+#	-D_BMC_CAPS \			Bus manager capabilities defined
+#	-D_BM \					Bus manager (not fully implemented)
+#	-D_LOOSE_ISO \			Loose isoc (async stream packet support)
+#	-D_WATCH_THREAD \       *lhlWatch for statistics
+#------------------------------------------------------------------------------
+ifeq (1394lal, $(findstring 1394lal, ${MODULE}))
+	CFLAGS += \
+	-D_1394CORE \
+	-D_OPTIMIZE \
+	-D_IRMC_CAPS \
+	-D_IRM \
+	-D_WATCH_THREAD \
+	-D_LOOSE_ISO \
+	-I${COMMON_DIR}/1394lal/interface
+
+endif
+
+###############################################################################
+#               fcp module
+#------------------------------------------------------------------------------
+#	-D_DATASTREAM \			*Required for fcp and avc
+#------------------------------------------------------------------------------
+ifeq (fcp, $(findstring fcp, ${MODULE}))
+	CFLAGS += -D_DATASTREAM -I${COMMON_DIR}/fcp/interface
+endif
+
+
+###############################################################################
+#               1394avc module 
+#------------------------------------------------------------------------------
+#    available options: 
+#	-D_AVC \				*Audio/Video Control
+#	-D_DATASTREAM \			*Required
+#	-D_FCP \				*Function Control Protocol (could be used without AV/C)
+#	-D_EDS \				*Embedded descriptor services
+#	-D_CMP \				*Connection Management Protocol
+#	-D_DRD \				AV/C device reference design (optional)
+#	-D_REMOTEDVD \			AV/C DVD commands (Optional)
+#------------------------------------------------------------------------------
+ifeq (1394avc, $(findstring 1394avc, ${MODULE}))
+	CFLAGS += 	\
+	-D_AVC \
+	-D_DATASTREAM \
+	-D_FCP \
+	-D_EDS \
+	-D_CMP \
+	-D_DRD \
+	-I${COMMON_DIR}/1394avc/interface
+endif
+
+###############################################################################
+#               CRB module
+#------------------------------------------------------------------------------
+ifeq (crb, $(findstring crb, ${MODULE}))
+	CFLAGS += -D_CRB -I${COMMON_DIR}/crb/interface
+endif
+
+###############################################################################
+#               fis module
+#------------------------------------------------------------------------------
+ifeq (fis, $(findstring fis, ${MODULE}))
+	CFLAGS += -D_FIS -I${COMMON_DIR}/fis/interface
+endif
+
+###############################################################################
+#               dicedriver module
+#------------------------------------------------------------------------------
+ifeq (dicedriver, $(findstring dicedriver, ${MODULE}))
+	CFLAGS += -D_DICE_DRIVER -I${COMMON_DIR}/dicedriver/interface
+endif
+
+###############################################################################
+#               debug module
+#------------------------------------------------------------------------------
+#    available options: 
+#	-D_SYSDEBUG \			*Enable system debug info to be printed on tty
+#	-D_SYSERRORTEXT \		*Enable system error text names to be printed on tty
+#	-D_STATISTICS \			*Enable statistics on 1394 protocol stack
+#	-D_WATCH_THREAD \		Watch bus resets and toggle LED
+#								LMFlags							
+#	-D_SYSDEBUG_CB \			not active
+#	-D_SYSDEBUGPRINTF_LOG \		not active
+#	-D_SYSDEBUGPRINTF_CONSOLE \	not active
+#	-D_SYSPRINTF_CB \			not active
+#	-D_SYSLOGERROR_ISR \		not valid on dice
+#	-D_SYSLOGERROR_MSVC \		not valid on dice
+#	-D_SYSLOGERROR_1394 \		not valid on dice
+#	-D_CONSOLE_1394 \			not valid on dice
+#	-D_CONSOLE \				active
+#	-D_UART1_FOR_DEBUG \		active
+#	-D_STATISTICS \				active
+#	-D_SYSDEBUG \				active
+#	-D_SYSTIMESTAMP_LOG \		active
+#	-D_SYSLOGERROR_LOG \		active
+#	-D_SYSLOGERROR_CONSOLE \	active
+#	-D_TCWATCH \				active
+#	-D_CPULOAD_MEASURE \		active (kernel needs to be built correctly)
+#------------------------------------------------------------------------------
+ifeq (debug, $(findstring debug, ${MODULE}))
+	CFLAGS += -D_SYSDEBUG \
+	-D_SYSDEBUGERROR \
+	-D_STATISTICS \
+	-D_SYS_TRACE
+endif
+
+###############################################################################
+#               dal module
+#------------------------------------------------------------------------------
+ifeq (dal, $(findstring dal, ${MODULE}))
+	CFLAGS += -D_DAL -I${CHIP_DIR}/dal/interface
+endif
+
+###############################################################################
+#               spi module
+#------------------------------------------------------------------------------
+ifeq (spi, $(findstring spi, ${MODULE}))
+	CFLAGS += -D_SPI -I${CHIP_DIR}/spi/interface
+endif
+
+
+###############################################################################
+#               graymodule
+#------------------------------------------------------------------------------
+#    available options: 
+#	-D_GRAY \
+#	-D_GRAYINT_POLLING \
+#	-D_GRAYINT_DEFERRED \
+#------------------------------------------------------------------------------
+ifeq (gray, $(findstring gray, ${MODULE}))
+	CFLAGS += -D_GRAY \
+	-D_GRAYINT_POLLING \
+	-D_GRAYINT_DEFERRED -I${CHIP_DIR}/gray/interface
+endif
+
+###############################################################################
+#               avs module
+#------------------------------------------------------------------------------
+#    available options: 
+#	-D_AVS \					Include the Audio streaming module
+#	-D_AVSINT_POLLING \			Use polling for AVS events 
+#	-D_SPECIAL_PARTITION_MEMORY	Use only 2 tx and 2 rx, for better performance
+#------------------------------------------------------------------------------
+ifeq (avs, $(findstring avs, ${MODULE}))
+	CFLAGS += -D_AVS -D_AVSINT_POLLING -D_SPECIAL_PARTITION_MEMORY -I${CHIP_DIR}/avs/interface
+endif
+
+###############################################################################
+#               1394llc module
+#------------------------------------------------------------------------------
+#    available options: 
+#			-D_LLCINT_POLLING  poll llc event instead of interrupt
+#			-D_LOOSE_ISO       Include Async. streams (used by TCP/IP and AV/C)
+#------------------------------------------------------------------------------
+ifeq (1394llc, $(findstring 1394llc, ${MODULE}))
+	CFLAGS += -I${CHIP_DIR}/llc/interface
+endif
+
+###############################################################################
+#               i2c module
+#------------------------------------------------------------------------------
+ifeq (i2c, $(findstring i2c, ${MODULE}))
+	CFLAGS += -D_I2C -I${CHIP_DIR}/i2c/interface
+endif
+
+
+###############################################################################
+#               eap module
+#------------------------------------------------------------------------------
+ifeq (eap, $(findstring eap, ${MODULE}))
+	CFLAGS += -D_EAP -I${CHIP_DIR}/eap/interface
+	CFLAGS += -D_MIXFIX_EAP
+endif
+
+
+###############################################################################
+#               target module
+#------------------------------------------------------------------------------
+ifeq (target, $(findstring target, ${MODULE}))
+	CFLAGS += -I${PROJECT_DIR}/target/interface
+endif
+
+###############################################################################
+#               AML module
+#------------------------------------------------------------------------------
+ifeq (aml, $(findstring aml, ${MODULE}))
+	CFLAGS += -D_AML -I${COMMON_DIR}/aml/interface
+endif
+
+###############################################################################
+#               SPS module
+#------------------------------------------------------------------------------
+ifeq (sps, $(findstring sps, ${MODULE}))
+	CFLAGS += -D_SPS -D_FIS_SPS -I${COMMON_DIR}/sps/interface
+endif
+
+
+###############################################################################
+#               ftm module (firewire test module)
+#------------------------------------------------------------------------------
+ifeq (ftm, $(findstring ftm, ${MODULE}))
+	CFLAGS += -D_FTM
+	CFLAGS += -D_AVSTRIG
+endif
+
+###############################################################################
+#               main module
+#------------------------------------------------------------------------------
+######zluo, add test for avsTest.c, need to change later.
+ifeq (main, $(findstring main, ${MODULE}))
+	CFLAGS += -I${PROJECT_DIR}/main -I${PROJECT_DIR}/test/interface
+endif
+
+export CFLAGS 
+
+export AWK_PIPE_SCRIPT=${PROJECT_DIR}/make/gccpipe.awk
+
+ifneq (-D_RELEASE, $(findstring -D_RELEASE, $(CFLAGS)))
+DEBUG_EXTENSION=Debug
+endif
+
+export APP_FILE=${APPL_PRODUCT_NAME}${DEBUG_EXTENSION}

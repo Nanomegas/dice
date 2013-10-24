@@ -1,0 +1,56 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// This confidential and proprietary software may be used only as authorised
+// by a licensing agreement from TC Applied Technologies Ltd.
+//
+// (C) COPYRIGHT 2007 TC Applied Technologies Ltd. (ALL RIGHTS RESERVED)
+//
+// Unauthorized use, duplication or distribution of this software is  
+// strictly prohibited by law.
+//
+// The entire notice above must be reproduced on all authorised copies and
+// copies may only be made to the extent permitted by a licensing agreement
+// from TC Applied Technologies Ltd.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+#pragma once
+
+#include "JuceHeader.h"
+#include "fwi.h"
+
+class BusOhciCheckComponent;
+
+
+//==============================================================================
+// this component contains the subcomponents that display global information
+//
+// 
+class BusOhciCheckComponent : 
+	public Component,
+	public ButtonListener
+{
+public:
+	BusOhciCheckComponent();
+    ~BusOhciCheckComponent();
+
+	// gui callbacks
+	void paint (Graphics& g);
+    void resized();
+	void buttonClicked (Button* buttonThatWasClicked);
+	void broughtToFront();
+    void lookAndFeelChanged();
+
+	// gui updates
+	void updateContent();
+	void updateInfo();
+
+	fwi * m_fwi;
+
+
+private:
+	TextButton*		 m_rescan;
+	ToggleButton	* m_look_online;
+	ToggleButton	* m_show_inactive;
+	ToggleButton	* m_verbose;
+};

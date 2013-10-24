@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/dice/v2_0/include
+END
+plf_stub.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/dice/v2_0/include/plf_stub.h
+END
+hal_platform_ints.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/dice/v2_0/include/hal_platform_ints.h
+END
+hal_cache.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/dice/v2_0/include/hal_cache.h
+END
+hal_diag.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/dice/v2_0/include/hal_diag.h
+END
+hal_platform_setup.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/dice/v2_0/include/hal_platform_setup.h
+END
+plf_io.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/dice/v2_0/include/plf_io.h
+END

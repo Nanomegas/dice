@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/install/osx/uninstaller
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/install/osx/uninstaller/main.m
+END
+DiceUninstaller.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/install/osx/uninstaller/DiceUninstaller.xcconfig
+END
+info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/install/osx/uninstaller/info.plist
+END

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface
+END
+diceAESReg.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceAESReg.h
+END
+diceCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceCli.h
+END
+diceADATReg.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceADATReg.h
+END
+diceAES.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceAES.h
+END
+diceADAT.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceADAT.h
+END
+diceRouterReg.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceRouterReg.h
+END
+dice.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/dice.h
+END
+mixfix.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/mixfix.h
+END
+uartAml.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/uartAml.h
+END
+diceDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceDefs.h
+END
+diceInSReg.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceInSReg.h
+END
+diceClockReg.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceClockReg.h
+END
+diceInS.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceInS.h
+END
+diceClock.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceClock.h
+END
+diceHPLLReg.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceHPLLReg.h
+END
+diceHPLL.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceHPLL.h
+END
+diceAPBReg.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceAPBReg.h
+END
+diceTimer2.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceTimer2.h
+END
+diceAPB.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/dice/interface/diceAPB.h
+END

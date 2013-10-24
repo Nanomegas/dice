@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/test/src
+END
+memTest.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/test/src/memTest.c
+END
+pioneerDVDTest.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/test/src/pioneerDVDTest.c
+END
+avsTest.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/test/src/avsTest.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/test/src/Makefile
+END

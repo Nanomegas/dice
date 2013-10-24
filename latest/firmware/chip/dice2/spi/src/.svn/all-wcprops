@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/spi/src
+END
+spi.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/spi/src/spi.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/spi/src/Makefile
+END

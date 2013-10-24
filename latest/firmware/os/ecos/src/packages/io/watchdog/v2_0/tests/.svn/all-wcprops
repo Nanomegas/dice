@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/watchdog/v2_0/tests
+END
+watchdog.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/watchdog/v2_0/tests/watchdog.cxx
+END
+watchdog2.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/watchdog/v2_0/tests/watchdog2.cxx
+END
+watchdog_reset.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/watchdog/v2_0/tests/watchdog_reset.cxx
+END

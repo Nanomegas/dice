@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/misc
+END
+standard.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/misc/standard.c
+END
+matherr.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/misc/matherr.c
+END
+infconst.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/misc/infconst.c
+END
+signgam.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/misc/signgam.cxx
+END
+compatmode.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/misc/compatmode.cxx
+END

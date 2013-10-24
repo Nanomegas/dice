@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main
+END
+myAppCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main/myAppCli.c
+END
+myAppAVC.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main/myAppAVC.c
+END
+myAppCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main/myAppCli.h
+END
+AKM4620.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main/AKM4620.c
+END
+version.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main/version.c
+END
+cyg_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main/cyg_main.c
+END
+myApp.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main/myApp.c
+END
+AKM4620.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main/AKM4620.h
+END
+patch-level.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main/patch-level.h
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main/version.h
+END
+myApp.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main/myApp.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_tcd22x0/main/Makefile
+END

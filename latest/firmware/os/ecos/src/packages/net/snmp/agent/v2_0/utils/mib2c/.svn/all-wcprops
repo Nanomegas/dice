@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/utils/mib2c
+END
+mib2c.conf
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/utils/mib2c/mib2c.conf
+END
+mib2c.storage.conf
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/utils/mib2c/mib2c.storage.conf
+END
+README-eCos
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/utils/mib2c/README-eCos
+END
+README.mib2c
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/utils/mib2c/README.mib2c
+END
+mib2c
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/utils/mib2c/mib2c
+END
+mib2c.vartypes.conf
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/utils/mib2c/mib2c.vartypes.conf
+END
+mib2c.conf-ORIG
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/utils/mib2c/mib2c.conf-ORIG
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/i2c/src
+END
+i2cCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/i2c/src/i2cCli.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/i2c/src/Makefile
+END
+i2c.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/i2c/src/i2c.c
+END

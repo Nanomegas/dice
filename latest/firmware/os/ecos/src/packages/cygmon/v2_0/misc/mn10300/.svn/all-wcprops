@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/mn10300
+END
+mn10300-mon.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/mn10300/mn10300-mon.c
+END
+cpu_info.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/mn10300/cpu_info.h
+END
+board.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/mn10300/board.h
+END
+cpu.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/mn10300/cpu.h
+END

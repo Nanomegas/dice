@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/pal_notify
+END
+events.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/pal_notify/events.cpp
+END
+listener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/pal_notify/listener.cpp
+END
+dice_eap_device.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/pal_notify/dice_eap_device.cpp
+END
+Events.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/pal_notify/Events.h
+END
+Listener.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/pal_notify/Listener.h
+END
+dice_eap_device.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/pal_notify/dice_eap_device.h
+END

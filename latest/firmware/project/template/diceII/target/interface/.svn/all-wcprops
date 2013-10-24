@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/target/interface
+END
+targetBoard.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/target/interface/targetBoard.h
+END
+targetPlugs.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/target/interface/targetPlugs.h
+END
+targetConfigCSR.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/target/interface/targetConfigCSR.h
+END
+targetVendorDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/target/interface/targetVendorDefs.h
+END

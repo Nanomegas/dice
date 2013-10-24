@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/avs/interface
+END
+avs.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/avs/interface/avs.h
+END
+avsDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/avs/interface/avsDefs.h
+END
+avsMidi.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/avs/interface/avsMidi.h
+END
+avsFmt.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/avs/interface/avsFmt.h
+END
+avsCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/avs/interface/avsCli.h
+END
+avsFmtDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/avs/interface/avsFmtDefs.h
+END
+avsAml.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/avs/interface/avsAml.h
+END
+avsEnvDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/avs/interface/avsEnvDefs.h
+END
+avsInt.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/avs/interface/avsInt.h
+END

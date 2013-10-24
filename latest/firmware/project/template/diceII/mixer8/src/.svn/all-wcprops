@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/mixer8/src
+END
+mixer8Cli.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/mixer8/src/mixer8Cli.c
+END
+mixer8firewire.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/mixer8/src/mixer8firewire.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/mixer8/src/Makefile
+END
+mixer8.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/mixer8/src/mixer8.c
+END
+mixer8DAL.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/mixer8/src/mixer8DAL.c
+END

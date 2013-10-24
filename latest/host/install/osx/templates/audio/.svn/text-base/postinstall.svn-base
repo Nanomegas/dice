@@ -1,0 +1,9 @@
+#!/bin/bash
+touch /System/Library/Extensions
+rm -rf /Library/Audio/MIDI\ Drivers/kTCAT_DICE_DRV.bundle
+rm -rf /Library/Audio/MIDI\ Drivers/kTCAT_DICE_DRV.plugin
+rm -rf /System/Library/PreferencePanes/kTCAT_DICE_DRV.prefPane
+rm -rf /bin/kTCAT_DICE_DRV
+rm -rf /Library/StartupItems/kTCAT_DICE_DRV
+rm -rf /Library/Application\ Support/kTCAT_DICE_DRV/kTCAT_DICE_DRV
+exit 0

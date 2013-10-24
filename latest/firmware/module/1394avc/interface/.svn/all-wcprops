@@ -1,0 +1,371 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface
+END
+dss.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/dss.h
+END
+avcUnitVendorDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitVendorDefs.h
+END
+avcPanel.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcPanel.h
+END
+avcUnitUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitUtils.h
+END
+avcAudio.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcAudio.h
+END
+avcPanelDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcPanelDefs.h
+END
+crCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/crCli.h
+END
+edstypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/edstypes.h
+END
+cmpUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/cmpUtils.h
+END
+cmpP2P.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/cmpP2P.h
+END
+avcUnitCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitCli.h
+END
+avcUnitSecurity.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitSecurity.h
+END
+edsServer.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/edsServer.h
+END
+cr.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/cr.h
+END
+avcUnitReserve.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitReserve.h
+END
+avcDriverInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcDriverInterface.h
+END
+cmpCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/cmpCli.h
+END
+avc.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avc.h
+END
+drd.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/drd.h
+END
+avcDriverExtStatus.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcDriverExtStatus.h
+END
+avcMusic.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcMusic.h
+END
+eds.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/eds.h
+END
+avcDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcDefs.h
+END
+drdDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/drdDefs.h
+END
+avcPanelRsp.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcPanelRsp.h
+END
+sbm.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/sbm.h
+END
+avcPanelCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcPanelCli.h
+END
+avrDrd.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avrDrd.h
+END
+avcCmdCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcCmdCli.h
+END
+edsWrite.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/edsWrite.h
+END
+avcRspCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcRspCli.h
+END
+avcUnitChannelUsage.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitChannelUsage.h
+END
+drs.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/drs.h
+END
+avcUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUtils.h
+END
+avcCmdGeneral.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcCmdGeneral.h
+END
+edsClientTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/edsClientTypes.h
+END
+drdCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/drdCli.h
+END
+avcSecurity.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcSecurity.h
+END
+avcUnitNotify.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitNotify.h
+END
+edsCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/edsCli.h
+END
+edsRead.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/edsRead.h
+END
+avcUnit.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnit.h
+END
+avcUnitConnectAV.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitConnectAV.h
+END
+avcCmdConnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcCmdConnection.h
+END
+avcPanelCmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcPanelCmd.h
+END
+avcdriverCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcdriverCli.h
+END
+edsSample.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/edsSample.h
+END
+rangemaps.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/rangemaps.h
+END
+aqm.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/aqm.h
+END
+cmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/cmp.h
+END
+avcUnitSignalFormat.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitSignalFormat.h
+END
+avcCmdCCM.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcCmdCCM.h
+END
+cmpDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/cmpDefs.h
+END
+avcCmdStreamFormat.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcCmdStreamFormat.h
+END
+avcUnitConnect.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitConnect.h
+END
+cmpBC.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/cmpBC.h
+END
+systemcallbacks.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/systemcallbacks.h
+END
+avcDriver.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcDriver.h
+END
+avcUnitPower.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitPower.h
+END
+avcUnitVendor.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitVendor.h
+END
+avcUnitSignalSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/interface/avcUnitSignalSource.h
+END

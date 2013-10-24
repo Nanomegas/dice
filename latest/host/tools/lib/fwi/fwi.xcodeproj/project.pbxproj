@@ -1,0 +1,214 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D394D6A7156B23E800B0DAD7 /* DevsXmlFile_osx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D394D6A2156B23E800B0DAD7 /* DevsXmlFile_osx.cpp */; };
+		D394D6A8156B23E800B0DAD7 /* DevsXmlFile.h in Headers */ = {isa = PBXBuildFile; fileRef = D394D6A3156B23E800B0DAD7 /* DevsXmlFile.h */; };
+		D394D6A9156B23E800B0DAD7 /* fwi_osx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D394D6A4156B23E800B0DAD7 /* fwi_osx.cpp */; };
+		D394D6AA156B23E800B0DAD7 /* fwi.h in Headers */ = {isa = PBXBuildFile; fileRef = D394D6A5156B23E800B0DAD7 /* fwi.h */; };
+		D394D6AB156B23E800B0DAD7 /* ohci1394db.h in Headers */ = {isa = PBXBuildFile; fileRef = D394D6A6156B23E800B0DAD7 /* ohci1394db.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D369B414155F61BC00B891CC /* libfwi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfwi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D394D6A1156B23B100B0DAD7 /* fwi.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = fwi.xcconfig; sourceTree = "<group>"; };
+		D394D6A2156B23E800B0DAD7 /* DevsXmlFile_osx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DevsXmlFile_osx.cpp; sourceTree = "<group>"; };
+		D394D6A3156B23E800B0DAD7 /* DevsXmlFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevsXmlFile.h; sourceTree = "<group>"; };
+		D394D6A4156B23E800B0DAD7 /* fwi_osx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fwi_osx.cpp; sourceTree = "<group>"; };
+		D394D6A5156B23E800B0DAD7 /* fwi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fwi.h; sourceTree = "<group>"; };
+		D394D6A6156B23E800B0DAD7 /* ohci1394db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ohci1394db.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D369B411155F61BC00B891CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D369B409155F61BB00B891CC = {
+			isa = PBXGroup;
+			children = (
+				D394D6A1156B23B100B0DAD7 /* fwi.xcconfig */,
+				D369B41B155F63D200B891CC /* Source Files */,
+				D369B415155F61BC00B891CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D369B415155F61BC00B891CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D369B414155F61BC00B891CC /* libfwi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D369B41B155F63D200B891CC /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D394D6A2156B23E800B0DAD7 /* DevsXmlFile_osx.cpp */,
+				D394D6A3156B23E800B0DAD7 /* DevsXmlFile.h */,
+				D394D6A4156B23E800B0DAD7 /* fwi_osx.cpp */,
+				D394D6A5156B23E800B0DAD7 /* fwi.h */,
+				D394D6A6156B23E800B0DAD7 /* ohci1394db.h */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D369B412155F61BC00B891CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D394D6A8156B23E800B0DAD7 /* DevsXmlFile.h in Headers */,
+				D394D6AA156B23E800B0DAD7 /* fwi.h in Headers */,
+				D394D6AB156B23E800B0DAD7 /* ohci1394db.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D369B413155F61BC00B891CC /* fwi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D369B418155F61BC00B891CC /* Build configuration list for PBXNativeTarget "fwi" */;
+			buildPhases = (
+				D369B410155F61BC00B891CC /* Sources */,
+				D369B411155F61BC00B891CC /* Frameworks */,
+				D369B412155F61BC00B891CC /* Headers */,
+				D394D63E156AEB7C00B0DAD7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fwi;
+			productName = fwi;
+			productReference = D369B414155F61BC00B891CC /* libfwi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D369B40B155F61BB00B891CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D369B40E155F61BB00B891CC /* Build configuration list for PBXProject "fwi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D369B409155F61BB00B891CC;
+			productRefGroup = D369B415155F61BC00B891CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D369B413155F61BC00B891CC /* fwi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D394D63E156AEB7C00B0DAD7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/python ohciXMLToHeader.py OHCI1394DB_URL ohci1394db.h\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D369B410155F61BC00B891CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D394D6A7156B23E800B0DAD7 /* DevsXmlFile_osx.cpp in Sources */,
+				D394D6A9156B23E800B0DAD7 /* fwi_osx.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D369B416155F61BC00B891CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D394D6A1156B23B100B0DAD7 /* fwi.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		D369B417155F61BC00B891CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D394D6A1156B23B100B0DAD7 /* fwi.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+			};
+			name = Release;
+		};
+		D369B419155F61BC00B891CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D369B41A155F61BC00B891CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D369B40E155F61BB00B891CC /* Build configuration list for PBXProject "fwi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D369B416155F61BC00B891CC /* Debug */,
+				D369B417155F61BC00B891CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D369B418155F61BC00B891CC /* Build configuration list for PBXNativeTarget "fwi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D369B419155F61BC00B891CC /* Debug */,
+				D369B41A155F61BC00B891CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D369B40B155F61BB00B891CC /* Project object */;
+}

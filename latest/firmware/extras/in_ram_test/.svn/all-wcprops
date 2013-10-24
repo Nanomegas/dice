@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/extras/in_ram_test
+END
+internal_ram_test.gdbinit
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/extras/in_ram_test/internal_ram_test.gdbinit
+END
+in_ram_test_dice2
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/extras/in_ram_test/in_ram_test_dice2
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/extras/in_ram_test/README.txt
+END
+in_ram_test_jr_mini
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/extras/in_ram_test/in_ram_test_jr_mini
+END
+.gdbinit
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/extras/in_ram_test/.gdbinit
+END

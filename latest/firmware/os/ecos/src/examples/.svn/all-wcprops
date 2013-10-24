@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/examples
+END
+serial.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/examples/serial.c
+END
+hello.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/examples/hello.c
+END
+simple-alarm.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/examples/simple-alarm.c
+END
+twothreads.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/examples/twothreads.c
+END
+instrument-test.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/examples/instrument-test.c
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/examples/ChangeLog
+END
+build_Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/examples/build_Makefile
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/examples/Makefile
+END
+build_Make.params
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/examples/build_Make.params
+END

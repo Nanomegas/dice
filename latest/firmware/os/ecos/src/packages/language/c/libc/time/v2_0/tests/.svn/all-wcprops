@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/time/v2_0/tests
+END
+time.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/time/v2_0/tests/time.c
+END
+ctime.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/time/v2_0/tests/ctime.c
+END
+gmtime.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/time/v2_0/tests/gmtime.c
+END
+asctime.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/time/v2_0/tests/asctime.c
+END
+mktime.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/time/v2_0/tests/mktime.c
+END
+strptime.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/time/v2_0/tests/strptime.c
+END
+localtime.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/time/v2_0/tests/localtime.c
+END
+clock.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/time/v2_0/tests/clock.c
+END
+strftime.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/time/v2_0/tests/strftime.c
+END

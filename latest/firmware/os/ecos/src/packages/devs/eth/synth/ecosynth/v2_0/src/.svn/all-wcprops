@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/synth/ecosynth/v2_0/src
+END
+protocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/synth/ecosynth/v2_0/src/protocol.h
+END
+syntheth.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/synth/ecosynth/v2_0/src/syntheth.c
+END

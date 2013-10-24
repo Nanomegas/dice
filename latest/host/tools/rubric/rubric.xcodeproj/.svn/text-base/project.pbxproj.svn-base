@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D30D12BC136897E70038BD19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30D12BB136897E70038BD19 /* Foundation.framework */; };
+		D30D12D31368991B0038BD19 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30D12D21368991B0038BD19 /* CoreMIDI.framework */; };
+		D30D12E6136899510038BD19 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30D12E5136899510038BD19 /* Cocoa.framework */; };
+		D336AD480C28A6680069A46C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D336AD470C28A6680069A46C /* CoreAudio.framework */; };
+		D3421D3B0C28ACEA00361B36 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3421D3A0C28ACEA00361B36 /* AGL.framework */; };
+		D35DCEBE1588525300799E3E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35DCEBD1588525300799E3E /* QuartzCore.framework */; };
+		D3E3E1BD0E1ABE1D0080C7B1 /* ApplicationStartup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3E3E1B20E1ABE1D0080C7B1 /* ApplicationStartup.cpp */; };
+		D3E3E1BE0E1ABE1D0080C7B1 /* BinaryData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3E3E1B30E1ABE1D0080C7B1 /* BinaryData.cpp */; };
+		D3E3E1C00E1ABE1D0080C7B1 /* DescriptorTreeView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3E3E1B50E1ABE1D0080C7B1 /* DescriptorTreeView.cpp */; };
+		D3E3E1C20E1ABE1D0080C7B1 /* DescriptorTreeViewItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3E3E1B70E1ABE1D0080C7B1 /* DescriptorTreeViewItem.cpp */; };
+		D3E3E1C40E1ABE1D0080C7B1 /* MainWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3E3E1B90E1ABE1D0080C7B1 /* MainWindow.cpp */; };
+		D3FE49600C2863FE00EB1CE8 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
+		D3FE49620C2863FE00EB1CE8 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C4A41006C0F9A00066071B /* IOKit.framework */; };
+		D3FE49640C2863FE00EB1CE8 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		84C4A41006C0F9A00066071B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D30D12BB136897E70038BD19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		D30D12D21368991B0038BD19 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = /System/Library/Frameworks/CoreMIDI.framework; sourceTree = "<absolute>"; };
+		D30D12E5136899510038BD19 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		D336AD470C28A6680069A46C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		D3421D3A0C28ACEA00361B36 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		D35DCEBD1588525300799E3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../../../../System/Library/Frameworks/QuartzCore.framework; sourceTree = "<group>"; };
+		D39946A80C28985A007755C3 /* rubric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rubric.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E3E1B20E1ABE1D0080C7B1 /* ApplicationStartup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApplicationStartup.cpp; sourceTree = "<group>"; };
+		D3E3E1B30E1ABE1D0080C7B1 /* BinaryData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryData.cpp; sourceTree = "<group>"; };
+		D3E3E1B40E1ABE1D0080C7B1 /* BinaryData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryData.h; sourceTree = "<group>"; };
+		D3E3E1B50E1ABE1D0080C7B1 /* DescriptorTreeView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DescriptorTreeView.cpp; sourceTree = "<group>"; };
+		D3E3E1B60E1ABE1D0080C7B1 /* DescriptorTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptorTreeView.h; sourceTree = "<group>"; };
+		D3E3E1B70E1ABE1D0080C7B1 /* DescriptorTreeViewItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DescriptorTreeViewItem.cpp; sourceTree = "<group>"; };
+		D3E3E1B80E1ABE1D0080C7B1 /* DescriptorTreeViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptorTreeViewItem.h; sourceTree = "<group>"; };
+		D3E3E1B90E1ABE1D0080C7B1 /* MainWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainWindow.cpp; sourceTree = "<group>"; };
+		D3E3E1BA0E1ABE1D0080C7B1 /* MainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindow.h; sourceTree = "<group>"; };
+		D3E3E1BB0E1ABE1D0080C7B1 /* rubric_headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rubric_headers.h; sourceTree = "<group>"; };
+		D3E3E1CB0E1ABE600080C7B1 /* rubric.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = rubric.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3FE495E0C2863FE00EB1CE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3FE49600C2863FE00EB1CE8 /* Carbon.framework in Frameworks */,
+				D3FE49620C2863FE00EB1CE8 /* IOKit.framework in Frameworks */,
+				D3FE49640C2863FE00EB1CE8 /* CoreServices.framework in Frameworks */,
+				D336AD480C28A6680069A46C /* CoreAudio.framework in Frameworks */,
+				D3421D3B0C28ACEA00361B36 /* AGL.framework in Frameworks */,
+				D30D12BC136897E70038BD19 /* Foundation.framework in Frameworks */,
+				D30D12D31368991B0038BD19 /* CoreMIDI.framework in Frameworks */,
+				D30D12E6136899510038BD19 /* Cocoa.framework in Frameworks */,
+				D35DCEBE1588525300799E3E /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20286C29FDCF999611CA2CEA /* rubric */ = {
+			isa = PBXGroup;
+			children = (
+				D3E3E1CB0E1ABE600080C7B1 /* rubric.xcconfig */,
+				20286C2AFDCF999611CA2CEA /* Sources */,
+				20286C2CFDCF999611CA2CEA /* Resources */,
+				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
+				D39946A80C28985A007755C3 /* rubric.app */,
+			);
+			name = rubric;
+			sourceTree = "<group>";
+		};
+		20286C2AFDCF999611CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D3E3E1B20E1ABE1D0080C7B1 /* ApplicationStartup.cpp */,
+				D3E3E1B30E1ABE1D0080C7B1 /* BinaryData.cpp */,
+				D3E3E1B40E1ABE1D0080C7B1 /* BinaryData.h */,
+				D3E3E1B50E1ABE1D0080C7B1 /* DescriptorTreeView.cpp */,
+				D3E3E1B60E1ABE1D0080C7B1 /* DescriptorTreeView.h */,
+				D3E3E1B70E1ABE1D0080C7B1 /* DescriptorTreeViewItem.cpp */,
+				D3E3E1B80E1ABE1D0080C7B1 /* DescriptorTreeViewItem.h */,
+				D3E3E1B90E1ABE1D0080C7B1 /* MainWindow.cpp */,
+				D3E3E1BA0E1ABE1D0080C7B1 /* MainWindow.h */,
+				D3E3E1BB0E1ABE1D0080C7B1 /* rubric_headers.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		20286C2CFDCF999611CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4E960486CD37000505A6 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D35DCEBD1588525300799E3E /* QuartzCore.framework */,
+				D30D12E5136899510038BD19 /* Cocoa.framework */,
+				D30D12D21368991B0038BD19 /* CoreMIDI.framework */,
+				D30D12BB136897E70038BD19 /* Foundation.framework */,
+				D3421D3A0C28ACEA00361B36 /* AGL.framework */,
+				D336AD470C28A6680069A46C /* CoreAudio.framework */,
+				84C4A41006C0F9A00066071B /* IOKit.framework */,
+				20286C33FDCF999611CA2CEA /* Carbon.framework */,
+				4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3FE49500C2863FE00EB1CE8 /* Rubric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3FE49690C2863FE00EB1CE8 /* Build configuration list for PBXNativeTarget "Rubric" */;
+			buildPhases = (
+				D3FE49560C2863FE00EB1CE8 /* Resources */,
+				D3FE49590C2863FE00EB1CE8 /* Sources */,
+				D3FE495E0C2863FE00EB1CE8 /* Frameworks */,
+				6BD08F8B0F3A3458003BF274 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rubric;
+			productInstallPath = "$(HOME)/Applications";
+			productName = rubric;
+			productReference = D39946A80C28985A007755C3 /* rubric.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20286C28FDCF999611CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = 84CFBCCF085F14F000C52F85 /* Build configuration list for PBXProject "rubric" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 20286C29FDCF999611CA2CEA /* rubric */;
+			productRefGroup = 20286C29FDCF999611CA2CEA /* rubric */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3FE49500C2863FE00EB1CE8 /* Rubric */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3FE49560C2863FE00EB1CE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BD08F8B0F3A3458003BF274 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Creating disk image...\"\n\nif [ -z \"${BUILT_PRODUCTS_DIR}\" ]; then\n\techo \"ERROR: the BUILT_PRODUCTS_DIR variable is not set\"\n\texit 1\nfi\n\nif [ -z \"${FULL_PRODUCT_NAME}\" ]; then\n\techo \"ERROR: the FULL_PRODUCT_NAME variable is not set\"\n\texit 1\nfi\n\nif [ -z \"${DMG_DEST_PATH}\" ]; then\n\techo \"ERROR: the DMG_DEST_PATH variable is not set\"\n\texit 1\nfi\n\nif [ -z \"${DMG_NAME}\" ]; then\n\techo \"ERROR: the DMG_NAME variable is not set\"\n\texit 1\nfi\n\nDMG_DEST_DIR=\"${DMG_DEST_PATH}/${CONFIGURATION}\"\n\nmkdir -p \"${DMG_DEST_DIR}\"\n\n/usr/bin/hdiutil create -srcdir \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" -volname \"${DMG_NAME}\" -ov \"${DMG_DEST_DIR}/${DMG_NAME}.dmg\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3FE49590C2863FE00EB1CE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E3E1BD0E1ABE1D0080C7B1 /* ApplicationStartup.cpp in Sources */,
+				D3E3E1BE0E1ABE1D0080C7B1 /* BinaryData.cpp in Sources */,
+				D3E3E1C00E1ABE1D0080C7B1 /* DescriptorTreeView.cpp in Sources */,
+				D3E3E1C20E1ABE1D0080C7B1 /* DescriptorTreeViewItem.cpp in Sources */,
+				D3E3E1C40E1ABE1D0080C7B1 /* MainWindow.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84CFBCD0085F14F000C52F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3E3E1CB0E1ABE600080C7B1 /* rubric.xcconfig */;
+			buildSettings = {
+				RUN_CLANG_STATIC_ANALYZER = YES;
+			};
+			name = Debug;
+		};
+		84CFBCD1085F14F000C52F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3E3E1CB0E1ABE600080C7B1 /* rubric.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		D3FE496A0C2863FE00EB1CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+				);
+				OTHER_LDFLAGS = "-ljucedebug";
+			};
+			name = Debug;
+		};
+		D3FE496B0C2863FE00EB1CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+				);
+				OTHER_LDFLAGS = "-ljuce";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84CFBCCF085F14F000C52F85 /* Build configuration list for PBXProject "rubric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CFBCD0085F14F000C52F85 /* Debug */,
+				84CFBCD1085F14F000C52F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D3FE49690C2863FE00EB1CE8 /* Build configuration list for PBXNativeTarget "Rubric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3FE496A0C2863FE00EB1CE8 /* Debug */,
+				D3FE496B0C2863FE00EB1CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20286C28FDCF999611CA2CEA /* Project object */;
+}

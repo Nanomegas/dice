@@ -1,0 +1,7 @@
+;LIBRARY			UninstDev
+EXPORTS	
+	SearchAndRemoveInf
+	FindExistingDevice
+	FindAndRemoveExistingDevice
+	DeleteThisService
+	DeleteReadOnlyFile

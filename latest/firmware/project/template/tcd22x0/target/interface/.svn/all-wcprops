@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/tcd22x0/target/interface
+END
+targetBoard.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/tcd22x0/target/interface/targetBoard.h
+END
+targetPlugs.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/tcd22x0/target/interface/targetPlugs.h
+END
+targetConfigCSR.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/tcd22x0/target/interface/targetConfigCSR.h
+END
+targetVendorDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/tcd22x0/target/interface/targetVendorDefs.h
+END

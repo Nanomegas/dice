@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src
+END
+bplist-dynamic.c
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/bplist-dynamic.c
+END
+hal_misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/hal_misc.c
+END
+thread-packets.c
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/thread-packets.c
+END
+gdb-fileio.c
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/gdb-fileio.c
+END
+hal_stub.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/hal_stub.c
+END
+hal_if.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/hal_if.c
+END
+drv_api.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/drv_api.c
+END
+gdb-fileio.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/gdb-fileio.h
+END
+generic-stub.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/generic-stub.c
+END
+dummy.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/dummy.c
+END
+thread-pkts.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/thread-pkts.h
+END
+board.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/board.h
+END
+dbg-threads-syscall.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/src/dbg-threads-syscall.c
+END

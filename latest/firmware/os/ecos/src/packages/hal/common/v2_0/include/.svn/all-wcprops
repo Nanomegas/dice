@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/include
+END
+dbg-thread-syscall.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/include/dbg-thread-syscall.h
+END
+hal_spd.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/include/hal_spd.h
+END
+dbg-threads-api.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/include/dbg-threads-api.h
+END
+hal_arbiter.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/include/hal_arbiter.h
+END
+hal_tables.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/include/hal_tables.h
+END
+hal_misc.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/include/hal_misc.h
+END
+hal_stub.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/include/hal_stub.h
+END
+hal_endian.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/include/hal_endian.h
+END
+hal_if.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/include/hal_if.h
+END
+drv_api.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/include/drv_api.h
+END
+generic-stub.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/common/v2_0/include/generic-stub.h
+END

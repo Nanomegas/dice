@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/install/win/uninstall
+END
+uninstall.def
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/install/win/uninstall/uninstall.def
+END
+uninstall.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/install/win/uninstall/uninstall.cpp
+END
+uninstall.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/install/win/uninstall/uninstall.vcproj
+END

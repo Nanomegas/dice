@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/arm/ks32c5000/v2_0/src
+END
+ks5000_ether.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/arm/ks32c5000/v2_0/src/ks5000_ether.h
+END
+std.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/arm/ks32c5000/v2_0/src/std.h
+END
+ics1890.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/arm/ks32c5000/v2_0/src/ics1890.c
+END
+phy.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/arm/ks32c5000/v2_0/src/phy.h
+END
+ks5000_regs.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/arm/ks32c5000/v2_0/src/ks5000_regs.h
+END
+lxt970.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/arm/ks32c5000/v2_0/src/lxt970.c
+END
+ks5000_ether.c
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/arm/ks32c5000/v2_0/src/ks5000_ether.c
+END
+lxt972.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/arm/ks32c5000/v2_0/src/lxt972.c
+END

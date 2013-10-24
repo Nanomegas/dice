@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/acsupport
+END
+mkinstalldirs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/acsupport/mkinstalldirs
+END
+ltconfig
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/acsupport/ltconfig
+END
+acinclude.m4
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/acsupport/acinclude.m4
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/acsupport/ChangeLog
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/acsupport/missing
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/acsupport/config.guess
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/acsupport/config.sub
+END
+ltmain.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/acsupport/ltmain.sh
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/acsupport/install-sh
+END

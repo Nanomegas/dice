@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/src
+END
+locale.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/src/locale.cxx
+END
+internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/src/internal.h
+END
+mbstowcs.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/src/mbstowcs.cxx
+END
+wcstombs.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/src/wcstombs.cxx
+END
+ctype.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/src/ctype.cxx
+END
+mbtowc_jp.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/src/mbtowc_jp.cxx
+END
+wctomb_jp.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/src/wctomb_jp.cxx
+END
+mbtowc.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/src/mbtowc.cxx
+END
+wctomb.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/src/wctomb.cxx
+END
+mblen.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/src/mblen.cxx
+END
+mbtowc_c.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/i18n/v2_0/src/mbtowc_c.cxx
+END

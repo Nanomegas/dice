@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/mibII
+END
+vacm_vars.c
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/mibII/vacm_vars.c
+END
+helpers.c
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/mibII/helpers.c
+END
+interfaces.c
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/mibII/interfaces.c
+END
+snmp_mib.c
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/mibII/snmp_mib.c
+END
+tcp.c
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/mibII/tcp.c
+END
+sysORTable.c
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/mibII/sysORTable.c
+END
+icmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/mibII/icmp.c
+END
+ip.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/mibII/ip.c
+END
+udp.c
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/mibII/udp.c
+END
+dot3.c
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/mibII/dot3.c
+END
+system_mib.c
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/mibII/system_mib.c
+END

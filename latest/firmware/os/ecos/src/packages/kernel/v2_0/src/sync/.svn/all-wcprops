@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sync
+END
+mqueue.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sync/mqueue.cxx
+END
+mutex.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sync/mutex.cxx
+END
+mbox.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sync/mbox.cxx
+END
+cnt_sem.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sync/cnt_sem.cxx
+END
+flag.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sync/flag.cxx
+END
+cnt_sem2.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sync/cnt_sem2.cxx
+END
+bin_sem.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sync/bin_sem.cxx
+END

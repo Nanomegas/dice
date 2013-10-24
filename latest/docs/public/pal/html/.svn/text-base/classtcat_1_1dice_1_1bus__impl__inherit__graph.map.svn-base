@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$classtcat_1_1dice_1_1bus.html" title="{tcat::dice::bus\&lt; device_t \&gt;\n|&#45; m_mount\l|+ bus()\l+ ~bus()\l+ add()\l+ fetch_devicelist()\l+ fetch_devices()\l+ find()\l+ find()\l+ mount()\l+ unmount()\l+ update_devices()\l# new_device()\l}" alt="" coords="24,1542,203,1782" />
+<area shape="rect" href="$classtcat_1_1dice_1_1base.html" title="{tcat::dice::base\n||+ _addref()\l+ _release()\l# base()\l# test()\l&#45; _are_all_objects_known()\l&#45; _is_object_known()\l&#45; _lock()\l&#45; _unlock()\l}" alt="" coords="22,6,206,198" />
+</map>

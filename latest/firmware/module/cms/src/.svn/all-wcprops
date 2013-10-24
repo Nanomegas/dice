@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cms/src
+END
+cms.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cms/src/cms.c
+END
+cmsCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cms/src/cmsCli.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cms/src/Makefile
+END
+cmsAvs.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/cms/src/cmsAvs.c
+END

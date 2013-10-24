@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/arch/v2_0/include
+END
+hal_io.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/arch/v2_0/include/hal_io.h
+END
+arm_stub.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/arch/v2_0/include/arm_stub.h
+END
+basetype.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/arch/v2_0/include/basetype.h
+END
+arch.inc
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/arch/v2_0/include/arch.inc
+END
+hal_intr.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/arch/v2_0/include/hal_intr.h
+END
+hal_arch.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/arch/v2_0/include/hal_arch.h
+END
+hal_mmu.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/arch/v2_0/include/hal_mmu.h
+END

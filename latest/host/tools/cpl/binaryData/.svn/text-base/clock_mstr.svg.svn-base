@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="44"
+   version="1.0"
+   width="48"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="clock_mstr.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <sodipodi:namedview
+     inkscape:window-height="1069"
+     inkscape:window-width="1773"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="2.1867234"
+     inkscape:cx="-9.8863196"
+     inkscape:cy="69.043549"
+     inkscape:window-x="22"
+     inkscape:window-y="24"
+     inkscape:current-layer="svg2" />
+  <style
+     type="text/css"
+     id="style4">
+#P0 {fill:url(#R0)}
+#P1 {fill:url(#L2);stroke-width:1.2535489}
+#P2 {fill:url(#L1)}
+#P3 {fill:url(#L3)}
+#P4,#P5,#P6 {fill:none;fill-opacity:.75}
+#P2,#P4 {stroke-width:3.75}
+#P4,#P5 {stroke:#000}
+#P5 {stroke-width:3.4538534}
+#P6 {stroke:#f00;stroke-width:1.875}
+</style>
+  <metadata
+     id="metadata6">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:title>Modern Clock</dc:title>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clock</rdf:li>
+            <rdf:li>modern</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://www.openclipart.org">
+            <dc:title>Chris Kempson</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Chris Kempson</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Chris Kempson</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://web.resource.org/cc/PublicDomain" />
+        <dc:language>en</dc:language>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 105.6375 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="212.16249 : 105.6375 : 1"
+       inkscape:persp3d-origin="106.08125 : 70.425003 : 1"
+       id="perspective56" />
+    <linearGradient
+       id="L0">
+      <stop
+         style="stop-color:#000"
+         id="stop11" />
+      <stop
+         offset=".87947369"
+         style="stop-color:#000;stop-opacity:.76612902"
+         id="stop13" />
+      <stop
+         offset="1"
+         style="stop-color:#000;stop-opacity:0"
+         id="stop15" />
+    </linearGradient>
+    <linearGradient
+       id="L1"
+       x1="259.40082"
+       x2="260.54816"
+       y1="307.82748"
+       y2="469.55243"
+       gradientTransform="matrix(0.1999844,0,0,0.2000156,-27.859289,-55.307442)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         style="stop-color:#ddd"
+         id="stop18" />
+      <stop
+         offset="1"
+         style="stop-color:#f5f5f5"
+         id="stop20" />
+    </linearGradient>
+    <linearGradient
+       id="L2"
+       x1="243.32457"
+       x2="243.32458"
+       y1="402.15451"
+       y2="260.52774"
+       gradientTransform="matrix(0.1873663,2.8898974e-3,0,0.1939217,-20.856909,-49.121802)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         style="stop-color:#fff;stop-opacity:0"
+         id="stop23" />
+      <stop
+         offset="1"
+         style="stop-color:#fff;stop-opacity:.57254905"
+         id="stop25" />
+    </linearGradient>
+    <linearGradient
+       id="L3"
+       x1="104.63348"
+       x2="106.81163"
+       y1="987.17004"
+       y2="850.52942"
+       gradientTransform="matrix(0.1885751,0,0,0.1853243,4.163939,-150.08554)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         style="stop-color:#fff;stop-opacity:0"
+         id="stop28" />
+      <stop
+         offset="1"
+         style="stop-color:#fff;stop-opacity:.85000002"
+         id="stop30" />
+    </linearGradient>
+    <linearGradient
+       id="L4"
+       x1="-2.9137933e-19"
+       x2="1"
+       xlink:href="#L0"
+       y1="0.5"
+       y2="0.5" />
+    <radialGradient
+       id="R0"
+       cx="244.76436"
+       cy="364.19266"
+       fx="244.76436"
+       fy="364.19266"
+       r="103.66491"
+       xlink:href="#L0"
+       gradientTransform="matrix(0.199969,0,0,0.2000311,-23.279109,-49.586042)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <path
+     id="P0"
+     d="M 46.395929,23.2638 C 46.399479,11.812554 37.117409,2.527598 25.666169,2.527598 C 14.214917,2.527598 4.932845,11.812554 4.936401,23.2638 C 4.932845,34.71505 14.214917,44 25.666159,44 C 37.117409,44 46.399479,34.71505 46.395929,23.2638 L 46.395929,23.2638 z"
+     style="fill:url(#R0)" />
+  <path
+     d="M 45.423529,22.4682 C 45.427079,11.016954 36.145009,1.731998 24.693769,1.731998 C 13.242517,1.731998 3.960445,11.016954 3.964001,22.4682 C 3.960445,33.91945 13.242517,43.2044 24.693759,43.2044 C 36.145009,43.2044 45.427079,33.91945 45.423529,22.4682 L 45.423529,22.4682 z"
+     id="path35" />
+  <path
+     id="P1"
+     d="M 44.426999,22.50998 C 44.430329,11.408534 35.733239,2.273017 25.003689,2.107527 C 14.274131,1.942037 5.577043,10.80927 5.580375,21.91082 C 5.577043,33.01227 14.274131,42.14779 25.003689,42.31328 C 35.733239,42.47877 44.430329,33.61154 44.426999,22.50998 L 44.426999,22.50998 z"
+     style="fill:url(#L2);stroke-width:1.25354886" />
+  <path
+     d="M 42.345859,24.13668 C 42.345859,13.583951 34.439639,5.029275 24.686819,5.029275 C 14.933996,5.029275 7.027774,13.583951 7.027774,24.13668 C 7.027774,34.68941 14.933996,43.24408 24.686819,43.24408 C 34.439639,43.24408 42.345859,34.68941 42.345859,24.13668 L 42.345859,24.13668 z"
+     id="path38" />
+  <path
+     id="P2"
+     d="M 41.225449,22.32024 C 41.226869,13.195346 33.830079,5.797406 24.705179,5.797406 C 15.580291,5.797406 8.183501,13.195346 8.184921,22.32024 C 8.183501,31.44513 15.580291,38.84307 24.705179,38.84307 C 33.830079,38.84307 41.226869,31.44513 41.225449,22.32024 z"
+     style="fill:url(#L1);stroke-width:3.75" />
+  <path
+     id="P3"
+     d="M 38.682019,21.06955 C 38.683839,13.490184 32.430819,7.344952 24.716689,7.344952 C 17.00257,7.344952 10.749547,13.490184 10.751361,21.06955 C 10.749547,28.64891 17.00257,34.79414 24.716689,34.79414 C 32.430819,34.79414 38.683839,28.64891 38.682019,21.06955 z"
+     style="fill:url(#L3)" />
+  <g
+     transform="matrix(0.2,0,0,0.2,3.742949,-167.28054)"
+     id="g42">
+    <path
+       id="P4"
+       d="M 110.59018,958.15572 L 79.870691,910.36983"
+       style="fill:none;fill-opacity:0.75;stroke:#000000;stroke-width:3.75" />
+    <path
+       id="P5"
+       d="M 98.933011,958.94485 L 135.90047,891.8317"
+       style="fill:none;fill-opacity:0.75;stroke:#000000;stroke-width:3.45385337" />
+    <path
+       id="P6"
+       d="M 91.475836,950.64651 L 171.34653,942.45465"
+       style="fill:none;fill-opacity:0.75;stroke:#ff0000;stroke-width:1.875" />
+  </g>
+  <rect
+     height="1.8121172"
+     width="0.75461662"
+     x="24.339006"
+     y="6.9833827"
+     id="rect47" />
+  <rect
+     height="1.8121172"
+     width="0.75461662"
+     x="24.339006"
+     y="35.777893"
+     id="rect49" />
+  <rect
+     height="1.8121172"
+     transform="matrix(0,1,-1,0,0,0)"
+     width="0.75461662"
+     x="21.863937"
+     y="-11.362057"
+     id="rect51" />
+  <rect
+     height="1.8121172"
+     transform="matrix(0,1,-1,0,0,0)"
+     width="0.75461662"
+     x="21.863937"
+     y="-39.836174"
+     id="rect53" />
+</svg>

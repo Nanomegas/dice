@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/infra/testsuite
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/infra/testsuite/Makefile.in
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/infra/testsuite/Makefile.am
+END

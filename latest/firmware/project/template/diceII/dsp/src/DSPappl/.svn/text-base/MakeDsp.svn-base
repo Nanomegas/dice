@@ -1,0 +1,64 @@
+##===========================================================================
+##
+## This confidential and proprietary software may be used only as authorised
+## by a licensing agreement from TC Applied Technologies Ltd.
+##
+## (C) COPYRIGHT 2004 TC Applied Technologies Ltd. (ALL RIGHTS RESERVED)
+##
+## Unauthorized use, duplication or distribution of this software is  
+## strictly prohibited by law.
+##
+## The entire notice above must be reproduced on all authorised copies and
+## copies may only be made to the extent permitted by a licensing agreement
+## from TC Applied Technologies Ltd.
+##
+##===========================================================================
+## $Id: MakeDsp,v 1.1.1.1 2006/08/10 20:03:13 zluo Exp $
+##===========================================================================
+
+
+DST=dspappl
+
+all:	${DST}.h
+
+
+
+SRCS=dsptest.asm
+OBJS=${SRCS:%.asm=%.cln}
+
+
+##########################################
+# Rules for various targets              #
+#                                        #
+##########################################            
+
+
+# Rule for DSP asm code
+%.cln:	%.asm
+	asm56300.exe -b -l $*.asm
+
+
+# Rule for link
+${DST}.cld:	${OBJS} ${DST}.ctl
+	dsplnk.exe -A -B${DST}.cld -M${DST}.map -R${DST}.ctl ${OBJS}
+  
+${DST}.lod:	${DST}.cld
+	cldlod.exe ${DST}.cld > ${DST}.lod
+  
+${DST}.h:	${DST}.lod
+	./lodtoc.exe ${DST} ${DST} -full
+	cp ${DST}.h ..
+	cp ${DST}.c ..
+
+
+
+clean:
+	rm -f *.cln
+	rm -f *.lst
+	rm -f ${DST}.cld
+	rm -f ${DST}.lod
+	rm -f ${DST}.map
+	rm -f ${DST}.h
+	rm -f ${DST}.c
+
+

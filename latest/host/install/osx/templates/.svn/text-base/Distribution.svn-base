@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<installer-gui-script minSpecVersion="1">
+    <options rootVolumeOnly="true"/>
+    <title>kTCAT_DICE_USR Driver</title>
+    <!-- background file -->
+    <!-- welcome file -->
+    <!-- readme file -->
+    <!-- license file -->
+    <pkg-ref id="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.controlpanel"/>
+    <pkg-ref id="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.audio_driver"/>
+    <pkg-ref id="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.midi_driver"/>
+    <options customize="never" require-scripts="false"/>
+    <choices-outline>
+        <line choice="default">
+            <line choice="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.controlpanel"/>
+            <line choice="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.audio_driver"/>
+            <line choice="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.midi_driver"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.controlpanel" visible="false">
+        <pkg-ref id="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.controlpanel"/>
+    </choice>
+    <pkg-ref id="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.controlpanel" version="4.1.0" onConclusion="none">Control%20Panel.pkg</pkg-ref>
+    <choice id="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.audio_driver" visible="false">
+        <pkg-ref id="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.audio_driver"/>
+    </choice>
+    <pkg-ref id="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.audio_driver" version="4.1.0" onConclusion="RequireRestart">Audio%20Driver.pkg</pkg-ref>
+    <choice id="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.midi_driver" visible="false">
+        <pkg-ref id="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.midi_driver"/>
+    </choice>
+    <pkg-ref id="kTCAT_DICE_VENDOR_UTI.pkg.kTCAT_DICE_DRV.midi_driver" version="4.1.0" onConclusion="none">MIDI%20Driver.pkg</pkg-ref>
+</installer-gui-script>

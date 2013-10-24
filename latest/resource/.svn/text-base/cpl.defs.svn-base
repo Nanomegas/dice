@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<PROPERTIES>
+  <VALUE name="showSimpleTab" val="1"/>
+  <VALUE name="showAdvancedTab" val="1"/>
+
+  <VALUE name="showDPC" val="1"/>
+  <VALUE name="showSystem" val="1"/>
+
+  <VALUE name="allowLoadAfterWarning" val="1"/>
+
+  <VALUE name="hideRatesIfSingle" val="1"/>
+  <VALUE name="hideSyncsIfSingle" val="1"/>
+
+  <VALUE name="vendorInfo1" val="Developed for vendor by TCAT"/>
+  <VALUE name="vendorInfo2" val="Copyright (c) 2008-2013 TC Applied Technologies"/>
+  <VALUE name="vendorInfo3" val="All rights reserved"/>
+
+  <VALUE name="F5RefreshesColours" val="1"/>
+
+  <VALUE name="UseGeneratedColourShades" val="1"/>
+  <VALUE name="BaseColourHue" val="50"/>
+  <VALUE name="BaseColourValue" val="75"/>
+  <VALUE name="BaseColourSaturation" val="10"/>
+
+  <VALUE name="UseBlendedColours" val="0"/>
+  <VALUE name="BlendColour1" val="ffff99"/>
+  <VALUE name="BlendColour2" val="000033"/>
+
+</PROPERTIES>

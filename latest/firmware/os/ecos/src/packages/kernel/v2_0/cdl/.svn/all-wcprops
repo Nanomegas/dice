@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/cdl
+END
+scheduler.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/cdl/scheduler.cdl
+END
+interrupts.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/cdl/interrupts.cdl
+END
+kernel.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/cdl/kernel.cdl
+END
+counters.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/cdl/counters.cdl
+END
+synch.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/cdl/synch.cdl
+END
+thread.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/cdl/thread.cdl
+END
+instrument.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/cdl/instrument.cdl
+END

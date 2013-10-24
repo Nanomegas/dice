@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/target/interface
+END
+targetBoard.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/target/interface/targetBoard.h
+END
+targetPlugs.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/target/interface/targetPlugs.h
+END
+targetConfigCSR.h
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/target/interface/targetConfigCSR.h
+END
+targetVendorDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/target/interface/targetVendorDefs.h
+END

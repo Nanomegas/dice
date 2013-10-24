@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/smsc/lan91cxx/v2_0/src
+END
+smsc_lan91cxx.h
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/smsc/lan91cxx/v2_0/src/smsc_lan91cxx.h
+END
+if_lan91cxx.c
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/smsc/lan91cxx/v2_0/src/if_lan91cxx.c
+END

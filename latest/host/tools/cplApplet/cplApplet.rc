@@ -1,0 +1,46 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+//	combined dice software version
+//
+#include <windows.h>
+#include "..\..\..\interface\tcat_dice_myproduct.h"
+#include "resource.h"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION    kTCAT_DICE_VERSION_RC
+PRODUCTVERSION kTCAT_DICE_VERSION_RC
+FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
+FILEFLAGS      0
+FILEOS         VOS_NT_WINDOWS32
+FILETYPE       VFT_APP
+FILESUBTYPE    VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"   /* LANG_ENGLISH/SUBLANG_ENGLISH_US, Unicode CP */
+        BEGIN
+            VALUE "CompanyName",     kTCAT_DICE_USR_PROVIDER_STR
+            VALUE "FileDescription", kTCAT_DICE_USR_STR 
+            VALUE "FileVersion",     kTCAT_DICE_VERSION_STR
+            VALUE "InternalName",    kTCAT_DICE_USR_STR
+            VALUE "LegalCopyright",  kTCAT_DICE_USR_COPYRIGHT_STR
+            VALUE "OriginalFilename",kTCAT_DICE_DRV_STR ".cpl"
+            VALUE "ProductName",     kTCAT_DICE_USR_STR
+            VALUE "ProductVersion",  kTCAT_DICE_VERSION_STR
+        END
+
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 0x04B0
+    END
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NAMESTRING          kTCAT_DICE_DRV_STR
+    ID_DESCSTRING          kTCAT_DICE_USR_STR
+END
+
+ID_ICON ICON "..\\..\\..\\resource\\icon.ico"

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests
+END
+ldiv.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/ldiv.c
+END
+atol.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/atol.c
+END
+rand1.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/rand1.c
+END
+abs.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/abs.c
+END
+rand2.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/rand2.c
+END
+srand.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/srand.c
+END
+rand3.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/rand3.c
+END
+bsearch.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/bsearch.c
+END
+rand4.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/rand4.c
+END
+qsort.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/qsort.c
+END
+strtoul.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/strtoul.c
+END
+labs.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/labs.c
+END
+div.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/div.c
+END
+strtol.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/strtol.c
+END
+getenv.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/getenv.c
+END
+atoi.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdlib/v2_0/tests/atoi.c
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/no1394_tcd22x0/target/src
+END
+targetBoard.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/no1394_tcd22x0/target/src/targetBoard.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/no1394_tcd22x0/target/src/Makefile
+END

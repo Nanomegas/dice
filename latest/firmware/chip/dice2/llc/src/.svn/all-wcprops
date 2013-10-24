@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src
+END
+llcFIFO.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/llcFIFO.c
+END
+lhlPHY.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/lhlPHY.c
+END
+lhlService.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/lhlService.c
+END
+llcSelfID.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/llcSelfID.c
+END
+lhlLLCCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/lhlLLCCli.c
+END
+llcInt.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/llcInt.c
+END
+lhlWatch.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/lhlWatch.c
+END
+llcReg.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/llcReg.c
+END
+lhlARx.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/lhlARx.c
+END
+lhlLLC.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/lhlLLC.c
+END
+llcUtils.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/llcUtils.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/Makefile
+END
+lhlATx.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/lhlATx.c
+END
+lhlBri.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/llc/src/lhlBri.c
+END

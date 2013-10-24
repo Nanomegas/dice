@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/src
+END
+uit_objs.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/src/uit_objs.cxx
+END
+uit_ifnc.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/src/uit_ifnc.cxx
+END
+uit_func.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/src/uit_func.cxx
+END

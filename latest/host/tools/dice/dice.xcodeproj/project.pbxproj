@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B65C4020FEFFD300045AD3F /* test_suite.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B65C4010FEFFD2C0045AD3F /* test_suite.py */; };
+		CD0A94100ACDC11500752438 /* libtcat_dice_pal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0A940A0ACDC0F500752438 /* libtcat_dice_pal.a */; };
+		CD0A943D0ACDC48200752438 /* dice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD0A943C0ACDC48200752438 /* dice.cpp */; };
+		CD0ABC6C0B94ACAB00D54F44 /* dice_mac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD0ABC6B0B94ACAB00D54F44 /* dice_mac.cpp */; };
+		CD5CC7CA0ADD45D4005BF8D0 /* dice_streaming_coreaudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD5CC7C90ADD45D4005BF8D0 /* dice_streaming_coreaudio.cpp */; };
+		CD7197870AE69AA4001F51DD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7197860AE69AA4001F51DD /* CoreAudio.framework */; };
+		CD9250DE0B04E9BE00EBB7B7 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9250DD0B04E9BE00EBB7B7 /* CoreMIDI.framework */; };
+		CD97019B0E2D32BC0088B1A6 /* dice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD0A943C0ACDC48200752438 /* dice.cpp */; };
+		CD97019C0E2D32BC0088B1A6 /* dice_streaming_coreaudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD5CC7C90ADD45D4005BF8D0 /* dice_streaming_coreaudio.cpp */; };
+		CD97019D0E2D32BC0088B1A6 /* dice_mac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD0ABC6B0B94ACAB00D54F44 /* dice_mac.cpp */; };
+		CD97019E0E2D32BC0088B1A6 /* dice_streaming.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDDE7A100C451882002F449F /* dice_streaming.cpp */; };
+		CD9701A10E2D32BC0088B1A6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF29F750ACDC9000095DA65 /* IOKit.framework */; };
+		CD9701A20E2D32BC0088B1A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF29F7A0ACDC94B0095DA65 /* Carbon.framework */; };
+		CD9701A30E2D32BC0088B1A6 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7197860AE69AA4001F51DD /* CoreAudio.framework */; };
+		CD9701A40E2D32BC0088B1A6 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9250DD0B04E9BE00EBB7B7 /* CoreMIDI.framework */; };
+		CD9701B30E2D33050088B1A6 /* libtcat_dice_avc_pal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9701710E2D2E340088B1A6 /* libtcat_dice_avc_pal.a */; };
+		CDDE7A110C451882002F449F /* dice_streaming.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDDE7A100C451882002F449F /* dice_streaming.cpp */; };
+		CDF29F760ACDC9000095DA65 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF29F750ACDC9000095DA65 /* IOKit.framework */; };
+		CDF29F7B0ACDC94B0095DA65 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF29F7A0ACDC94B0095DA65 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD0A94090ACDC0F500752438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD0A94050ACDC0F500752438 /* tcat_dice_pal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC06F0554671400DB518D;
+			remoteInfo = tcat_dice_pal;
+		};
+		CD0A940E0ACDC10700752438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD0A94050ACDC0F500752438 /* tcat_dice_pal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC06E0554671400DB518D;
+			remoteInfo = tcat_dice_pal;
+		};
+		CD9701700E2D2E340088B1A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD0A94050ACDC0F500752438 /* tcat_dice_pal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD97016E0E2D2E330088B1A6;
+			remoteInfo = tcat_dice_avc_pal;
+		};
+		CD9701B10E2D32F70088B1A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD0A94050ACDC0F500752438 /* tcat_dice_pal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CD97016D0E2D2E330088B1A6;
+			remoteInfo = tcat_dice_avc_pal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B65C3FD0FEFFD000045AD3F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				6B65C4020FEFFD300045AD3F /* test_suite.py in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD9701A50E2D32BC0088B1A6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6B65C4010FEFFD2C0045AD3F /* test_suite.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = test_suite.py; path = scripts/test_suite.py; sourceTree = SOURCE_ROOT; };
+		8DD76F6C0486A84900D96B5E /* dice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dice; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859E8B029090EE04C91782 /* dice.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = dice.1; sourceTree = "<group>"; };
+		CD0A94050ACDC0F500752438 /* tcat_dice_pal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tcat_dice_pal.xcodeproj; path = ../../pal/tcat_dice_pal.xcodeproj; sourceTree = SOURCE_ROOT; };
+		CD0A94140ACDC13000752438 /* dice.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = dice.xcconfig; sourceTree = "<group>"; };
+		CD0A943C0ACDC48200752438 /* dice.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = dice.cpp; sourceTree = SOURCE_ROOT; };
+		CD0ABC6B0B94ACAB00D54F44 /* dice_mac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = dice_mac.cpp; sourceTree = SOURCE_ROOT; };
+		CD0ABC6D0B94ACC200D54F44 /* dice.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = dice.h; sourceTree = SOURCE_ROOT; };
+		CD2C0A700ADD51AD0052CFDF /* tcat_dice_version.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tcat_dice_version.h; path = ../../../interface/tcat_dice_version.h; sourceTree = SOURCE_ROOT; };
+		CD2C0A710ADD51AD0052CFDF /* tcat.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tcat.h; path = ../../../interface/tcat.h; sourceTree = SOURCE_ROOT; };
+		CD2C0AC10ADD8A770052CFDF /* tcat_dice_myproduct.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tcat_dice_myproduct.h; path = ../../../interface/tcat_dice_myproduct.h; sourceTree = SOURCE_ROOT; };
+		CD3041C80ADD3F1E008D179B /* dice_streaming.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = dice_streaming.h; sourceTree = SOURCE_ROOT; };
+		CD5CC7C90ADD45D4005BF8D0 /* dice_streaming_coreaudio.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = dice_streaming_coreaudio.cpp; sourceTree = "<group>"; };
+		CD7197860AE69AA4001F51DD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		CD7BAA370CFDF77D00990463 /* tcat_dice_macros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tcat_dice_macros.h; path = ../../../interface/tcat_dice_macros.h; sourceTree = SOURCE_ROOT; };
+		CD9250DD0B04E9BE00EBB7B7 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = /System/Library/Frameworks/CoreMIDI.framework; sourceTree = "<absolute>"; };
+		CD9701A90E2D32BC0088B1A6 /* avc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = avc; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD99204C0E2D3CBE00B070D8 /* tcat_dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tcat_dice.h; path = ../../interface/tcat_dice.h; sourceTree = SOURCE_ROOT; };
+		CD99204D0E2D3CBE00B070D8 /* tcat_dice_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tcat_dice_mac.h; path = ../../interface/tcat_dice_mac.h; sourceTree = SOURCE_ROOT; };
+		CDDE7A100C451882002F449F /* dice_streaming.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = dice_streaming.cpp; sourceTree = "<group>"; };
+		CDF29F750ACDC9000095DA65 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		CDF29F7A0ACDC94B0095DA65 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0A94100ACDC11500752438 /* libtcat_dice_pal.a in Frameworks */,
+				CDF29F760ACDC9000095DA65 /* IOKit.framework in Frameworks */,
+				CDF29F7B0ACDC94B0095DA65 /* Carbon.framework in Frameworks */,
+				CD7197870AE69AA4001F51DD /* CoreAudio.framework in Frameworks */,
+				CD9250DE0B04E9BE00EBB7B7 /* CoreMIDI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD97019F0E2D32BC0088B1A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9701B30E2D33050088B1A6 /* libtcat_dice_avc_pal.a in Frameworks */,
+				CD9701A10E2D32BC0088B1A6 /* IOKit.framework in Frameworks */,
+				CD9701A20E2D32BC0088B1A6 /* Carbon.framework in Frameworks */,
+				CD9701A30E2D32BC0088B1A6 /* CoreAudio.framework in Frameworks */,
+				CD9701A40E2D32BC0088B1A6 /* CoreMIDI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* dice */ = {
+			isa = PBXGroup;
+			children = (
+				CD0A94140ACDC13000752438 /* dice.xcconfig */,
+				6B65C3F90FEFFC6D0045AD3F /* interface */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				6B65C3FE0FEFFD110045AD3F /* scripts */,
+				6B65C21B0FEFF2590045AD3F /* External Frameworks and Libraries */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = dice;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CD3041C80ADD3F1E008D179B /* dice_streaming.h */,
+				CDDE7A100C451882002F449F /* dice_streaming.cpp */,
+				CD5CC7C90ADD45D4005BF8D0 /* dice_streaming_coreaudio.cpp */,
+				CD0ABC6D0B94ACC200D54F44 /* dice.h */,
+				CD0A943C0ACDC48200752438 /* dice.cpp */,
+				CD0ABC6B0B94ACAB00D54F44 /* dice_mac.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* dice */,
+				CD9701A90E2D32BC0088B1A6 /* avc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B65C21B0FEFF2590045AD3F /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CD0A94050ACDC0F500752438 /* tcat_dice_pal.xcodeproj */,
+				CD9250DD0B04E9BE00EBB7B7 /* CoreMIDI.framework */,
+				CD7197860AE69AA4001F51DD /* CoreAudio.framework */,
+				CDF29F7A0ACDC94B0095DA65 /* Carbon.framework */,
+				CDF29F750ACDC9000095DA65 /* IOKit.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		6B65C3F90FEFFC6D0045AD3F /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C0A710ADD51AD0052CFDF /* tcat.h */,
+				CD99204C0E2D3CBE00B070D8 /* tcat_dice.h */,
+				CD99204D0E2D3CBE00B070D8 /* tcat_dice_mac.h */,
+				CD2C0A700ADD51AD0052CFDF /* tcat_dice_version.h */,
+				CD2C0AC10ADD8A770052CFDF /* tcat_dice_myproduct.h */,
+				CD7BAA370CFDF77D00990463 /* tcat_dice_macros.h */,
+			);
+			name = interface;
+			sourceTree = "<group>";
+		};
+		6B65C3FE0FEFFD110045AD3F /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6B65C4010FEFFD2C0045AD3F /* test_suite.py */,
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* dice.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		CD0A94060ACDC0F500752438 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD0A940A0ACDC0F500752438 /* libtcat_dice_pal.a */,
+				CD9701710E2D2E340088B1A6 /* libtcat_dice_avc_pal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* dice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "dice" */;
+			buildPhases = (
+				6B872B8114291E9000B8ABD1 /* ShellScript */,
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				6B65C3FD0FEFFD000045AD3F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD0A940F0ACDC10700752438 /* PBXTargetDependency */,
+			);
+			name = dice;
+			productInstallPath = "$(HOME)/bin";
+			productName = dice;
+			productReference = 8DD76F6C0486A84900D96B5E /* dice */;
+			productType = "com.apple.product-type.tool";
+		};
+		CD9701970E2D32BC0088B1A6 /* avc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD9701A60E2D32BC0088B1A6 /* Build configuration list for PBXNativeTarget "avc" */;
+			buildPhases = (
+				CD97019A0E2D32BC0088B1A6 /* Sources */,
+				CD97019F0E2D32BC0088B1A6 /* Frameworks */,
+				CD9701A50E2D32BC0088B1A6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD9701B20E2D32F70088B1A6 /* PBXTargetDependency */,
+			);
+			name = avc;
+			productInstallPath = "$(HOME)/bin";
+			productName = dice;
+			productReference = CD9701A90E2D32BC0088B1A6 /* avc */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "dice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* dice */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CD0A94060ACDC0F500752438 /* Products */;
+					ProjectRef = CD0A94050ACDC0F500752438 /* tcat_dice_pal.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* dice */,
+				CD9701970E2D32BC0088B1A6 /* avc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CD0A940A0ACDC0F500752438 /* libtcat_dice_pal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtcat_dice_pal.a;
+			remoteRef = CD0A94090ACDC0F500752438 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD9701710E2D2E340088B1A6 /* libtcat_dice_avc_pal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtcat_dice_avc_pal.a;
+			remoteRef = CD9701700E2D2E340088B1A6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B872B8114291E9000B8ABD1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# workaround for linker warning \"directory not found for option ...\"\nmkdir -p ${TARGET_BUILD_DIR}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0A943D0ACDC48200752438 /* dice.cpp in Sources */,
+				CD0ABC6C0B94ACAB00D54F44 /* dice_mac.cpp in Sources */,
+				CDDE7A110C451882002F449F /* dice_streaming.cpp in Sources */,
+				CD5CC7CA0ADD45D4005BF8D0 /* dice_streaming_coreaudio.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD97019A0E2D32BC0088B1A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD97019B0E2D32BC0088B1A6 /* dice.cpp in Sources */,
+				CD97019C0E2D32BC0088B1A6 /* dice_streaming_coreaudio.cpp in Sources */,
+				CD97019D0E2D32BC0088B1A6 /* dice_mac.cpp in Sources */,
+				CD97019E0E2D32BC0088B1A6 /* dice_streaming.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD0A940F0ACDC10700752438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tcat_dice_pal;
+			targetProxy = CD0A940E0ACDC10700752438 /* PBXContainerItemProxy */;
+		};
+		CD9701B20E2D32F70088B1A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tcat_dice_avc_pal;
+			targetProxy = CD9701B10E2D32F70088B1A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0A94140ACDC13000752438 /* dice.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0A94140ACDC13000752438 /* dice.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+		CD9701A70E2D32BC0088B1A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = TCAT_DICE_AVC;
+				PRODUCT_NAME = avc;
+			};
+			name = Debug;
+		};
+		CD9701A80E2D32BC0088B1A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = TCAT_DICE_AVC;
+				PRODUCT_NAME = avc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "dice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "dice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD9701A60E2D32BC0088B1A6 /* Build configuration list for PBXNativeTarget "avc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9701A70E2D32BC0088B1A6 /* Debug */,
+				CD9701A80E2D32BC0088B1A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

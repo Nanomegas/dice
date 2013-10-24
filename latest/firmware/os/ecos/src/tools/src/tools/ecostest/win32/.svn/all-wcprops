@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/ecostest/win32
+END
+eCosTest.mak
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/ecostest/win32/eCosTest.mak
+END
+ser_filter.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/ecostest/win32/ser_filter.dsp
+END
+ser_filter.mak
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/ecostest/win32/ser_filter.mak
+END
+ser_filter.dsw
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/ecostest/win32/ser_filter.dsw
+END
+eCosTest.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/tools/ecostest/win32/eCosTest.dsp
+END

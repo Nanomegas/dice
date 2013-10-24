@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/powerpc/quicc2/v2_0/src
+END
+EnetPHY.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/powerpc/quicc2/v2_0/src/EnetPHY.h
+END
+fec.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/powerpc/quicc2/v2_0/src/fec.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/powerpc/quicc2/v2_0/src/types.h
+END
+if_fec.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/powerpc/quicc2/v2_0/src/if_fec.c
+END
+EnetPHY.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/powerpc/quicc2/v2_0/src/EnetPHY.c
+END

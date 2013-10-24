@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/dicedriver/src
+END
+dicedriver.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/dicedriver/src/dicedriver.c
+END
+dicedriverCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/dicedriver/src/dicedriverCli.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/dicedriver/src/Makefile
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src
+END
+diceADAT.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/diceADAT.c
+END
+diceClock.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/diceClock.c
+END
+diceI2S.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/diceI2S.c
+END
+dice.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/dice.c
+END
+diceHPLL.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/diceHPLL.c
+END
+diceDSAI.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/diceDSAI.c
+END
+uartAml.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/uartAml.c
+END
+diceAPB.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/diceAPB.c
+END
+diceTimer2.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/diceTimer2.c
+END
+diceTDIF.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/diceTDIF.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/Makefile
+END
+diceCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/diceCli.c
+END
+diceAES.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dice/src/diceAES.c
+END

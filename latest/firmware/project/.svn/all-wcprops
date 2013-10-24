@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project
+END
+install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/install.sh
+END
+new_no1394_tcd22x0_proj.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/new_no1394_tcd22x0_proj.sh
+END
+new_eap_tcd22x0_EVM003_proj.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/new_eap_tcd22x0_EVM003_proj.sh
+END
+new_diceII_proj.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/new_diceII_proj.sh
+END
+new_tcd22x0_proj.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/new_tcd22x0_proj.sh
+END
+new_cms_tcd22x0_proj.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/new_cms_tcd22x0_proj.sh
+END
+new_eap_tcd22x0_proj.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/new_eap_tcd22x0_proj.sh
+END
+createBinaries.sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/createBinaries.sh
+END
+copyProject.sh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/copyProject.sh
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/README.txt
+END
+new_avc_tcd22x0_proj.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/new_avc_tcd22x0_proj.sh
+END
+new_diceII_EVM002_proj.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/new_diceII_EVM002_proj.sh
+END
+new_tcd22x0_EVM003_proj.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/new_tcd22x0_EVM003_proj.sh
+END
+new_tcd22x0_EVM004_proj.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/new_tcd22x0_EVM004_proj.sh
+END

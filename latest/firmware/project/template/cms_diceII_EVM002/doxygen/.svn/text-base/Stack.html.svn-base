@@ -1,0 +1,28 @@
+<HTML>
+	<HEAD>
+		<TITLE>Stack</TITLE>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+	</HEAD>
+	<BODY BGCOLOR="#FFFFFF" LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+		<!-- ImageReady Slices (Stack.psd) -->
+		<IMG SRC="images/Stack.gif" WIDTH="750" HEIGHT="450" BORDER="0" ALT="" USEMAP="#Stack_Map">
+		<MAP NAME="Stack_Map">
+			<AREA SHAPE="rect" ALT="myApp" COORDS="565,159,651,208" HREF="group__my_app.html">
+			<AREA SHAPE="rect" ALT="Dice II Driver" COORDS="332,157,420,207" HREF="group___dice_driver.html">
+			<AREA SHAPE="rect" ALT="mLAN" COORDS="228,158,316,208" HREF="group__m_l_a_n.html">
+			<AREA SHAPE="rect" ALT="Function Control Protocol" COORDS="124,158,210,206" HREF="group___f_c_p.html">
+			<AREA SHAPE="rect" ALT="AVC" COORDS="124,101,211,150" HREF="group___a_v_c.html">
+			<AREA SHAPE="rect" ALT="DICE Audio Layer" COORDS="599,273,729,367" HREF="group___d_a_l.html">
+			<AREA SHAPE="rect" ALT="Node Controller Interface" COORDS="490,273,587,368" HREF="group___c_m_p.html">
+			<AREA SHAPE="rect" ALT="RTOS Abstraction" COORDS="381,273,477,367" HREF="group___r_t_o_s.html">
+			<AREA SHAPE="rect" ALT="1394 I/O" COORDS="301,306,362,352" HREF="group___l_a_l_async.html">
+			<AREA SHAPE="rect" ALT="Device Info and Handles" COORDS="228,305,293,352" HREF="group___info_and_handles.html">
+			<AREA SHAPE="rect" ALT="Bus Reset Handling" COORDS="157,307,220,352" HREF="group___bus_reset_interface.html">
+			<AREA SHAPE="rect" ALT="Address Range Callback" COORDS="86,305,148,354" HREF="group___address_range_callback.html">
+			<AREA SHAPE="rect" ALT="Link Abstraction Layer" COORDS="82,272,364,297" HREF="group___l_a_l.html">
+			<AREA SHAPE="rect" ALT="Command Line Interface" COORDS="22,150,61,369" HREF="group___c_l_i.html">
+			<AREA SHAPE="rect" ALT="Utilities" COORDS="21,18,61,134" HREF="group___programming.html">
+		</MAP>
+		<!-- End ImageReady Slices -->
+	</BODY>
+</HTML>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/intel/strata/v2_0/src
+END
+strata.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/intel/strata/v2_0/src/strata.c
+END
+flash_lock_block.c
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/intel/strata/v2_0/src/flash_lock_block.c
+END
+flash_program_buf.c
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/intel/strata/v2_0/src/flash_program_buf.c
+END
+flash_query.c
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/intel/strata/v2_0/src/flash_query.c
+END
+flash_unlock_block.c
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/intel/strata/v2_0/src/flash_unlock_block.c
+END
+strata.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/intel/strata/v2_0/src/strata.h
+END
+flash_erase_block.c
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/intel/strata/v2_0/src/flash_erase_block.c
+END

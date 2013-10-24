@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<StatusDescriptor xmlns="http://briankarr.com/musicSUSD_XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://briankarr.com/musicSUSD_XMLSchema.xsd file:/C:/Documents%20and%20Settings/brian/Desktop/musicSUSD_XMLSchemaOxygen.xsd"
+                  version="0.7" descriptor_length="231" notes="Brief description of the descriptor.">
+  <music_subunit_status_area_ib compound_len="10" ib_type="0x8100" primary_fields_len="6" current_tx_cap="0x01"
+                                current_rx_cap="0x01" current_latency_cap="0xFFFFFFFF" openness="open"/>
+  <routing_status_ib compound_len="141" ib_type="0x8108" primary_fields_len="4" num_su_dst_plugs="1"
+                     num_su_src_plugs="1" num_music_plugs="1" openness="open">
+    <su_dst_plug_ib compound_len="44" ib_type="0x8109" primary_fields_len="8" su_plug_id="1"
+                    signal_format="0x9002" plug_type="0x01" num_clusters="1" num_channels="1" openness="closed">
+      <cluster_ib compound_len="30" ib_type="0x810A" primary_fields_len="7" stream_format="0x01"
+                  port_type="0x01" num_signals="1" openness="closed">
+        <signal music_plug_id="1" stream_position="1" stream_location="0x01" openness="open"/>
+        <name_ib compound_len="19" ib_type="0x000B" primary_fields_len="15" name_data_ref_type="0" openness="open">
+          <name_data xmlns="" name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="9" ib_type="0x000A" primary_fields_len="5" raw_text_data="name" openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_dst_plug_ib>
+    <su_src_plug_ib compound_len="44" ib_type="0x8109" primary_fields_len="8" su_plug_id="1"
+                    signal_format="0x9002" plug_type="0x01" num_clusters="1"  num_channels="1" openness="closed">
+      <cluster_ib xmlns="" compound_len="30" ib_type="0x810A" primary_fields_len="7"
+                  stream_format="0x01" port_type="0x01" num_signals="1" openness="closed">
+        <signal music_plug_id="1" stream_position="1" stream_location="0x01" openness="open"/>
+        <name_ib compound_len="19" ib_type="0x000B" primary_fields_len="15" name_data_ref_type="0" openness="open">
+          <name_data name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="9" ib_type="0x000A" primary_fields_len="5" raw_text_data="name" openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_src_plug_ib>
+    <music_plug_ib compound_len="37" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x01"
+                   music_plug_id="1" routing_support="0x01" src_plug_fn_type="0xF0"
+                   src_plug_id="1" src_plug_fn_block_id="0xFF" src_stream_position="1"
+                   src_stream_location="0x01" dst_plug_fn_type="0xF1" dst_plug_id="1"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="1" src_stream_location="0x02" openness="closed">
+    </music_plug_ib>
+  </routing_status_ib>
+</StatusDescriptor>

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc
+END
+meterLegend.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/meterLegend.h
+END
+MainDPCWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/MainDPCWindow.cpp
+END
+DPCTool_headers.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/DPCTool_headers.h
+END
+DPCTool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/DPCTool.cpp
+END
+juce_TCATLookAndFeel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/juce_TCATLookAndFeel.cpp
+END
+MainDPCWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/MainDPCWindow.h
+END
+DPCTool.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/DPCTool.h
+END
+juce_TCATLookAndFeel.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/juce_TCATLookAndFeel.h
+END
+Meter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/Meter.cpp
+END
+DPCTool.sln
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/DPCTool.sln
+END
+build.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/build.cmd
+END
+meter.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/meter.h
+END
+DPCTool.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/DPCTool.vcproj
+END
+DPCTool.rc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/DPCTool.rc
+END
+DPCTool.manifest.fragment
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/DPCTool.manifest.fragment
+END
+MeterLegend.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/dpc/MeterLegend.cpp
+END

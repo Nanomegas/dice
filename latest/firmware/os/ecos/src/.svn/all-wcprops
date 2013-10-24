@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/configure
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/Makefile.in
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/configure.in
+END
+acinclude.m4
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/acinclude.m4
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/ChangeLog
+END
+eCos.hhp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/eCos.hhp
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/COPYING
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/Makefile.am
+END
+README.host
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/README.host
+END
+eCos.hhc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/eCos.hhc
+END
+buildid.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/buildid.txt
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/README.txt
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/aclocal.m4
+END

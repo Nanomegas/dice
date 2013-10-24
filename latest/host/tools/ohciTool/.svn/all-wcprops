@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool
+END
+ohciTool.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool/ohciTool.xcconfig
+END
+build.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool/build.cmd
+END
+ohciTool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool/ohciTool.cpp
+END
+ohciTool.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool/ohciTool.vcproj
+END
+MainOHCIToolWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool/MainOHCIToolWindow.h
+END
+icon.icns
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool/icon.icns
+END
+ohciTool.rc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool/ohciTool.rc
+END
+Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool/Info.plist
+END
+juce_TCATLookAndFeel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool/juce_TCATLookAndFeel.cpp
+END
+juce_TCATLookAndFeel.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool/juce_TCATLookAndFeel.h
+END
+ohciTool.sln
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool/ohciTool.sln
+END
+MainOHCIToolWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/ohciTool/MainOHCIToolWindow.cpp
+END

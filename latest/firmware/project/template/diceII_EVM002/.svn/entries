@@ -1,0 +1,43 @@
+10
+
+dir
+37897
+https://dev.tctechnologies.tc/tcat/tags/release/basic/latest/firmware/project/template/diceII_EVM002
+https://dev.tctechnologies.tc/tcat
+
+
+
+2012-08-30T15:39:30.173602Z
+34479
+cclark
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cb784262-f21f-0410-bc70-b56a7c46d0f2
+
+test
+dir
+
+main
+dir
+
+target
+dir
+
+doxygen
+dir
+
+make
+dir
+

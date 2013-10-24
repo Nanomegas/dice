@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/main
+END
+myAppCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/main/myAppCli.c
+END
+myAppCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/main/myAppCli.h
+END
+AKM4620.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/main/AKM4620.c
+END
+version.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/main/version.c
+END
+cyg_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/main/cyg_main.c
+END
+myApp.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/main/myApp.c
+END
+AKM4620.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/main/AKM4620.h
+END
+patch-level.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/main/patch-level.h
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/main/version.h
+END
+myApp.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/main/myApp.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/cms_diceII_EVM002/main/Makefile
+END

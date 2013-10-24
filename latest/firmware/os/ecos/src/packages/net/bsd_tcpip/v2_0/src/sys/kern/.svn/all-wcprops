@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/bsd_tcpip/v2_0/src/sys/kern
+END
+sockio.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/bsd_tcpip/v2_0/src/sys/kern/sockio.c
+END
+uipc_domain.c
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/bsd_tcpip/v2_0/src/sys/kern/uipc_domain.c
+END
+md5c.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/bsd_tcpip/v2_0/src/sys/kern/md5c.c
+END
+uipc_socket.c
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/bsd_tcpip/v2_0/src/sys/kern/uipc_socket.c
+END
+uipc_mbuf.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/bsd_tcpip/v2_0/src/sys/kern/uipc_mbuf.c
+END
+kern_subr.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/bsd_tcpip/v2_0/src/sys/kern/kern_subr.c
+END
+uipc_socket2.c
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/bsd_tcpip/v2_0/src/sys/kern/uipc_socket2.c
+END
+uipc_mbuf2.c
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/bsd_tcpip/v2_0/src/sys/kern/uipc_mbuf2.c
+END
+uipc_accf.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/bsd_tcpip/v2_0/src/sys/kern/uipc_accf.c
+END

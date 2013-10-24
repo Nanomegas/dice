@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/infra/v2_0/cdl
+END
+infra.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/infra/v2_0/cdl/infra.cdl
+END
+assert.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/infra/v2_0/cdl/assert.cdl
+END
+startup.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/infra/v2_0/cdl/startup.cdl
+END
+debug.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/infra/v2_0/cdl/debug.cdl
+END

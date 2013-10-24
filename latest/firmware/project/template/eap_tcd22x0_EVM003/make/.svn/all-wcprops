@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/make
+END
+Make.params
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/make/Make.params
+END
+buildDiceFromMSVC.txt
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/make/buildDiceFromMSVC.txt
+END
+eap_tcd22x0_evm003.sln
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/make/eap_tcd22x0_evm003.sln
+END
+vc_insight.bat
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/make/vc_insight.bat
+END
+eap_tcd22x0_evm003.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/make/eap_tcd22x0_evm003.vcproj
+END
+Make.def
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/make/Make.def
+END
+vc_make.bat
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/make/vc_make.bat
+END
+gccpipe.awk
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/make/gccpipe.awk
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/eap_tcd22x0_EVM003/make/Makefile
+END

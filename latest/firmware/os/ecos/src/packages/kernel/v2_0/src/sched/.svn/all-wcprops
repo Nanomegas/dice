@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sched
+END
+lottery.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sched/lottery.cxx
+END
+sched.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sched/sched.cxx
+END
+bitmap.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sched/bitmap.cxx
+END
+mlqueue.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/kernel/v2_0/src/sched/mlqueue.cxx
+END

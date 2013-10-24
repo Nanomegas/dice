@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main
+END
+myMode8_Mini.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode8_Mini.c
+END
+myMode1_JR.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode1_JR.c
+END
+myMode3_JR.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode3_JR.c
+END
+patch-level.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/patch-level.h
+END
+myMode5_JR.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode5_JR.c
+END
+metering.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/metering.c
+END
+myMode7_JR.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode7_JR.c
+END
+myModes.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myModes.c
+END
+metering.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/metering.h
+END
+myModes.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myModes.h
+END
+AKM4620.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/AKM4620.c
+END
+cyg_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/cyg_main.c
+END
+myMode1_Mini.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode1_Mini.c
+END
+myMode3_Mini.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode3_Mini.c
+END
+AKM4620.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/AKM4620.h
+END
+myMode5_Mini.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode5_Mini.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/Makefile
+END
+myMode7_Mini.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode7_Mini.c
+END
+myMode0_JR.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode0_JR.c
+END
+myMode2_JR.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode2_JR.c
+END
+myMode4_JR.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode4_JR.c
+END
+myMode6_JR.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode6_JR.c
+END
+myMode8_JR.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode8_JR.c
+END
+myAppCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myAppCli.c
+END
+myAppAVC.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myAppAVC.c
+END
+myAppCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myAppCli.h
+END
+version.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/version.c
+END
+myMode0_Mini.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode0_Mini.c
+END
+myMode2_Mini.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode2_Mini.c
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/version.h
+END
+myMode4_Mini.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode4_Mini.c
+END
+myApp.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myApp.h
+END
+myMode6_Mini.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/main/myMode6_Mini.c
+END

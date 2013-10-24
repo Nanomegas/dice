@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal
+END
+tcat_dice_pal_device.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_device.h
+END
+tcat_dice_pal_bus_win.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_bus_win.cpp
+END
+tcat_dice_pal_system_osx_avc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_system_osx_avc.cpp
+END
+tcat_dice_pal_osx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_osx.cpp
+END
+tcat_dice_pal_bus_osx_avc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_bus_osx_avc.cpp
+END
+tcat_dice_pal_system_osx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_system_osx.cpp
+END
+tcat_exception.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_exception.cpp
+END
+tcat_dice_pal.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal.cpp
+END
+tcat_dice_pal_bus_osx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_bus_osx.cpp
+END
+tcat_exception.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_exception.h
+END
+tcat_dice_pal_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_Prefix.pch
+END
+tcat_dice_pal.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal.h
+END
+tcat_dice_pal_bus.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_bus.cpp
+END
+tcat_dice_pal_system.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_system.h
+END
+tcat_dice_pal_win.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_win.cpp
+END
+tcat_dice_pal_bus.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_bus.h
+END
+tcat_dice_pal.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal.xcconfig
+END
+tcat_osx.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_osx.h
+END
+tcat_dice_pal_device.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_device.cpp
+END
+tcat_dice_pal.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal.vcproj
+END
+tcat_dice_pal_system_win.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/pal/tcat_dice_pal_system_win.cpp
+END

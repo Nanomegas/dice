@@ -1,0 +1,455 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl
+END
+DeviceSimpleFirmwareComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceSimpleFirmwareComponent.h
+END
+cpl.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/cpl.vcproj
+END
+VMeter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/VMeter.cpp
+END
+cplApplication.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/cplApplication.cpp
+END
+ChannelList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/ChannelList.cpp
+END
+FirmwareProgress.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/FirmwareProgress.h
+END
+DefaultsFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DefaultsFile.cpp
+END
+appDefaults.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/appDefaults.cpp
+END
+Blender.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/Blender.cpp
+END
+BusOhciCheckComponent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusOhciCheckComponent.cpp
+END
+BinaryData.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BinaryData.cpp
+END
+BusGeneralComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusGeneralComponent.h
+END
+EventLogger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/EventLogger.cpp
+END
+DeviceFirmwareComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceFirmwareComponent.h
+END
+BusWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusWindow.h
+END
+DeviceWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceWindow.cpp
+END
+DeviceMixerComponent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceMixerComponent.cpp
+END
+DeviceSimpleFirmwareComponent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceSimpleFirmwareComponent.cpp
+END
+ChannelStrip.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/ChannelStrip.cpp
+END
+MeterLegend.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/MeterLegend.cpp
+END
+SpeakerList.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/SpeakerList.h
+END
+BusInfoComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusInfoComponent.h
+END
+meterLegend.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/meterLegend.h
+END
+BusStatsComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusStatsComponent.h
+END
+FirmwareProgress.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/FirmwareProgress.cpp
+END
+BusWDMChMapComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusWDMChMapComponent.h
+END
+ChannelList.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/ChannelList.h
+END
+juce_TCATLookAndFeel.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/juce_TCATLookAndFeel.h
+END
+appDefaults.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/appDefaults.h
+END
+DeviceFirmwareComponent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceFirmwareComponent.cpp
+END
+build.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/build.cmd
+END
+meter.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/meter.h
+END
+BusWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusWindow.cpp
+END
+DeviceTestComponent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceTestComponent.cpp
+END
+BlenderSerialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BlenderSerialize.cpp
+END
+BinaryData.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BinaryData.h
+END
+BusWDMComponent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusWDMComponent.cpp
+END
+HMeter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/HMeter.cpp
+END
+BusStatsComponent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusStatsComponent.cpp
+END
+BusWDMChMapComponent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusWDMChMapComponent.cpp
+END
+ChannelStrip.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/ChannelStrip.h
+END
+cpl_bin_builder.bat
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/cpl_bin_builder.bat
+END
+DeviceList.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceList.h
+END
+juce_TCATLookAndFeel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/juce_TCATLookAndFeel.cpp
+END
+EventLogComponent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/EventLogComponent.cpp
+END
+Vmeter.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/Vmeter.h
+END
+sample.defs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/sample.defs
+END
+DeviceGeneralComponent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceGeneralComponent.cpp
+END
+eapProperties.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/eapProperties.cpp
+END
+eapPropertiesFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/eapPropertiesFile.cpp
+END
+DeviceTestComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceTestComponent.h
+END
+BusWDMComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusWDMComponent.h
+END
+DeviceList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceList.cpp
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/resource.h
+END
+cpl.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/cpl.xcconfig
+END
+cpl.rc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/cpl.rc
+END
+Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/Info.plist
+END
+BusGeneralComponent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusGeneralComponent.cpp
+END
+MainCplWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/MainCplWindow.cpp
+END
+EventLogComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/EventLogComponent.h
+END
+DefaultsFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DefaultsFile.h
+END
+Meter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/Meter.cpp
+END
+Blender.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/Blender.h
+END
+MainCplwindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/MainCplwindow.h
+END
+BusOhciCheckComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusOhciCheckComponent.h
+END
+DeviceGeneralComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceGeneralComponent.h
+END
+EventLogger.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/EventLogger.h
+END
+SpeakerList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/SpeakerList.cpp
+END
+eapPropertiesFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/eapPropertiesFile.h
+END
+eapProperties.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/eapProperties.h
+END
+BusInfoComponent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/BusInfoComponent.cpp
+END
+cpl.sln
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/cpl.sln
+END
+Hmeter.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/Hmeter.h
+END
+DeviceWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceWindow.h
+END
+DeviceMixerComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cpl/DeviceMixerComponent.h
+END

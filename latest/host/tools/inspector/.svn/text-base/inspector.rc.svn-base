@@ -1,0 +1,55 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// This confidential and proprietary software may be used only as authorised
+// by a licensing agreement from TC Applied Technologies Ltd.
+//
+// (C) COPYRIGHT 2004 TC Applied Technologies Ltd. (ALL RIGHTS RESERVED)
+//
+// Unauthorized use, duplication or distribution of this software is  
+// strictly prohibited by law.
+//
+// The entire notice above must be reproduced on all authorised copies and
+// copies may only be made to the extent permitted by a licensing agreement
+// from TC Applied Technologies Ltd.
+//
+///////////////////////////////////////////////////////////////////////////////
+//
+//	combined dice software version
+//
+#include <windows.h>
+#include "..\..\..\interface\tcat_dice_myproduct.h"
+
+
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION    kTCAT_DICE_VERSION_RC
+PRODUCTVERSION kTCAT_DICE_VERSION_RC
+FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
+FILEFLAGS      0
+FILEOS         VOS_NT_WINDOWS32
+FILETYPE       VFT_APP
+FILESUBTYPE    VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"   /* LANG_ENGLISH/SUBLANG_ENGLISH_US, Unicode CP */
+        BEGIN
+            VALUE "CompanyName",     kTCAT_DICE_USR_PROVIDER_STR
+            VALUE "FileDescription", kTCAT_DICE_USR_STR 
+            VALUE "FileVersion",     kTCAT_DICE_VERSION_EXTENDED_STR
+            VALUE "InternalName",    kTCAT_DICE_USR_STR
+            VALUE "LegalCopyright",  kTCAT_DICE_USR_COPYRIGHT_STR
+            VALUE "OriginalFilename","inspector.exe"
+            VALUE "ProductName",     kTCAT_DICE_USR_STR
+            VALUE "ProductVersion",  kTCAT_DICE_VERSION_STR
+        END
+
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 0x04B0
+    END
+END
+
+IDB_ICON ICON "..\\..\\..\\resource\\icon.ico"

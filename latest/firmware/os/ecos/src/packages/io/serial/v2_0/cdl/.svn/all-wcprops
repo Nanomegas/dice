@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/serial/v2_0/cdl
+END
+tty.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/serial/v2_0/cdl/tty.cdl
+END
+termios.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/serial/v2_0/cdl/termios.cdl
+END
+io_serial.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/serial/v2_0/cdl/io_serial.cdl
+END

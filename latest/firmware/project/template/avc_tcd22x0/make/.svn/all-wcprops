@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/make
+END
+Make.params
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/make/Make.params
+END
+buildDiceFromMSVC.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/make/buildDiceFromMSVC.txt
+END
+avc_tcd22x0.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/make/avc_tcd22x0.vcproj
+END
+vc_insight.bat
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/make/vc_insight.bat
+END
+Make.def
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/make/Make.def
+END
+avc_tcd22x0.sln
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/make/avc_tcd22x0.sln
+END
+vc_make.bat
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/make/vc_make.bat
+END
+gccpipe.awk
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/make/gccpipe.awk
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/make/Makefile
+END

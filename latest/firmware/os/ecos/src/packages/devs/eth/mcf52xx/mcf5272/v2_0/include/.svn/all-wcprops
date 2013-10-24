@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/mcf52xx/mcf5272/v2_0/include
+END
+nbuf.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/mcf52xx/mcf5272/v2_0/include/nbuf.h
+END
+if_mcf5272.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/mcf52xx/mcf5272/v2_0/include/if_mcf5272.h
+END
+if_mcf5272_private_data.h
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/eth/mcf52xx/mcf5272/v2_0/include/if_mcf5272_private_data.h
+END

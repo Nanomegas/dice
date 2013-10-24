@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/fcp/src
+END
+dsCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/fcp/src/dsCli.c
+END
+dsbuffer.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/fcp/src/dsbuffer.c
+END
+datastream.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/fcp/src/datastream.c
+END
+fcp.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/fcp/src/fcp.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/fcp/src/Makefile
+END

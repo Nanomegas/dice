@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/doc
+END
+prepare-manpages.sh
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/doc/prepare-manpages.sh
+END
+snmp-manpages.sgml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/doc/snmp-manpages.sgml
+END
+snmp.sgml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/doc/snmp.sgml
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/mn10300
+END
+gdb-cpu.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/mn10300/gdb-cpu.c
+END
+gdb.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/mn10300/gdb.h
+END
+gdb-cpu.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/mn10300/gdb-cpu.h
+END
+insn.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/mn10300/insn.h
+END
+singlestep.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/mn10300/singlestep.c
+END

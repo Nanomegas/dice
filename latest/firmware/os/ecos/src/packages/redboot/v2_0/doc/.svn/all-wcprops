@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/redboot/v2_0/doc
+END
+redboot.sgml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/redboot/v2_0/doc/redboot.sgml
+END
+redboot_installing.sgml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/redboot/v2_0/doc/redboot_installing.sgml
+END
+redboot_rebuilding.sgml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/redboot/v2_0/doc/redboot_rebuilding.sgml
+END
+redboot_cmds.sgml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/redboot/v2_0/doc/redboot_cmds.sgml
+END
+redboot_epilogue.sgml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/redboot/v2_0/doc/redboot_epilogue.sgml
+END

@@ -1,0 +1,1452 @@
+package CYGPKG_HAL {
+        alias		{ "eCos common HAL" hal hal_common }
+	directory	hal/common
+	script		hal.cdl
+	description "
+The eCos HAL package provide a porting layer for higher-level parts of
+the system such as the kernel and the C library. Each installation
+should have HAL packages for one or more architectures, and for each
+architecture there may be one or more supported platforms. It is
+necessary to select one target architecture and one platform for that
+architecture. There are also a number of configuration options that
+are common to all HAL packages."
+}
+
+package CYGPKG_INFRA {
+	alias 		{ Infrastructure infra }
+	directory	infra
+	script		infra.cdl
+        description "
+Common types and useful macros.
+Tracing and assertion facilities.
+Package startup options." 
+}
+
+package CYGPKG_IO {
+	alias 		{ "I/O sub-system" io }
+	directory	io/common
+	script		io.cdl
+        description "
+           The eCos system is supplied with a number of different
+           device drivers.  This package contains the basic I/O system
+           support which is the basis for all drivers."
+}
+
+package CYGPKG_IO_SERIAL {
+	alias 		{ "Serial device drivers" serial io_serial }
+	directory	io/serial
+	script		io_serial.cdl
+        description "
+           This package contains drivers for basic I/O services on
+           serial devices."
+}
+
+package CYGPKG_IO_FLASH {
+	alias 		{ "Generic FLASH memory support" flash }
+	directory	io/flash
+	script		io_flash.cdl
+        description "
+           This package contains generic support for FLASH memory."
+}
+
+package CYGPKG_DEVS_FLASH_INTEL_BOOTBLOCK {
+	alias 		{ "Support for Intel boot block flash memory" flash_intel_bootblock }
+	directory	devs/flash/intel/bootblock
+	script		flash_intel_bootblock.cdl
+	hardware
+        description "
+           This package contains hardware support for Intel boot block flash memory."
+}
+
+package CYGPKG_DEVS_FLASH_ARM_AAED2000 {
+	alias 		{ "Support for flash memory on Agilent AAED2000 board" flash_aaed2000 }
+	directory	devs/flash/arm/aaed2000
+	script		flash_arm_aaed2000.cdl
+	hardware
+        description "
+           This package contains hardware support for flash memory
+	   on the Agilent AAED2000 platform."
+}
+
+package CYGPKG_DEVS_FLASH_AMD_AM29XXXXX {
+	alias 		{ "Support for AMD AM29xxxxx flash memory" flash_amd_am29xxxxx }
+	directory	devs/flash/amd/am29xxxxx
+	script		flash_amd_am29xxxxx.cdl
+	hardware
+        description "
+           This package contains hardware support for AMD AM29xxxxx
+           flash memory devices."
+}
+
+package CYGPKG_DEVS_FLASH_ATMEL_AT29CXXXX {
+	alias 		{ "Support for Atmel AT29Cxxxx flash memory" flash_atmel_at29cxxxx }
+	directory	devs/flash/atmel/at29cxxxx
+	script		flash_atmel_at29cxxxx.cdl
+	hardware
+        description "
+           This package contains hardware support for Atmel AT29Cxxxx
+           flash memory devices."
+}
+
+package CYGPKG_DEVS_FLASH_ARM_PID {
+	alias 		{ "Support for flash memory on ARM/PID board" flash_arm_pid }
+	directory	devs/flash/arm/pid
+	script		flash_arm_pid.cdl
+	hardware
+        description "
+           This package contains hardware support for flash memory
+	   on the ARM PID platform."
+}
+
+package CYGPKG_DEVS_FLASH_SH_EDK7708 {
+	alias 		{ "Support for flash memory on Hitachi/EDK7708 board" flash_sh_edk7708 }
+	directory	devs/flash/sh/edk7708
+	script		flash_sh_edk7708.cdl
+	hardware
+        description "
+           This package contains hardware support for flash memory
+	   on the Hitachi EDK7708 platform."
+}
+
+package CYGPKG_DEVS_FLASH_CQ7750 {
+	alias 		{ "Support for flash memory on CqREEK SH7750 board" flash_cq7750 }
+	directory	devs/flash/sh/cq7750
+	script		flash_cq7750.cdl
+	hardware
+        description "
+           This package contains hardware support for flash memory
+	   on the CqREEK SH7750 platform."
+}
+
+package CYGPKG_DEVS_FLASH_MIPS_OCELOT {
+	alias 		{ "Support for flash memory on PMC-Sierra/Ocelot board" flash_qed_ocelot }
+	directory	devs/flash/mips/ocelot
+	script		flash_mips_ocelot.cdl
+	hardware
+        description "
+           This package contains hardware support for flash memory
+	   on the PMC-Sierra Ocelot platform."
+}
+
+package CYGPKG_DEVS_FLASH_MIPS_VRC437X {
+	alias 		{ "Support for flash memory on VRC437X boards" flash_vrc437x }
+	directory	devs/flash/mips/vrc437x
+	script		flash_mips_vrc437x.cdl
+	hardware
+        description "
+           This package contains hardware support for flash memory
+	   on the VRC437X platform."
+}
+
+package CYGPKG_DEVS_FLASH_MIPS_REFIDT334 {
+	alias 		{ "MIPS IDT 79RC32334 reference platform flash support" flash_refidt334 }
+	directory	devs/flash/mips/idt79s334a
+	script		flash_mips_refidt334.cdl
+	hardware
+        description "
+           This package contains hardware support for flash memory
+	   on the IDT MIPS 334a reference platform."
+}
+
+package CYGPKG_DEVS_FLASH_SH_HS7729PCI {
+        alias           { "Hitachi SH/HS7729PCI FLASH memory support" flash_hs7729pci }
+        directory       devs/flash/sh/hs7729pci
+        script          flash_sh_hs7729pci.cdl
+        hardware
+        description "
+           This package contains hardware support for FLASH memory
+           on the Hitachi/HS7729PCI platform."
+}
+
+package CYGPKG_DEVS_FLASH_SH_SE77X9 {
+        alias           { "Hitachi SH/SE77X9 FLASH memory support" flash_se77x9 }
+        directory       devs/flash/sh/se77x9
+        script          flash_sh_se77x9.cdl
+        hardware
+        description "
+           This package contains hardware support for FLASH memory
+           on the Hitachi/SE77X9 platform."
+}
+
+package CYGPKG_DEVS_FLASH_SH_SE7751 {
+        alias           { "Hitachi SH/SE7751 FLASH memory support" flash_se7751 }
+        directory       devs/flash/sh/se7751
+        script          flash_sh_se7751.cdl
+        hardware
+        description "
+           This package contains hardware support for FLASH memory
+           on the Hitachi/SE7751 platform."
+}
+
+package CYGPKG_DEVS_FLASH_EBSA285 {
+	alias 		{ "FLASH memory support for StrongARM EBSA-285" flash_ebsa285 }
+	directory	devs/flash/arm/ebsa285
+	script		flash_ebsa285.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the StrongARM EBSA-285 platform."
+}
+
+package CYGPKG_DEVS_FLASH_SA1100MM {
+	alias 		{ "FLASH memory support for StrongARM SA1100 Multimedia" flash_sa1100mm }
+	directory	devs/flash/arm/sa1100mm
+	script		flash_sa1100mm.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the StrongARM SA1100 Multimedia platform."
+}
+
+package CYGPKG_DEVS_FLASH_EDB7XXX {
+	alias 		{ "FLASH support for Cirrus Logic EP7xxx based boards" flash_edb7xxx }
+	directory	devs/flash/arm/edb7xxx
+	script		flash_edb7xxx.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Cirrus Logic EP7xxx based platform(s)."
+}
+
+package CYGPKG_DEVS_FLASH_AT91 {
+	alias 		{ "FLASH memory support for Atmel AT91/EB40" flash_at91 }
+	directory	devs/flash/arm/at91
+	script		flash_at91.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Atmel AT91/EB40 platform(s)."
+}
+
+package CYGPKG_DEVS_FLASH_ARM_NS50 {
+	alias 		{ "FLASH memory support for TCAT NS50/FPGA" flash_ns50 }
+	directory	devs/flash/arm/ns50
+	script		flash_ns50.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the TCAT ns50/FPGA platform(s)."
+}
+
+package CYGPKG_DEVS_FLASH_ARM_DICE {
+	alias 		{ "FLASH memory support for TCAT dice/VB" flash_dice }
+	directory	devs/flash/arm/dice
+	script		flash_dice.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the TCAT dice/VB platform(s)."
+}
+
+package CYGPKG_DEVS_FLASH_ARM_DICEJR {
+	alias 		{ "FLASH memory support for TCAT diceJr/EVM" flash_diceJr }
+	directory	devs/flash/arm/diceJr
+	script		flash_diceJr.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the TCAT diceJr/EVM platform(s)."
+}
+
+package CYGPKG_DEVS_FLASH_ASSABET {
+	alias 		{ "FLASH memory support for Intel SA1110 (Assabet)" flash_assabet }
+	directory	devs/flash/arm/assabet
+	script		flash_assabet.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Intel StrongARM SA-1110 Assabet platform."
+}
+
+package CYGPKG_DEVS_FLASH_CERF {
+	alias 		{ "FLASH memory support for Intrinsyc SA1110 (Cerf)" flash_cerf }
+	directory	devs/flash/arm/cerf
+	script		flash_cerf.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Intrinsyc SA1110 Cerf board."
+}
+
+package CYGPKG_DEVS_FLASH_CERFPDA {
+	alias 		{ "FLASH memory support for Intrinsyc SA1110 (Cerfpda)" flash_cerfpda }
+	directory	devs/flash/arm/cerfpda
+	script		flash_cerfpda.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Intrinsyc SA1110 Cerfpda."
+}
+
+package CYGPKG_DEVS_FLASH_IPAQ {
+	alias 		{ "FLASH memory support for Intel SA1110 (Ipaq)" flash_ipaq }
+	directory	devs/flash/arm/ipaq
+	script		flash_ipaq.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Intel StrongARM SA-1110 iPAQ platform."
+}
+
+package CYGPKG_DEVS_FLASH_FLEXANET {
+      alias           { "FLASH memory support for Flexanet" flash_flexanet }
+      directory       devs/flash/arm/flexanet
+      script          flash_flexanet.cdl
+      hardware
+        description "
+           This package contains hardware support for FLASH memory
+           on the SA-1100 Flexanet platform."
+}
+
+package CYGPKG_DEVS_FLASH_MPC50 {
+	alias 		{ "FLASH memory support for MPC 5.0" flash_mpc50 }
+	directory	devs/flash/arm/mpc50
+	script		flash_mpc50.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the MPC 5.0."
+}
+
+package CYGPKG_DEVS_FLASH_MALTA {
+	alias 		{ "FLASH memory support for MIPS Malta board" flash_malta }
+	directory	devs/flash/mips/malta
+	script		flash_malta.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the MIPS Malta platform."
+}
+
+package CYGPKG_DEVS_FLASH_ARM_EXCALIBUR {
+	alias 		{ "FLASH memory support for Altera ARM9/Excalibur board" flash_malta }
+	directory	devs/flash/arm/excalibur
+	script		flash_excalibur.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Altera Excalibur platform."
+}
+
+package CYGPKG_DEVS_FLASH_ARM_INNOVATOR {
+	alias 		{ "FLASH memory support for the Innovator" flash_innovator }
+	directory	devs/flash/arm/innovator
+	script		flash_innovator.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Innovator platform."
+}
+
+package CYGPKG_DEVS_FLASH_NANO {
+	alias 		{ "FLASH memory support for Intel SA1110 nanoEngine" flash_nano }
+	directory	devs/flash/arm/nano
+	script		flash_nano.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the StrongARM SA-1110 nanoEngine platform."
+}
+
+package CYGPKG_DEVS_FLASH_STRATA {
+	alias 		{ "Generic FLASH memory support for Intel StrataFLASH" strata }
+	directory	devs/flash/intel/strata
+	script		flash_strata.cdl
+	hardware
+        description "
+           This package contains generic hardware support for Intel
+	   StrataFLASH memory devices."
+}
+
+package CYGPKG_DEVS_FLASH_INTEL_28FXXX {
+	alias 		{ "Generic FLASH memory support for Intel 28Fxxx Flash parts" flashfile }
+	directory	devs/flash/intel/28fxxx
+	script		flash_intel_28fxxx.cdl
+	hardware
+        description "
+           This package contains generic hardware support for Intel
+	   Flash memory devices."
+}
+
+package CYGPKG_DEVS_FLASH_ARM_XSCALE_IQ80310 {
+	alias 		{ "FLASH memory support for Cyclone IQ80310" flash_iq80310 }
+	directory	devs/flash/arm/iq80310
+	script		flash_iq80310.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Cyclone IQ80310 platform."
+}
+
+package CYGPKG_DEVS_FLASH_IQ80321 {
+	alias 		{ "FLASH memory support for IQ80321" flash_iq80321 }
+	directory	devs/flash/arm/iq80321
+	script		flash_iq80321.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the IQ80321 platform."
+}
+
+package CYGPKG_DEVS_FLASH_ARM_INTEGRATOR {
+        alias           { "FLASH memory support for ARM INTEGRATOR" flash_integrator }
+        directory       devs/flash/arm/integrator
+        script          flash_integrator.cdl
+        hardware
+        description "
+           This package contains hardware support for FLASH memory
+           on the ARM INTEGRATOR platform."
+}
+
+package CYGPKG_DEVS_FLASH_MBX {
+	alias 		{ "FLASH memory support for Motorola PowerPC/860 MBX" flash_mbx }
+	directory	devs/flash/powerpc/mbx
+	script		flash_mbx.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Motorola PowerPC/860 MBX platform."
+}
+
+package CYGPKG_DEVS_FLASH_TS6 {
+	alias 		{ "FLASH memory support for Delphi Communication Systems, Inc. TigerSHARC6 Board" flash_ts6 }
+	directory	devs/flash/powerpc/ts6
+	script		flash_ts6.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Delphi Communication Systems TigerSHARC6 platform."
+}
+
+package CYGPKG_DEVS_FLASH_VADS {
+	alias 		{ "FLASH memory support for Motorola MPC8260 Voyager ADS board" flash_vads }
+	directory	devs/flash/powerpc/vads
+	script		flash_vads.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Motorola MPC8260 Voyager ADS platform."
+}
+
+package CYGPKG_DEVS_FLASH_CME555 {
+	alias 		{ "FLASH memory support for Axiom's CME555" flash_cme555 }
+	directory	devs/flash/powerpc/cme555
+	script		flash_cme555.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on Axiom's CME555 board."
+}
+
+package CYGPKG_DEVS_FLASH_EC555 {
+	alias 		{ "FLASH memory support for ec555 board" flash_ec555 }
+	directory	devs/flash/powerpc/ec555
+	script		flash_ec555.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the ec555 board."
+}
+
+package CYGPKG_DEVS_FLASH_VIPER {
+	alias 		{ "FLASH memory support for A&M Viper PowerPC/8xx" flash_viper }
+	directory	devs/flash/powerpc/viper
+	script		flash_viper.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the A&M PowerPC/8xx VIPER platform."
+}
+
+package CYGPKG_DEVS_FLASH_POWERPC_ADDER {
+	alias 		{ "FLASH memory support for A&M Adder PowerPC/85x" flash_adder }
+	directory	devs/flash/powerpc/adder
+	script		flash_adder.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the A&M PowerPC/8xx ADDER platform."
+}
+
+package CYGPKG_DEVS_FLASH_MN10300_STB {
+	alias 		{ "FLASH memory support for Matsushita MN10300 STB" flash_stb }
+	directory	devs/flash/mn10300/stb
+	script		flash_stb.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Matsushita MN10300 STB platform (SRAM2 socket)."
+}
+
+package CYGPKG_DEVS_FLASH_MN10300_ASB2303 {
+	alias 		{ "FLASH memory support for Matsushita ASB2303" flash_asb2303 }
+	directory	devs/flash/mn10300/asb2303
+	script		flash_asb2303.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Matsushita MN10300 ASB2303 platform (system flash socket)."
+}
+
+package CYGPKG_DEVS_FLASH_MN10300_ASB2305 {
+	alias 		{ "FLASH memory support for Matsushita ASB2305" flash_asb2305 }
+	directory	devs/flash/mn10300/asb2305
+	script		flash_asb2305.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the Matsushita MN10300 ASB2305 platform (system flash socket)."
+}
+
+package CYGPKG_DEVS_FLASH_ATLAS {
+	alias 		{ "FLASH memory support for MIPS Atlas" flash_atlas }
+	directory	devs/flash/mips/atlas
+	script		flash_atlas.cdl
+	hardware
+        description "
+           This package contains hardware support for FLASH memory
+	   on the MIPS Atlas platform."
+}
+
+package CYGPKG_DEVS_FLASH_SYNTH {
+    alias               { "Synthetic FLASH memory support" synth_flash flash_synth }
+    directory           devs/flash/synth
+    script              flash_synth.cdl
+    hardware
+    description   "
+        FLASH memory device support for Synthetic target"
+}
+
+package CYGPKG_DEVS_FLASH_FRV_FRV400 {
+        alias           { "Fujitsu FRV400 FLASH memory support" flash_frv400 }
+        directory       devs/flash/frv/frv400
+        script          flash_frv_frv400.cdl
+        hardware
+        description "
+           This package contains hardware support for FLASH memory
+           on the Fujitsu FRV400 platform."
+}
+
+package CYGPKG_DEVS_TOUCH_IPAQ {
+	alias 		{ "Touch screen support for iPAQ" touch_ipaq }
+	directory	devs/touch/arm/ipaq
+	script		touch_ipaq.cdl
+	hardware
+        description "
+           This package contains hardware support for the touch screen
+	   on the Compaq iPAQ Pocket PC."
+}
+
+package CYGPKG_IO_SERIAL_ARM_DICE {
+    alias 	      { "TCAT Dice verification board (VB)"
+                        devs_serial_arm_dice dice_serial_driver }
+    hardware
+    directory	      devs/serial/arm/dice
+    script	      ser_arm_dice.cdl	
+    description       "TCAT DICE Verification board (VB) serial drivers."
+}
+
+package CYGPKG_IO_SERIAL_ARM_DICEJR {
+    alias 	      { "TCAT DiceJr Evaluation Module (EVM)"
+                        devs_serial_arm_diceJr diceJr_serial_driver }
+    hardware
+    directory	      devs/serial/arm/diceJr
+    script	      ser_arm_diceJr.cdl	
+    description       "TCAT DiceJr Evaluation Module (EVM) serial drivers."
+}
+
+package CYGPKG_IO_SERIAL_GENERIC_16X5X {
+    alias             { "16x5x compatible serial device drivers"
+                        devs_serial_generic_16x5x 16x5x_serial_driver }
+    hardware
+    directory	      devs/serial/generic/16x5x
+    script	      ser_generic_16x5x.cdl
+    description       "16x5x compatible serial device drivers"
+}
+
+package CYGPKG_IO_SERIAL_LOOP {
+    alias             { "Loop serial device drivers"
+                        devs_serial_loop loop_serial_driver }
+    directory	      devs/serial/loop
+    script	      ser_loop.cdl	
+    description       "Loopback serial device driver."
+}
+
+package CYGPKG_IO_FILEIO {
+	alias 		{ "File IO" fileio io_file }
+	directory	io/fileio
+	script		fileio.cdl
+        description "
+	   This package contains the infrastructure for doing POSIX compliant
+	   file IO."
+}
+
+package CYGPKG_FS_RAM {
+	alias 		{ "RAM Filesystem" ramfs ram_fs fs_ram }
+	directory	fs/ram
+	script		ramfs.cdl
+        description "
+	   This package contains a RAM resident filesystem."
+}
+
+package CYGPKG_FS_ROM {
+	alias 		{ "ROM Filesystem" romfs rom_fs fs_rom }
+	directory	fs/rom
+	script		romfs.cdl
+        description "
+	   This package contains a ROM resident filesystem."
+}
+
+package CYGPKG_FS_JFFS2 {
+	alias 		{ "JFFS2 Filesystem" jffs2 }
+	directory	fs/jffs2
+	script		jffs2.cdl
+        description "
+	   This package contains the JFFS2 filesystem."
+}
+
+package CYGPKG_LINUX_COMPAT {
+        alias           { "Linux compatibility" linux_compat linuxcompat }
+        directory       compat/linux
+        script          linux.cdl
+        description "
+eCos supports a basic Linux compatibility Layer providing various
+functions, equivalents or stubs expected by Linux kernel code, for
+assistance in porting drivers and file system code from Linux.
+Note this does not provide Linux compatibility to applications."
+}
+
+package CYGPKG_IO_ETH_DRIVERS {
+	alias 		{ "Common ethernet support" net_drivers eth_drivers CYGPKG_NET_ETH_DRIVERS }
+	directory	io/eth
+	script		eth_drivers.cdl
+        description     "Platform independent ethernet support."
+}
+
+package CYGPKG_IO_USB { 
+        alias           { "Generic USB support" usb }
+        hardware
+        directory       io/usb/common
+        script          usb.cdl
+        description     "Generic USB support"
+}
+
+package CYGPKG_IO_USB_SLAVE {
+	alias           { "Generic USB slave-side support" usbs }
+        hardware
+        directory       io/usb/slave
+        script          usbs.cdl
+	description     "Generic USB slave-side support"
+}
+
+package CYGPKG_IO_USB_SLAVE_ETH {
+        alias		{ "USB slave-side ethernet class drivers" usbs_eth }
+        directory       io/usb/eth/slave
+        script          usbs_eth.cdl
+        description     "Support for USB peripherals that provide an ethernet-class function"
+}
+
+package CYGPKG_NET {
+	alias 		{ "Networking" net }
+	directory	net/common
+	script		net.cdl
+        description     "Generic networking support, including TCP/IP."
+}
+
+package CYGPKG_NET_OPENBSD_STACK {
+	alias 		{ "OpenBSD Stack" openbsd_net }
+	directory	net/tcpip
+	script		openbsd_net.cdl
+        description     "TCP/IP stack from OpenBSD."
+}
+
+package CYGPKG_NET_FREEBSD_STACK {
+	alias 		{ "FreeBSD Stack" freebsd_net }
+	directory	net/bsd_tcpip
+	script		freebsd_net.cdl
+        description     "TCP/IP stack from FreeBSD, including KAME IPv6."
+}
+
+package CYGPKG_NET_FTPCLIENT {
+        alias           { "FTP Client" ftpclient }
+        directory       net/ftpclient
+        script          ftpclient.cdl
+        description     "FTP client support for get and put of files."
+}
+
+package CYGPKG_SNMPLIB {
+	alias 		{ "SNMP library" snmplib }
+	directory	net/snmp/lib
+	script		snmplib.cdl
+        description     "UCD SNMP library."
+}
+
+package CYGPKG_SNMPAGENT {
+	alias 		{ "SNMP agent" snmpagent }
+	directory	net/snmp/agent
+	script		snmpagent.cdl
+        description     "UCD SNMP agent."
+}
+
+package CYGPKG_HTTPD {
+	alias 		{ "HTTP server" httpd }
+	directory	net/httpd
+	script		httpd.cdl
+        description     "HTTP server."
+}
+
+package CYGPKG_NS_DNS {
+	alias 		{ "DNS" dns }
+	directory	net/ns/dns
+	script		dns.cdl
+        description     "DNS client support."
+}
+
+package CYGPKG_DEVS_ETH_ARM_EDB7XXX {
+	alias 		{ "Cirrus Logic ethernet driver for EP7xxx boards" edb7xxx_eth_driver }
+	hardware
+	directory	devs/eth/arm/edb7xxx
+	script		edb7xxx_eth_drivers.cdl
+        description     "Ethernet driver for Cirrus Logic EP7xxx based
+                         development boards."
+}
+
+package CYGPKG_DEVS_ETH_ARM_KS32C5000 {
+	alias 		{ "Samsung KS32C5000 ethernet driver" eth_ks32c5000 }
+	directory	devs/eth/arm/ks32c5000
+	script		ks32c5000_eth.cdl
+        description     "Ethernet driver for Samsung ks32c5000/S3c4510."
+}
+
+package CYGPKG_DEVS_ETH_ARM_AAED2000 {
+	alias 		{ "Ethernet driver for Agilent AAED2000 board" aaed2000_eth_driver }
+	hardware
+	directory	devs/eth/arm/aaed2000
+	script		aaed2000_eth_drivers.cdl
+        description     "Ethernet driver for Agilent AAED2000
+                         development boards."
+}
+
+package CYGPKG_DEVS_ETH_AMD_PCNET {
+	alias 		{ "AMD PCNET ethernet driver" pcnet_eth_driver }
+	hardware
+	directory	devs/eth/amd/pcnet
+	script		amd_pcnet_eth_drivers.cdl
+        description     "Ethernet driver for AMD PCNET controller."
+}
+
+package CYGPKG_DEVS_ETH_MIPS_MIPS32_MALTA {
+	alias 		{ "MIPS Malta board ethernet driver" malta_eth_driver }
+	hardware
+	directory	devs/eth/mips/malta
+	script		mips_mips32_malta_eth_drivers.cdl
+        description     "Ethernet driver for MIPS Malta board."
+}
+
+package CYGPKG_DEVS_ETH_MN10300_ASB2305 {
+	alias 		{ "MN10300 ASB2305 board ethernet driver" asb2305_eth_driver }
+	hardware
+	directory	devs/eth/mn10300/asb2305
+	script		mn10300_asb2305_eth.cdl
+        description     "Ethernet driver for MN10300 ASB2305 board."
+}
+
+package CYGPKG_DEVS_ETH_VIA_RHINE {
+	alias 		{ "VIA Rhine ethernet driver" rhine_eth_driver }
+	hardware
+	directory	devs/eth/via/rhine
+	script		via_rhine_eth_drivers.cdl
+        description     "Ethernet driver for VIA Rhine controller."
+}
+
+package CYGPKG_DEVS_ETH_SH_HS7729PCI {
+	alias 		{ "HS7729PCI ethernet driver" hs7729pci_eth_driver }
+	hardware
+	directory	devs/eth/sh/hs7729pci
+	script		sh_hs7729pci_eth_drivers.cdl
+        description     "Ethernet driver for HS7729PCI development boards."
+}
+
+package CYGPKG_DEVS_ETH_SH_SE77X9 {
+	alias 		{ "SE77X9 ethernet driver" se77x9_eth_driver }
+	hardware
+	directory	devs/eth/sh/se77x9
+	script		sh_se77x9_eth_drivers.cdl
+        description     "Ethernet driver for SE77x9 development boards."
+}
+
+package CYGPKG_DEVS_ETH_SH_SE7751 {
+	alias 		{ "SE7751 ethernet driver" se7751_eth_driver }
+	hardware
+	directory	devs/eth/sh/se7751
+	script		sh_se7751_eth_drivers.cdl
+        description     "Ethernet driver for SE7751 board."
+}
+
+package CYGPKG_DEVS_ETH_SH_ETHERC {
+	alias 		{ "SH2 etherc driver" etherc_eth_driver }
+	hardware
+	directory	devs/eth/sh/etherc
+	script		sh_etherc_eth_drivers.cdl
+        description     "Ethernet driver for SH2 etherc controller."
+}
+
+package CYGPKG_DEVS_ETH_ARM_EBSA285 {
+	alias 		{ "Intel EBSA285 with PRO/100+ ethernet driver"
+			   devs_eth_arm_ebsa285 ebsa285_eth_driver }
+	hardware
+	directory	devs/eth/arm/ebsa285
+	script		ebsa285_eth_drivers.cdl
+        description     "Ethernet driver for Intel EBSA285 with PRO/100+ boards."
+}
+
+package CYGPKG_DEVS_ETH_ARM_FLEXANET {
+      alias           { "SA11x0/Flexanet onboard ethernet support" devs_eth_arm_flexanet }
+      hardware
+      directory       devs/eth/arm/flexanet
+      script          flexanet_eth_drivers.cdl
+      description "This package contains hardware support for onboard SMC91C96
+                   ethernet device on the Flexanet board."
+}
+
+package CYGPKG_DEVS_ETH_ARM_INNOVATOR {
+      alias           { "OMAP Innovator onboard ethernet support" devs_eth_arm_innovator }
+      hardware
+      directory       devs/eth/arm/innovator
+      script          innovator_eth_drivers.cdl
+      description "This package contains hardware support for onboard SMC91C96
+                   ethernet device on the Innovator board."
+}
+
+package CYGPKG_DEVS_ETH_ARM_INTEGRATOR {
+        alias           { "ARM INTEGRATOR with Intel PRO/100+ ethernet driver"
+                           devs_eth_arm_integrator integrator_eth_driver }
+        hardware
+        directory       devs/eth/arm/integrator
+        script          integrator_eth_drivers.cdl
+        description     "Ethernet driver for Intel PRO/100+ boards on ARM INTEGRATOR."
+}
+
+package CYGPKG_DEVS_ETH_POWERPC_QUICC {
+	alias 		{ "QUICC ethernet driver" quicc_eth_driver }
+	hardware
+	directory	devs/eth/powerpc/quicc
+	script		quicc_eth_drivers.cdl
+        description     "Ethernet driver for PowerPC QUICC (MPC8xx) based boards."
+}
+
+package CYGPKG_DEVS_ETH_POWERPC_MBX {
+	alias 		{ "MBX ethernet driver specifics" mbx_eth_driver }
+	hardware
+	directory	devs/eth/powerpc/mbx
+	script		mbx_eth_drivers.cdl
+        description     "Ethernet driver specifics for Motorola MBX PowerPC (MPC8xx) based boards."
+}
+
+package CYGPKG_DEVS_ETH_POWERPC_QUICC2 {
+	alias 		{ "QUICC2 ethernet driver" quicc_eth_driver }
+	hardware
+	directory	devs/eth/powerpc/quicc2
+	script		quicc2_eth_drivers.cdl
+        description     "Fast ethernet driver for PowerPC QUICC2 (MPC8260) based boards."
+}
+
+package CYGPKG_DEVS_ETH_POWERPC_FEC {
+	alias 		{ "FEC ethernet driver" fec_eth_driver }
+	hardware
+	directory	devs/eth/powerpc/fec
+	script		fec_eth_drivers.cdl
+        description     "Ethernet driver for PowerPC FEC (MPC8xxT) based boards."
+}
+
+package CYGPKG_DEVS_ETH_POWERPC_VIPER {
+	alias 		{ "A&M Viper ethernet driver" viper_eth_driver }
+	hardware
+	directory	devs/eth/powerpc/viper
+	script		viper_eth_drivers.cdl
+        description     "Ethernet driver specifics for A&M Viper (MPC8xxT) based boards."
+}
+
+package CYGPKG_DEVS_ETH_POWERPC_ADDER {
+	alias 		{ "A&M Adder ethernet driver" adder_eth_driver }
+	hardware
+	directory	devs/eth/powerpc/adder
+	script		adder_eth_drivers.cdl
+        description     "Ethernet driver specifics for A&M Adder (MPC85x) based boards."
+}
+
+package CYGPKG_DEVS_ETH_INTEL_I82559 {
+	alias 		{ "Intel 82559 ethernet driver"
+			   devs_eth_intel_i82559 i82559_eth_driver }
+	hardware
+	directory	devs/eth/intel/i82559
+	script		intel_i82559_eth_drivers.cdl
+        description     "Ethernet driver for Intel 82559 NIC."
+}
+
+package CYGPKG_DEVS_ETH_INTEL_I82544 {
+	alias 		{ "Intel 82544 ethernet driver"
+			   devs_eth_intel_i82544 i82544_eth_driver }
+	hardware
+	directory	devs/eth/intel/i82544
+	script		intel_i82544_eth_drivers.cdl
+        description     "Ethernet driver for Intel 82544 NIC."
+}
+
+package CYGPKG_DEVS_ETH_INTEL_I21143 {
+	alias 		{ "Intel 21143 ethernet driver"
+			   devs_eth_intel_i21143 i21143_eth_driver }
+	hardware
+	directory	devs/eth/intel/i21143
+	script		intel_i21143_eth_drivers.cdl
+        description     "Ethernet driver for Intel \[DEC\] 21143 NIC."
+}
+
+package CYGPKG_DEVS_ETH_MIPS_VRC4375 {
+	alias 		{ "NEC MIPS VRC4375 ethernet driver"
+			   devs_eth_mips_vrc4375 vrc4375_eth_driver }
+	hardware
+	directory	devs/eth/mips/vrc4375
+	script		vrc4375_eth_drivers.cdl
+        description     "Ethernet driver for NEC MIPS VRC4375 'Blue Nile'
+			board with Intel \[ex Digital Equipment\]
+                        i21143 ethernet interface."
+}
+
+package CYGPKG_DEVS_ETH_MIPS_RM7000_OCELOT {
+	alias 		{ "Ocelot ethernet drivers"
+			   devs_eth_mips_rm7000_ocelot ocelot_eth_driver }
+	hardware
+	directory	devs/eth/mips/ocelot
+	script		mips_rm7000_ocelot_eth_drivers.cdl
+        description     "Ethernet driver for PMC-Sierra Ocelot board."
+}
+
+package CYGPKG_DEVS_ETH_ARM_IQ80321 {
+	alias 		{ "Intel IQ80321 with onboard 82544 ethernet driver"
+			   devs_eth_arm_iq80321 iq80321_eth_driver }
+	hardware
+	directory	devs/eth/arm/iq80321
+	script		iq80321_eth_drivers.cdl
+        description     "Ethernet driver for Intel IQ80321 with onboard 82544 NIC."
+}
+
+package CYGPKG_DEVS_ETH_ARM_XSCALE_IQ80310 {
+	alias 		{ "Intel IQ80310 with onboard 82559 ethernet driver"
+			   devs_eth_arm_iq80310 iq80310_eth_driver }
+	hardware
+	directory	devs/eth/arm/iq80310
+	script		iq80310_eth_drivers.cdl
+        description     "Ethernet driver for Intel IQ80310 with onboard 82559 NIC."
+}
+
+package CYGPKG_DEVS_ETH_I386_PC_I82559 {
+	alias 		{ "Standard PC with EtherPro 10/100 ethernet device"
+			   devs_eth_i386_pc_i82559 pc_etherpro }
+	hardware
+	directory	devs/eth/i386/pc/i82559
+	script		i386_pc_i82559_eth_drivers.cdl
+        description     "Ethernet driver for standard PC with Intel 82559 NIC. This is
+			 essentially support for a EtherPro 10/100 PCI card."
+}
+
+package CYGPKG_DEVS_ETH_I386_PC_I82544 {
+	alias 		{ "Standard PC with Intel Gigabit ethernet device"
+			   devs_eth_i386_pc_i82544 pc_ether_giga }
+	hardware
+	directory	devs/eth/i386/pc/i82544
+	script		i386_pc_i82544_eth_drivers.cdl
+        description     "Ethernet driver for standard PC with Intel 82544 Gigabit NIC."
+}
+
+package CYGPKG_DEVS_ETH_MIPS_ATLAS {
+	alias 		{ "MIPS Atlas with onboard SAA9730 ethernet driver"
+			   devs_eth_mips_atlas atlas_eth_driver }
+	hardware
+	directory	devs/eth/mips/atlas
+	script		atlas_eth_drivers.cdl
+        description     "Ethernet driver for MIPS Atlas with onboard SAA9730 NIC."
+}
+
+package CYGPKG_DEVS_ETH_NS_DP83902A {
+	alias 		{ "NS DP83902A ethernet driver" dp83902a_eth_driver }
+	hardware
+	directory	devs/eth/ns/dp83902a
+	script		ns_dp83902a_eth_drivers.cdl
+        description     "Ethernet driver for NS DP83902A controller."
+}
+
+package CYGPKG_DEVS_ETH_CL_CS8900A {
+	alias 		{ "Cirrus Logic CS8900A ethernet driver" cs8900a_eth_driver }
+	hardware
+	directory	devs/eth/cl/cs8900a
+	script		cl_cs8900a_eth_drivers.cdl
+        description     "Ethernet driver for Cirrus Logic CS8900A controller."
+}
+
+package CYGPKG_DEVS_ETH_MIPS_UPD985XX {
+	alias		{ "NEC uPD985xx ethernet driver" uPD985xx_eth_driver }
+	hardware
+	directory	devs/eth/mips/upd985xx
+	script		upd985xx_eth_drivers.cdl
+	description     "NEC uPD985xx ethernet driver"
+}
+
+package CYGPKG_DEVS_ETH_MIPS_REFIDT334 {
+        alias           { "MIPS IDT 79RC32334 reference platform ethernet driver"
+                           devs_eth_refidt334 refidt334_eth_driver }
+        hardware
+        directory       devs/eth/mips/idt79s334a
+        script          refidt334_eth_drivers.cdl
+        description     "Ethernet driver for MIPS IDT 79RC32334 reference platform."
+}
+
+package CYGPKG_DEVS_ETH_CF {
+	alias 		{ "PCMCIA (Compact Flash) ethernet drivers" cf_eth_drivers }
+	directory	devs/eth/cf
+	script		cf_eth_drivers.cdl
+        hardware
+        description     "Ethernet drivers for PCMCIA (Compact Flash) cardss."
+}
+
+package CYGPKG_DEVS_ETH_H8300_AKI3068NET {
+	alias 		{ "Akizuki H8/3068 Board ethernet driver" aki3068net_eth_drivers }
+	directory	devs/eth/h8300/aki3068net
+	script		h8300_aki3068net_eth_drivers.cdl
+        hardware
+        description     "Ethernet drivers for Akizuki H8/3068 Network
+   	                 micom board."
+}
+
+package CYGPKG_DEVS_ETH_MCF5272 {
+        alias           { "MCF5272 Fast Ethernet Controller driver" mcf5272_eth_driver}
+        hardware
+        directory       devs/eth/mcf52xx/mcf5272
+        script          mcf5272_eth_driver.cdl
+        description     "Ethernet driver for the MCF5272."
+}
+
+package CYGPKG_DEVS_ETH_ECOSYNTH {
+        alias           { "Synthetic target ethernet driver" ecosyntheth ecosynth_eth_driver }
+        directory       devs/eth/synth/ecosynth
+        script          syntheth.cdl
+        hardware
+        description     "Ethernet driver for the synthetic target"
+}
+
+package CYGPKG_IO_WALLCLOCK {
+        alias           { "Wallclock device framework" wallclock io_wallclock devices_wallclock device_wallclock }
+	directory	io/wallclock
+	script          wallclock.cdl
+        description "
+           This package provides a wallclock device framework. It is
+           also necessary to select an actual driver implementation."
+}
+
+package CYGPKG_DEVICES_WATCHDOG_ARM_AEB {
+	alias		{ "Watchdog driver for ARM/AEB board" devices_watchdog_aeb device_watchdog_aeb }
+	directory	devs/watchdog/arm/aeb
+	script          watchdog_aeb.cdl
+	hardware
+        description "
+           This package provides a watchdog driver implementation for the
+           ARM/AEB board."
+}
+
+package CYGPKG_DEVICES_WATCHDOG_ARM_AT91 {
+	alias		{ "Watchdog driver for ARM AT91 CPU" devices_watchdog_at91 device_watchdog_at91 }
+	directory	devs/watchdog/arm/at91
+	script          watchdog_at91.cdl
+	hardware
+        description "
+           This package provides a watchdog driver implementation for the
+           ARM AT91 CPU."
+}
+
+package CYGPKG_DEVICES_WATCHDOG_ARM_EBSA285 {
+	alias		{ "Watchdog driver for ARM/EBSA285 board" devices_watchdog_ebsa285 device_watchdog_ebsa285 }
+	directory	devs/watchdog/arm/ebsa285
+	script          watchdog_ebsa285.cdl
+	hardware
+        description "
+           This package provides a watchdog driver implementation for the
+           ARM/EBSA285 board."
+}
+
+package CYGPKG_DEVICES_WATCHDOG_ARM_SA11X0 {
+	alias		{ "Watchdog driver for StrongARM SA11x0 devices" devices_watchdog_sa11x0 device_watchdog_sa11x0 }
+	directory	devs/watchdog/arm/sa11x0
+	script          watchdog_sa11x0.cdl
+	hardware
+        description "
+           This package provides a watchdog driver implementation for
+           Intel StrongARM SA11x0 integrated devices."
+}
+
+package CYGPKG_DEVICES_WATCHDOG_MN10300_MN10300 {
+	alias		{ "Watchdog driver for MN10300 chip" devices_watchdog_mn10300 device_watchdog_mn10300 }
+	directory	devs/watchdog/mn10300/mn10300
+	script          watchdog_mn10300.cdl
+	hardware
+        description "
+           This package provides a watchdog driver implementation for the
+           MN10300 chip."
+}
+
+package CYGPKG_DEVICES_WATCHDOG_SH_SH3 {
+	alias		{ "Watchdog driver for the Hitachi SH3 chip" devices_watchdog_sh3 device_watchdog_sh3 }
+	directory	devs/watchdog/sh/sh3
+	script          watchdog_sh3.cdl
+	hardware
+        description "
+           This package provides a watchdog driver implementation for the
+           Hitachi SH3 chip."
+}
+
+package CYGPKG_DEVICES_WATCHDOG_H8300_H8300H {
+	alias		{ "Watchdog driver for the Hitachi H8/300H chip" devices_watchdog_h8300h device_watchdog_h8300h }
+	directory	devs/watchdog/h8300/h8300h
+	script          watchdog_h8300h.cdl
+	hardware
+        description "
+           This package provides a watchdog driver implementation for the
+           Hitachi H8/300H chip."
+}
+
+package CYGPKG_DEVS_WATCHDOG_SYNTH {
+	alias		{ "Watchdog driver for the synthetic target" devices_watchdog_synth device_watchdog_synth }
+	directory	devs/watchdog/synth
+	script          synth_watchdog.cdl
+	hardware
+        description "
+           This package provides a watchdog driver for the eCos
+           synthetic target."
+}
+
+package CYGPKG_IO_WATCHDOG {
+	alias		{ "Watchdog IO device" watchdog io_watchdog }
+	directory	io/watchdog
+        script          watchdog.cdl
+        description "
+           This package provides a watchdog device."
+}
+
+package CYGPKG_KERNEL {
+	alias		{ "eCos kernel" kernel }
+	directory	kernel
+	script		kernel.cdl
+     	description "
+This package contains the core functionality of the eCos kernel. It
+relies on functionality provided by various HAL packages and by the
+eCos infrastructure. In turn the eCos kernel provides support for
+other packages such as the device drivers and the uITRON compatibility
+layer."
+}
+
+package CYGPKG_MEMALLOC {
+        alias           { "Dynamic memory allocation" memalloc malloc }
+        directory       services/memalloc/common
+        script          memalloc.cdl
+        description "
+This package provides memory allocator infrastructure required for
+dynamic memory allocators, including the ISO standard malloc
+interface. It also contains some sample implementations."
+}
+
+package CYGPKG_LOADER {
+        alias           { "Dynamic loader" loader dload }
+        directory       services/loader
+        script          loader.cdl
+        description "
+This package provides support for the dynamic executable and
+library loader."
+}
+
+package CYGPKG_COMPRESS_ZLIB {
+        alias           { "Zlib compress/decompress" zlib_compress compress_zlib zlib }
+        directory       services/compress/zlib
+        script          compress_zlib.cdl
+        description "
+This package provides zlib compression and decompression support."
+}
+
+package CYGPKG_POWER {
+	alias 		{ "Power Management support" power }
+	directory	services/power/common
+	script		power.cdl
+	description "
+This package provides some generic support for power management."
+}
+
+package CYGPKG_CRC {
+        alias           { "CRC support" crc }
+        directory       services/crc
+        script          crc.cdl
+        description "
+This package provides support for CRC functions, including the 
+POSIX 1003 defined CRC algorithm."
+}
+
+package CYGPKG_CPULOAD {
+        alias           { "cpuload support" cpuload }
+        directory       services/cpuload
+        script          cpuload.cdl
+        description "
+This package measures the CPU load over the last 100ms, 1second 
+and 10 second. All loads are returned as a percentage, ie 0-100.
+This is only a rough measure."
+}
+
+package CYGPKG_PROFILE_GPROF {
+        alias           { "Application profile support" profile_gprof gprof_profile }
+        directory       services/profile/gprof
+        script          profile_gprof.cdl
+        description "
+This package instruments applications to collect profiling data,
+using a methodology compatible with the gprof utility."
+}
+
+package CYGPKG_UITRON {
+	alias		{ "uITRON compatibility" uitron }
+	directory	compat/uitron
+	script		uitron.cdl
+	description "
+eCos supports a uITRON Compatibility Layer, providing full Level S
+(Standard) compliance with Version 3.02 of the uITRON Standard, plus
+many Level E (Extended) features. uITRON is the premier Japanese
+embedded RTOS standard."
+}
+
+package CYGPKG_ISOINFRA {
+        alias           { "ISO C and POSIX infrastructure" isoinfra }
+        directory       isoinfra
+        script          isoinfra.cdl
+        description "
+eCos supports implementations of ISO C libraries and POSIX implementations.
+This package provides infrastructure used by all such implementations."
+}
+
+package CYGPKG_POSIX {
+	alias		{ "POSIX compatibility" posix }
+	directory	compat/posix
+	script		posix.cdl
+	description "
+This package enables compatibility with the ISO/IEEE 1003.1 POSIX
+standard.  This allows the user application to use a well known
+standard API, and starts a thread to invoke the user function
+main()"
+}
+
+package CYGPKG_LIBC {
+	alias		{ "C library" libc clib clibrary }
+	directory	language/c/libc/common
+	script		libc.cdl
+        description  "
+The packages under this package enable compatibility with the ISO C
+standard - ISO/IEC 9899:1990. This allows the user application to use
+well known standard C library functions, and in eCos starts a thread
+to invoke the user function main(). This package is a top-level placeholder
+to contain the implementations."
+}
+
+package CYGPKG_LIBC_I18N {
+	alias		{ "ISO C library internationalization" libc_i18n }
+	directory	language/c/libc/i18n
+	script		i18n.cdl
+        description  "
+This package provides internationalization functions specified by the
+ISO C standard - ISO/IEC 9899:1990."
+}
+
+package CYGPKG_LIBC_SETJMP {
+	alias		{ "ISO C library non-local jumps" libc_setjmp }
+	directory	language/c/libc/setjmp
+	script		setjmp.cdl
+        description  "
+This package provides non-local jump functionality specified by the
+ISO C standard - ISO/IEC 9899:1990."
+}
+
+package CYGPKG_LIBC_SIGNALS {
+	alias		{ "ISO C library signals" libc_signals }
+	directory	language/c/libc/signals
+	script		signals.cdl
+        description   "
+This component controls signal functionality, as implemented in
+ISO/IEC 9899:1990 chapter 7.7 with the signal() and raise() functions.
+As well as allowing a program to send itself signals, it is also
+possible to cause hardware exceptions to be signalled to the program
+in a similar way."
+}
+
+package CYGPKG_LIBC_STARTUP {
+	alias		{ "ISO environment startup/termination" libc_startup }
+	directory	language/c/libc/startup
+	script		startup.cdl
+        description   "
+            This package manages the control of the
+            environment (in the general sense) that an
+            application would require for full ISO C / POSIX
+            compatibility, including a main() entry point
+            supplied with arguments and an environment
+            (as retrievable by the getenv() function).
+            It also includes at the other end of things,
+            what happens when main() returns or exit() is
+            called."
+}
+
+package CYGPKG_LIBC_STDIO {
+	alias		{ "ISO C library standard input/output functions" libc_stdio }
+	directory	language/c/libc/stdio
+	script		stdio.cdl
+        description  "
+This package provides standard input/output functions associated
+with the header file <stdio.h> as specified by the
+ISO C standard - ISO/IEC 9899:1990."
+}
+
+package CYGPKG_LIBC_STDLIB {
+	alias		{ "ISO C library general utility functions" libc_stdlib }
+	directory	language/c/libc/stdlib
+	script		stdlib.cdl
+        description  "
+This package provides general utility functions associated
+with the header file <stdlib.h> as specified by the
+ISO C standard - ISO/IEC 9899:1990."
+}
+
+package CYGPKG_LIBC_STRING {
+	alias		{ "ISO C library string functions" libc_string }
+	directory	language/c/libc/string
+	script		string.cdl
+        description  "
+This package provides string functions specified by the ISO C standard
+- ISO/IEC 9899:1990."
+}
+
+package CYGPKG_LIBC_TIME {
+	alias		{ "ISO C library date/time functions" libc_time }
+	directory	language/c/libc/time
+	script		time.cdl
+        description  "
+This package provides date and time manipulation functionality specified
+by the ISO C standard - ISO/IEC 9899:1990."
+}
+
+package CYGPKG_LIBM {
+	alias		{ "Math library" libm mathlib mathlibrary }
+	directory	language/c/libm
+	script		libm.cdl
+        description  "
+ISO standard floating point mathematical library containing many
+useful functions for mathematical calculations."
+}
+
+package CYGPKG_ERROR {
+	alias 		{ "Common error code support" error errors }
+	directory	error
+	script		error.cdl
+        description  "
+This package contains the common list of error and status codes. It is
+held centrally to allow packages to interchange error codes and status
+codes in a common way, rather than each package having its own
+conventions for error/status reporting. The error codes are modelled
+on the POSIX style naming e.g. EINVAL etc. This package also provides
+the standard strerror() function to convert error codes to textual
+representation, as well as an implementation of the errno idiom."
+}
+
+package CYGPKG_CYGMON {
+    alias           { "CygMon support via eCos" cygmon }
+    directory       cygmon
+    script          cygmon.cdl
+    description     "
+        This package supports the CygMon \[stand-alone debug monitor\]
+        using eCos as the underlying board support mechanism."
+}
+
+package CYGPKG_REDBOOT {
+    alias           { "RedBoot, the Red Hat bootstrap" cygmon }
+    directory       redboot
+    script          redboot.cdl
+    description     "
+        This package creates the RedBoot \[stand-alone bootstrap & debug monitor\]
+        using eCos as the underlying board support mechanism."
+}
+
+package CYGPKG_HAL_ARM {
+	alias		{ "ARM common HAL" hal_arm arm_hal arm_arch_hal }
+	directory	hal/arm/arch
+	script		hal_arm.cdl
+	hardware
+	description "
+The ARM architecture HAL package provides generic support for this
+processor architecture. It is also necessary to select a specific
+target platform HAL package."
+}
+
+package CYGPKG_HAL_ARM_DICE {
+	alias		{ "TCAT DICE verification board (VB)" hal_arm_dice arm_dice_hal }
+	directory	hal/arm/dice
+	script		hal_arm_dice.cdl
+	hardware
+        description "
+The DICE HAL package provides the support needed to run eCos on an TCAT DICE
+verification board (VB)."
+}
+
+package CYGPKG_HAL_ARM_DICEJR {
+	alias		{ "TCAT DICE JR evaluation module (EVM)" hal_arm_diceJr arm_diceJr_hal }
+	directory	hal/arm/diceJr
+	script		hal_arm_diceJr.cdl
+	hardware
+        description "
+The DICEJR HAL package provides the support needed to run eCos on an TCAT DICEJR
+Evaluation Module (EVM)."
+}
+
+package CYGPKG_DEVS_ETH_SMSC_LAN91CXX {
+	alias 		{ "SMSC LAN91CXX ethernet driver" lan91cxx_eth_driver lan9000_eth_driver }
+	hardware
+	directory	devs/eth/smsc/lan91cxx
+	script		smsc_lan91cxx_eth_drivers.cdl
+        description     "Ethernet driver for SMSC LAN91CXX (LAN9000) controller."
+}
+
+target dice {
+	alias { "TCAT DICE verification board (VB)" VB }
+	packages { CYGPKG_HAL_ARM
+                   CYGPKG_HAL_ARM_DICE
+                   CYGPKG_IO_FLASH_NONBLOCK
+                   CYGPKG_DEVS_FLASH_ARM_DICE
+                   CYGPKG_DEVS_FLASH_AMD_AM29XXXXX
+                   CYGPKG_IO_SERIAL_ARM_DICE
+        }
+        description "
+The VB target provides the packages needed to run eCos on an TCAT DICE
+verification board (VB)."
+}
+
+target diceJr {
+	alias { "TCAT DICEJR Evaluation Module (EVM)" EVM }
+	packages { CYGPKG_HAL_ARM
+                   CYGPKG_HAL_ARM_DICEJR
+                   CYGPKG_IO_FLASH_NONBLOCK
+                   CYGPKG_DEVS_FLASH_ARM_DICEJR
+                   CYGPKG_DEVS_FLASH_AMD_AM29XXXXX
+                   CYGPKG_IO_SERIAL_ARM_DICEJR
+        }
+        description "
+The EVM target provides the packages needed to run eCos on an TCAT DICEJR
+Evaluation Module (EVM)."
+}
+
+package CYGPKG_IO_FLASH_NONBLOCK {
+	alias 		{ "Generic non blocking FLASH memory support" flash_nonblock }
+	directory	io/flash_nonblock
+	script		io_flash_nonblock.cdl
+        description "
+           This package contains generic support for FLASH memory with 
+		   addition of nonblocking functions."
+}
+

@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/watchdog/h8300/h8300h/v2_0/src
+END
+watchdog_h8300h.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/watchdog/h8300/h8300h/v2_0/src/watchdog_h8300h.cxx
+END

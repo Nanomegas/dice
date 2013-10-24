@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdio/v2_0/src/output
+END
+fwrite.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdio/v2_0/src/output/fwrite.cxx
+END
+fputc.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdio/v2_0/src/output/fputc.cxx
+END
+fputs.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdio/v2_0/src/output/fputs.cxx
+END
+printf.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdio/v2_0/src/output/printf.cxx
+END
+fnprintf.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdio/v2_0/src/output/fnprintf.cxx
+END
+fprintf.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdio/v2_0/src/output/fprintf.cxx
+END
+vfnprintf.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libc/stdio/v2_0/src/output/vfnprintf.cxx
+END

@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src
+END
+Make_vms.com
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/Make_vms.com
+END
+infcodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/infcodes.h
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/configure
+END
+inffixed.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/inffixed.h
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/Makefile.in
+END
+deflate.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/deflate.c
+END
+zutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/zutil.c
+END
+gzio.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/gzio.c
+END
+deflate.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/deflate.h
+END
+infutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/infutil.c
+END
+zutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/zutil.h
+END
+infutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/infutil.h
+END
+trees.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/trees.c
+END
+algorithm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/algorithm.txt
+END
+minigzip.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/minigzip.c
+END
+INDEX
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/INDEX
+END
+infblock.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/infblock.c
+END
+trees.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/trees.h
+END
+inffast.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/inffast.c
+END
+example.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/example.c
+END
+compress.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/compress.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/Makefile
+END
+infblock.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/infblock.h
+END
+Makefile.riscos
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/Makefile.riscos
+END
+inffast.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/inffast.h
+END
+descrip.mms
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/descrip.mms
+END
+README.eCos
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/README.eCos
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/ChangeLog
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/README
+END
+inftrees.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/inftrees.c
+END
+zlib.3
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/zlib.3
+END
+inflate.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/inflate.c
+END
+uncompr.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/uncompr.c
+END
+inftrees.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/inftrees.h
+END
+FAQ
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/FAQ
+END
+infcodes.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/infcodes.c
+END
+adler32.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/adler32.c
+END
+maketree.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/services/compress/zlib/v2_0/src/maketree.c
+END

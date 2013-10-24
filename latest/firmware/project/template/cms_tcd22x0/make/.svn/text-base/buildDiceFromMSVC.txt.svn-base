@@ -1,0 +1,99 @@
+Building cms_tcd22x0 from MS Visual C++ .NET
+----------------------------------------
+
+Load the Visual C++ project workspace file firmware/project/cms_tcd22x0/cms_tcd22x0.sln
+
+The Firmware folders and files are available under FileView
+
+--------------
+   building
+--------------
+
+The following options are available for building the firmware application:
+
+- Build:Build cms_tcd22x0
+	(calling vc_make.bat with no argument, equivalent to "all" thus performing)
+	make all AWK_PIPE=1
+
+	This rebuilds the application code, and assumes that the kernel has been built.
+	If the kernel has not been built, perform the Build:Rebuild cms_tcd22x0
+	
+- Build:Rebuild cms_tcd22x0
+	(calling vc_make.bat with argument "rebuild" thus performing)
+	make install AWK_PIPE=1
+
+- Build:Clean cms_tcd22x0
+	(calling vc_make.bat with argument "clean" thus performing)
+	make clean
+
+--------------
+  debugging
+--------------
+
+- A Tool can be defined in the Visual C++ environment for launching the Insight debugger.
+
+With this tool installed, debugging using Insight can then be accessed from the Tools menu 
+(or using key shortcuts such as "Alt-t d")
+
+Create the tools this way:
+	* select "Tools:External Tools..."
+	* choose "Add"
+	
+	* Fill out the fields below for launching Insight with the default binary built 
+	for this project.
+
+	Tool:			&Debug cms_tcd22x0Debug
+	Command:		vc_insight.bat
+	Arguments:		cms_tcd22x0Debug
+	Initial Directory:	$(ProjectDir)
+	Use Output Window:	enabled
+
+	Note that this tool will invoke the batch files for the project that is currently
+	open and active in Visual C++.
+	
+	Note also the ampersand in the Tool title indicates the shortcut key that will 
+	execute it.
+
+	* Click on the "Move Up" or "Move Down" buttons until it is in the desired place in 
+	the menu.
+	
+- A Toolbar button can be added for this as follows:
+	* select "Tools:Customize..."
+	* on the "Commands" tab, select the Tools category
+	* Scroll down in the Commands list until you find the External Command that
+	corresponds to the place in the section of the Tools menu containing your
+	new command.
+	* Click on the External Command and drag it onto the desired toolbar.
+	* When the Customize dialog is closed, the button you've added changes its name 
+	to the name of the command from the Tools menu.
+	
+--------------
+makefiles etc.
+--------------
+
+The following make related files are located in the project folder "Make"
+
+- vc_make.bat:
+	called from Visual C++ executing bash login make calls
+- vc_insight.bat:
+	When configured as above, called from Visual C++ invoking the Insight debugger 
+	with the project debug image
+- Makefile:
+	main makefile calling into each modules makefile
+	having the following labels: all,dep,clean,cleanMake	
+	includes Make.params 
+- Make.params:
+	target specific flags, defines, etc.
+- Make.def:
+	target defines
+- gccpipe.awk
+	awk based message pipe for translating gcc output to MsDev compatible tags
+	
+
+When building from Visual C++, vc_make.bat calls make with AWK_PIPE=1, which causes 
+the make output to be piped into gawk and translated to MsDev tags
+
+The warnings and errors will then printed in the Outpur view. 
+Pressing F8 will get you to the next error/warning if any 
+and automatically load the actual file at the line where the error exists
+

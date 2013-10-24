@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/target/src
+END
+targetBoard.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/target/src/targetBoard.c
+END
+targetPlugs.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/target/src/targetPlugs.c
+END
+targetConfigCSR.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/target/src/targetConfigCSR.c
+END
+targetVendorDefs.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/target/src/targetVendorDefs.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/AudioMonitor/target/src/Makefile
+END

@@ -1,0 +1,3256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>DICE Windows Driver Release Notes</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+</head>
+
+<body bgcolor="#ffffff">
+	<p><b><font size="5" face="Verdana">DICE WINDOWS DRIVER RELEASE NOTES</font></b></p>
+	<p></p>
+
+	<p><b><font size="3" face="Verdana">Requirements:</font></b></p>
+
+	<p><font size="2" face="Verdana">
+	<p>&nbsp;&nbsp;<b>Operating System:</b></p>
+	&nbsp;&nbsp;Windows XP (32-bit) with Service Pack 3 &nbsp;&nbsp;<i>(see Note 1)</i><br>
+	&nbsp;&nbsp;Windows Vista (32 and 64-bit) with Service Pack 2<br>
+	&nbsp;&nbsp;Windows 7 (32 and 64-bit) with Service Pack 1<br>
+	&nbsp;&nbsp;Windows 8 (32 and 64-bit)<br>
+	<br>
+	&nbsp;&nbsp;Note 1: If you had already installed an S800 1394b FireWire interface in your computer<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and applied the hotfix for XP Service Pack 2 (<a href="http://support.microsoft.com/kb/885222">http://support.microsoft.com/kb/885222</a>),<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and then upgraded to XP Service Pack 3, you will need to apply a hotfix from<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microsoft.  <a href="http://support.microsoft.com/kb/955408">http://support.microsoft.com/kb/955408</a><br>
+	</font></p>
+
+	<p><font size="2" face="Verdana">
+	<p>&nbsp;&nbsp;<b>Hardware:</b></p>
+	&nbsp;&nbsp;Minimum:<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Intel or AMD 1.6GHz processor<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;512MB RAM<br>
+	<br>
+	&nbsp;&nbsp;Recommended:<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Intel Pentium 4 2.8GHz EM64T or better<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;AMD Athlon 64 XP 3000+ or better<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;1GB or more RAM<br>
+	<br>
+	&nbsp;&nbsp;<b>Please also consult your audio applications' requirements.</b>
+	</font></p>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 4.1.3</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1109</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver could become unresponsive after reattaching or power-cycling a device multiple times.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1131</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">When using stacked devices, a device's input channels could be incorrectly sample-aligned.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1139, 1172, 1173, 1239</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">An intermittent BSOD could occur on some system configurations.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1205</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel's System tab was failing to report OHCI chipsets on Windows XP SP3.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1207</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">On a system with high DPC latency, WDM audio could become distorted when the driver experienced successive DPC delays.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1220</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur when more than one application was playing or recording WDM audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1221</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur when opening a WDM audio application on a Windows 32-bit OS.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1228</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur after detaching a device while an audio application was using it.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1232</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Improved the driver's allocation of FireWire isochronous bandwidth.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1233</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Audio streaming could become distorted when using a FireWire hard drive.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 4.1.2</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1193</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The checkbox added to the Control Panel in Version 4.1.0 which allows user control over whether WDM applications are allowed to change the sample rate on Windows Vista and later has been removed.  This is now automatically controlled by the driver.  WDM audio applications may change the sample rate by default, and are only restricted when an ASIO audio application is active.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1194</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur after changing the sample rate when playing or recording WDM audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1196</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">With a device that only publishes a single sample rate, after a sample rate change occurred WDM audio could still attempt to use and display the old rate.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1199</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The first part of playback could be skipped when a WDM audio application used the WASPI event-driven (pull) mode.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1200</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Control Panel could become unresponsive after a device was removed.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1206</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur after a device was removed when playing or recording WDM audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 4.1.1</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1146</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when playing WDM 24-bit audio with some audio applications.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1150</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The AC3 encoded audio driver could show incorrect channel capabilities.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1152</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">WDM audio playback could become distorted when using WDM WASAPI mode in Sonar.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1159</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The WDM bit rate (16 or 24-bit) is now maintained when the sample rate is changed.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1163</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">WDM audio playback could become distorted when using WDM KS mode in Reaper.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1168</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A drawing glitch could occur in the WDM Channel Mapping window.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1169</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A WDM channel could be accidentally unmapped without dragging it into a channel assignment slot.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 4.1.0</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">889</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Audio streaming could become distorted when using a FireWire hard drive on a computer using an LSI FW643 OHCI with revision 0x06.  Higher revisions were not affected.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1027</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A workaround has been added to avoid an intermittent BSOD that could occur in Microsoft's new 1394 OHCI bus driver on Windows 7 when freeing isochronous resources.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1051, 1091</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver could leak resources when an unexpected error condition occurred.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1070, 1102</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A device could become unresponsive after sleeping and waking the computer.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1071</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When configured to use WDM/KS, Sonar X1 would report that the audio engine had stopped when recording.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1087</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A WDM input or output audio channel could become distorted after a change to the channel's mapping.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1092</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur when playing WDM 24-bit audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1093</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">WDM audio playback could become distorted after leaving the system inactive for awhile.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1094</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A WDM audio application was able to change the sample rate even though the sample rate was locked.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1097</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">WDM audio could become distorted when a 24-bit format was used.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1100, 1113</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A new checkbox has been added to the Control Panel which allows user control over whether WDM applications are allowed to change the sample rate on Windows Vista and later.  This is for users who primarily use WDM audio applications.  Users who use ASIO audio applications should leave this unchecked to prevent an issue where WDM audio could fail to play when an ASIO application is active.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Vista/Win7/Win8</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1103</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur when waking the computer from sleep.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1107</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When attaching a device for the first time after installing the driver, a delay could occur before the WDM audio and MIDI ports were published.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1116</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur after connecting a device.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1120, 1132</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur if an application was accessing a device while it was being removed.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1121</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">When using stacked devices, after changing the sample rate a slave device's input channels could be incorrectly sample-aligned.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1129</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur if a device was already attached to another computer on the FireWire bus.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1134</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Improved performance when using more than two stacked devices on Windows 7 and later.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Win7/Win8</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 4.0.0</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">22</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">MIDI latency has been improved.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">277, 1009</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">MIDI data throughput has been improved.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">368, 827, 962, 1000</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver's streaming engine has been rewritten to improve performance, stability, and reduce latency.  It is optimized to work on both Microsoft's new and legacy 1394 OHCI bus drivers.  ASIO performance when using small buffer sizes is vastly improved.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">412</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver's ASIO interface has been refactored to improve performance and compatibility with ASIO host applications.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">455</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver's handling of DPC delays has been greatly improved.  The driver will also no longer send a kASIOResetRequest event to ASIO host applications when a streaming discontinuity occurs due to a DPC delay.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">705, 739, 806</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Added support for Dynamic Format Change on Windows 7.  The sample rate used by WDM audio will now follow the sample rate set in the Control Panel.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">714</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">MIDI output is now more accurately aligned with the audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">744</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver's ASIO interface now supports buffer sizes starting at 32, 64, or 128 (depending on the current sample rate) and increasing by a power-of-two.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">777</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">On Windows 7, the WDM audio input's gain was too sensitive and could cause clipping.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">794</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver's new streaming engine avoids almost all of the performance issues that are present in Microsoft's new 1394 OHCI bus driver in Windows 7.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">805</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur when a system would wake from sleep.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">815</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver could stop responding after switching to 176.2kHz or 192kHz.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">833</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver would incorrectly take a second longer to initially start streaming when a device was first connected.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">838, 867, 910, 919, 921, 935</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The WDM audio driver has been rewritten to use a new Windows streaming model in order to improve performance and to take advantage of newer features.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">857</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur when a device was attached.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">920</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A WDM output's audio could become silent when the Front L or Front R channel was remapped to another channel.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">931, 938</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A WDM input or output audio channel could become distorted after a change to the channel's mapping.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">934</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Fixed a minor memory leak in the MIDI driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">940</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The WDM audio input can now be configured as either a mono or stereo source.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">990</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The performance of the WDM audio driver has been optimized.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">999</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The ASIO driver could be delayed up to 8 seconds in starting up.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1007</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Support for AC3 audio was not fully implemented.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1008</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Operation Mode settings have been renamed.  On both platforms there are four modes available:  Low Latency, Normal, and Safe Mode Levels 1 to 2.<br><br><table border="1" cellspacing="0" cellpadding="5"><tr><td><b><font size="2" face="Verdana">Old Setting</font></b></td><td><b><font size="2" face="Verdana">New Setting</font></b></td></tr><tr><td><font size="2" face="Verdana">Normal</font></td><td><font size="2" face="Verdana">Low Latency</font></td></tr><tr><td><font size="2" face="Verdana">Safe Mode Level 1</font></td><td><font size="2" face="Verdana">Normal</font></td></tr><tr><td><font size="2" face="Verdana">Safe Mode Level 2</font></td><td><font size="2" face="Verdana">Safe Mode Level 1</font></td></tr><tr><td><font size="2" face="Verdana">Safe Mode Level 3</font></td><td><font size="2" face="Verdana">Safe Mode Level 2</font></td></tr></table>
+<br>
+On Windows, the Operation Mode setting no longer affects the minimum ASIO buffer size.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1013</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel could crash if an exception occurred during the initial connection to the driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1017</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Control Panel could take up to 50 seconds to launch if an exception occurred during the initial connection to the driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1019</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver's streaming engine would not recover correctly after a large DPC delay (>24ms) resulting in distorted audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1020</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when playing or recording WDM audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1025</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver was not correctly enabling a workaround that decreases CPU usage on Windows 7.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1029</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Control Panel's Event Log window is now wider by default, and is now resizable.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1033</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The ASIO driver now reports the correct ratio of input latency and output latency.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1034</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When using stacked devices, the driver could send invalid packets for a short duration that would cause the slave devices to take longer to lock.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1035</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Fixed a minor memory leak in the AC3 encoded audio driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1038</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Control Panel's DPC graph could be only partially drawn.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1039</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel's DPC tab now indicates that it is not available when there is no device attached.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1041</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">AC3 encoded audio was not being streamed correctly.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1042</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel's DPC tab was not using the correct DPC delay thresholds when recommending an Operation Mode.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1043</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Improved performance when using stacked devices on Windows 7.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1049</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel could crash when moving the mouse wheel over another application's window.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1050</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The performance of the driver when using stacked devices has been improved.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1053, 1059</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">AC3 parameters are now locked when an ASIO or WDM application is using the driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1054</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when detaching a device while an ASIO host application was using it.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1060, 1062</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">An ASIO host application's audio could become distorted if it was using a large percentage of CPU time to process  its audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1066</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">WDM audio could stutter when paused in some WDM audio applications.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1072</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">An ASIO host application's audio could become silent after changing the sample rate.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.6</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">914</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">To work around issues in Pro Tools 9's ASIO host implementation, the driver no longer allows Pro Tools to change the ASIO buffer size; instead the Control Panel must be used.  Other ASIO host applications are not restricted.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.5</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">885</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when the driver unloaded in low memory conditions.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.4</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">799</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Optimized the driver's processing of MIDI data.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">840</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Added a partial workaround to minimize the performance issues that are present in Microsoft's new 1394 OHCI bus driver in Windows 7.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">845</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Improved how the driver starts isochronous streaming.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">855</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Improved how the driver allocates isochronous bandwidth.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.3</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">512</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur when receiving MIDI input data.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">703</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver could exhibit audio dropouts and large spikes of CPU usage on some Windows 7 systems.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">726</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">On Windows 7, the "Safe Mode Level 1 - 3" Operation Modes are now better at allowing the driver to operate on a system with a high DPC latency (at the expense of additional audio latency).  The minimum ASIO buffer size has increased when using one of the Safe Modes on Windows 7.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">734</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel's System tab now reports more details about the system configuration and an OHCI chipset's capabilities.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">736</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when changing WDM settings with certain WDM channel mapping configurations.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">748</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A workaround has been added to avoid an intermittent BSOD that could occur in Microsoft's new 1394 OHCI bus driver on Windows 7 64-bit systems with a quad-core processor.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">767</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur because of an error in the driver's WDM channel mapping logic.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">769</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel application could sometimes crash when quit.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">776</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when attempting to view the WDM Microphone's properties.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">786</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver's clock synchronization logic has been improved.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">791</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur when an ASIO host application was opening its connection to the driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.2</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">723</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">WDM audio streaming was non-operational in the 3.5.1.7616 release.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">724</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur when receiving MIDI input data.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.1</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">663</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The ASIO driver now reports the correct digital latency on Windows 7.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">716</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Improved streaming performance on systems with 4GB or more of RAM installed.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">717</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Improved ASIO performance when using small buffer sizes on Windows XP or Vista.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.0</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">565</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver has been updated to include support for Windows 7.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">618</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver's performance on a system with high DPC latencies has been improved.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">636</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">On Windows 7 64-bit, Microsoft's new 1394 stack would sometimes fail to deallocate the isochronous bandwidth, requiring a system restart to restore the driver's functionality.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">647, 664</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur on multi-processor/core systems when the audio streaming configuration was changed or when it recovered from a dropout.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">661</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">In the Control Panel application's Event Log window, the device lock changed bits were displayed in reverse order.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">662</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">On Windows 7, the driver's minimum buffer size was not reported correctly.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">668</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">An ASIO host application's audio could become distorted after a large DPC latency spike occurred on the system.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">674</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">After putting a Windows 7 system to sleep, Microsoft's new 1394 stack was causing the driver to hang when the system was resumed.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">685</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When using stacked devices, the order of the ASIO input channels could be flipped depending on the order that the devices were attached.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista/Win7</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">689</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">ASIO streaming performance on Windows 7 has been improved.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Win7</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.4.2</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">316, 543</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur on multi-processor/core systems when the audio streaming configuration was changed or when it recovered from a dropout.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">577</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A WDM application's audio could glitch or stop after remapping WDM output channels.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">590</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Control Panel's WDM Channel Mapper window's scroll position would reset after each channel assignment.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">598</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur during installation during the New Found Hardware Wizard.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">608</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Changes to the WDM channel mapping would fail on some devices.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">627</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Installation would fail on some Vista 64-bit systems, with Windows reporting that the driver was not digitally signed.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.4.1</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">523</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">If a device was removed while being used by an ASIO host application and then reattached, the device would not become available until the ASIO host application was quit.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">551</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">After launching the Control Panel, the Speaker Setup field on the WDM tab would sometimes be blank.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">557</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">WDM audio could glitch or become distorted after a large DPC latency spike occurred on the system.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">558</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">With a device that only publishes a single sample rate, the Control Panel's sample rate field would not refresh when the sample rate was changed on the device.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">559</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">With a device that only publishes a single sample rate, the buffer size would not get set to the minimum when the sample rate was changed on the device.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">560</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">If there was not enough FireWire bandwidth available to allocate the channels required for two stacked devices at a particular sample rate the driver would disable the second device, but it would not attempt to re-enable the second device if the sample rate was changed.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">562</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur when changing the sample rate with two stacked devices.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">567</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">When using stacked devices, the driver could incorrectly report the lock status of a device after it was re-enabled by the driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">569</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur after changing WDM channel mapping during playback.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">570</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Changing the WDM channel mapping could result in WDM playback stopping and requiring a reboot to restore WDM audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">574</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">WDM audio could glitch or become distorted when using two stacked devices.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">575</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Attaching a second device could result in WDM audio stopping and requiring a reboot to restore WDM audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">576</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">WDM audio would not stream when using two stacked devices if the WDM channels were only mapped to the second device.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">578</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver's Buffer Size and Operation Mode could not be changed when an ASIO host application was using the driver.  It is now possible to change the Buffer Size and Operation Mode when there is only one ASIO host application active and no WDM applications active.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">581</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">It was not possible to map a WDM channel if the device's channel name was longer than 16 characters.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">587</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">WDM audio would not stream if only one WDM channel was mapped to an output on Vista.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">588</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">If two stacked devices both had the same nickname, it was not possible to change which device was the Master.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">594</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The ASIO driver now returns the correct minimum allowed buffer size to ASIO host applications based on the current Operation Mode.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.4.0</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">170, 225, 275, 301, 376, 377, 429, 434, 452, 453, 493</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver's WDM audio interface is now always presented as 8 in/out channels, regardless of the number of total audio channels available on a device or on a number of stacked devices.  An 8 channel interface provides support for Mono to 7.1 Surround configurations for WDM audio applications.  This resolves many issues since the WDM Audio model does not handle dynamic configuration changes very well.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">316, 485</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">When using a Mac with Boot Camp, users should try disabling the KbdMgr.exe process if their computer is experiencing high DPC system latency. The KbdMgr.exe process is known to cause high DPC system latency, leading to audio dropouts and in some cases BSOD's.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">322</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The DPC latency checker did not work on Vista 64-bit.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">325</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">On a 64-bit version of Windows with 4GB or more of RAM installed, the driver's audio streaming would constantly lock and unlock.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">328</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A 64-bit ASIO host application, running on Vista 64-bit, that provided a user interface to open the driver's Control Panel would fail to open the driver's Control Panel.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">329</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A 32-bit ASIO host application, running on a 64-bit version of Windows, that provided a user interface to open the driver's Control Panel would fail to open the driver's Control Panel.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">357</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">In the Control Panel's WDM tab, the WDM enable/disable checkbox has been removed.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">369</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">In the Control Panel's WDM tab, the Speaker Configuration has been removed. The speaker setup should now be configured using Window's Sound Control Panel.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">375</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">In the Windows Vista Sound Control Panel, some of the speaker configurations weren't available in the device's Speaker Setup window.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">430</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A reset button has been added to the WDM Channel Mapper window. This maps the WDM channels to the first device channels.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">438, 448, 462</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">WDM applications are now limited in their ability to change the sample rate.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">441</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">If the Control Panel's error log window was open, it would always become the front-most window whenever a new log message was received.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">443</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Control Panel application could crash if the Event Logger window was open while exiting the application.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">461, 479, 480, 481</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">WDM applications, like Skype, now work correctly at all sample rates when the device is the default audio device for recording and playback.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">468</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The default height of the Control Panel window is slightly smaller, and still allows up to 5 devices in the device list before scrolling.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">476</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">In the Windows Vista Sound Control Panel, the Advanced tab would sometimes not be shown in the device's Properties window.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">483</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur on Vista 64-bit when the system was shutting down.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">488</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">On rare occasions, an ASIO host could sometimes fail when initializing or resetting its ASIO connection to the driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">504</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A WDM application's audio would glitch or stop after remapping WDM output channels during playback on Vista.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">515</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">During device installation, a BSOD could occur if the driver's MIDI interface was accessed before the device installation was completed.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">516, 547</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">On Vista 64-bit, a rare BSOD could occur when booting the computer with a device attached.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">525</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver was not recovering from a large spike in the computer's DPC system latency, resulting in no audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">538</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when opening a project in Cubase SX4 with two stacked devices.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">544</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver could hang when a device was removed in a stacked configuration, requiring the PC to be restarted.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">546</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A WDM application's audio would play at 2x speed on a device that only supports a 96kHz sample rate.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">550</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">On Vista 64-bit, installing over an existing driver was not properly uninstalling the old driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.3.4</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">449</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The ASIO driver no longer returns an error code when an ASIO host application requests to set the sample rate to the same value as the current sample rate.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">467</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">When the operation mode is set to Normal, the driver now returns the correct minimum buffer size for the Control Panel's combo box display.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<br><br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.3.3</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">48, 283, 361</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Each device supported by the driver may now have unique MIDI port names.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">220, 315, 406</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel's buffer combo box now only shows the buffer sizes that are currently available.  The minimum buffer size is dependent on the current sample rate and operation mode.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">309</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">SONAR 8 would hang for 20 to 30 seconds at the start of recording when configured to use its new WASAPI driver mode.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">341</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel's WDM channel mapper window would truncate channel names to 32 characters.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">352</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Control Panel would crash if the speaker setup was set to "7.1 home theater speakers" in the Sound and Audio Control Panel.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">366</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">In a rare case, the Control Panel firmware update could fail and would update the device with an incomplete firmware image.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">374</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When a test tone was being played in the Sound and Audio Control Panel, the speaker configuration dialog could not be accessed.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">380</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A WDM audio application could force the sample rate to change even though an ASIO application was already active.  The driver's parameter locking logic was not correctly preventing this.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">401</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Control Panel would induce high CPU usage when the Bus tab was visible.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">444</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">After closing a WDM audio application, the driver's parameter locking logic could incorrectly leave the parameters in a locked state.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<br><br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.3.2</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">71</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Control Panel Look and Feel overhaul, including layout, icons and color schemes. Improved visibility of various items and events for the user.<br>
+					<br>
+
+					Look and Feel
+					<ul>
+					<li>Flatter look, with concentric rounded-rectangles.
+					<li>New Control shapes along the lines of the flatter look.
+					<li>New Device item layout.
+					<li>Native-looking title bar buttons.
+					<li>Updated color scheme.
+					</ul>
+
+					Layout
+					<ul>
+					<li>
+					Added Info tab, displaying versions and vendor info.
+					<li>
+					Reorganized the Bus tab, added more visible alert when lock is lost.
+					<li>
+					Simplified Device Nickname controls.
+					<li>
+					The Master Device Unique ID is now shown in a ToolTip when hovering over selected master.
+					<li>
+					Removed Sample Rate Change Restriction setting.
+					<li>
+					Moved Operation Mode from Advanced to Bus tab for Windows (matches Mac OS X).
+					<li>
+					When there is only one Sample Rate or one Sync Source, the GUI controls are made invisible.
+					<li>
+					Changed alignments and highlighting in some areas to make it easier to find values quickly.
+					</ul>
+
+					Events
+					<ul>
+					<li>
+					Added Parameter Locking support. GUI elements are disabled when Audio clients are active, replaces Sample Rate restriction setting.
+					<li>
+					Improved error reporting for driver version mismatch, no devices, low resources, etc. When a low resources error occurs on Windows, some text appears explaining that the user may need the 1394b hotfix from Microsoft.
+					<li>
+					Warning icon over the device shows when an event has happened, info icon stays visible for a while after that, indicating that the device's TootTip will show accumulated recent events.
+					<li>
+					Added event log window, which appears with shift+click on the active device. This shows all recent events and some status messages.
+					</ul>
+
+					WDM
+					<ul>
+					<li>
+					Renamed the Advanced tab to WDM since it now only has WDM controls.
+					<li>The WDM Channel Mapper Dialog now responds appropriately to parameter locking.
+					<li>
+					Removed Direct Out from WDM Out Speaker Configurations.
+					<li>
+					Removed Input Mapping from WDM Channel Mapper Dialog.
+					</ul>
+
+					Other
+					<ul>
+					<li>
+					Only one instance of the Control Panel is allowed to run.
+					</ul></font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<br><br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.3.1</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">289</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The second MIDI port on an isochronous stream was not working at 176kHz and 192kHz.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">292</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel DPC latency checker will now continue to run when switching to another page in the UI.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">298</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when removing a device.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">302</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">When the sample rate parameter is locked (more than one ASIO or WDM client is active) the ASIO driver now correctly reports that the only supported sample rate is the current sample rate.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">311</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Added support to the ASIO driver's API so that an ASIO host can indicate that it will not attempt to change any parameters and therefore should not affect parameter locking.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<br><br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.3.0</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">7, 250, 252, 258, 264</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The control panel and driver now disable parameter changes when a parameter change request cannot be honored without disturbing ASIO or WDM applications.  The control panel will dynamically grey-out parameters that cannot currently be changed.<br><br>This has superseded the sample rate change permission feature which has been removed from the control panel and driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">238</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The original XP SP2 problem with 1394b devices (KB885222) still persists with SP3. Microsoft has recognized this and they are working on an SP3 compatible hotfix for the problem.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP SP3</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">244</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The installer now also copies the control panel customization file if there is an .defs file provided for this customization.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">253</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A Windows catalog file has been added to the distribution and to the installer.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">254, 255</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The control panel is now able to show a better fatal device or driver error description.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">268</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Improved support for the WASAPI driver mode in Vista.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">282</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A rare BSOD could occur when the device's MIDI port configuration changed.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">290</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Testing for XP32 SP3 is now part of the standard regression test. This release is also tested with SP2 but future releases will not be fully tested under SP2.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP SP3</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<br><br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.2.1</font></b></p>
+	<p><b><font size="2" face="Verdana"></font></b></p>
+	<p><b><font size="3" face="Verdana">Issues resolved</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">23, 217</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">MIDI dropouts could occur when large amounts of MIDI data was output.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">171</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">ASIO clients are now allowed to change the buffer size using the ASIO API, but only if there are no other ASIO clients open.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">267</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">For devices that have multiple MIDI ports, some applications would show duplicate listings of the first MIDI port.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<br><br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.2.0</font></b></p>
+	<p><b><font size="2" face="Verdana"></font></b></p>
+	<p><b><font size="3" face="Verdana">Issues resolved</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">10, 195</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when using the WDM/KS audio interface.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">107 </font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Test scripts have been added to the dice command line binary folder to run automated streaming tests on Windows.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">109</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The new JUCE and PAL based Control Panel is now installed by default.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">113</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A Control Panel hang was fixed. A deadlock could occur when handling the device lock state callback.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">122</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">If the buffer size is below the minimum value required for the selected operation mode, the buffer size will now be set to the minimum value required for the selected operation mode.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">123</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Preliminary and local builds are now marked to avoid their distribution.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">141</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">There was a small, constant discrepancy to the latency reported by the ASIO driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">147</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">When using Sony Vegas with ASIO the WDM driver gets in the way when trying to change sample rates. Previously this could result in a BSOD but that has been fixed. The workaround is to either disable WDM in the Device control panel or use Vegas with WDM instead of ASIO.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">153</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When the previous master device is removed, the new master device's sync source is now set to Internal.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">154</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">An attempt to install on Vista 64-bit would fail because of a missing installation helper application - that is now included.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">156</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The 64-bit DICE driver is now compatible with 32-bit applications running under Wow64 on a Windows 64-bit OS.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">163</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Windows installer now displays the release notes.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">169</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">ASIO streaming performance on Vista has been improved.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">173</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The new Control Panel checks for atomic delete+program capability of downloaded image data. If the firmware is capable, the explicit delete step is skipped.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">185</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The display name of the ASIO driver now starts with "ASIO" to better distinguish between WDM and ASIO drivers in applications showing both in one setup dialog element.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">191</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A 32-bit ASIO host was unable to connect to the ASIO driver on a Windows 64-bit OS.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">192</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The new JUCE and PAL based Control Panel is registered by the installer as the default ASIO control panel for the DICE ASIO driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">200</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The ASIO driver could cause problems with multi-processing in host applications.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">209</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The installer no longer copies its Uninstall.dll into the system folder. A previous installation will still be removed completely.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">210</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A Control Panel application crash was fixed. This was due to an unhandled divide by zero in meter region size calculations.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<br><br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.1.2</font></b></p>
+	<p><b><font size="2" face="Verdana"></font></b></p>
+	<p><b><font size="3" face="Verdana">Issues resolved</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">3, 6, 9, 36</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when changing the driver configuration:  sample rate, channel configuration, WDM speaker configuration, enabling/disabling WDM.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">4</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Improved ASIO performance, particularly on multi-core systems.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">5</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">On rare occasions, ASIO streaming would not start.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">8</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">On Vista, a BSOD could occur when removing multiple stacked devices at the same time.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">43</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when assigning WDM channels with a stacked devices configuration.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">49</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">ASIO/WDM channel ordering could be presented incorrectly in a stacked devices configuration.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">72, 44, 108</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD would occur while changing sample rates from the device using the development CLI (Command Line Interface).  The BSOD could also occur during device removal.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">93</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when changing channel configuration while iTunes was playing.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">101</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A bug was introduced in the version 3.1.1 Windows driver installer such that the installer did not correctly remove the previous driver. The result was that after install and reboot the "Found New Hardware" dialog would not appear automatically and the previous driver version would remain installed.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">116</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">On Vista, the audio input streams could remain unlocked after connecting a device.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">117</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Using multiple devices on Vista, the "Found New Hardware" dialog could incorrectly appear indicating a new WDM device when changing the master device.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">118</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver could hang when a device was removed in a stacked devices configuration.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">120</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A BSOD could occur when disconnecting a device.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<br><br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.1.1</font></b></p>
+	<p><b><font size="2" face="Verdana"></font></b></p>
+	<p><b><font size="3" face="Verdana">Issues resolved</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="575">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="575">
+					<p><font size="2" face="Verdana">The driver now defaults to using Safe Mode 1 and a buffer size of 512 if no driver settings are found in the registry (fresh installation).</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="575">
+					<p><font size="2" face="Verdana">Selecting a small ASIO buffer size in Cubase may result in a BSOD.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="575">
+					<p><font size="2" face="Verdana">Fixed a problem with ASIO reset being sent in case of user mode CPU overload. Now the BufferSwitch call is skipped and SamplePosition incremented.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="575">
+					<p><font size="2" face="Verdana">The driver now reports consistent latencies for a given buffer setting and sample rate. There is still a small discrepancy to the reported latency but it is constant.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="575">
+					<p><font size="2" face="Verdana">Problem with WDM channel mapping with stacked devices fixed. In some cases the control panel would not allow changes.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="575">
+					<p><font size="2" face="Verdana">Phase alignment when locking to external clocks has been further improved.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<br><br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.1.0</font></b></p>
+	<p><b><font size="2" face="Verdana"></font></b></p>
+	<p><b><font size="3" face="Verdana">Issues resolved</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="575">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="575">
+					<p><font size="2" face="Verdana">Rare micro alignment errors where multiple isoc streams exhibit different latency. Multiple streams will now be sample accurately aligned. This will also fix issues reported earlier when having multiple ASIO clients open in high channel count configurations (VST plugins).</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="575">
+					<p><font size="2" face="Verdana">Improved phase alignment of output streams in relation to master stream. This will fix problems with locking to external sync where audio might become garbled.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<br><br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.0.1</font></b></p>
+	<p><b><font size="2" face="Verdana"></font></b></p>
+	<p><b><font size="3" face="Verdana">Issues resolved</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="575">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="575">
+					<p><font size="2" face="Verdana">Speaker Mapping changes cause system hang if performed in stacked configuration while iTunes is open.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="575">
+					<p><font size="2" face="Verdana">DTM tests related BSODs.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">XP/Vista</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

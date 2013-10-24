@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B00915613693AE7009731D0 /* libTDL_UserLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B00915313693AC2009731D0 /* libTDL_UserLib.a */; };
+		CD0A93DD0ACDC00700752438 /* tcat_dice_pal_bus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD0A93D20ACDC00700752438 /* tcat_dice_pal_bus.cpp */; };
+		CD0A93DE0ACDC00700752438 /* tcat_dice_pal_bus.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0A93D30ACDC00700752438 /* tcat_dice_pal_bus.h */; };
+		CD0A93DF0ACDC00700752438 /* tcat_dice_pal_device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD0A93D40ACDC00700752438 /* tcat_dice_pal_device.cpp */; };
+		CD0A93E00ACDC00700752438 /* tcat_dice_pal_device.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0A93D50ACDC00700752438 /* tcat_dice_pal_device.h */; };
+		CD0A93E20ACDC00700752438 /* tcat_dice_pal_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = CD0A93D70ACDC00700752438 /* tcat_dice_pal_Prefix.pch */; };
+		CD0A93E40ACDC00700752438 /* tcat_dice_pal_system.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0A93D90ACDC00700752438 /* tcat_dice_pal_system.h */; };
+		CD0A93E60ACDC00700752438 /* tcat_dice_pal.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0A93DB0ACDC00700752438 /* tcat_dice_pal.h */; };
+		CD0A93F30ACDC01D00752438 /* tcat_dice.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0A93EC0ACDC01D00752438 /* tcat_dice.h */; };
+		CD2C0A4D0ADD4ED00052CFDF /* tcat.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2C0A4B0ADD4ED00052CFDF /* tcat.h */; };
+		CD2C0A4E0ADD4ED00052CFDF /* tcat_dice_version.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2C0A4C0ADD4ED00052CFDF /* tcat_dice_version.h */; };
+		CD2C0AB20ADD8A1F0052CFDF /* tcat_dice_myproduct.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2C0AB10ADD8A1F0052CFDF /* tcat_dice_myproduct.h */; };
+		CD3EDF6C0B1DF90400362E51 /* tcat_dice_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3EDF6B0B1DF90400362E51 /* tcat_dice_mac.h */; };
+		CD768AAD0C4BFAC600A6E127 /* tcat_dice_pal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD768AAC0C4BFAC600A6E127 /* tcat_dice_pal.cpp */; };
+		CD8BC4230E5F219B00410008 /* tcat_osx.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8BC4220E5F219B00410008 /* tcat_osx.h */; };
+		CD8BC4240E5F219B00410008 /* tcat_osx.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8BC4220E5F219B00410008 /* tcat_osx.h */; };
+		CD9701790E2D2EA30088B1A6 /* tcat_dice_pal_device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD0A93D40ACDC00700752438 /* tcat_dice_pal_device.cpp */; };
+		CD97017C0E2D2EA30088B1A6 /* tcat_exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEE398D0AD181AA0078C608 /* tcat_exception.cpp */; };
+		CD97017D0E2D2EA30088B1A6 /* tcat_dice_pal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD768AAC0C4BFAC600A6E127 /* tcat_dice_pal.cpp */; };
+		CD97017E0E2D2EB20088B1A6 /* tcat_dice_pal_bus.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0A93D30ACDC00700752438 /* tcat_dice_pal_bus.h */; };
+		CD97017F0E2D2EB20088B1A6 /* tcat_dice_pal_device.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0A93D50ACDC00700752438 /* tcat_dice_pal_device.h */; };
+		CD9701800E2D2EB20088B1A6 /* tcat_dice_pal_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = CD0A93D70ACDC00700752438 /* tcat_dice_pal_Prefix.pch */; };
+		CD9701810E2D2EB20088B1A6 /* tcat_dice_pal_system.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0A93D90ACDC00700752438 /* tcat_dice_pal_system.h */; };
+		CD9701820E2D2EB20088B1A6 /* tcat_dice_pal.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0A93DB0ACDC00700752438 /* tcat_dice_pal.h */; };
+		CD9701830E2D2EB20088B1A6 /* tcat_dice.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0A93EC0ACDC01D00752438 /* tcat_dice.h */; };
+		CD9701840E2D2EB20088B1A6 /* tcat_exception.h in Headers */ = {isa = PBXBuildFile; fileRef = CDEE398C0AD181AA0078C608 /* tcat_exception.h */; };
+		CD9701850E2D2EB20088B1A6 /* tcat.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2C0A4B0ADD4ED00052CFDF /* tcat.h */; };
+		CD9701860E2D2EB20088B1A6 /* tcat_dice_version.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2C0A4C0ADD4ED00052CFDF /* tcat_dice_version.h */; };
+		CD9701870E2D2EB20088B1A6 /* tcat_dice_myproduct.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2C0AB10ADD8A1F0052CFDF /* tcat_dice_myproduct.h */; };
+		CD9701880E2D2EB20088B1A6 /* tcat_dice_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3EDF6B0B1DF90400362E51 /* tcat_dice_mac.h */; };
+		CD9701890E2D2EB20088B1A6 /* tcat_dice_firmware_loader.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDCB24A0B2A0B61000DBF1A /* tcat_dice_firmware_loader.h */; };
+		CD97018A0E2D2EB20088B1A6 /* tcat_dice_firmware.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDCB24B0B2A0B61000DBF1A /* tcat_dice_firmware.h */; };
+		CD9701C30E2D369B0088B1A6 /* tcat_dice_pal_system_osx_avc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9701C10E2D369B0088B1A6 /* tcat_dice_pal_system_osx_avc.cpp */; };
+		CD9701C40E2D369B0088B1A6 /* tcat_dice_pal_system_osx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9701C00E2D369B0088B1A6 /* tcat_dice_pal_system_osx.cpp */; };
+		CD9701E20E2D37D70088B1A6 /* tcat_dice_pal_bus_osx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9701E00E2D37D70088B1A6 /* tcat_dice_pal_bus_osx.cpp */; };
+		CD9701E30E2D37D70088B1A6 /* tcat_dice_pal_osx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9701E10E2D37D70088B1A6 /* tcat_dice_pal_osx.cpp */; };
+		CD9701EB0E2D38CD0088B1A6 /* tcat_dice_pal_bus_osx_avc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9701EA0E2D38CD0088B1A6 /* tcat_dice_pal_bus_osx_avc.cpp */; };
+		CD9701ED0E2D39620088B1A6 /* tcat_dice_pal_osx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD9701E10E2D37D70088B1A6 /* tcat_dice_pal_osx.cpp */; };
+		CDDCB24C0B2A0B61000DBF1A /* tcat_dice_firmware_loader.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDCB24A0B2A0B61000DBF1A /* tcat_dice_firmware_loader.h */; };
+		CDDCB24D0B2A0B61000DBF1A /* tcat_dice_firmware.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDCB24B0B2A0B61000DBF1A /* tcat_dice_firmware.h */; };
+		CDEE398E0AD181AA0078C608 /* tcat_exception.h in Headers */ = {isa = PBXBuildFile; fileRef = CDEE398C0AD181AA0078C608 /* tcat_exception.h */; };
+		CDEE398F0AD181AA0078C608 /* tcat_exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEE398D0AD181AA0078C608 /* tcat_exception.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B00915313693AC2009731D0 /* libTDL_UserLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTDL_UserLib.a; path = ../TDL/binary/public/TDL_UserLib/osx/Release/libTDL_UserLib.a; sourceTree = SOURCE_ROOT; };
+		6B2E21781020CB0800BA5AB8 /* tcat_dice_pal.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tcat_dice_pal.xcconfig; sourceTree = SOURCE_ROOT; };
+		CD0A93D20ACDC00700752438 /* tcat_dice_pal_bus.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tcat_dice_pal_bus.cpp; sourceTree = SOURCE_ROOT; };
+		CD0A93D30ACDC00700752438 /* tcat_dice_pal_bus.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tcat_dice_pal_bus.h; sourceTree = SOURCE_ROOT; };
+		CD0A93D40ACDC00700752438 /* tcat_dice_pal_device.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tcat_dice_pal_device.cpp; sourceTree = SOURCE_ROOT; };
+		CD0A93D50ACDC00700752438 /* tcat_dice_pal_device.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tcat_dice_pal_device.h; sourceTree = SOURCE_ROOT; };
+		CD0A93D70ACDC00700752438 /* tcat_dice_pal_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tcat_dice_pal_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		CD0A93D90ACDC00700752438 /* tcat_dice_pal_system.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tcat_dice_pal_system.h; sourceTree = SOURCE_ROOT; };
+		CD0A93DB0ACDC00700752438 /* tcat_dice_pal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tcat_dice_pal.h; sourceTree = SOURCE_ROOT; };
+		CD0A93EC0ACDC01D00752438 /* tcat_dice.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tcat_dice.h; path = ../interface/tcat_dice.h; sourceTree = SOURCE_ROOT; };
+		CD2C0A4B0ADD4ED00052CFDF /* tcat.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tcat.h; path = ../../interface/tcat.h; sourceTree = SOURCE_ROOT; };
+		CD2C0A4C0ADD4ED00052CFDF /* tcat_dice_version.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tcat_dice_version.h; path = ../../interface/tcat_dice_version.h; sourceTree = SOURCE_ROOT; };
+		CD2C0AB10ADD8A1F0052CFDF /* tcat_dice_myproduct.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tcat_dice_myproduct.h; path = ../../interface/tcat_dice_myproduct.h; sourceTree = SOURCE_ROOT; };
+		CD3EDF6B0B1DF90400362E51 /* tcat_dice_mac.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tcat_dice_mac.h; path = ../interface/tcat_dice_mac.h; sourceTree = SOURCE_ROOT; };
+		CD768AAC0C4BFAC600A6E127 /* tcat_dice_pal.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tcat_dice_pal.cpp; sourceTree = "<group>"; };
+		CD8BC4220E5F219B00410008 /* tcat_osx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcat_osx.h; sourceTree = "<group>"; };
+		CD97016E0E2D2E330088B1A6 /* libtcat_dice_avc_pal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtcat_dice_avc_pal.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9701C00E2D369B0088B1A6 /* tcat_dice_pal_system_osx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tcat_dice_pal_system_osx.cpp; sourceTree = "<group>"; };
+		CD9701C10E2D369B0088B1A6 /* tcat_dice_pal_system_osx_avc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tcat_dice_pal_system_osx_avc.cpp; sourceTree = "<group>"; };
+		CD9701E00E2D37D70088B1A6 /* tcat_dice_pal_bus_osx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tcat_dice_pal_bus_osx.cpp; sourceTree = "<group>"; };
+		CD9701E10E2D37D70088B1A6 /* tcat_dice_pal_osx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tcat_dice_pal_osx.cpp; sourceTree = "<group>"; };
+		CD9701EA0E2D38CD0088B1A6 /* tcat_dice_pal_bus_osx_avc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tcat_dice_pal_bus_osx_avc.cpp; sourceTree = "<group>"; };
+		CDDCB24A0B2A0B61000DBF1A /* tcat_dice_firmware_loader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tcat_dice_firmware_loader.h; path = ../../interface/tcat_dice_firmware_loader.h; sourceTree = SOURCE_ROOT; };
+		CDDCB24B0B2A0B61000DBF1A /* tcat_dice_firmware.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tcat_dice_firmware.h; path = ../../interface/tcat_dice_firmware.h; sourceTree = SOURCE_ROOT; };
+		CDEE398C0AD181AA0078C608 /* tcat_exception.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tcat_exception.h; sourceTree = SOURCE_ROOT; };
+		CDEE398D0AD181AA0078C608 /* tcat_exception.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tcat_exception.cpp; sourceTree = SOURCE_ROOT; };
+		D2AAC06F0554671400DB518D /* libtcat_dice_pal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtcat_dice_pal.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B00915513693AE1009731D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B00915613693AE7009731D0 /* libTDL_UserLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC06F0554671400DB518D /* libtcat_dice_pal.a */,
+				CD97016E0E2D2E330088B1A6 /* libtcat_dice_avc_pal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* tcat_dice_pal */ = {
+			isa = PBXGroup;
+			children = (
+				6B2E21781020CB0800BA5AB8 /* tcat_dice_pal.xcconfig */,
+				08FB77ACFE841707C02AAC07 /* Source */,
+				6B00914B13693A80009731D0 /* External Frameworks and Libraries */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+			);
+			name = tcat_dice_pal;
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C0A4B0ADD4ED00052CFDF /* tcat.h */,
+				CD0A93EC0ACDC01D00752438 /* tcat_dice.h */,
+				CD3EDF6B0B1DF90400362E51 /* tcat_dice_mac.h */,
+				CD2C0A4C0ADD4ED00052CFDF /* tcat_dice_version.h */,
+				CD2C0AB10ADD8A1F0052CFDF /* tcat_dice_myproduct.h */,
+				CDDCB24B0B2A0B61000DBF1A /* tcat_dice_firmware.h */,
+				CDDCB24A0B2A0B61000DBF1A /* tcat_dice_firmware_loader.h */,
+				CD0A93D70ACDC00700752438 /* tcat_dice_pal_Prefix.pch */,
+				CD8BC4220E5F219B00410008 /* tcat_osx.h */,
+				CDEE398C0AD181AA0078C608 /* tcat_exception.h */,
+				CDEE398D0AD181AA0078C608 /* tcat_exception.cpp */,
+				CD0A93D50ACDC00700752438 /* tcat_dice_pal_device.h */,
+				CD0A93D40ACDC00700752438 /* tcat_dice_pal_device.cpp */,
+				CD0A93D30ACDC00700752438 /* tcat_dice_pal_bus.h */,
+				CD0A93D20ACDC00700752438 /* tcat_dice_pal_bus.cpp */,
+				CD9701E00E2D37D70088B1A6 /* tcat_dice_pal_bus_osx.cpp */,
+				CD9701EA0E2D38CD0088B1A6 /* tcat_dice_pal_bus_osx_avc.cpp */,
+				CD0A93D90ACDC00700752438 /* tcat_dice_pal_system.h */,
+				CD9701C00E2D369B0088B1A6 /* tcat_dice_pal_system_osx.cpp */,
+				CD9701C10E2D369B0088B1A6 /* tcat_dice_pal_system_osx_avc.cpp */,
+				CD0A93DB0ACDC00700752438 /* tcat_dice_pal.h */,
+				CD768AAC0C4BFAC600A6E127 /* tcat_dice_pal.cpp */,
+				CD9701E10E2D37D70088B1A6 /* tcat_dice_pal_osx.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		6B00914B13693A80009731D0 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				6B00915313693AC2009731D0 /* libTDL_UserLib.a */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CD97016A0E2D2E330088B1A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD97017E0E2D2EB20088B1A6 /* tcat_dice_pal_bus.h in Headers */,
+				CD97017F0E2D2EB20088B1A6 /* tcat_dice_pal_device.h in Headers */,
+				CD9701800E2D2EB20088B1A6 /* tcat_dice_pal_Prefix.pch in Headers */,
+				CD9701810E2D2EB20088B1A6 /* tcat_dice_pal_system.h in Headers */,
+				CD9701820E2D2EB20088B1A6 /* tcat_dice_pal.h in Headers */,
+				CD9701830E2D2EB20088B1A6 /* tcat_dice.h in Headers */,
+				CD9701840E2D2EB20088B1A6 /* tcat_exception.h in Headers */,
+				CD9701850E2D2EB20088B1A6 /* tcat.h in Headers */,
+				CD9701860E2D2EB20088B1A6 /* tcat_dice_version.h in Headers */,
+				CD9701870E2D2EB20088B1A6 /* tcat_dice_myproduct.h in Headers */,
+				CD9701880E2D2EB20088B1A6 /* tcat_dice_mac.h in Headers */,
+				CD9701890E2D2EB20088B1A6 /* tcat_dice_firmware_loader.h in Headers */,
+				CD97018A0E2D2EB20088B1A6 /* tcat_dice_firmware.h in Headers */,
+				CD8BC4240E5F219B00410008 /* tcat_osx.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC06B0554671400DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0A93DE0ACDC00700752438 /* tcat_dice_pal_bus.h in Headers */,
+				CD0A93E00ACDC00700752438 /* tcat_dice_pal_device.h in Headers */,
+				CD0A93E20ACDC00700752438 /* tcat_dice_pal_Prefix.pch in Headers */,
+				CD0A93E40ACDC00700752438 /* tcat_dice_pal_system.h in Headers */,
+				CD0A93E60ACDC00700752438 /* tcat_dice_pal.h in Headers */,
+				CD0A93F30ACDC01D00752438 /* tcat_dice.h in Headers */,
+				CDEE398E0AD181AA0078C608 /* tcat_exception.h in Headers */,
+				CD2C0A4D0ADD4ED00052CFDF /* tcat.h in Headers */,
+				CD2C0A4E0ADD4ED00052CFDF /* tcat_dice_version.h in Headers */,
+				CD2C0AB20ADD8A1F0052CFDF /* tcat_dice_myproduct.h in Headers */,
+				CD3EDF6C0B1DF90400362E51 /* tcat_dice_mac.h in Headers */,
+				CDDCB24C0B2A0B61000DBF1A /* tcat_dice_firmware_loader.h in Headers */,
+				CDDCB24D0B2A0B61000DBF1A /* tcat_dice_firmware.h in Headers */,
+				CD8BC4230E5F219B00410008 /* tcat_osx.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CD97016D0E2D2E330088B1A6 /* tcat_dice_avc_pal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD9701760E2D2E590088B1A6 /* Build configuration list for PBXNativeTarget "tcat_dice_avc_pal" */;
+			buildPhases = (
+				CD97016A0E2D2E330088B1A6 /* Headers */,
+				CD97016B0E2D2E330088B1A6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tcat_dice_avc_pal;
+			productName = tcat_dice_avc_pal;
+			productReference = CD97016E0E2D2E330088B1A6 /* libtcat_dice_avc_pal.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC06E0554671400DB518D /* tcat_dice_pal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB920108733DBB0010E9CD /* Build configuration list for PBXNativeTarget "tcat_dice_pal" */;
+			buildPhases = (
+				D2AAC06B0554671400DB518D /* Headers */,
+				D2AAC06C0554671400DB518D /* Sources */,
+				6B00915513693AE1009731D0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tcat_dice_pal;
+			productName = tcat_dice_pal;
+			productReference = D2AAC06F0554671400DB518D /* libtcat_dice_pal.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = 1DEB920508733DBB0010E9CD /* Build configuration list for PBXProject "tcat_dice_pal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* tcat_dice_pal */;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC06E0554671400DB518D /* tcat_dice_pal */,
+				CD97016D0E2D2E330088B1A6 /* tcat_dice_avc_pal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD97016B0E2D2E330088B1A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD97017C0E2D2EA30088B1A6 /* tcat_exception.cpp in Sources */,
+				CD9701790E2D2EA30088B1A6 /* tcat_dice_pal_device.cpp in Sources */,
+				CD9701EB0E2D38CD0088B1A6 /* tcat_dice_pal_bus_osx_avc.cpp in Sources */,
+				CD9701C30E2D369B0088B1A6 /* tcat_dice_pal_system_osx_avc.cpp in Sources */,
+				CD97017D0E2D2EA30088B1A6 /* tcat_dice_pal.cpp in Sources */,
+				CD9701ED0E2D39620088B1A6 /* tcat_dice_pal_osx.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC06C0554671400DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEE398F0AD181AA0078C608 /* tcat_exception.cpp in Sources */,
+				CD0A93DF0ACDC00700752438 /* tcat_dice_pal_device.cpp in Sources */,
+				CD0A93DD0ACDC00700752438 /* tcat_dice_pal_bus.cpp in Sources */,
+				CD9701E20E2D37D70088B1A6 /* tcat_dice_pal_bus_osx.cpp in Sources */,
+				CD9701C40E2D369B0088B1A6 /* tcat_dice_pal_system_osx.cpp in Sources */,
+				CD768AAD0C4BFAC600A6E127 /* tcat_dice_pal.cpp in Sources */,
+				CD9701E30E2D37D70088B1A6 /* tcat_dice_pal_osx.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB920208733DBB0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = tcat_dice_pal_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TCAT_DEBUG=1";
+				PRODUCT_NAME = tcat_dice_pal;
+			};
+			name = Debug;
+		};
+		1DEB920308733DBB0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = tcat_dice_pal_Prefix.pch;
+				PRODUCT_NAME = tcat_dice_pal;
+			};
+			name = Release;
+		};
+		1DEB920608733DBB0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B2E21781020CB0800BA5AB8 /* tcat_dice_pal.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+			};
+			name = Debug;
+		};
+		1DEB920708733DBB0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B2E21781020CB0800BA5AB8 /* tcat_dice_pal.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+			};
+			name = Release;
+		};
+		CD9701720E2D2E340088B1A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TCAT_DICE_AVC,
+					"TCAT_DEBUG=1",
+				);
+				PRODUCT_NAME = tcat_dice_avc_pal;
+			};
+			name = Debug;
+		};
+		CD9701730E2D2E340088B1A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = TCAT_DICE_AVC;
+				PRODUCT_NAME = tcat_dice_avc_pal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB920108733DBB0010E9CD /* Build configuration list for PBXNativeTarget "tcat_dice_pal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB920208733DBB0010E9CD /* Debug */,
+				1DEB920308733DBB0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB920508733DBB0010E9CD /* Build configuration list for PBXProject "tcat_dice_pal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB920608733DBB0010E9CD /* Debug */,
+				1DEB920708733DBB0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD9701760E2D2E590088B1A6 /* Build configuration list for PBXNativeTarget "tcat_dice_avc_pal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9701720E2D2E340088B1A6 /* Debug */,
+				CD9701730E2D2E340088B1A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/TCKernel/src
+END
+TCKernelCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/TCKernel/src/TCKernelCli.c
+END
+TCMemory.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/TCKernel/src/TCMemory.c
+END
+TCMsgQueue.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/TCKernel/src/TCMsgQueue.c
+END
+TCInterrupt.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/TCKernel/src/TCInterrupt.c
+END
+TCTime.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/TCKernel/src/TCTime.c
+END
+TCTasking.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/TCKernel/src/TCTasking.c
+END
+TCSemaphore.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/TCKernel/src/TCSemaphore.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/TCKernel/src/Makefile
+END
+TCDebug.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/TCKernel/src/TCDebug.c
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/target/src
+END
+targetBoard.c
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/target/src/targetBoard.c
+END
+musicDescriptor.c
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/target/src/musicDescriptor.c
+END
+musicSD_6x6plusMIDI.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/target/src/musicSD_6x6plusMIDI.xml
+END
+audioDescriptor.c
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/target/src/audioDescriptor.c
+END
+targetPlugs.c
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/target/src/targetPlugs.c
+END
+targetConfigCSR.c
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/target/src/targetConfigCSR.c
+END
+EVM002AudioMusicSU_6x6plusMIDI.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/target/src/EVM002AudioMusicSU_6x6plusMIDI.pdf
+END
+targetVendorDefs.c
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/target/src/targetVendorDefs.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/avc_tcd22x0/target/src/Makefile
+END

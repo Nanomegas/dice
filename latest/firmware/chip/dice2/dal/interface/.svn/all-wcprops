@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface
+END
+dalAES.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalAES.h
+END
+dalADAT.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalADAT.h
+END
+dalAVS.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalAVS.h
+END
+dalWCEXT.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalWCEXT.h
+END
+dalI2S.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalI2S.h
+END
+dalClkCtrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalClkCtrl.h
+END
+dalRates.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalRates.h
+END
+dal.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dal.h
+END
+dalDSAI.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalDSAI.h
+END
+dalRouter.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalRouter.h
+END
+dalEvents.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalEvents.h
+END
+dalTDIF.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalTDIF.h
+END
+dalCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalCli.h
+END
+dalRouting.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/dice2/dal/interface/dalRouting.h
+END

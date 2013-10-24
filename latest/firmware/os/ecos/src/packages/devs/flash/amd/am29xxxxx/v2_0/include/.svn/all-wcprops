@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/amd/am29xxxxx/v2_0/include
+END
+flash_am29xxxxx_parts.inl
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/amd/am29xxxxx/v2_0/include/flash_am29xxxxx_parts.inl
+END
+flash_am29xxxxx.inl
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/amd/am29xxxxx/v2_0/include/flash_am29xxxxx.inl
+END

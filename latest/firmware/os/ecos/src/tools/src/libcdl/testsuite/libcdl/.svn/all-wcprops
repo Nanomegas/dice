@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/libcdl/testsuite/libcdl
+END
+cdl1.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/libcdl/testsuite/libcdl/cdl1.cxx
+END
+cdl2.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/libcdl/testsuite/libcdl/cdl2.cxx
+END
+regress.exp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/libcdl/testsuite/libcdl/regress.exp
+END
+cdl3.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/libcdl/testsuite/libcdl/cdl3.cxx
+END
+cdl4.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/libcdl/testsuite/libcdl/cdl4.cxx
+END
+cdl5.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/libcdl/testsuite/libcdl/cdl5.cxx
+END
+cdl.exp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/tools/src/libcdl/testsuite/libcdl/cdl.exp
+END

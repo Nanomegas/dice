@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/host
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/host/configure
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/host/Makefile.in
+END
+usbchmod.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/host/usbchmod.c
+END
+acinclude.m4
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/host/acinclude.m4
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/host/configure.in
+END
+verbose.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/host/verbose.tcl
+END
+usbhost.c
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/host/usbhost.c
+END
+usbhost.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/host/usbhost.tcl
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/host/Makefile.am
+END
+list.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/host/list.tcl
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/host/aclocal.m4
+END

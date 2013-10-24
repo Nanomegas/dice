@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main
+END
+myMode13.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode13.c
+END
+myMode14.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode14.c
+END
+myMode15.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode15.c
+END
+patch-level.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/patch-level.h
+END
+myMode0.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode0.c
+END
+myMode1.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode1.c
+END
+myMode2.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode2.c
+END
+myMode3.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode3.c
+END
+myModes.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myModes.c
+END
+myMode4.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode4.c
+END
+myAppCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myAppCli.c
+END
+myMode5.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode5.c
+END
+myMode6.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode6.c
+END
+myAppAVC.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myAppAVC.c
+END
+myMode7.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode7.c
+END
+myModes.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myModes.h
+END
+myMode8.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode8.c
+END
+myMode9.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode9.c
+END
+myAppCli.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myAppCli.h
+END
+version.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/version.c
+END
+myApp.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myApp.c
+END
+cyg_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/cyg_main.c
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/version.h
+END
+myApp.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myApp.h
+END
+myMode10.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode10.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/Makefile
+END
+myMode11.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode11.c
+END
+myMode12.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/main/myMode12.c
+END

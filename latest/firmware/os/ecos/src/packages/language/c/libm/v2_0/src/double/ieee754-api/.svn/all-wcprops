@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api
+END
+w_j0.c
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_j0.c
+END
+w_j1.c
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_j1.c
+END
+w_lgamma_r.c
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_lgamma_r.c
+END
+w_log.c
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_log.c
+END
+w_log10.c
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_log10.c
+END
+w_gamma.c
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_gamma.c
+END
+w_scalb.c
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_scalb.c
+END
+w_fmod.c
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_fmod.c
+END
+w_acos.c
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_acos.c
+END
+w_sqrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_sqrt.c
+END
+w_asin.c
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_asin.c
+END
+w_atanh.c
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_atanh.c
+END
+w_exp.c
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_exp.c
+END
+w_cosh.c
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_cosh.c
+END
+w_acosh.c
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_acosh.c
+END
+w_lgamma.c
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_lgamma.c
+END
+w_sinh.c
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_sinh.c
+END
+w_gamma_r.c
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_gamma_r.c
+END
+w_hypot.c
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_hypot.c
+END
+w_pow.c
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_pow.c
+END
+w_atan2.c
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_atan2.c
+END
+w_remainder.c
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_remainder.c
+END
+w_jn.c
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/ieee754-api/w_jn.c
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf
+END
+mlt_arm_diceJr_EVM_rom.h
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf/mlt_arm_diceJr_EVM_rom.h
+END
+mlt_arm_diceJr_EVM_romram.h
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf/mlt_arm_diceJr_EVM_romram.h
+END
+mlt_arm_diceJr_EVM_rom.ldi
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf/mlt_arm_diceJr_EVM_rom.ldi
+END
+mlt_arm_diceJr_EVM_romram.ldi
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf/mlt_arm_diceJr_EVM_romram.ldi
+END
+mlt_arm_diceJr_EVM_ram.h
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf/mlt_arm_diceJr_EVM_ram.h
+END
+mlt_arm_diceJr_EVM_ram.ldi
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf/mlt_arm_diceJr_EVM_ram.ldi
+END
+mlt_arm_diceJr_EVM_rom.mlt
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf/mlt_arm_diceJr_EVM_rom.mlt
+END
+mlt_arm_diceJr_EVM_romram.mlt
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf/mlt_arm_diceJr_EVM_romram.mlt
+END
+mlt_arm_diceJr_EVM_ram_rb.ldi
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf/mlt_arm_diceJr_EVM_ram_rb.ldi
+END
+mlt_arm_diceJr_EVM_in_ram_test.h
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf/mlt_arm_diceJr_EVM_in_ram_test.h
+END
+mlt_arm_diceJr_EVM_ram.mlt
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf/mlt_arm_diceJr_EVM_ram.mlt
+END
+mlt_arm_diceJr_EVM_in_ram_test.ldi
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/hal/arm/diceJr/v2_0/include/pkgconf/mlt_arm_diceJr_EVM_in_ram_test.ldi
+END

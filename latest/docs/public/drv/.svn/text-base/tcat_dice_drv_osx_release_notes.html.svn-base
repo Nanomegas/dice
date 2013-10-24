@@ -1,0 +1,1795 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>DICE Mac OS X Driver Release Notes</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+</head>
+
+<body bgcolor="#ffffff">
+	<b><font size="5" face="Verdana">DICE MAC OS X DRIVER RELEASE NOTES</font></b><br>
+	<br>
+
+	<b><font size="3" face="Verdana">Requirements:</font></b><br>
+	<br>
+	<font size="2" face="Verdana">
+	&nbsp;&nbsp;<b>Operating System:</b><br>
+	<br>
+	&nbsp;&nbsp;Mac OS X 10.6.8 or higher<br>
+	&nbsp;&nbsp;Mac OS X 10.7.2 or higher<br>
+	&nbsp;&nbsp;Mac OS X 10.8.0 or higher<br>
+	<br>
+	&nbsp;&nbsp;<b>Hardware:</b><br>
+	<br>
+	&nbsp;&nbsp;Minimum:<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Intel Core Solo 1.5GHz processor<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;1GB RAM<br>
+	<br>
+	&nbsp;&nbsp;Recommended:<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Intel Core 2 Duo, Core i3, Core i5, Core i7, or Xeon processor<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;2GB or more RAM<br>
+	<br>
+	&nbsp;&nbsp;<b>Please also consult your audio applications' requirements.</b>
+	<br>
+	</font>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 4.1.3</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1131</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When using stacked devices, a device's input channels could be incorrectly sample-aligned.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x/10.8.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1218</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">When using stacked devices, CoreAudio would change the sample rate when a second device was power-cycled.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x/10.8.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1230</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When using stacked devices, the master device was not always restored correctly after a system power-cycle.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x/10.8.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1232</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Improved the driver's allocation of FireWire isochronous bandwidth.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x/10.8.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1235</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When using stacked devices, multiple MIDI device entries could appear for the same device in Audio MIDI Setup.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x/10.8.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1238</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A rare Kernel Panic could occur during a low memory or low resources condition.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x/10.8.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 4.1.2</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1161</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Added a workaround to resolve an issue where asynchronous FireWire transactions could fail on newer model Macs, starting with OS X 10.8.2.  This would result in firmware updates reporting a checksum failure.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.8.2/10.8.3</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 4.1.1</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1135, 1162</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Under certain conditions, the driver's streaming engine could fail to resume properly after a 1394 bus reset resulting in missing audio channels or no audio streaming.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x/10.8.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1167</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel application would fail to launch on Core Solo and Core Duo 32-bit processors running OS X 10.6.8.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x/10.8.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 4.1.0</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">889</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Audio streaming could become distorted when using a FireWire hard drive on a computer using an LSI FW643 OHCI with revision 0x06.  Higher revisions were not affected.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x/10.8.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1024</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">CoreAudio could incorrectly restore an old clock source value at startup.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x/10.8.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1067</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">An intermittent Kernel Panic could occur when changing the sample rate resulted in the number of input and/or output channels changing.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x/10.8.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1084, 1085</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Optimized the driver's streaming performance.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x/10.8.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1104</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The installer and software components are now signed to allow installation on Mac OS X 10.8 "Mountain Lion" with default GateKeeper settings.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.8.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 4.0.0</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">22</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">MIDI latency has been improved.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">277</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">MIDI data throughput has been improved.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">976</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Mac OS X 10.5 and the PowerPC architecture are no longer supported.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">977</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The installer now always places the Control Panel in the Applications directory, even if a previously installed version had been relocated.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">993</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A Kernel Panic could occur if the device's firmware provided an invalid parameter to the driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">994</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver's audio output latency is now lower.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1008</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Operation Mode settings have been renamed.  On both platforms there are four modes available:  Low Latency, Normal, and Safe Mode Levels 1 to 2.<br><br><table border="1" cellspacing="0" cellpadding="5"><tr><td><b><font size="2" face="Verdana">Old Setting</font></b></td><td><b><font size="2" face="Verdana">New Setting</font></b></td></tr><tr><td><font size="2" face="Verdana">Normal</font></td><td><font size="2" face="Verdana">Low Latency</font></td></tr><tr><td><font size="2" face="Verdana">Safe Mode Level 1</font></td><td><font size="2" face="Verdana">Normal</font></td></tr><tr><td><font size="2" face="Verdana">Safe Mode Level 2</font></td><td><font size="2" face="Verdana">Safe Mode Level 1</font></td></tr><tr><td><font size="2" face="Verdana">Safe Mode Level 3</font></td><td><font size="2" face="Verdana">Safe Mode Level 2</font></td></tr></table>
+<br>
+On Windows, the Operation Mode setting no longer affects the minimum ASIO buffer size.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1013</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel could crash if an exception occurred during the initial connection to the driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1017</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Control Panel could take up to 50 seconds to launch if an exception occurred during the initial connection to the driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1029</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel's Event Log window is now wider by default, and is now resizable.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x/10.7.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.5.6</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">905</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A device could sometimes appear in Audio MIDI Setup with 0 input channels and would require a reboot to restore functionality.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">843, 911, 922</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A device that was detached from the computer could remain listed in Audio MIDI Setup.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">915</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When loading Pro Tools 9 projects that used different sample rates, the driver would sometimes not switch to the correct sample rate or Pro Tools 9 would complain of a sample rate mismatch.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">923</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver has been upgraded for Mac OS X 10.7 "Lion" compatibility.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.7.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.5.5</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">876</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Control Panel application could crash at startup if the driver preference file was inaccessible.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.5.4</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">855</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Improved how the driver allocates isochronous bandwidth.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.5.3</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">746</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">If a device was attached while certain applications were active (iTunes and applications that use QuickTime, including web browsers), the CPU usage would increase and these applications' audio playback could become distorted.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">747</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The uninstaller application would not correctly detect and uninstall the driver on a Mac running OS X 10.6 if the driver had been installed before the Mac was upgraded to Mac OS X 10.6.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">756</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">If the user's language was set to a non-English language, the MIDI plugin could crash resulting in OS X's MIDIServer process continuously restarting.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">769</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel application could sometimes crash when quit.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">798</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Channel names were not displayed in Audio MIDI Setup's speaker configuration window.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.6.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.5.2</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">721</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver could fail to load at system bootup with a device attached.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.5.1</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">706</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver would hang when used with a device that used a large channel count and a particular channel configuration.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">711</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A Kernel Panic could occur in low memory conditions.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">713</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">MIDI output is now more accurately aligned with the audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">715</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver will now ignore any devices that are not on the same FireWire bus as the master device.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.5.0</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">38</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Using large Core Audio buffer sizes on PowerPC Macs would often result in audio glitches.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">261</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver's streaming engine has been improved to minimize CPU usage.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">450, 637</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver has been updated to include Mac OS X 10.6 "Snow Leopard" 64-bit driver support.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">520</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Audio could become silent or distorted if other realtime processes delayed the driver's streaming engine from processing its FireWire audio.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">539</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver is now much faster at reconfiguring its streaming engine, for instance after selecting a new sample rate.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">612</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">When loading Cubase projects that used different sample rates, the driver would sometimes not switch to the correct sample rate.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">643</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">After attaching a device for the first time, a device could sometimes appear in Audio MIDI Setup with 0 input channels and 0 output channels and could not be used for audio input or output.  The workaround was to toggle the sample rate or clock source to get it to be republished correctly.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">649</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">On rare occasions, the driver could hang when a device was removed.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">661</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">In the Control Panel application's Event Log window, the device lock changed bits were displayed in reverse order.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">665</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The driver's streaming engine would unnecessarily restart twice when a device's channel configuration would change because of a change to the sample rate.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">666</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver's clock synchronization logic has been improved.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">682</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A device's nickname could become corrupted when it was shortened.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">683, 684</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">On rare occasions, a device's nickname would not be restored correctly after a system power-cycle.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.5.x/10.6.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.4.2</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">249</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">At sample rates of 88.2kHz and higher, MIDI dropouts could occur when large amounts of MIDI data was output.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">616</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The uninstaller application has been updated to work on Mac OS X 10.6 "Snow Leopard".</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.6.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.4.1</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">573</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver had a kernel memory leak that would occur whenever streaming was restarted.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">580</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">In a rare situation, changing the sample rate in a Core Audio application could result in no audio being passed until the application's driver connection was reset.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">583</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver would not load on some PowerPC Macs running 10.4.11.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.4.0</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">295</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver could fail to instantiate a device properly after attaching and detaching devices many times.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">443</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The Control Panel application could crash if the Event Logger window was open while exiting the application.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">468</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The default height of the Control Panel window is slightly smaller, and still allows up to 5 devices in the device list before scrolling.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">494</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The MIDI driver's input parser has been improved and its memory usage has been reduced.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">495</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">On rare occasions, the MIDI driver would not publish the device's MIDI port when the device was attached.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.3.4</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">477</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The firmware file info fields were not correctly endian swapped on the Mac PowerPC platform.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.3.3</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">48, 144</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Each device supported by the driver may now have unique MIDI port names.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">347</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A crash could occur when the Control Panel was quit.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">389</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When attempting to change the Clock Source in the Audio MIDI Setup application, the Clock Source would revert back to Internal.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="dddddd" width="75">
+					<p><font size="2" face="Verdana">398</font></p>
+				</td>
+				<td valign="top" bgcolor="dddddd" width="500">
+					<p><font size="2" face="Verdana">The MIDI driver now dynamically enables or disables the MIDI ports when a device is attached or removed.</font></p>
+				</td>
+				<td valign="top" bgcolor="dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">399</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A bus reset would occur when the Control Panel was quit, resulting in an interruption to the audio streaming.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.3.2</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">71</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Control Panel Look and Feel overhaul, including layout, icons and color schemes. Improved visibility of various items and events for the user.<br>
+					<br>
+
+					Look and Feel
+					<ul>
+					<li>Flatter look, with concentric rounded-rectangles.
+					<li>New Control shapes along the lines of the flatter look.
+					<li>New Device item layout.
+					<li>Native-looking title bar buttons.
+					<li>Updated color scheme.
+					</ul>
+
+					Layout
+					<ul>
+					<li>
+					Added Info tab, displaying versions and vendor info.
+					<li>
+					Reorganized the Bus tab, added more visible alert when lock is lost.
+					<li>
+					Simplified Device Nickname controls.
+					<li>
+					The Master Device Unique ID is now shown in a ToolTip when hovering over selected master.
+					<li>
+					Removed Sample Rate Change Restriction setting.
+					<li>
+					Moved Operation Mode from Advanced to Bus tab for Windows (matches Mac OS X).
+					<li>
+					When there is only one Sample Rate or one Sync Source, the GUI controls are made invisible.
+					<li>
+					Changed alignments and highlighting in some areas to make it easier to find values quickly.
+					</ul>
+
+					Events
+					<ul>
+					<li>
+					Added Parameter Locking support. GUI elements are disabled when Audio clients are active, replaces Sample Rate restriction setting.
+					<li>
+					Improved error reporting for driver version mismatch, no devices, low resources, etc. When a low resources error occurs on Windows, some text appears explaining that the user may need the 1394b hotfix from Microsoft.
+					<li>
+					Warning icon over the device shows when an event has happened, info icon stays visible for a while after that, indicating that the device's TootTip will show accumulated recent events.
+					<li>
+					Added event log window, which appears with shift+click on the active device. This shows all recent events and some status messages.
+					</ul>
+
+					WDM
+					<ul>
+					<li>
+					Renamed the Advanced tab to WDM since it now only has WDM controls.
+					<li>The WDM Channel Mapper Dialog now responds appropriately to parameter locking.
+					<li>
+					Removed Direct Out from WDM Out Speaker Configurations.
+					<li>
+					Removed Input Mapping from WDM Channel Mapper Dialog.
+					</ul>
+
+					Other
+					<ul>
+					<li>
+					Only one instance of the Control Panel is allowed to run.
+					</ul></font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">351</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Optimized the streaming performance in the driver.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.3.1</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">42, 50</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">In some situations, the displayed sample rate could differ between the Control Panel, a DAW, and Audio MIDI Setup.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">219</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Changing the sample rate in Cubase could result in no audio being passed until Cubase's driver connection was reset.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">289</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The second MIDI port on an isochronous stream was not working at 176kHz and 192kHz.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">297</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Audio playback could become distorted after changing the sample rate in a DAW.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">304</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Control Panel's Operation Mode field could incorrectly display "Normal" after making a change to the Sample Rate field.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.3.0</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">244</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The installer now also copies the control panel customization file if there is an .defs file provided for this customization.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">254, 255</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The control panel is now able to show a better fatal device or driver error description.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">263</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The sync source names were not correctly endian swapped on the Mac PowerPC platform.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">286</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The permission of the persistent storage file generated by a PAL based control panel was user dependent and access could therefore fail when generated by another user.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.2.1</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">262</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Only the first MIDI port on a device would be available.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.2.0</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">11</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A Kernel Panic could occur when unplugging stacked devices.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">25</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">When the previous master device is removed, the new master device's sync source is now set to Internal.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">37</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When changing a device's nickname, it would sometimes not be updated in the UI.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">107</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Test scripts have been added to the dice command line binary folder to run automated streaming tests on OS X.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">109</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The new JUCE and PAL based Control Panel is now installed by default.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">123</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Preliminary and local builds are now marked to avoid their distribution.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">131</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The driver will now only send the interface ready notification to the client which is registering itself.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">173 </font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The new Control Panel checks for atomic delete+program capability of downloaded image data. If the firmware is capable, the explicit delete step is skipped.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">199</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A Control Panel hang has been fixed. A thread deadlock was possible under certain situations.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">202, 218</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A bug in the application driver interface (PAL) has been fixed avoiding a kernel panic "zalloc: \"ipc kmsgs\"", a result of exhausting kernel resources.  This could occur after adding or removing devices many times while a control panel application was open.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">203</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The operation mode settings available on OS X have been updated to match the settings available on Windows.  On both platforms there are four modes available:  Normal, and Safe Mode Levels 1 to 3.<br><br><table border="1" cellspacing="0" cellpadding="5"><tr><td><b><font size="2" face="Verdana">Old Setting</font></b></td><td><b><font size="2" face="Verdana">New Setting</font></b></td></tr><tr><td><font size="2" face="Verdana">DAW</font></td><td><font size="2" face="Verdana">Normal</font></td></tr><tr><td><font size="2" face="Verdana">Normal</font></td><td><font size="2" face="Verdana">Safe Mode Level 1</font></td></tr><tr><td><font size="2" face="Verdana">Slow</font></td><td><font size="2" face="Verdana">Safe Mode Level 3</font></td></tr></table></font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">210</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A Control Panel application crash was fixed. This was due to an unhandled divide by zero in meter region size calculations.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">241</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">In rare conditions it was possible for an older driver to still be active after installation because the OS X kext cache was not rebuilt.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.1.2</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">12</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A rare Kernel Panic could occur while changing the speaker configuration in the Audio MIDI Setup application.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">30</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Ableton Live (demo) version 7 crash. After quitting Live with the sample rate set to either 176k or 192k, then opening the Dice Control Panel and/or the Audio MIDI Setup application and switching the sample rate to a lower/different sample rate, Ableton Live will crash when it is launched again. This has been reported to Ableton, and confirmed as an Ableton issue.  It should be resolved in a future release of Ableton.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">31</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Using multiple devices, removal of one device could result in iTunes no longer being able to play until all devices were removed or until the computer was restarted.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.1.1</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="575">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="575">
+					<p><font size="2" face="Verdana">Inconsistent latencies - the latencies will vary when disconnecting and reconnecting the device.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="575">
+					<p><font size="2" face="Verdana">Fixed rare micro alignment errors where multiple isoc streams exhibit different latency. Multiple streams will now be sample accurately aligned.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="575">
+					<p><font size="2" face="Verdana">The driver now defaults to using OP_MODE_SLOW if the driver settings file does not exist (fresh installation).</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="575">
+					<p><font size="2" face="Verdana">Persistent storage of driver settings such as operation mode and NickName will now be stored even when changed from PAL based control panel.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.1.0</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="575">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="575">
+					<p><font size="2" face="Verdana">Driver Installer modified to install without reboot</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.11/10.5.2</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<b><font size="4" face="Verdana">Version 3.0.1</font></b><br><br>
+	<b><font size="3" face="Verdana">Issues resolved:</font></b><br><br>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="575">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">OS</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="575">
+					<p><font size="2" face="Verdana">Bug related to notification handling and locking.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.x/10.5.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="575">
+					<p><font size="2" face="Verdana">System crash related to device arrival/removal.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.x/10.5.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="575">
+					<p><font size="2" face="Verdana">Protocol fix: driver was writing to improper location at startup.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.x/10.5.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="575">
+					<p><font size="2" face="Verdana">Phase offset not proper after losing/regaining lock on external sources.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.x/10.5.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="575">
+					<p><font size="2" face="Verdana">Device Communication Protocol fix.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.x/10.5.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="575">
+					<p><font size="2" face="Verdana">Driver writing to invalid space (overwriting Nicknames in some devices).</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.x/10.5.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="575">
+					<p><font size="2" face="Verdana">Driver reading extra memory for channel names.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">10.4.x/10.5.x</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="575">
+					<p><font size="2" face="Verdana">Skype not working on various machines.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">10.4.x/10.5.x</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+</body>
+</html>

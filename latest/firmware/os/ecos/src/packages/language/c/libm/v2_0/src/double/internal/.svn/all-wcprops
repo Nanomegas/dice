@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/internal
+END
+k_cos.c
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/internal/k_cos.c
+END
+k_sin.c
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/internal/k_sin.c
+END
+k_rem_pio2.c
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/internal/k_rem_pio2.c
+END
+k_tan.c
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/language/c/libm/v2_0/src/double/internal/k_tan.c
+END

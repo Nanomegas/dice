@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>	<string>English</string>
+	<key>CFBundleExecutable</key>			<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleGetInfoString</key>		<string>kTCAT_DICE_USR kTCAT_DICE_VERSION_EXTENDED kTCAT_DICE_COPYRIGHT</string>
+	<key>CFBundleShortVersionString</key>	<string>kTCAT_DICE_VERSION_SHORT</string>
+	<key>NSHumanReadableCopyright</key>		<string>kTCAT_DICE_COPYRIGHT</string>
+	<key>CFBundleIconFile</key>				<string>icon.icns</string>
+	<key>CFBundleName</key>					<string>kTCAT_DICE_USR</string>
+	<key>CFBundleIdentifier</key>			<string>kTCAT_DICE_VENDOR_UTI.prefpane</string>
+	<key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+	<key>CFBundlePackageType</key>			<string>BNDL</string>
+	<key>CFBundleSignature</key>			<string>????</string>
+	<key>CFBundleVersion</key>				<string>kTCAT_DICE_VERSION</string>
+	<key>NSMainNibFile</key>				<string>prefPane</string>
+	<key>NSPrefPaneIconFile</key>			<string>icon.tiff</string>
+	<key>NSPrefPaneIconLabel</key>			<string>kTCAT_DICE_USR</string>
+//	<key>NSPrincipalClass</key>				<string>kTCAT_DICE_DRV</string>
+	<key>NSPrincipalClass</key>				<string>prefPane</string>
+</dict>
+</plist>

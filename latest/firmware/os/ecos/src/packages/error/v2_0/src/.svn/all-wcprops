@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/error/v2_0/src
+END
+strerror.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/error/v2_0/src/strerror.cxx
+END
+errno.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/error/v2_0/src/errno.cxx
+END

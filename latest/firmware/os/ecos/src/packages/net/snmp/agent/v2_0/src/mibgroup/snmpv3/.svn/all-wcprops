@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/snmpv3
+END
+snmpEngine.c
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/snmpv3/snmpEngine.c
+END
+usmStats.c
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/snmpv3/usmStats.c
+END
+usmUser.c
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/net/snmp/agent/v2_0/src/mibgroup/snmpv3/usmUser.c
+END

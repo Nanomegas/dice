@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/extras/RedBoot
+END
+redboot.elf.gdbinit
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/extras/RedBoot/redboot.elf.gdbinit
+END
+redboot.elf
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/extras/RedBoot/redboot.elf
+END
+redboot.bin
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/extras/RedBoot/redboot.bin
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/extras/RedBoot/README.txt
+END
+.gdbinit
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/extras/RedBoot/.gdbinit
+END

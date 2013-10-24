@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/interface
+END
+llcPHY.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/interface/llcPHY.h
+END
+llcUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/interface/llcUtils.h
+END
+lhlLLCDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/interface/lhlLLCDefs.h
+END
+llcDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/interface/llcDefs.h
+END
+llcFIFO.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/interface/llcFIFO.h
+END
+llcSelfID.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/interface/llcSelfID.h
+END
+llcEnvDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/interface/llcEnvDefs.h
+END
+llcInt.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/interface/llcInt.h
+END
+lhlWatch.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/interface/lhlWatch.h
+END
+llcReg.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/chip/diceJr/llc/interface/llcReg.h
+END

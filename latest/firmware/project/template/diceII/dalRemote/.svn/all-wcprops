@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dalRemote
+END
+dalRemote.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dalRemote/dalRemote.h
+END
+dalRemoteInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dalRemote/dalRemoteInterface.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dalRemote/Makefile
+END
+dalRemote.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dalRemote/dalRemote.c
+END

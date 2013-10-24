@@ -1,0 +1,15 @@
+#include "../../../interface/tcat_dice.xcconfig"
+
+PRODUCT_NAME = dice
+
+SYMROOT = ../../../binary/tools/dice/osx
+OBJROOT = build
+
+HEADER_SEARCH_PATHS = ../../pal ../../TDL/interface/public
+
+GCC_INLINES_ARE_PRIVATE_EXTERN = NO
+GCC_SYMBOLS_PRIVATE_EXTERN = NO
+
+WARNING_CFLAGS = -Wall
+GCC_WARN_ABOUT_RETURN_TYPE = YES
+GCC_WARN_UNUSED_VARIABLE = YES

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dsp/src
+END
+dspCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dsp/src/dspCli.c
+END
+dspappl.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dsp/src/dspappl.c
+END
+dsp.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dsp/src/dsp.c
+END
+dspappl.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dsp/src/dspappl.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/project/template/diceII/dsp/src/Makefile
+END

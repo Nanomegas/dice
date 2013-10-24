@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/tcat/!svn/ver/37821/tags/release/basic/latest/host
+END
+build.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/build.cmd
+END
+build.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/build.sh
+END

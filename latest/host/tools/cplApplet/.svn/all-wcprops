@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cplApplet
+END
+cplApplet.def
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cplApplet/cplApplet.def
+END
+cplApplet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cplApplet/cplApplet.cpp
+END
+cplApplet.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cplApplet/cplApplet.vcproj
+END
+cplApplet.rc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cplApplet/cplApplet.rc
+END
+cplApplet.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cplApplet/cplApplet.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/cplApplet/resource.h
+END

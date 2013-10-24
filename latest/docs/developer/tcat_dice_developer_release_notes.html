@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>DICE Driver Development Release Notes</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<style type="text/css">
+		<!--
+		body	{color: #000;background: #fff;font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;font-size: 12px;}
+		.b {font-weight:bold;}
+		//-->
+	</style>
+</head>
+
+<body bgcolor="#ffffff">
+	<p><b><font size="5">DICE Driver Development Release Notes</font></b></p>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 4.1.3</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 1214]</b> It is now possible to specify the default sample rate, buffer size, and operation mode that is used in a new installation.  Please contact us if you need this feature.<br><br>
+
+		<li><b>[Case 1232]</b> We have improved the driver's allocation of FireWire isochronous bandwidth in order to prevent issues when using multiple DICE devices or other devices on the FireWire bus.  Note that since the amount of bandwidth that the driver allocates has increased slightly, some large channel configurations that previously worked may now result in a bandwidth allocation error.<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 4.1.2</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 1193, 1204]</b> The control logic for whether WDM applications are allowed to change the sample rate on Windows Vista and later is now handled automatically in the driver. Therefore the PAL API methods allow_wdm_samplerate_changes(), allow_wdm_samplerate_changes_readonly(), update_allow_wdm_samplerate_changes(), and update_allow_wdm_samplerate_changes_readonly() that were introduced in 4.1.0 have been removed.  Any applications which use the PAL library will need to be updated and recompiled.<br><br>
+
+		<li><b>[Case 1201]</b> The Control Panel's EAP mixer tabs are now correctly re-enabled after changing to a lower sample rate.<br><br>
+
+		<li><b>[Case 1209]</b> The Control Panel's EAP mixer tabs now correctly handle automatically setting the direct out configuration when the sample rate is changed.<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 4.1.1</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 1158]</b> Fixed Control Panel drawing issues when using custom colors.<br><br>
+
+		<li><b>[Case 1164]</b> The optional multiple stereo pair WDM configuration no longer uses the direct-out type by default, as some WDM audio applications fail to play audio on that type of output.<br><br>
+
+		<li><b>[Case 1170]</b> The prebuilt firmware utility binaries located in binary/firmware/in_ram_test and binary/firmware/RedBoot directories have been relocated to firmware/extras.<br><br>
+
+		<li><b>[Case 1171]</b> When using stacked devices, a PAL based application could hang after one of the attached devices was removed.<br><br>
+
+		<li><b>[Case 1077, 1176, 1177, 1178, 1179, 1181]</b> The Control Panel's EAP implementation has been refactored and improved.<br><br>
+
+		<li><b>[Case 1166]</b> The provided Windows installer script was not removing device entries for devices assigned to kTCAT_DICE_DEVICE_9_MODEL_ID and higher.<br><br>
+
+		<li><b>[Case 1174, 1180]</b> A kSupportsEAP capabilities flag has been added to the DICE Driver protocol to optimize the Control Panel's EAP detection.<br><br>
+
+		<li><b>[Case 1187]</b> The PAL now validates more data ranges to prevent invalid data from causing unresponsiveness and excessive memory usage.<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 4.1.0</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 222]</b> We now support a configuration that modifies the driver's behavior so that it publishes its WDM audio interface as
+				multiple stereo pairs instead of a single 8-channel interface.  Please contact us if you would like more details.<br><br>
+
+		<li><b>[Case 1023]</b> The optional AC3 WDM audio interface is now implemented as a pin in the WDM filter.<br><br>
+
+		<li><b>[Case 1082, 1083]</b> The FWI library and the OHCITool application (<i>refer to Case 564 below for a description</i>) are now available on Mac OS X.  The OHCITool application is useful for customer support to determine what FireWire OHCI chipset a customer has on their Mac.<br><br>
+
+		<li><b>[Case 1099]</b> When using the firmware loader functions of the Control Panel, if a flash file is being overwritten, the Control Panel first checks to see if the auto erase capability FL_CAP_AUTOERASE is available in the running firmware on the device.
+				If the device does not support auto erase, the Control Panel will delete the file before writing it.<br>
+				<br>
+				The check for this capability was incorrect, resulting in a failed firmware update on devices running older firmware which does not support auto erase.<br>
+				<br>
+				The FL_CAP_AUTOERASE feature was implemented in firmware version 3.2.0, in June of 2008.<br>
+				This Control Panel bug was introduced as part of the fix for Case 366 and first appeared in version 3.3.3, November of 2008.<br>
+				<br>
+
+		<li><b>[Case 1100, 1112, 1113]</b> New PAL API methods have been added to allow user control over whether WDM applications are allowed to change the sample rate on Windows Vista and later.<br>
+				<br>
+				Note that this is for users who primarily use WDM audio applications.  Users who use ASIO audio applications should leave this unchecked to prevent an issue where WDM audio could fail to play when an ASIO application is active.<br>
+				<br>
+				See the PAL documentation for API details.<br><br>
+
+		<li><b>[Case 1101]</b> The Control Panel now requires JUCE 2.0 to compile.<br>
+				<br>
+				Note that the JUCE 2.0 release no longer provides an Xcode project for building a static library of JUCE on Mac OS X.  Please contact us if you require this, as we can provide you with the Xcode project that we use.<br><br>
+
+		<li><b>[Case 1105]</b> The Mac OS X installer creation script (host/install/osx/build-installer.sh) has been updated to create a flat installer package and to optionally sign the installer.
+				The script's command-line arguments and output have not changed.<br>
+				<br>
+				If you set the environment variable DEVELOPER_ID_CERT_NAME to the name of your Developer ID installed in the KeyChain, the script will also sign the installer with it.<br>
+				<br>
+				Note that it is no longer required to run the build-installer.sh script as the root user (with sudo).<br>
+				<br>
+				Note that Xcode 4.3 is now required.<br>
+				<br>
+
+		<li><b>[Case 1114]</b> The ASIO DLL is no longer copied by the INF file.  This was redundant as the installer application has always been responsible for installing the ASIO DLL.<br><br>
+
+		<li><b>[Case 1119]</b> System Requirement Updates:<br>
+				<br>
+				Mac OS X 10.8 "Mountain Lion" is now supported.<br>
+				Note that support for Mac OS X 10.6 will be dropped in a future release.<br>
+				<br>
+				Windows 8 is now supported.<br>
+				<br>
+				The minimum supported version of Windows XP is now Service Pack 3.<br>
+				The minimum supported version of Windows Vista is now Service Pack 2.<br>
+				The minimum supported version of Windows 7 is now Service Pack 1. &nbsp;&nbsp;&nbsp;&nbsp;<i>(Note Case 1125 below)</i><br><br>
+
+		<li><b>[Case 1123]</b> Fixed an issue where ASIO channels names could be truncated when using a large number of channels.<br><br>
+
+		<li><b>[Case 1124]</b> Audio latency values were not being updated for ASIO hosts that support kAsioLatenciesChanged notification.<br><br>
+
+		<li><b>[Case 1125]</b> For users that are experiencing issues on Windows 7 SP1 where the driver is unable to allocate isochronous bandwidth,
+				we recommend that the user installs Microsoft's hotfix <a href="http://support.microsoft.com/kb/2707135">KB2707135</a>.<br><br>
+
+		<li><b>[Case 1126, 1128]</b> A device's firmware can now specify its input and output audio latency to the driver.
+				The driver will add this latency into the values that it provides to ASIO or CoreAudio so that audio recorded within a DAW application can be aligned sample-accurately.<br>
+				<br>
+				Without knowledge of a device's A/D or D/A converters' latency or a device's internal signal path, previous driver versions simply specified the latency for the AES/SPDIF transceiver. 
+				The 4.1.0 driver will continue to do this with devices that are running firmware less than 4.1.0.  Older drivers will ignore the new latency values and retain the old behavior when connected to devices running 4.1.0 firmware.<br>
+				<br>
+				Note that since ASIO only supports one over-all input and output latency value for all channels, it is not possible to indicate the latency for each group of channels (analog, AES/SPDIF, ADAT, etc.).
+				The general standard is to specify the latency for the analog I/O path.<br>
+				<br>
+				When using stacked devices, the driver will specify the master device's latency.<br>
+				<br>
+				Please refer to the firmware release notes for implementation details.<br>
+				<br>
+				We have a simple command-line test tool available for Mac OS X and Windows that can be used to measure a device's audio latency to assist in calculating these values.
+				Please contact us if you would like to be provided with the command-line test tool.<br><br>
+
+		<li><b>[Case 1127]</b> When using stacked devices, the driver defaults to sorting the audio channels by the devices' GUID. The firmware can now specify its sort order amongst multiple stacked devices.  Please refer to the firmware release notes for details.<br><br>
+
+		<li><b>[Case 1130]</b> The dice tool's streaming test now works correctly on Mac OS X with devices whose streams have non-matching channel counts.<br><br>
+
+		<li><b>[Case 1133]</b> The ASIO interface is no longer limited to 64 input and 64 output channels.<br><br>
+
+		<li><b>[Case 1153]</b> The Control Panel on OS X now includes the "System" tab. As with the Windows Control Panel, this tab scans the system for 1394 OHCI interfaces and reports capabilities and DICE driver compatibility information.<br>
+				<br>
+				The visibility of this tab is controlled using the "showSystem" property in the cpl.defs customization file.<br><br>
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 4.0.0</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 1061]</b> The 4.0.0 driver is no longer limited to power-of-two ASIO buffer sizes.  The driver now allows setting a buffer size that is a multiple of either 32 or 48 (and must also between the min and max) using the PAL API.  ASIO hosts are still told that only power-of-two buffer sizes are supported, since it is not possible to describe the above limitation in the ASIO protocol.<br><br>
+
+		<li><b>[Case 1074]</b> The driver now allocates 1% more FireWire bandwidth to accommodate external clock variation and to avoid an issue when fully utilizing the FireWire bus bandwidth when using a TI OHCI.<br><br>
+
+	</ul></font>
+
+	<p><b><font size="4">Version 4.0.0 <font color="#dd0000">BETA</font> build 13393</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 1028]</b> The PAL doxygen documentation is now being generated correctly.<br><br>
+
+	</ul></font>
+
+	<p><b><font size="4">Version 4.0.0 <font color="#dd0000">BETA</font> build 12850</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 981]</b> Eliminated a race condition in the PAL that could occur on Mac OS X when sequentially setting multiple driver parameters (sample rate, clock source, clock master, operation mode) that would result in only the first parameter actually changing.<br><br>
+
+		<li><b>[Case 1026]</b> The Control Panel would report that a 4.0.0 firmware image was older than the device's 3.x.x firmware.<br><br>
+
+	</ul></font>
+
+	<p><b><font size="4">Version 4.0.0 <font color="#dd0000">BETA</font> build 12374</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 744]</b> The driver's ASIO interface now supports buffer sizes starting at 32, 64, or 128 (depending on the current sample rate).<br><br>
+
+		<li><b>[Case 973]</b> The TCAT Control Panel no longer resets the channel configuration of a third-party device running EAP-capable DICE firmware.<br><br>
+
+		<li><b>[Case 976]</b> Xcode 4.1 is now required for Mac OS X development.  Mac OS X 10.5 and the PowerPC architecture are no longer supported.<br><br>
+
+		<li><b>[Case 980]</b> The Control Panel now requires JUCE 1.53 to compile.<br><br>
+
+		<li><b>[Case 1004]</b> TDL LogCapture now stops correctly in all situations when "Stop on Error" is selected.<br><br>
+
+		<li><b>[Case 1008]</b> The Operation Mode settings have been renamed.<br><br><table border="1" cellspacing="0" cellpadding="5"><tr><td><b><font size="2" face="Verdana">Old Setting</font></b></td><td><b><font size="2" face="Verdana">New Setting</font></b></td></tr><tr><td><font size="2" face="Verdana">Normal</font></td><td><font size="2" face="Verdana">Low Latency</font></td></tr><tr><td><font size="2" face="Verdana">Safe Mode Level 1</font></td><td><font size="2" face="Verdana">Normal</font></td></tr><tr><td><font size="2" face="Verdana">Safe Mode Level 2</font></td><td><font size="2" face="Verdana">Safe Mode Level 1</font></td></tr><tr><td><font size="2" face="Verdana">Safe Mode Level 3</font></td><td><font size="2" face="Verdana">Safe Mode Level 2</font></td></tr></table><br>On Windows, the Operation Mode setting no longer affects the minimum ASIO buffer size.<br><br>
+
+		<li><b>[Case 1015]</b> The max_io_size() and update_max_io_size() methods have been added to the PAL bus class for retrieving the maximum supported ASIO buffer size and for receiving a notification when it changes.<br><br>
+
+		<li><b>[Case 1018]</b> The dpc_stats() method has been added to the PAL bus class for retrieving detailed statistics on the DPC delay experienced by the driver.  The dpc_stats_clear() method has been added for resetting the statistics.<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.5.6</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 32]</b> Due to the fact that Mac OS X 10.7 "Lion" now has stricter permissions on the "/Library/Preferences" directory,
+			we have refactored the driver to use a launchd daemon that takes care of both saving and restoring the driver's persistent settings.<br>
+			<br>
+			<b>NOTE: If you create your own Mac OS X installer, you must make the following changes:</b><br>
+			<br>
+			(in the paths below <font color="green">kTCAT_DICE_DRV</font> and <font color="green">kTCAT_DICE_VENDOR_UTI</font> should be replaced by the value
+			of the corresponding define set in <font color="blue">interface/tcat_dice_myproduct.h</font>, if <font color="green">kTCAT_DICE_VENDOR_UTI</font>
+			is not defined in <font color="blue">interface/tcat_dice_myproduct.h</font> then use the value in <font color="blue">interface/tcat_dice_defaults.h</font>)<br>
+			<br>
+			1.) Your installer should no longer install the old startup helper application:<br>
+			&nbsp;&nbsp;/Library/StartupItems/<font color="green">kTCAT_DICE_DRV</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(this directory contained a plist file and another startup script named <font color="green">kTCAT_DICE_DRV</font>)<br>
+			&nbsp;&nbsp;/Library/Application Support/<font color="green">kTCAT_DICE_DRV</font>/<font color="green">kTCAT_DICE_DRV</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(the old startup application)<br>
+			<br>
+			Your installer should also delete the above StartupItem directory and startup application before installing over an older driver version.  This can be added to the installer's preflight or postflight script.  Customized ready-to-use versions of the preflight and postflight scripts are available in the <font color="blue">host/install/osx</font> directory.<br>
+			<br>
+			2.) Your installer needs to install the new launchd helper daemon (found in <font color="blue">binary/drv/osx/release/</font>):<br>
+			<br>
+			<table border="1" cellspacing="0" cellpadding="5">
+				<tr>
+					<td><b><font size="2">Permissions</font></b></td>
+					<td><b><font size="2">Owner</font></b></td>
+					<td><b><font size="2">Group</font></b></td>
+					<td><b><font size="2">Path</font></b></td>
+				</tr>
+				<tr>
+					<td><font size="2">-rw-r--r--</font></td>
+					<td><font size="2">root</font></td>
+					<td><font size="2">wheel</font></td>
+					<td><font size="2">/Library/LaunchDaemons/kTCAT_DICE_VENDOR_UTI.<font color="green">kTCAT_DICE_DRV</font>.plist</font></td>
+				</tr>
+				<tr>
+					<td><font size="2">-rwxr-xr-x</font></td>
+					<td><font size="2">root</font></td>
+					<td><font size="2">wheel</font></td>
+					<td><font size="2">/Library/Application Support/<font color="green">kTCAT_DICE_DRV</font>/<font color="green">kTCAT_DICE_DRV</font>Daemon</font></td>
+				</tr>
+			</table>
+			<br><br>
+
+		<li><b>[Case 553]</b> It is now possible to have multiple instantiations of the PAL library in a Windows application.<br><br>
+
+		<li><b>[Case 851]</b> This release adds the TCAT Driver Log (TDL) to the Mac OS X platform.<br>
+			<br>
+			The LogCapture installer for Mac OS X can be found in your SVN release tag at:<br><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<font color="blue">host/TDL/binary/public/install/osx/</font>
+			<br><br>
+
+		<li><b>[Case 899]</b> LogCapture now compresses the log data reducing the size of the saved TDL log files.<br><br>
+
+		<li><b>[Case 929]</b> The Control Panel now requires JUCE 1.52 to compile.<br><br>
+
+		<li><b>[Case 930]</b> The Windows Visual Studio Solution filename is no longer used to customize the name of the Control Panel and driver binaries,
+			therefore the Visual Studio Solution filenames are no longer customized to <font color="green">kTCAT_DICE_DRV</font>.
+			If you build these binaries from the source, you may have to make adjustments to your build process to accomodate for this.<br><br>
+
+		<li><b>[Case 974]</b> The <font color="blue">host/install/osx</font> directory now includes customized versions of the preflight and postflight scripts that can be used directly when building your own installer for Mac OS X.<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.5.5</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 895]</b> The TDL LogCapture application's Save dialog now provides a template for what information to provide in the description field.<br><br>
+
+		<li><b>[Case 896]</b> To prevent the accidental erasure of captured log data, the TDL LogCapture application now provides an explicit Clear Log button and provides a warning prompt when quit.<br><br>
+
+		<li><b>[Case 897]</b> The TDL LogCapture application now records the computer's 1394 OHCI chipset information in the TDL data file.<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.5.4</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 659]</b> This release introduces the TCAT Driver Log (TDL).  This is a new cross-platform lightweight logging system that is built into the
+			software components.  Note that this release only includes the logging support on Windows; the next release will include support on Mac OS X.<br>
+			<br>
+			The TDL logging system now provides us with the capability to gather very detailed log information on any computer which is exhibiting an issue.
+			We can then use this log information to assist us in debugging these hard to reproduce issues (especially with the infinite combinations of hardware
+			for Windows desktops and laptops).  In addition to using this during development and testing, your customer support can send this tool and instructions
+			to those customers who are experiencing any hard to solve issues.<br>
+			<br>
+			The logging system is disabled by default, and cannot be enabled unless LogCapture is installed.  The LogCapture application is used to configure the
+			logging, start/stop logging, enter user marker events, and save the log contents to a file along with a description of the issue.  The resulting file
+			compresses down to a size that can be sent via email.  If a BSOD occurs on Windows while logging is enabled, the LogCapture application can be used to
+			extract the log information from a Windows kernel memory dump file.<br>
+			<br>
+			The TDL documentation can be found in your SVN release tag at:<br>
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a href="host/LogCapture_IHV_description.pdf">docs/developer/host/LogCapture_IHV_description.pdf</a><br><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a href="host/Using_LogCapture.pdf">docs/developer/host/Using_LogCapture.pdf</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>(this document is for end-users; the LogCapture installer places this file on the system)</i><br>
+			<br>
+			The LogCapture installer can be found in your SVN release tag at:<br><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<font color="blue">host/TDL/binary/public/install/</font>
+			<br><br>
+
+		<li><b>[Case 719]</b> All Visual Studio solution and project files have been updated to Visual Studio 2008.  Visual Studio 2005 is no longer supported.<br><br>
+
+		<li><b>[Case 795]</b> Pre-release builds are now labeled "beta" instead of "preliminary".<br><br>
+
+		<li><b>[Case 809]</b> The Control Panel now requires JUCE 1.51 to compile.<br><br>
+
+		<li><b>[Case 863]</b> Improvements to the sign.py script:
+			<ol>
+				<li>If the environment variable <font color="blue">SELFSIGN_CERT_NAME</font> is set to "automatic", it will select the best signing certificate automatically.
+				<li>If the optional environment variable <font color="blue">W7BASE</font> exists (and is set to the path of the Windows DDK 7600 directory), the script
+					will use the sign.exe tool from the Windows DDK 7600 directory.
+				<li>If the optional environment variable <font color="blue">SELFSIGN_TIMESTAMP_RETRIES</font> exists, the script will now retry the timestamping up to
+				that many times, waiting 30 seconds between each retry.
+			</ol>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.5.3</font></b></p>
+	<ul><font size="2">
+		<li>Please note that we will be upgrading to Visual Studio 2008 in the upcoming feature release.  We will no longer support Visual Studio 2005 at that time.<br><br>
+
+		<li><b>[Case 753]</b> A kTCAT_DICE_DEVICE_n_DESC device description string in tcat_dice_myproduct.h that contained the word "and" would not be displayed correctly by PAL-based applications on Mac OS X.<br><br>
+
+		<li><b>[Case 757]</b> The location of the Windows installer executable and Mac OS X installer disk image within the binary directory's tree has changed. They are now located in a new installer sub-directory.<br><br>
+
+		<li><b>[Case 758]</b> A new sign.py python script is available to assist with code-signing tasks on Windows.  Several of the Visual Studio projects now use this script to optionally sign the built executable.<br>
+			If the environment variable <font color="blue">SELFSIGN_CERT_NAME</font> is not set, then the sign.py script just prints a warning message.<br><br>
+			To successfully sign a file, the sign.py script depends on several environment variables:<br>
+			<table border="1" cellspacing="0" cellpadding="3">
+				<tr>
+					<td><b><font size="2">Environment Variable</font></b></td>
+					<td><b><font size="2">Status</font></b></td>
+					<td><b><font size="2">Value</font></b></td>
+					<td><b><font size="2">Example Value</font></b></td>
+				</tr>
+				<tr>
+					<td><font size="2">WLHBASE</font></td>
+					<td><font size="2">required</font></td>
+					<td><font size="2">path to the Windows DDK 6001 dir</font></td>
+					<td><font size="2">C:\WINDDK\6001.18001</font></td>
+				</tr>
+				<tr>
+					<td><font size="2">SELFSIGN_CERT_NAME</font></td>
+					<td><font size="2">required</font></td>
+					<td><font size="2">the Subject Name of the signing cert</font></td>
+					<td><font size="2">TC Applied Technologies Ltd.</font></td>
+				</tr>
+				<tr>
+					<td><font size="2">SELFSIGN_TIMESTAMP_URL</font></td>
+					<td><font size="2">optional</font></td>
+					<td><font size="2">the timestamp server's URL</font></td>
+					<td><font size="2">http://timestamp.verisign.com/scripts/timstamp.dll</font></td>
+				</tr>
+				<tr>
+					<td><font size="2">SELFSIGN_CROSS_CERT</font></td>
+					<td><font size="2">optional</font></td>
+					<td><font size="2">path to the cross-cert file</font></td>
+					<td><font size="2">C:\MSCV-VSClass3.cer</font></td>
+				</tr>
+			</table>
+			<br>
+
+			Run "<font color="blue">sign.py --help</font>" to get the script's usage details.  Also see our <a href="host/Driver_Signing.pdf">Driver Signing Guide</a> document for more information.<br><br>
+
+		<li><b>[Case 760]</b> On Mac OS X, the PAL library's build flags have been adjusted to eliminate the compiler "visibility" warnings when building PAL-based applications (Control Panel, dice tool, inspector, etc.).<br><br>
+
+		<li><b>[Case 762]</b> A new "Test" tab is included in the Control Panel. It can be enabled by adding
+			<font color="blue">"&lt;VALUE name="showTestTab" val="1"/&gt;"</font> to your cpl.defs file.
+			This is used for sending test commands to the device for firmware debugging or factory test purposes.<br><br>
+
+		<li><b>[Case 768]</b> On Mac OS X, the PAL now throws the correct xptn_driver_version exception when it attempts to open an older driver (3.4.x and earlier).<br><br>
+
+		<li><b>[Case 769]</b> A new system::close() method has been added to the PAL that unmounts and closes any bus objects to avoid race conditions that could lead to PAL based
+			applications crashing during shutdown.<br><br>
+
+			<b>PLEASE NOTE:</b> system::close() must now be called before the system object's destructor is called.  Since a single instance of the system object is usually held
+			over the entire application life time, close() should be called just before the application releases its system object reference and quits.  The <a href="../public/pal/html/index.html">PAL documentation</a> has been updated
+			to reflect this.<br><br>
+
+			The debug build of the PAL library will now assert when run from the debugger to indicate that a system object has not been closed properly or that a bus object has not been unmounted properly.<br><br>
+
+		<li><b>[Case 770]</b> The Control Panel would emit debug messages in the release build on Mac and Windows. Logger output calls have been replaced with the DBG and DBG_PRINTF macro so that they are no longer compiled into release builds.<br><br>
+
+		<li><b>[Case 771]</b> The Control Panel's Firmware Loader tab will no longer warn about version compatibility when writing a firmware setup sector.<br><br>
+
+		<li><b>[Case 773]</b> A new Control Panel customization option is available to disable the display of the measured sample rate.  It can be disabled by adding
+			<font color="blue">"&lt;VALUE name="showMeasuredSampleRate" val="0"/&gt;"</font> to your cpl.defs file.  When disabled, the device's lock state is shown instead.<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.5.2</font></b></p>
+	<ul><font size="2">
+		<li>[None]<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.5.1</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 634]</b> Updated documentation and support files are now available to assist in <a href="../public/firmware/OpenOCD/DICE_OOCD_JTAG.pdf">Using OpenOCD JTAG for DICE Firmware Development</a>.<br>
+		Please refer to the new <a href="../public/firmware/OpenOCD/">docs/public/firmware/OpenOCD</a> directory for details.<br><br>
+
+		<li><b>[Case 710]</b> We are currently using JUCE 1.46.  There is a new JUCE 1.50 version available.  If you would like to
+			use JUCE 1.50, you'll need to do the following:<br>
+			<br>
+			Windows:<br>
+			<ol>
+				<li>If building with Visual Studio 2005, edit JUCE.vcproj and change the version from 9 to 8.
+				<li>Rebuild the JUCE library for each configuration that you want to build.
+			</ol><br>
+
+			Mac OS X:<br>
+			<ol>
+				<li>In juce_Config.h, also undefine the following:<br>
+					JUCE_WEB_BROWSER<br>
+					JUCE_SUPPORT_CARBON
+				<li>Add CoreMIDI.framework.
+				<li>Rebuild the JUCE library.
+			</ol><br>
+
+			All Platforms:<br>
+			<ol>
+				<li>In all references to TabbedControl::SetOutline(), remove the color argument.
+			</ol>
+			<br>
+
+		<li><b>[Case 712]</b> The Mac OS X driver was incorrectly sending some zero'd isochronous packets during streaming startup -- the DICE would simply ignore them as being invalid.<br><br>
+
+		<li><b>[Case 718]</b> The Windows DPCTool application 3.5.0 was not asking for administrator rights at launch on some Vista and Windows 7 systems.<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.5.0</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 642]</b> A BSOD could occur during Microsoft DTM testing on x64.<br><br>
+
+		<li><b>[Case 651]</b> The new fwi library could mislabel a card that was not found in the database.<br><br>
+
+		<li><b>[Case 654]</b> The user interface for the Control Panel application's new System tab has been improved.  The system information is now displayed in a separate window and the contents can be saved to a file.<br><br>
+
+		<li><b>[Case 658]</b> The new fwi library now caches the online database after fetching it, and will use the cached database for up to 10 minutes.<br><br>
+
+		<li><b>[Case 660]</b> The font used by the Control Panel's Event Log window on Mac OS X was too small.  This issue was introduced in the 3.5.0 preliminary release.<br><br>
+
+		<li><b>[Case 667]</b> The new fwi library could crash when fetching the online database if there was no network access.<br><br>
+
+		<li><b>[Case 670]</b> The Mac OS X driver could introduce audio artifacts near -1db and 0db on Intel Macs.  This issue was introduced in the 3.5.0 preliminary release.<br><br>
+
+		<li><b>[Case 671]</b> On Windows, a 32-bit application using the PAL library would not receive firmware user notifications when using a 64-bit driver.<br><br>
+
+		<li><b>[Case 676]</b> The pal_notify layer now includes virtual declarations of update_user and an event_device::update_user override.<br><br>
+
+		<li><b>[Case 677]</b> On Mac OS X, the PAL's Xcode project is once again self-reliant; it no longer requires the top-level tcat_dice.xcconfig file.<br><br>
+
+		<li><b>[Case 678]</b> The /MP compiler flag has been added to the Visual Studio projects to enable multi-core builds.<br><br>
+
+		<li><b>[Case 679]</b> On Windows, a 32-bit application was unable to indicate kAsioSetSlaveClient to the 64-bit driver.<br><br>
+
+		<li><b>[Case 680]</b> Instead of just detecting Windows 7, the driver now correctly detects the new 1394 bus driver (introduced in Windows 7) and switches its behavior accordingly.  This allows it to operate correctly with the legacy 1394 bus driver on Windows 7 as well.<br><br>
+
+		<li><b>[Case 686]</b> A BSOD could occur whenever streaming was restarted.  This issue was introduced in the 3.5.0 preliminary release.<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.5.0 PRELIMINARY</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 564]</b> A new support library is available that assists in determining what FireWire OHCI chipset(s) are installed in a Windows
+			machine and whether a specific OHCI chipset is compatible with DICE.<br>
+			<br>
+			We developed this as it is often difficult for customer support to determine what FireWire OHCI chipset a customer has on their motherboard, PCI
+			card, PCIe card, CardBus, or ExpressCard.  Often they can only provide the manufacturer of the motherboard or card, which does not reliably
+			indicate the exact FireWire OHCI chipset that it contains.<br>
+			<br>
+			The fwi library (host/tools/lib/fwi) can be used to determine the number of OHCI chipset(s) installed, and for each chipset found it will report:
+			<ul>
+				<li> manufacturer name
+				<li> chipset name
+				<li> chipset revision
+				<li> the number of isochronous contexts for transmit and receive that the chipset supports (if known)
+				<li> whether the chipset is supported by the DICE driver
+				<li> a notes field with any details about compatibility
+			</ul>
+			<br>
+			We are maintaining this chipset and compatibility info in an XML file whose data is compiled into the fwi library.  The fwi library's API also
+			offers the ability to download and use the latest version of our OHCI compatibility XML file from our website.  We will continue to publish updates
+			to the XML file on our website as new compatibility information becomes available.<br>
+			<br>
+			We would appreciate feedback on any compatibility issues that you may find with a particular chipset.  Please also let us know if you come across
+			any OHCI chipsets that do not print the manufacturer and/or chipset name; in this case we would like to know the hex value that is printed in
+			these fields and the text information that is printed on the OHCI chipset itself so that we can update our database file.<br>
+			<br>
+			The fwi library also provides support for determining the Windows OS version, and for determining whether the Windows XP hotfixes for 1394
+			related issues (mentioned in the Windows release notes) are installed.<br>
+			<br>
+			We have created a simple stand-alone JUCE-based GUI application (host/tools/ohciTool) that demonstrates the usage of the fwi library.<br>
+			<br>
+			The Control Panel application also contains support for a new tab that uses the fwi library.  It can be enabled by adding
+			<font color="blue">"&lt;VALUE name="showSystem" val="1"/&gt;"</font> to your cpl.defs file.<br><br>
+
+		<li><b>[Case 624]</b> The dice tool has been updated to include new commands that use the fwi library.<br><br>
+
+		<li><b>[Case 637]</b> It is now possible for a Mac OS X 64-bit application to use the PAL library.<br><br>
+
+		<li><b>[Case 646]</b> The driver's kIoctlVersionGet command has been extended to return a new data format that includes both the 32-bit driver version
+			and a new kIoctlAPIVersion value.<br>
+			<br>
+			The new kIoctlAPIVersion value is now used to check for client/driver API compatibility, independent of the driver version.  The driver's
+			kIoctlVersionGet command also continues to support its legacy API so that it will still respond to older clients that only request the 32-bit
+			driver version so that they will correctly report a driver version mismatch.<br>
+			<br>
+			This change only affects developers that don't use the PAL, and instead interface directly with the driver's ioctl interface.  If you don't use
+			the PAL, please refer to the kIoctlVersionGet usage in the PAL code as a reference on how to update your code to use the new data format.<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.4.2</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 130, 629]</b> The dice tool's MIDI streaming test has been improved.<br><br>
+
+		<li><b>[Case 227]</b> The Control Panel now requires JUCE 1.46 to compile.  See our support forum post on
+			<a href="http://www.tctechnologies.tc/forum/viewtopic.php?f=11&t=41">how to build the JUCE 1.46 library</a>.<br>
+			<br>
+			Developers who have applications based on the Control Panel may need to make the following changes in their application:
+			<ul>
+			<li>Common - change return type of drawProgressBar() to int and add a return, if you override the virtual.
+			<li>Common - add a parameter to isInterestedinDragSource, see the JUCE docs for the new parameter list.
+			<li> Mac OS X - add Cocoa.framework to your Xcode project so juce::systemStats can call NSApplicationLoad.
+			</ul><br><br>
+
+		<li><b>[Case 269]</b> The PAL's tcat::dice::bus destructor was unsafely calling the virtual unmount() method (the derived class is already
+			destroyed when the base classes' destructor is finally called).  This undefined behavior was resulting in an occasional crash.  If you have any
+			classes that are derived from tcat::dice::bus and that override the virtual unmount() method, you need to call the unmount() method in your
+			class's destructor.<br><br>
+
+		<li><b>[Case 599]</b> The Windows DPCTool application (host/tools/dpc) now asks for administrator rights at launch on Vista.  It now has a "trsuinfo"
+			directive added to its XML manifest file, which is embedded into the executable by the manifest tool MT.EXE. Unfortunately, the MT.EXE in VS2005
+			SP1 has a bug that prevents it from parsing the needed XML.  If you wish to compile DPCTool with this functionality, you'll need to replace VS
+			2005 SP1's MT.EXE with the version from the Vista SDK. (Note that they have the same version number, but they are different)<br><br>
+
+		<li><b>[Case 627]</b> We are now additionally signing the Windows driver's .sys files.  The <a href="host/Driver_Signing.pdf">Driver Signing Guide</a>
+			has been updated to reflect this change.<br><br>
+
+		<li><b>[Case 631]</b> The dice tool now correctly reports the Windows OS version.<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.4.1</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 395]</b> The Control Panel's Notification (Event/Listener) layer has been re-factored into a separate module.  This layer operates between
+			the Platform Abstraction Layer (PAL) and host applications such as command-line tools and GUI programs.
+			<br><br>
+			Previously, this functionality was incorporated within the Control Panel sources, and so could go unnoticed as a time-saving resource for developers.
+			Since it is useful for many other applications, the source files for it have been logically separated into a separate directory in the source tree,
+			the host/tools/pal_notify directory.
+			<br><br>
+			Please refer to the new <a href="host/Using_PAL_Notifications.pdf">Using Pal Notifications</a> document for details.<br><br>
+
+		<li><b>[Case 489]</b> The driver no longer hangs if a device's firmware provides an invalid sample rate / clock source bitmap.<br><br>
+
+		<li><b>[Case 572]</b> An additional firmware_upload() method which takes a const unsigned char *pData and uint32 filesize has been added to the PAL API.<br><br>
+
+		<li><b>[Case 595]</b> The driver's maximum buffer size is now limited to 8192 samples.<br><br>
+
+	</ul></font>
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.4.0</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 172]</b> The Windows and Mac OS X release notes now provide more detailed OS and hardware requirements.<br><br>
+
+		<li><b>[Case 247]</b> The Control Panel implementation of setting the Buffer Size has been changed. It now uses try/catch and follows what the driver
+			enforces in the case of minimum buffer size for the current Safe Mode. This is the recommended way to use the io_size() PAL API.<br><br>
+
+		<li><b>[Case 301]</b> The driver's WDM audio interface has been significantly re-factored.<br>
+			<br>
+			<b>Background:</b><br>
+			<br>
+			It is fair to say that the WDM interface has caused a lot of problems to users of DICE based products.  The main reason for this is the fact that
+			the WDM Audio model does not have very good support for dynamic configuration changes.  The DICE driver is complex as it handles the aggregation of
+			devices of different type and channel count.  It also supports changing of the number of channels when changing to higher sample rates, etc.<br>
+			<br>
+			This is not very compatible with WDM and we found that whenever the channel count changed it would too often result in hanging driver components
+			and crashing applications.  One of the main reasons for this was that the driver was representing the combined number of channels from all
+			devices to the WDM engine. This meant that applications using WDM/KS streaming would have access to all channels.  Unfortunately it also meant that
+			if one of the devices changed the channel count the driver would have to be removed and recreated and that resulted in the problems.<br>
+			<br>
+			Furthermore WDM/KS is less efficient than ASIO primarily due to the WDM layer. It is not possible to control latency tightly, etc. By offering
+			all channels through WDM/KS we were not actively encouraging users to use ASIO and we needed to deal with the channel changing situation mentioned
+			above.<br>
+			<br>
+			<b>New WDM Implementation:</b><br>
+			<br>
+			To overcome these problems, we have implemented a new and simpler WDM model in the driver:<br>
+			<br>
+			<ul>
+				<li>The DICE driver's WDM audio interface is now always presented as 8 in/out channels, regardless of the number of total audio channels
+					available on a device or on a number of aggregated devices.  An 8 channel interface provides support for Mono to 7.1 Surround configurations
+					for WDM audio applications (WaveOut, DirectSound). In addition to standard playback through applications such as MediaPlayer, iTunes, and
+					WinAmp, it will also support playback and record through two-way applications such as Skype.
+				<li>The 8 channels are accessible through WDM/KS, but only 8 in and 8 out.
+				<li>WDM is now always enabled, so the ability to enable/disable has been removed from the PAL API and Control Panel.
+				<li>A new channel mapping PAL API allows a Control Panel to provide a user interface where each of these 8 channels can be mapped to device
+					channels. For the output mapping, PAL will provide information based on the selected Windows speaker configuration so the channels can be
+					labelled with the corresponding speaker names.
+				<li>The speaker configuration has been removed from the PAL API and Control Panel.  It should now be managed by the user in the 
+					Windows Sounds and Audio Devices control panel.
+			</ul>
+			<br>
+			These changes only affect WDM, the driver's ASIO interface has not changed.  Whenever possible ASIO should be used for multi-channel operation and
+			WDM should be used for typical playback applications and simple stereo recording.<br>
+			<br>
+			Advantages:<br>
+			<br>
+			<ul>
+				<li>The driver's WDM audio interface never changes channel count and is therefore stable.
+				<li>Only 8 channels are available through WDM/KS encouraging users to use ASIO.
+				<li>It is possible to map channels across stacked devices so a surround setup can span several devices (FireWire speakers etc.)
+				<li>It is simple and intuitive.
+			</ul>
+			<br>
+			Implications for developers who provide a custom control panel:<br>
+			<br>
+			<ul>
+				<li>Remove the WDM enable/disable checkbox, if you provided it.
+				<li>Remove the Speaker In/Out Configuration selector/combo box, if you provided it.
+				<li>Refactor the WDM channel mapping, if you provided it.  Provide WDM input and output channel mapping that always shows 8 channels.
+					Optionally add the description to each output channel mapping indicating the speaker.
+			</ul>
+			<br>
+			If you do not provide support for WDM in/out channel mapping in your user interface the channels will simply play back through the first 8 channels
+			of the first device.  We encourage you to implement the WDM channel mapping as it is essential when the user has more than one device
+			attached.<br>
+			<br>
+			The <a href="host/CPL_Overview_and_Customization.pdf">Control Panel Overview and Customization Guide</a> has been updated to reflect these changes.
+			Please also refer to the provided Control Panel source code as an example implementation.
+			<br><br>
+
+		<li><b>[Case 354]</b> The pre-built Windows driver binaries are now signed with TC Applied Technologies Ltd's code-signing certificate. The driver's
+			catalog file and the installer application are both signed.  This allows installation on Vista 64-bit.  If you'd prefer to have your company's name
+			appear in the Window's driver installation warning dialog box, you will need to re-sign the provided binaries with your company's code-signing
+			certificate.  Please refer to the new <a href="host/Driver_Signing.pdf">Driver Signing Guide</a> document for details.
+			<br><br>
+
+		<li><b>[Case 356]</b> The Control Panel's WDM Channel Mapper window has been refactored for the changed PAL API's. Developers who implement their own
+			control panel will need to update their implementations to use the changed PAL API's:<br>
+			<br>
+			removed: bus::speaker( bool out, uint32 configuration )<br>
+			changed: bus::speaker( bool out )<br>
+			changed: bus::update_speaker()<br>
+			<br>
+			See tcat_dice_pal_system.h<br><br>
+
+		<li><b>[Case 373]</b> The dice tool has been updated to reflect the new PAL API changes, including removal of the wdm() enable/disable API, and displaying
+			the speaker configuration and mappings correctly.<br><br>
+
+		<li><b>[Case 505]</b> The input and output channel lists were swapped in the Control Panel's WDM channel mapping dialog.  If you copied the Control
+			Panel's source code for your WDM channel mapping dialog implementation, please integrate the changes in BusWDMChMapComponent.cpp.<br><br>
+
+		<li><b>[Case 519]</b> The dice tool "di" command output now displays the correct text names for the sync caps bitmap.  It also now parses the supported
+			clock caps bitmap and displays the supported samples rates in text form.<br><br>
+
+		<li><b>[Case 522]</b> The Mac OS X driver was sending incorrectly formatted empty packets.  This would cause synchronization problems only on slave devices
+			whose DAL was configured to use RATE_MODE_LOW_MID.  A firmware fix was also added for this issue (see the firmware release notes, Case 521).<br><br>
+
+		<li><b>[Case 524]</b> The Enable checkbox on the Control Panel's DPC tab is now disabled on Vista if the application was not launched with Administrator
+			rights, and a popup tooltip explains this.  A new function procHasAdminCredentials() has been added to the DPC library to support this.<br><br>
+
+		<li><b>[Case 545]</b> A BSOD would occur during Microsoft DTM testing when running the PNP test.<br><br>
+	</ul></font>
+
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.3.4</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 467]</b> The PAL method bus::min_io_size(), added in version 3.3.3, now returns the correct minimum buffer size when the operation mode is set to Normal.<br><br>
+
+		<li><b>[Case 475]</b> The build script for the Mac OS X installer ("host/install/osx/build-installer.sh") has been updated to support new options which should make it easier
+			to customize your installer without having to modify the build-installer.sh script.  Run "./build-installer.sh ?" to display the usage and list of options.<br><br>
+
+			<font face="Monaco">
+			<table border="1" cellspacing="0" cellpadding="5">
+				<tr>
+					<td><b><font size="1">Option<font></b></td>
+					<td><b><font size="1">Description</font></b></td>
+				</tr>
+				<tr>
+					<td><font size="1">-b BuildType</font></td>
+					<td><font size="1">use the specified build type, instead of the default (Release)</font></td>
+				</tr>
+				<tr>
+					<td><font size="1">-c ControlPanelAppPath</font></td>
+					<td><font size="1">use the specified Control Panel application, instead of the default ("binary/tools/cpl/osx/{BuildType}/{Vendor} Control Panel")<font></td>
+				</tr>
+				<tr>
+					<td><font size="1">-i BackgroundImagePath</font></td>
+					<td><font size="1">use the specified installer background image (620 x 418 pixels; jpg, tiff, gif, pict, eps, or pdf), instead of the default
+							(if it exists, "resource/installer_background.tiff")</font></td>
+				<tr>
+				<tr>
+					<td><font size="1">-l LicensePath</font></td>
+					<td><font size="1">use the specified License doc (rtf, rtfd, txt, or html), instead of the default (if it exists, "resource/License.rtf")</font></td>
+				<tr>
+				<tr>
+					<td><font size="1">-r ReadMePath</font></td>
+					<td><font size="1">use the specified Readme doc (rtf, rtfd, txt, or html), instead of the default (if it exists, "resource/Readme.rtf")</font></td>
+				<tr>
+				<tr>
+					<td><font size="1">-u</font></td>
+					<td><font size="1">do not include the Uninstaller application on the disk image</font></td>
+				<tr>
+				<tr>
+					<td><font size="1">-w WelcomePath</font></td>
+					<td><font size="1">use the specified Welcome doc (rtf, rtfd, txt, or html), instead of the default (if it exists, "resource/Welcome.rtf")</font></td>
+				<tr>
+			</table>
+			</font><br><br>
+	</ul></font>
+
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.3.3</font></b></p>
+	<ul><font size="2">
+		<li><b>[Case 48, 144, 283, 361]</b> It is now possible to customize the MIDI device name and MIDI port names for each device that is supported by the driver.
+		Please refer to the new <a href="host/MIDI_Name_Customization.pdf">MIDI Naming Customization</a> document for details.<br><br>
+		Note that when first attaching a device on Windows there are now two additional 'Add Hardware' dialogs, one for all of the device's MIDI inputs
+		and one for all of the device's MIDI outputs. These dialogs are not displayed to the user on Vista when using a signed driver.<br><br>
+
+		<li><b>[Case 178]</b> When using the PAL's device::firmware_upload() method, the 8-bit checksum calculation would cause a Visual Studio Debugger runtime warning
+		of possibly lost data.  This is an error with the compiler, and as a workaround, the value is now explicitly masked to prevent the warning.<br><br>
+
+		<li><b>[Case 220, 315, 406]</b> A new API has been added to PAL that allows applications to query the current minimum buffer size allowed by the driver.
+		This value changes depending on the operation mode and sample rate.
+		The new method bus::min_io_size() returns the value, and the new method bus::update_min_io_size() notifies when this value has changed.<br>
+		When setting the buffer size, the driver accepts the minimum value and any value above that which is a multiple of 8.<br>
+		We recommend that you update your custom application to use this new API.  See the Control Panel source code for a usage example.<br><br>
+
+		<li><b>[Case 227]</b> Please note that the Control Panel application does not currently compile with JUCE 1.46 (released June 17).  Please use JUCE 1.45 until
+		we resolve this.<br><br>
+
+		<li>We now use several <a href="http://www.python.org/">Python</a> scripts in the build process.   Python is installed by default on Mac OS X.
+		Windows developers will need to download and install <a href="http://www.python.org/download/">Python</a>.<br><br>
+
+		<li><b>[Case 327]</b> The DICE tool MIDI stream tests now work on Windows Vista.  The DICE tool is now able to determine which MIDI ports belong to a device.<br><br>
+
+		<li><b>[Case 343]</b> The DICE tool MIDI stream tests now work correctly on Mac PowerPC machines.<br><br>
+
+		<li><b>[Case 347]</b> A crash could occur when a Mac OS X application that uses PAL was shutting down and it had pending notifications from the driver.
+		This could occur with the Control Panel and DICE tool.<br><br>
+
+		<li><b>[Case 366]</b> The Control Panel firmware loader now traps device::firmware_upload() exceptions.  It uses informative message boxes for communication
+		errors and checksum errors, and does not write the flash sector in case of an exception.<br>
+		The firmware upload also now defaults to 8-bit checksums, which was not apparent before because we were missing the exceptions.<br><br>
+
+		<li><b>[Case 386]</b> When reading or writing address spaces that do not exist, the PAL (properly) throws an exception.  The exception is now handled in PAL
+		wherever read/write ioctls are used directly.<br><br>
+	</ul></font>
+
+
+
+	<br><hr>
+	<p><b><font size="4">Version 3.3.2</font></b></p>
+	<ul><font size="2">
+		<li>Xcode 3.0 is now required for Mac OS X development.  Xcode 3.1 is also now supported.<br><br>
+
+		<li>The PowerPC build of the Mac OS X driver is now built with the 10.4 Universal SDK, matching the Intel build.<br><br>
+
+		<li>The environmental variable "juce" is now required on Mac OS X when building the Control Panel.  It should point to JUCE's top-level directory.
+		This can be set in Xcode's Preferences, under Source Trees.<br><br>
+
+	</ul></font>
+
+
+</body>
+</html>

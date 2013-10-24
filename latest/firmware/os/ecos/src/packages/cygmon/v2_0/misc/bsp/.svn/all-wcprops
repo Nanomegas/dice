@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp
+END
+dbg-threads-api.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/dbg-threads-api.h
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/defs.h
+END
+hex-utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/hex-utils.h
+END
+gdb-data.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/gdb-data.h
+END
+bsp.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/bsp.h
+END
+cpu.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/cygmon/v2_0/misc/bsp/cpu.h
+END

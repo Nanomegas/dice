@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src
+END
+cmpUtils.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/cmpUtils.c
+END
+cmpP2P.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/cmpP2P.c
+END
+avcUnitCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnitCli.c
+END
+avcUnitSecurity.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnitSecurity.c
+END
+edsServer.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/edsServer.c
+END
+cr.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/cr.c
+END
+avcUnitReserve.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnitReserve.c
+END
+cmpCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/cmpCli.c
+END
+musicDescriptorWithSync.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/musicDescriptorWithSync.c
+END
+drd.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/drd.c
+END
+avc.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avc.c
+END
+avcMusic.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcMusic.c
+END
+eds.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/eds.c
+END
+avcPanelRsp.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcPanelRsp.c
+END
+avcPanelCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcPanelCli.c
+END
+sbm.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/sbm.c
+END
+avrDrd.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avrDrd.c
+END
+avcCmdCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcCmdCli.c
+END
+avcRspCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcRspCli.c
+END
+edsWrite.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/edsWrite.c
+END
+avcUnitChannelUsage.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnitChannelUsage.c
+END
+drs.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/drs.c
+END
+avcUtils.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUtils.c
+END
+avcCmdGeneral.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcCmdGeneral.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/Makefile
+END
+drdCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/drdCli.c
+END
+avcUnitNotify.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnitNotify.c
+END
+edsCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/edsCli.c
+END
+edsRead.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/edsRead.c
+END
+avcUnit.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnit.c
+END
+avcUnitConnectAV.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnitConnectAV.c
+END
+rangemaps.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/rangemaps.c
+END
+edsSample.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/edsSample.c
+END
+avcPanelCmd.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcPanelCmd.c
+END
+avcCmdConnection.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcCmdConnection.c
+END
+avcdriverCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcdriverCli.c
+END
+aqm.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/aqm.c
+END
+cmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/cmp.c
+END
+avcCmdCCM.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcCmdCCM.c
+END
+avcUnitSignalFormat.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnitSignalFormat.c
+END
+avcCmdStreamFormat.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcCmdStreamFormat.c
+END
+avcUnitConnect.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnitConnect.c
+END
+cmpBC.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/cmpBC.c
+END
+avcDriver.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcDriver.c
+END
+avcUnitPower.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnitPower.c
+END
+avcUnitVendor.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnitVendor.c
+END
+avcUnitSignalSource.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnitSignalSource.c
+END
+dss.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/dss.c
+END
+avcPanel.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcPanel.c
+END
+avcUnitUtils.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcUnitUtils.c
+END
+avcAudio.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/avcAudio.c
+END
+crCli.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/module/1394avc/src/crCli.c
+END

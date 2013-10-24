@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D31D0E121560BDF7004A1F62 /* juce_TCATLookAndFeel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D31D0E0D1560BDF7004A1F62 /* juce_TCATLookAndFeel.cpp */; };
+		D31D0E131560BDF7004A1F62 /* MainOHCIToolWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D31D0E0F1560BDF7004A1F62 /* MainOHCIToolWindow.cpp */; };
+		D31D0E141560BDF7004A1F62 /* ohciTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D31D0E111560BDF7004A1F62 /* ohciTool.cpp */; };
+		D377FEF91560BBB800C40E7B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D377FEF81560BBB800C40E7B /* Cocoa.framework */; };
+		D394C6D21562FE750072DDCD /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D394C6D11562FE750072DDCD /* CoreMIDI.framework */; };
+		D394C6DE1562FEA10072DDCD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D394C6DD1562FEA10072DDCD /* CoreAudio.framework */; };
+		D394C6E01562FEAB0072DDCD /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D394C6DF1562FEAB0072DDCD /* CoreServices.framework */; };
+		D394C6E21562FEBF0072DDCD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D394C6E11562FEBE0072DDCD /* IOKit.framework */; };
+		D3CC3F041581934800199DA0 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3CC3F021581934800199DA0 /* icon.icns */; };
+		D3D0D1E615671D9C0063EA7B /* libfwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D394C6FD156369440072DDCD /* libfwi.a */; };
+		D3E7398C1587D60700BD99D3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E7398B1587D60700BD99D3 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D394C6FC156369440072DDCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D394C6F5156369430072DDCD /* fwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D369B414155F61BC00B891CC;
+			remoteInfo = fwi;
+		};
+		D3D0D1E415671D650063EA7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D394C6F5156369430072DDCD /* fwi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D369B413155F61BC00B891CC;
+			remoteInfo = fwi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D31D0E0D1560BDF7004A1F62 /* juce_TCATLookAndFeel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = juce_TCATLookAndFeel.cpp; sourceTree = "<group>"; };
+		D31D0E0E1560BDF7004A1F62 /* juce_TCATLookAndFeel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = juce_TCATLookAndFeel.h; sourceTree = "<group>"; };
+		D31D0E0F1560BDF7004A1F62 /* MainOHCIToolWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainOHCIToolWindow.cpp; sourceTree = "<group>"; };
+		D31D0E101560BDF7004A1F62 /* MainOHCIToolWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainOHCIToolWindow.h; sourceTree = "<group>"; };
+		D31D0E111560BDF7004A1F62 /* ohciTool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ohciTool.cpp; sourceTree = "<group>"; };
+		D31D0E3215619364004A1F62 /* ohciTool.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ohciTool.xcconfig; sourceTree = "<group>"; };
+		D377FEF41560BBB800C40E7B /* ohciTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ohciTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D377FEF81560BBB800C40E7B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D377FEFB1560BBB900C40E7B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D377FEFC1560BBB900C40E7B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D377FEFD1560BBB900C40E7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D394C6D11562FE750072DDCD /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		D394C6DD1562FEA10072DDCD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D394C6DF1562FEAB0072DDCD /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		D394C6E11562FEBE0072DDCD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		D394C6F5156369430072DDCD /* fwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fwi.xcodeproj; path = ../lib/fwi/fwi.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D3CC3F021581934800199DA0 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		D3CC3F031581934800199DA0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E7398B1587D60700BD99D3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D377FEF11560BBB800C40E7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3D0D1E615671D9C0063EA7B /* libfwi.a in Frameworks */,
+				D377FEF91560BBB800C40E7B /* Cocoa.framework in Frameworks */,
+				D394C6D21562FE750072DDCD /* CoreMIDI.framework in Frameworks */,
+				D394C6DE1562FEA10072DDCD /* CoreAudio.framework in Frameworks */,
+				D394C6E01562FEAB0072DDCD /* CoreServices.framework in Frameworks */,
+				D394C6E21562FEBF0072DDCD /* IOKit.framework in Frameworks */,
+				D3E7398C1587D60700BD99D3 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D31D0E0C1560BDBE004A1F62 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D31D0E0D1560BDF7004A1F62 /* juce_TCATLookAndFeel.cpp */,
+				D31D0E0E1560BDF7004A1F62 /* juce_TCATLookAndFeel.h */,
+				D31D0E0F1560BDF7004A1F62 /* MainOHCIToolWindow.cpp */,
+				D31D0E101560BDF7004A1F62 /* MainOHCIToolWindow.h */,
+				D31D0E111560BDF7004A1F62 /* ohciTool.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D377FEE91560BBB800C40E7B = {
+			isa = PBXGroup;
+			children = (
+				D31D0E3215619364004A1F62 /* ohciTool.xcconfig */,
+				D3CC3F011581932600199DA0 /* Resource Files */,
+				D31D0E0C1560BDBE004A1F62 /* Source Files */,
+				D377FEF71560BBB800C40E7B /* Frameworks */,
+				D377FEF51560BBB800C40E7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D377FEF51560BBB800C40E7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D377FEF41560BBB800C40E7B /* ohciTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D377FEF71560BBB800C40E7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D394C6F5156369430072DDCD /* fwi.xcodeproj */,
+				D377FEFB1560BBB900C40E7B /* AppKit.framework */,
+				D377FEF81560BBB800C40E7B /* Cocoa.framework */,
+				D377FEFC1560BBB900C40E7B /* CoreData.framework */,
+				D394C6D11562FE750072DDCD /* CoreMIDI.framework */,
+				D394C6DD1562FEA10072DDCD /* CoreAudio.framework */,
+				D394C6DF1562FEAB0072DDCD /* CoreServices.framework */,
+				D377FEFD1560BBB900C40E7B /* Foundation.framework */,
+				D394C6E11562FEBE0072DDCD /* IOKit.framework */,
+				D3E7398B1587D60700BD99D3 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D394C6F6156369430072DDCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D394C6FD156369440072DDCD /* libfwi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3CC3F011581932600199DA0 /* Resource Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3CC3F021581934800199DA0 /* icon.icns */,
+				D3CC3F031581934800199DA0 /* Info.plist */,
+			);
+			name = "Resource Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D377FEF31560BBB800C40E7B /* ohciTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D377FF121560BBB900C40E7B /* Build configuration list for PBXNativeTarget "ohciTool" */;
+			buildPhases = (
+				D377FEF01560BBB800C40E7B /* Sources */,
+				D377FEF11560BBB800C40E7B /* Frameworks */,
+				D377FEF21560BBB800C40E7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3D0D1E515671D650063EA7B /* PBXTargetDependency */,
+			);
+			name = ohciTool;
+			productName = ohciTool;
+			productReference = D377FEF41560BBB800C40E7B /* ohciTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D377FEEB1560BBB800C40E7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D377FEEE1560BBB800C40E7B /* Build configuration list for PBXProject "ohciTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D377FEE91560BBB800C40E7B;
+			productRefGroup = D377FEF51560BBB800C40E7B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D394C6F6156369430072DDCD /* Products */;
+					ProjectRef = D394C6F5156369430072DDCD /* fwi.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D377FEF31560BBB800C40E7B /* ohciTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D394C6FD156369440072DDCD /* libfwi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfwi.a;
+			remoteRef = D394C6FC156369440072DDCD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D377FEF21560BBB800C40E7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CC3F041581934800199DA0 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D377FEF01560BBB800C40E7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31D0E121560BDF7004A1F62 /* juce_TCATLookAndFeel.cpp in Sources */,
+				D31D0E131560BDF7004A1F62 /* MainOHCIToolWindow.cpp in Sources */,
+				D31D0E141560BDF7004A1F62 /* ohciTool.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3D0D1E515671D650063EA7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fwi;
+			targetProxy = D3D0D1E415671D650063EA7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D377FF101560BBB900C40E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D31D0E3215619364004A1F62 /* ohciTool.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+			};
+			name = Debug;
+		};
+		D377FF111560BBB900C40E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D31D0E3215619364004A1F62 /* ohciTool.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+		D377FF131560BBB900C40E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					DEBUG,
+				);
+				OTHER_LDFLAGS = (
+					"-ljucedebug",
+					"-lcurl",
+					"-lxml2",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D377FF141560BBB900C40E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_NDEBUG,
+					NDEBUG,
+				);
+				OTHER_LDFLAGS = (
+					"-ljuce",
+					"-lcurl",
+					"-lxml2",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D377FEEE1560BBB800C40E7B /* Build configuration list for PBXProject "ohciTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D377FF101560BBB900C40E7B /* Debug */,
+				D377FF111560BBB900C40E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D377FF121560BBB900C40E7B /* Build configuration list for PBXNativeTarget "ohciTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D377FF131560BBB900C40E7B /* Debug */,
+				D377FF141560BBB900C40E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D377FEEB1560BBB800C40E7B /* Project object */;
+}

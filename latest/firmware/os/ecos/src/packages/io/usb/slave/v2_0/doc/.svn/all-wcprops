@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc
+END
+usbs-writing.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/usbs-writing.html
+END
+usbs-enum.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/usbs-enum.html
+END
+usbs-start-rx.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/usbs-start-rx.html
+END
+usbs-devtab.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/usbs-devtab.html
+END
+usbs-start-tx.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/usbs-start-tx.html
+END
+usbs-halt.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/usbs-halt.html
+END
+usbs-data.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/usbs-data.html
+END
+usbs-intro.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/usbs-intro.html
+END
+io-usb-slave.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/io-usb-slave.html
+END
+usbs-start.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/usbs-start.html
+END
+usbs-testing.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/usbs-testing.html
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/makefile
+END
+usbs-control.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/usbs-control.html
+END
+usbs.sgml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/io/usb/slave/v2_0/doc/usbs.sgml
+END

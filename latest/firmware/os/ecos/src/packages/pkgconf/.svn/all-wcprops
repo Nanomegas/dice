@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/pkgconf
+END
+rules.mak
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/pkgconf/rules.mak
+END
+ssletter.dsl
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/pkgconf/ssletter.dsl
+END
+stylesheet.dsl
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/pkgconf/stylesheet.dsl
+END
+ssa4.dsl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/pkgconf/ssa4.dsl
+END
+fixhtml.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/pkgconf/fixhtml.tcl
+END
+rules.doc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/pkgconf/rules.doc
+END

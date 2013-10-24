@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi
+END
+fwi_osx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi/fwi_osx.cpp
+END
+ohci1394db.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi/ohci1394db.h
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi/stdafx.h
+END
+DevsXmlFile_win.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi/DevsXmlFile_win.cpp
+END
+fwi.sln
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi/fwi.sln
+END
+fwi_win.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi/fwi_win.cpp
+END
+fwi.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi/fwi.xcconfig
+END
+ohciXMLToHeader.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi/ohciXMLToHeader.py
+END
+fwi.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi/fwi.vcproj
+END
+DevsXmlFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi/DevsXmlFile.h
+END
+fwi.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi/fwi.h
+END
+DevsXmlFile_osx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tcat/!svn/ver/37821/tags/release/basic/latest/host/tools/lib/fwi/DevsXmlFile_osx.cpp
+END

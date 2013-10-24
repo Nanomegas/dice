@@ -1,0 +1,3 @@
+LIBRARY kTCAT_DICE_DRV.cpl
+EXPORTS
+	CPlApplet

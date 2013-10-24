@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/mips/idt79s334a/v2_0/src
+END
+mips_idt334a_flash.c
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/mips/idt79s334a/v2_0/src/mips_idt334a_flash.c
+END

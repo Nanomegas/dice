@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/watchdog/synth/v2_0/doc
+END
+devs-watchdog-synth.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/watchdog/synth/v2_0/doc/devs-watchdog-synth.html
+END
+synth_watchdog.sgml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/watchdog/synth/v2_0/doc/synth_watchdog.sgml
+END
+awake.png
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/watchdog/synth/v2_0/doc/awake.png
+END
+asleep.png
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/watchdog/synth/v2_0/doc/asleep.png
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/watchdog/synth/v2_0/doc/makefile
+END

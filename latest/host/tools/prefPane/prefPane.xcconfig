@@ -1,0 +1,20 @@
+#include "../../../interface/tcat_dice.xcconfig"
+
+PRODUCT_NAME = $(DICE_CUSTOMIZATION_NAME)
+WRAPPER_EXTENSION = prefPane
+
+SYMROOT = ../../../binary/drv/osx
+OBJROOT = build
+INSTALL_PATH = $(HOME)/Library/PreferencePanes
+
+HEADER_SEARCH_PATHS = ../../../interface ../../interface
+
+INFOPLIST_PREFIX_HEADER = ../../../interface/tcat_dice_defaults.h
+INFOPLIST_PREPROCESS = YES
+INFOPLIST_FILE = Info.plist
+
+GCC_WARN_ABOUT_RETURN_TYPE = YES
+GCC_WARN_UNUSED_PARAMETER = NO
+GCC_WARN_UNUSED_VARIABLE = YES
+GCC_WARN_UNUSED_VALUE = YES
+GCC_WARN_UNINITIALIZED_AUTOS = YES

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/intel/28fxxx/v2_0/include
+END
+flash_28fxxx.inl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/intel/28fxxx/v2_0/include/flash_28fxxx.inl
+END
+flash_28fxxx_parts.inl
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/devs/flash/intel/28fxxx/v2_0/include/flash_28fxxx_parts.inl
+END

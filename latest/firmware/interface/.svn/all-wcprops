@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/interface
+END
+coreDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/interface/coreDefs.h
+END
+Dice2ErrorCodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/interface/Dice2ErrorCodes.h
+END
+1394.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/interface/1394.h
+END
+bmdefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/interface/bmdefs.h
+END
+1394defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/interface/1394defs.h
+END
+ErrorCodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/interface/ErrorCodes.h
+END
+csr.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/interface/csr.h
+END
+1394ErrorCodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/interface/1394ErrorCodes.h
+END

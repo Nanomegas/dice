@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/cdl
+END
+uitron.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/cdl/uitron.cdl
+END
+mempoolvar.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/cdl/mempoolvar.cdl
+END
+tasks.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/cdl/tasks.cdl
+END
+version.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/cdl/version.cdl
+END
+mempoolfixed.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/cdl/mempoolfixed.cdl
+END
+semas.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/cdl/semas.cdl
+END
+flags.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/cdl/flags.cdl
+END
+mboxes.cdl
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/os/ecos/src/packages/compat/uitron/v2_0/cdl/mboxes.cdl
+END

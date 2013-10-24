@@ -1,0 +1,28 @@
+#include "../../../interface/tcat_dice.xcconfig"
+
+PRODUCT_NAME = ohciTool
+WRAPPER_EXTENSION = app
+
+ARCHS = $(ARCHS_STANDARD_32_BIT)
+
+SYMROOT = ../../../binary/tools/ohciTool/osx
+OBJROOT = build
+INSTALL_PATH = $(HOME)/Applications
+
+HEADER_SEARCH_PATHS = ../../../interface $(juce)/extras/'static library'/** ../lib/fwi
+ALWAYS_SEARCH_USER_PATHS = NO
+LIBRARY_SEARCH_PATHS = $(juce)/bin ../../../binary/tools/lib/fwi/osx/$(CONFIGURATION)
+
+INFOPLIST_FILE = Info.plist;
+INFOPLIST_PREPROCESS = YES
+INFOPLIST_PREFIX_HEADER = ../../../interface/tcat_dice_defaults.h
+
+GCC_INLINES_ARE_PRIVATE_EXTERN = NO
+GCC_SYMBOLS_PRIVATE_EXTERN = NO
+
+WARNING_CFLAGS = -Wall -Wreorder
+
+GCC_WARN_ABOUT_RETURN_TYPE = YES
+GCC_WARN_UNUSED_VARIABLE = YES
+GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES
+GCC_WARN_ABOUT_RETURN_TYPE = YES

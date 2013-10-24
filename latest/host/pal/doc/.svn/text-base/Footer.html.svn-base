@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>Platform Abstraction Layer API Documentation</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="doxygen.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<hr size="1">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><small><font face="Verdana, Arial, Helvetica, sans-serif">(C) COPYRIGHT 2007-$year TC Applied Technologies, Ltd. (ALL RIGHTS RESERVED)</font></small></td>
+				<td colspan="2" align="right"><font face="Verdana, Arial, Helvetica, sans-serif">Compiled on $date</font></td>
+			</tr>
+		</table>
+	</body>
+</html>

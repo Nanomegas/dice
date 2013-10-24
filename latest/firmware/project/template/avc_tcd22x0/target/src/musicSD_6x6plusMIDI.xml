@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<StatusDescriptor xmlns="http://briankarr.com/musicSUSD_XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://briankarr.com/musicSUSD_XMLSchema.xsd file:/C:/Documents%20and%20Settings/brian/Desktop/musicSUSD_XMLSchemaOxygen.xsd"
+                  descriptor_length="1509" notes="6 Audio in, 6 Audio out, 1 MIDI in, 1 MIDI out"
+                  openness="closed">
+  <music_subunit_status_area_ib compound_len="10" ib_type="0x8100" primary_fields_len="6" current_tx_cap="0x02"
+                                current_rx_cap="0x02" current_latency_cap="0xFFFFFFFF" openness="open"/>
+  <routing_status_ib compound_len="1159" ib_type="0x8108" primary_fields_len="4" num_su_dst_plugs="6"
+                     num_su_src_plugs="6" num_music_plugs="15" openness="open">
+    <su_dst_plug_ib compound_len="166" ib_type="0x8109" primary_fields_len="8" su_plug_id="0"
+                    signal_format="0x9002" plug_type="0x00" num_clusters="4" num_channels="7"
+                    openness="closed">
+      <cluster_ib compound_len="38" ib_type="0x810A" primary_fields_len="11" stream_format="0x06"
+                  port_type="0x03" num_signals="2" openness="open">
+        <signal music_plug_id="7" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <signal music_plug_id="8" stream_position="1" stream_location="0x02"
+                openness="closed"/>
+        <name_ib compound_len="21" ib_type="0x000B" primary_fields_len="17" name_data_ref_type="0"
+                 openness="closed">
+          <name_data  name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="11" ib_type="0x000A" primary_fields_len="7" raw_text_data="Line12"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+      <cluster_ib compound_len="38" ib_type="0x810A" primary_fields_len="11" stream_format="0x06"
+                  port_type="0x03" num_signals="2" openness="closed">
+        <signal music_plug_id="9" stream_position="2" stream_location="0x01"
+                openness="open"/>
+        <signal music_plug_id="10" stream_position="3" stream_location="0x02"
+                openness="open"/>
+        <name_ib compound_len="21" ib_type="0x000B" primary_fields_len="17" name_data_ref_type="0"
+                 openness="closed">
+          <name_data  name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="11" ib_type="0x000A" primary_fields_len="7" raw_text_data="Line34"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+      <cluster_ib compound_len="38" ib_type="0x810A" primary_fields_len="11" stream_format="0x06"
+                  port_type="0x04" num_signals="2" openness="closed">
+        <signal music_plug_id="11" stream_position="4" stream_location="0x01"
+                openness="closed"/>
+        <signal music_plug_id="12" stream_position="5" stream_location="0x02"
+                openness="closed"/>
+        <name_ib compound_len="21" ib_type="0x000B" primary_fields_len="17" name_data_ref_type="0"
+                 openness="closed">
+          <name_data  name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="11" ib_type="0x000A" primary_fields_len="7" raw_text_data="S/PDIF"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+      <cluster_ib compound_len="32" ib_type="0x810A" primary_fields_len="7" stream_format="0x0D"
+                  port_type="0x0A" num_signals="1" openness="closed">
+        <signal music_plug_id="13" stream_position="6" stream_location="0x0B"
+                openness="closed"/>
+        <name_ib compound_len="19" ib_type="0x000B" primary_fields_len="15" name_data_ref_type="0"
+                 openness="closed">
+          <name_data  name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="9" ib_type="0x000A" primary_fields_len="5" raw_text_data="Midi"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_dst_plug_ib>
+    <su_dst_plug_ib compound_len="52" ib_type="0x8109" primary_fields_len="8" su_plug_id="1"
+                    signal_format="0x9002" plug_type="0x04" num_clusters="1" num_channels="2"
+                    openness="closed">
+      <cluster_ib compound_len="38" ib_type="0x810A" primary_fields_len="11" stream_format="0x06"
+                  port_type="0x03" num_signals="2" openness="closed">
+        <signal music_plug_id="0" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <signal music_plug_id="1" stream_position="1" stream_location="0x02"
+                openness="closed"/>
+        <name_ib compound_len="21" ib_type="0x000B" primary_fields_len="17" name_data_ref_type="0"
+                 openness="closed">
+          <name_data  name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="11" ib_type="0x000A" primary_fields_len="7" raw_text_data="Line12"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_dst_plug_ib>
+    <su_dst_plug_ib compound_len="52" ib_type="0x8109" primary_fields_len="8" su_plug_id="2"
+                    signal_format="0x9002" plug_type="0x04" num_clusters="1" num_channels="2"
+                    openness="closed">
+      <cluster_ib compound_len="38" ib_type="0x810A" primary_fields_len="11" stream_format="0x06"
+                  port_type="0x01" num_signals="2" openness="closed">
+        <signal music_plug_id="2" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <signal music_plug_id="3" stream_position="1" stream_location="0x02"
+                openness="closed"/>
+        <name_ib compound_len="21" ib_type="0x000B" primary_fields_len="17" name_data_ref_type="0"
+                 openness="closed">
+          <name_data  name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="11" ib_type="0x000A" primary_fields_len="7" raw_text_data="Line34"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_dst_plug_ib>
+    <su_dst_plug_ib compound_len="52" ib_type="0x8109" primary_fields_len="8" su_plug_id="3"
+                    signal_format="0x9002" plug_type="0x05" num_clusters="1" num_channels="2"
+                    openness="closed">
+      <cluster_ib compound_len="38" ib_type="0x810A" primary_fields_len="11" stream_format="0x06"
+                  port_type="0x04" num_signals="2" openness="closed">
+        <signal music_plug_id="4" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <signal music_plug_id="5" stream_position="1" stream_location="0x02"
+                openness="closed"/>
+        <name_ib compound_len="21" ib_type="0x000B" primary_fields_len="17" name_data_ref_type="0"
+                 openness="closed">
+          <name_data  name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="11" ib_type="0x000A" primary_fields_len="7" raw_text_data="S/PDIF"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_dst_plug_ib>
+    <su_dst_plug_ib compound_len="46" ib_type="0x8109" primary_fields_len="8" su_plug_id="4"
+                    signal_format="0x9002" plug_type="0x02" num_clusters="1" num_channels="1"
+                    openness="closed">
+      <cluster_ib compound_len="32" ib_type="0x810A" primary_fields_len="7" stream_format="0x0D"
+                  port_type="0x0A" num_signals="1" openness="closed">
+        <signal music_plug_id="6" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <name_ib compound_len="19" ib_type="0x000B" primary_fields_len="15" name_data_ref_type="0"
+                 openness="closed">
+          <name_data  name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="9" ib_type="0x000A" primary_fields_len="5" raw_text_data="MIDI"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_dst_plug_ib>
+    <su_dst_plug_ib compound_len="46" ib_type="0x8109" primary_fields_len="8" su_plug_id="5"
+                    signal_format="0x9002" plug_type="0x03" num_clusters="1" num_channels="1"
+                    openness="closed">
+      <cluster_ib compound_len="32" ib_type="0x810A" primary_fields_len="7" stream_format="0x06"
+                  port_type="0x09" num_signals="1" openness="closed">
+        <signal music_plug_id="15" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <name_ib compound_len="19" ib_type="0x000B" primary_fields_len="15" name_data_ref_type="0"
+                 openness="closed">
+          <name_data  name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="9" ib_type="0x000A" primary_fields_len="5" raw_text_data="sync"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_dst_plug_ib>
+    <su_src_plug_ib compound_len="166" ib_type="0x8109" primary_fields_len="8" su_plug_id="0"
+                    signal_format="0x9002" plug_type="0x00" num_clusters="4" num_channels="7"
+                    openness="closed">
+      <cluster_ib  compound_len="38" ib_type="0x810A" primary_fields_len="11"
+                  stream_format="0x06" port_type="0x03" num_signals="2" openness="closed">
+        <signal music_plug_id="0" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <signal music_plug_id="1" stream_position="1" stream_location="0x02"
+                openness="closed"/>
+        <name_ib compound_len="21" ib_type="0x000B" primary_fields_len="17" name_data_ref_type="0"
+                 openness="closed">
+          <name_data name_data_attr="0" max_num_chars="0xFFFF" openness="closed">
+            <raw_text_ib compound_len="11" ib_type="0x000A" primary_fields_len="7" raw_text_data="Line12"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+      <cluster_ib compound_len="38" ib_type="0x810A" primary_fields_len="11" stream_format="0x06"
+                  port_type="0x03" num_signals="2" openness="closed">
+        <signal music_plug_id="2" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <signal music_plug_id="3" stream_position="1" stream_location="0x01"
+                openness="closed"/>
+        <name_ib compound_len="21" ib_type="0x000B" primary_fields_len="17" name_data_ref_type="0"
+                 openness="closed">
+          <name_data  name_data_attr="0" max_num_chars="0xFFFF" openness="closed">
+            <raw_text_ib compound_len="11" ib_type="0x000A" primary_fields_len="7" raw_text_data="Line34"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+      <cluster_ib compound_len="38" ib_type="0x810A" primary_fields_len="11" stream_format="0x06"
+                  port_type="0x04" num_signals="2" openness="closed">
+        <signal music_plug_id="4" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <signal music_plug_id="5" stream_position="1" stream_location="0x02"
+                openness="closed"/>
+        <name_ib compound_len="21" ib_type="0x000B" primary_fields_len="17" name_data_ref_type="0"
+                 openness="closed">
+          <name_data  name_data_attr="0" max_num_chars="0xFFFF" openness="closed">
+            <raw_text_ib compound_len="11" ib_type="0x000A" primary_fields_len="7" raw_text_data="S/PDIF"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+      <cluster_ib compound_len="32" ib_type="0x810A" primary_fields_len="7" stream_format="0x0D"
+                  port_type="0x0A" num_signals="1" openness="closed">
+        <signal music_plug_id="6" stream_position="0" stream_location="0x0B"
+                openness="closed"/>
+        <name_ib compound_len="19" ib_type="0x000B" primary_fields_len="15" name_data_ref_type="0"
+                 openness="closed">
+          <name_data  name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="9" ib_type="0x000A" primary_fields_len="5" raw_text_data="Midi"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_src_plug_ib>
+    <su_src_plug_ib compound_len="52" ib_type="0x8109" primary_fields_len="8" su_plug_id="1"
+                    signal_format="0x9002" plug_type="0x04" num_clusters="1" num_channels="2"
+                    openness="closed">
+      <cluster_ib  compound_len="38" ib_type="0x810A" primary_fields_len="11"
+                  stream_format="0x06" port_type="0x03" num_signals="2" openness="closed">
+        <signal music_plug_id="7" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <signal music_plug_id="8" stream_position="1" stream_location="0x02"
+                openness="closed"/>
+        <name_ib compound_len="21" ib_type="000B" primary_fields_len="17" name_data_ref_type="0"
+                 openness="closed">
+          <name_data name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="11" ib_type="0x000A" primary_fields_len="7" raw_text_data="Line12"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_src_plug_ib>
+    <su_src_plug_ib compound_len="52" ib_type="0x8109" primary_fields_len="8" su_plug_id="2"
+                    signal_format="0x9002" plug_type="0x04" num_clusters="1" num_channels="2"
+                    openness="closed">
+      <cluster_ib  compound_len="38" ib_type="0x810A" primary_fields_len="11"
+                  stream_format="0x06" port_type="0x03" num_signals="2" openness="open">
+        <signal music_plug_id="9" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <signal music_plug_id="10" stream_position="1" stream_location="0x02"
+                openness="closed"/>
+        <name_ib compound_len="21" ib_type="000B" primary_fields_len="17" name_data_ref_type="0"
+                 openness="closed">
+          <name_data name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="11" ib_type="0x000A" primary_fields_len="7" raw_text_data="Line34"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_src_plug_ib>
+    <su_src_plug_ib compound_len="51" ib_type="0x8109" primary_fields_len="8" su_plug_id="3"
+                    signal_format="0x9002" plug_type="0x05" num_clusters="1" num_channels="2"
+                    openness="closed">
+      <cluster_ib  compound_len="37" ib_type="0x810A" primary_fields_len="11"
+                  stream_format="0x06" port_type="0x04" num_signals="2" openness="closed">
+        <signal music_plug_id="11" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <signal music_plug_id="12" stream_position="1" stream_location="0x02"
+                openness="closed"/>
+        <name_ib compound_len="20" ib_type="000B" primary_fields_len="16" name_data_ref_type="0"
+                 openness="closed">
+          <name_data name_data_attr="0" max_num_chars="0xFFFF" openness="closed">
+            <raw_text_ib compound_len="10" ib_type="0x000A" primary_fields_len="6" raw_text_data="SPDIF"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_src_plug_ib>
+    <su_src_plug_ib compound_len="46" ib_type="0x8109" primary_fields_len="8" su_plug_id="4"
+                    signal_format="0x9002" plug_type="0x02" num_clusters="1" num_channels="1"
+                    openness="closed">
+      <cluster_ib  compound_len="32" ib_type="0x810A" primary_fields_len="7"
+                  stream_format="0x0D" port_type="0x0A" num_signals="1" openness="closed">
+        <signal music_plug_id="13" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <name_ib compound_len="19" ib_type="000B" primary_fields_len="15" name_data_ref_type="0"
+                 openness="closed">
+          <name_data name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="9" ib_type="0x000A" primary_fields_len="5" raw_text_data="MIDI"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_src_plug_ib>
+    <su_src_plug_ib compound_len="46" ib_type="0x8109" primary_fields_len="8" su_plug_id="5"
+                    signal_format="0x9002" plug_type="0x03" num_clusters="1" num_channels="1"
+                    openness="closed">
+      <cluster_ib  compound_len="32" ib_type="0x810A" primary_fields_len="7"
+                  stream_format="0x06" port_type="0x09" num_signals="1" openness="closed">
+        <signal music_plug_id="14" stream_position="0" stream_location="0x01"
+                openness="closed"/>
+        <name_ib compound_len="19" ib_type="000B" primary_fields_len="15" name_data_ref_type="0"
+                 openness="closed">
+          <name_data name_data_attr="0" max_num_chars="0xFFFF" openness="open">
+            <raw_text_ib compound_len="9" ib_type="0x000A" primary_fields_len="5" raw_text_data="Sync"
+                         openness="open"/>
+          </name_data>
+        </name_ib>
+      </cluster_ib>
+    </su_src_plug_ib>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x00"
+                   music_plug_id="0" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="1" src_plug_fn_block_id="0xFF" src_stream_position="0"
+                   src_stream_location="0x02" dst_plug_fn_type="0xF1" dst_plug_id="0"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="0" dst_stream_location="0x02"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x00"
+                   music_plug_id="1" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="1" src_plug_fn_block_id="0xFF" src_stream_position="1"
+                   src_stream_location="0x01" dst_plug_fn_type="0xF1" dst_plug_id="0"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="1" dst_stream_location="0x01"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x00"
+                   music_plug_id="2" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="2" src_plug_fn_block_id="0xFF" src_stream_position="0"
+                   src_stream_location="0x01" dst_plug_fn_type="0xF1" dst_plug_id="0"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="2" dst_stream_location="0x01"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x00"
+                   music_plug_id="3" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="2" src_plug_fn_block_id="0xFF" src_stream_position="1"
+                   src_stream_location="0x02" dst_plug_fn_type="0xF1" dst_plug_id="0"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="3" dst_stream_location="0x02"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x00"
+                   music_plug_id="4" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="3" src_plug_fn_block_id="0xFF" src_stream_position="0"
+                   src_stream_location="0x01" dst_plug_fn_type="0xF1" dst_plug_id="0"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="4" dst_stream_location="0x01"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x00"
+                   music_plug_id="5" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="3" src_plug_fn_block_id="0xFF" src_stream_position="1"
+                   src_stream_location="0x02" dst_plug_fn_type="0xF1" dst_plug_id="0"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="5" dst_stream_location="0x02"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x01"
+                   music_plug_id="6" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="4" src_plug_fn_block_id="0xFF" src_stream_position="0"
+                   src_stream_location="0x0B" dst_plug_fn_type="0xF1" dst_plug_id="0"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="6" dst_stream_location="0x0B"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x00"
+                   music_plug_id="7" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="0" src_plug_fn_block_id="0xFF" src_stream_position="0"
+                   src_stream_location="0x01" dst_plug_fn_type="0xF1" dst_plug_id="1"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="0" dst_stream_location="0x01"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x00"
+                   music_plug_id="8" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="0" src_plug_fn_block_id="0xFF" src_stream_position="1"
+                   src_stream_location="0x02" dst_plug_fn_type="0xF1" dst_plug_id="1"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="1" dst_stream_location="0x02"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x00"
+                   music_plug_id="9" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="0" src_plug_fn_block_id="0xFF" src_stream_position="2"
+                   src_stream_location="0x01" dst_plug_fn_type="0xF1" dst_plug_id="2"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="0" dst_stream_location="0x01"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x00"
+                   music_plug_id="10" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="0" src_plug_fn_block_id="0xFF" src_stream_position="3"
+                   src_stream_location="0x01" dst_plug_fn_type="0xF1" dst_plug_id="2"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="1" dst_stream_location="0x02"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x00"
+                   music_plug_id="11" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="0" src_plug_fn_block_id="0xFF" src_stream_position="4"
+                   src_stream_location="0x01" dst_plug_fn_type="0xF1" dst_plug_id="3"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="0" dst_stream_location="0x01"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x00"
+                   music_plug_id="12" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="0" src_plug_fn_block_id="0xFF" src_stream_position="5"
+                   src_stream_location="0x02" dst_plug_fn_type="0xF1" dst_plug_id="3"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="1" dst_stream_location="0x02"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x01"
+                   music_plug_id="13" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="0" src_plug_fn_block_id="0xFF" src_stream_position="6"
+                   src_stream_location="0x0B" dst_plug_fn_type="0xF1" dst_plug_id="4"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="0" dst_stream_location="0x0B"
+                   openness="closed"/>
+    <music_plug_ib compound_len="18" ib_type="0x810B" primary_fields_len="14" music_plug_type="0x80"
+                   music_plug_id="14" routing_support="0x00" src_plug_fn_type="0xF0"
+                   src_plug_id="5" src_plug_fn_block_id="0xFF" src_stream_position="0"
+                   src_stream_location="0x0A" dst_plug_fn_type="0xF1" dst_plug_id="5"
+                   dst_plug_fn_block_id="0xFF" dst_stream_position="0" dst_stream_location="0x0A"
+                   openness="closed"/>
+  </routing_status_ib>
+</StatusDescriptor>

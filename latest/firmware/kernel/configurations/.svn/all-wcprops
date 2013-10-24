@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/kernel/configurations
+END
+internal_ram_test.ecc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/kernel/configurations/internal_ram_test.ecc
+END
+redboot_romram.ecc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/kernel/configurations/redboot_romram.ecc
+END
+redboot_ram.ecc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/kernel/configurations/redboot_ram.ecc
+END
+kernel.ecc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/kernel/configurations/kernel.ecc
+END
+diceJrKernel.ecc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/kernel/configurations/diceJrKernel.ecc
+END
+internal_ram_test_jr.ecc
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tcat/!svn/ver/37821/tags/release/basic/latest/firmware/kernel/configurations/internal_ram_test_jr.ecc
+END

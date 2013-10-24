@@ -1,0 +1,1107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Firmware Release Notes</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<style type="text/css">
+		<!--
+		body	{color: #000;background: #fff;font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;font-size: 12px;}
+		.blue {color:#00f;background:#fff;}
+		.green {color:#080;background:#fff;}
+		.b {font-weight:bold;}
+		.tab {margin-left:4em;}
+		//-->
+	</style>
+</head>
+
+<body>
+	<p><b><font size="5" face="Verdana">DICE FIRMWARE RELEASE NOTES</font></b></p>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 4.1.3</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">APPLIES TO</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1231</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Typically an application will create and start a DAL domain in their init code running some fixed internal rate (48k). Eventually a driver will attach and set another clock source. In that case everything will work as the domain has been running at a rate and the PLL is on.
+					<br><br>
+					In case a device does not create the domain and set the clock until a driver attaches and in case the device is told to slave to SYT the AVS receiver will never lock as it needs some audio clock to lock. This is because the DAL state machine was not enabling the JET PLL clock until the first time it got lock.
+					<br><br>
+					That has now been changed such that the JET PLL will always be enabled when waiting for a device to lock.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 4.1.2</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	&nbsp;&nbsp;<font size="2" face="Verdana">[None]</font>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 4.1.1</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">APPLIES TO</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1185</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The EVM project templates that utilize EAP now correctly include the _MIXFIX_EAP define.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 4.1.0</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">APPLIES TO</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1126</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Without knowledge of a device's A/D or D/A converters' latency or a device's internal signal path, previous driver versions simply specified the audio latency for the AES/SPDIF transceiver to ASIO or CoreAudio.<br><br>A new function diceDriverSetHardwareLatencies( uint32 txHwLatency, uint32 rxHwLatency ) allows a device's firmware to specify its input and output audio latency to the driver.<br><br>Note that since ASIO only supports one over-all input and output latency value for all channels, it is not possible to indicate the latency for each group of channels (analog, AES/SPDIF, ADAT, etc.). The general standard is to specify the latency for the analog I/O path.<br><br>The values provided need to include the sample latency within the DICE, which includes the router and appropriate transceiver module (InS, AES/SPDIF, ADAT, or AVS).  New defines are available in dalRouting.h with these pre-calculated values.<br><br>Example usage of this can be found in the diceII and tcd22x0 project templates.<br><br>A new CLI command has been added for development testing:<br> dicedriver.setLatencies &lt;in&gt; &lt;out&gt;</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1127</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">When using stacked devices, the driver defaults to sorting the audio channels by the devices' GUID.<br><br>A new function diceDriverSetSortID( uint32 sortID ) has been added that allows the firmware to specify its sort order amongst multiple stacked devices.  Devices with the same sortID value are sorted by their GUID as before.<br><br>Note that after changing a device's sortID, a notification with the DD_NOTIFY_RX_CFG_CHG_BIT and DD_NOTIFY_TX_CFG_CHG_BIT bits set must be sent to notify the driver.<br><br>A new CLI command has been added for development testing:<br> dicedriver.setSortID &lt;sortID&gt;</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 4.0.0</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">APPLIES TO</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">780</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The UART transmit code has been re-factored to use an interrupt-driven software FIFO (16-byte) in order to work-around a limitation with the UART's hardware FIFO that was causing MIDI dropouts.  The 4.0.0 host driver checks the firmware's DICE Driver protocol version and will not increase its MIDI output transmit speed unless it determines the firmware has this fix.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">814</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">After a bus-reset the DICE 1394 Stack will by default read the WWUID from all devices on the bus into a cache. This information is not used by typical DICE applications and it prolongs the bus reset process and have been known to create dead-locks from time to time.
+					The templates have been changed to define _OPTIMIZE_BUSRESET in Make.params so this caching is not being done.
+					We strongly recommend defining this flag in all your products. In the rare case the WWUID information of the devices on the network is required, the cache can be manually updated using the briUpdateNodeInfos API function.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">992</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">When the firmware is built without the 'debug' module, the fSYS_TRACEn macros were not defined. The compiler issues warnings and assumes returning int, which is an error since the macros expand to void functions.
+
+					The macros in sysDebug.h are now defined away when _SYS_TRACE is not defined, and debug.h is explicitly included in all files that reference the macros.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">1010</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Several issues related to DICE-initiated bus resets have been fixed.
+
+					This is required for Linux compatibility, and is also a useful correction for OS X and Windows platforms.
+
+					Thanks go out to Clemens Ladisch (Linux community) for patch contributions.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">1047</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The isochronous MIDI transmitter is now interrupt driven and has an additional FIFO to prevent dropping MIDI input data.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.6</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">APPLIES TO</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">891</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The PLL control register settings have been adjusted to decrease the time it takes to report a lock state change to the host.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">946</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Added a new template for the EVM004 evaluation board.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">DICE Mini</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.5</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	&nbsp;&nbsp;<font size="2" face="Verdana">[None]</font>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.4</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">APPLIES TO</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">745, 807</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The Visual Studio solution and project files have been updated to Visual Studio 2008.  Visual Studio 2005 is no longer supported.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">812</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A memory leak could occur in the 1394 stack if the TxQueue became full.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">813</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A bus reset storm could crash the 1394 stack.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">839</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Fixed the S/PDIF emphasis coding.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.3</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">APPLIES TO</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">729</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Added a new template for the EVM003 evaluation board.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">735</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Due to GPL restrictions, the OpenOCD that was built to handle the DICEII watchdog has been removed. Instructions for building OpenOCD with a TCAT patch for handling the watchdog can be found in your SVN release tag in docs/public/firmware/OpenOCD/DICE_OOCD_JTAG.pdf.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">796</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Added ADAT support to the EVM003.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE Mini</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.2</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	&nbsp;&nbsp;<font size="2" face="Verdana">[None]</font>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.1</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">APPLIES TO</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">690</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Updated to the new ecosconfig.exe to eliminate ".svn does not have a CDL script" warnings on some development systems.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">692</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">Eliminated the eCos kernel build warnings.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">698</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Added a new template for the Audio Monitor II evaluation board.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.5.0</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">APPLIES TO</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">362</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">It is now possible to build the firmware successfully without the CLI (command line interface) module.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">655</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">A new CLI command has been added that can be used to send an arbitrary user notification to the host:  dicedriver.notify &lt;notification&gt;</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">673</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">In the firmware project template for DICE II on the Classic EVM, some of the myModes files had invalid SMUX IV related routes for high rate modes. These routes have been removed.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.4.2</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">APPLIES TO</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">216</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">There is now a support forum post that describes <a href="http://www.tctechnologies.tc/forum/viewtopic.php?f=14&amp;t=136">how to add C files to a firmware project</a>.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">615</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The eCos source code tree has been cleaned up to minimize the differences from the original eCos 2.0 snapshot that it is based on.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.4.1</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="125">
+					<p><b><font size="2" color="white" face="Verdana">APPLIES TO</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">571</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">The DICE-JR/Mini version of the internal RAM test, which runs entirely in internal RAM and tests external RAM, was incorrectly loading to external RAM. 
+					<br><br>
+					As part of the fix, this test is now built from a new separate internal_ram_test_jr.ecc ecosconfig file. If you would like to use this with your existing firmware projects, please update your project/&lt;myProj&gt;/make/Makefile
+					<br><br>
+					You must change the in_ram_test_jr make target commands, and you can find the corrected commands in any of the project templates.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">585</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">In rare cases where two bus resets were issued within milliseconds of each other the stack would get into an unrecoverable loop of sending bus resets.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">586</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">In rare cases where a packet was sent to a node while it was initializing the firmware would hang.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="125">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+	<br><hr>
+	<p><b><font size="4" face="Verdana">Version 3.4.0</font></b></p>
+	<p><font size="2" face="Verdana"></font></p>
+	<p><b><font size="3" face="Verdana">Issues resolved:</font></b></p>
+	<table border="1" cellspacing="0" cellpadding="2">
+		<tbody>
+			<tr>
+				<td valign="top" bgcolor="#555555" width="75">
+					<p><b><font size="2" color="white" face="Verdana">CASE</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="500">
+					<p><b><font size="2" color="white" face="Verdana">DESCRIPTION</font></b></p>
+				</td>
+				<td valign="top" bgcolor="#555555" width="200">
+					<p><b><font size="2" color="white" face="Verdana">APPLIES TO</font></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">490</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">Trying to program an AVS receiver to use an isochronous channel above 31 would result in the channel number wrapping, so setting it to 32 would actually set it to 0.  As most systems allocate isochronous channels from 0 and up this is unlikely to have caused any problems.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="200">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">508</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">The JET PLL source selector defines were wrong (DICE JR/Mini only). Fortunately only two of those are used in DAL, one selects the Clock Controller as the source (used in normal operation), the other selects the prescaler (used in unlocked situations). The latter was wrong resulting in the PLL falling to ~27KHz when not locked instead of the last good rate which was the intention.</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="200">
+					<p><font size="2" face="Verdana">DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">509</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">In certain situations after a hardware soft reset (firmware load, DICE tool test suite, etc.) the driver would not remount the device correctly. An investigation revealed several problems:
+					<ol>
+						<li>If a read request was issued to the device immediately after busreset, it would get lost.
+						<li>An illegal 1394 packet would be sent in response to Read Quadlet.
+						<li>Device was still CM capable after Minimum CSR was set before soft reset.
+					</ol>
+					All these would affect how fast the device would disappear after a soft reset of the hardware.
+					<br><br>
+					1) and 2) would make Windows wait ~2 sec before retrying. This could result in the device not correctly unmounting before reappearing. It would also slow down bus reset processing in general.
+					<br><br>
+					3) is not critical but it could potentially lead to problems.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="200">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="#dddddd" width="75">
+					<p><font size="2" face="Verdana">521</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="500">
+					<p><font size="2" face="Verdana">If the DAL is configured to use RATE_MODE_LOW_MID and the the device is syncing to a 1394 stream, the sync source module is required to detect the mode automatically from the SFC field in the incoming packets.  It now ignores incorrectly formatted empty packets, which were being sent by the Mac OS X driver (Case 522).</font></p>
+				</td>
+				<td valign="top" bgcolor="#dddddd" width="200">
+					<p><font size="2" face="Verdana">DICE II / DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" bgcolor="white" width="75">
+					<p><font size="2" face="Verdana">536</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="500">
+					<p><font size="2" face="Verdana">A new template firmware project has been added to assist in creating a product with the DICE that does not require a 1394 PHY and so does not need the 1394 stack.</font></p>
+				</td>
+				<td valign="top" bgcolor="white" width="200">
+					<p><font size="2" face="Verdana">DICE Jr. / DICE Mini</font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+
+
+<br><hr>
+<h2>Firmware changes for 3.3.3</h2>
+
+<p><span class="b">Case 355<br>
+Feature: </span>Several optimizations were made to the IEEE1394 stack to minimize CPU load and optimize packet response time. One copy step has been eliminated and ASM routines in internal memory are now used for data moves.
+There are no changes to the exported API's.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Case 383<br>
+Feature: </span>A new API function uart1_activity() has been added which will return activity status on the physical MIDI In and Out port.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Case 390<br>
+BugFix: </span>The AES Consumer (SPDIF) channel status was not indicated correctly for the mid and high sample rates.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Case 391<br>
+BugFix: </span>The Auto CRC was enabled under Consumer (SPDIF) and disabled under Pro. (AES). This was the wrong way around.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Case 396<br>
+Feature: </span>The CVS $Id tag lines have been removed from the header section of the source files.  The CVS $Id tag was no longer being used and the information had become stale.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Case 411<br>
+BugFix: </span>Under certain conditions the firmware would assume the minimal configuration ROM. This was a problem with a structure which had the incorrect endianess.
+It would only result in problems in the rare case that the lower byte of the CRC of the config ROM is 0 or 1.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Case 425<br>
+Feature: </span>The initialization code for Dice Jr/Mini has been modified:<br>
+- Removed redundant DICE II leftover (no effect)<br>
+- Disabled Watchdog (helps debugging)<br>
+<span class="b">Applies to: DICE Mini/JR</span></p>
+
+<p><span class="b">Case 426<br>
+BugFix: </span>The build system will now terminate if more than 16kb of internal RAM is used. It was incorrectly set to 32kb.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<br>
+<hr>
+
+
+<h2>Firmware changes for 3.3.2</h2>
+
+<p><span class="b">Case 213<br>
+Feature: </span>GlobalMute function in DAL for DICE II targets has been implemented.<br>
+<span class="b">Applies to: DICE II</span></p>
+
+<p><span class="b">Case 318<br>
+BugFix: </span>The DAL event hold-off timer was off by a factor of two.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<br>
+<hr>
+
+
+<h2>Firmware changes for 3.3.0</h2>
+
+<p><span class="b">Case 281<br>
+Feature: </span>The Classic EVM and the EVM002 firmware has been updated to improve regression testing for MIDI.
+<br>
+<p><div class="tab"><b>EVM002:</b></div>
+<div class="tab">Testmode 6 and 9: 16x16 now has two MIDI port pairs</div>
+<div class="tab">Testmode 7 and 10: 32x32 now has two MIDI port pairs (one on each Isoc.)</div>
+</p>
+<p><div class="tab"><b>Classic EVM:</b></div>
+<div class="tab">Testmode 9: 16x16 now has two MIDI port pairs</div>
+<div class="tab">Testmode 10: 32x32 now has two MIDI port pairs (one on each Isoc.)</div>
+</p>
+<p><div class="tab">In those two modes MIDI will always be enabled regardless of the MIDI DIP Switch.</div></p>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Case 291<br>
+Feature: </span>Mode 11 has been added to the EVM002 for tcd22x0 targets.
+<p>This mode is configurable through the evm.m11rx and evm.m11tx CLI commands.
+<br>The mode can be configured for any valid combination of audio and MIDI on each of the two Isoc. channels.
+<br>This mode is useful for testing purposes where the evm can be programmed to emulate any device.
+<br>The configuration is stored in the flash persistent sector.
+</p>
+<span class="b">Applies to: DICE Mini/JR</span></p>
+
+<br>
+<hr>
+
+
+<h2>Firmware changes for 3.2.0</h2>
+
+<p><span class="b">Case 52<br>
+Feature: </span>Removed eCos files for unused platforms, chips and device drivers, and ecos.db is updated accordingly. This reduces the eCos packages distribution size by neary half, in terms of size and number of files.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Case 76<br>
+Feature: </span> Modules can add unit Config ROM directories at run time.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Case 77<br>
+Feature: </span> Configuration ROM is now built using the new CRB module. The Config ROM Builder simplifies building device Configuration ROM, and also allows for prototyping Config ROMs at run-time from the CLI.
+The templates shows how to integrate this feature. For existing projects simply add "crb" to the Make.params APP_MODULE list and replace the project specific targetConfigCSR.h/c with the ones from the appropriate template.
+This update is not required for compatibility with drivers and PAL.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Case 146<br>
+Feature: </span> The firmware loader module has been updated to:
+<ul>
+<li>- provide progress information for lengthy operations such as firmware delete and create.
+<li>- provide capabilities flags indicating if various features are available such as progress information and atomic delete/create
+<li>- this extention is both backward and forward compatible with drivers and PAL
+<li>- PAL has been updated to take advantage of the new features if they are available.
+</ul>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Case 151<br>
+Feature:</span> A new firmware template is included, which implements a class compliant AV/C device for Mac OS X hosts.
+<br>The firmware works with Dice-JR or DICE-Mini on the EVM002, and operates with the latest versions of OS X Tiger and Leopard without any need for driver installs.
+<br>This implements 4x4 analog i/o, 2x2 S/PDIF i/o, and MIDI i/o.<br>
+<span class="b">Applies to: DICE Mini/JR</span></p>
+
+<p><span class="b">Case 231<br>
+Feature: </span>Ability to set AES DualWire mode individually for Rx and Tx.
+This only relates to tcd22x0 targets and not DICE II.<br>
+<span class="b">Applies to: DICE Mini/JR</span></p>
+
+<p><span class="b">Case 232<br>
+Feature: </span>GlobalMute function in DAL for tcd22x0 targets has been implemented.<br>
+<span class="b">Applies to: DICE Mini/JR</span></p>
+
+<br>
+<hr>
+
+
+<h2>Firmware changes for 3.1.2</h2>
+
+<p><span class="b">Feature:</span> The high-resolution TIMER2 is now also available for DICE II firmware targets.<br>
+<span class="b">Applies to: DICE II</span></p>
+
+<p><span class="b">BugFix:</span> EMV002 with DICE II would not always indicate the correct receiver locked status to the driver (control panel).<br>
+<span class="b">Applies to: DICE II</span></p>
+
+
+<br>
+<hr>
+
+<h2>Firmware changes since SVN revision 12707 (Build 95) up to revision 19512 (build 121)</h2>
+
+<p><span class="b">Improvement:</span> When the DICE is asked to soft reset either from the application or from the host (typically after firmware upload) the device would previously not disappear and reappear on the network. This could result in erratic behaviour as parameters could have been reset without the driver and control panel knowing. Functionality has been added to the templates to make sure this is happening correctly.
+This is only in the application templates so please make sure that this implementation is updated in current projects.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Feature:</span> Changed the version system to support new method of obtaining version from Binary and from device.
+For convenience the old version can be engaged by defining <code>_USE_OLD_VERSION_INFO</code>. 
+We suggest that all customers use this new file and define their application version accordingly. When using the new PAL this will be transparent. The functions in PAL will be able to retrieve both the old and new info if available. This new method enables the host to get more precise and consistent information from the running application as well as from a binary image.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Feature:</span> In some cases, it is required to be able to post an SPI command from an interrupt routine. A new function has been added to the SPI module (<code>_spiBufAdd</code>). This function will not use any print functions in case of errors. In order for the SPI to be interrupt safe if it is used from both thread and interrupt level define <code>_SPI_INTERRUPT_SAFE</code>. The new function can be called from both ISR and DSR handlers.<br>
+<span class="b">Applies to: DICE Mini/JR</span></p>
+
+<p><span class="b">Improvement:</span> The DICE system is not capable of handling async requests right after a bus reset due to internal housekeeping. In the previous firmware an async. request would be acknowledged with <code>ack_pending</code> but never responded to. This would result in the Host (Win) timing out and retrying after 2 sec. With this fix an ack_busy will be returned and the host will retry immediately reducing the 2 sec. to 200ms.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Feature:</span> Separate vector for <code>TIMER2</code> interrupt added to DICE JR/Mini eCOS adaptation. The DICE timers share one interrupt line but code has been added to demux those into two eCOS vectors. A new eCOS vector <code>CYGNUM_HAL_INTERRUPT_TIMER2</code> has been added and this can be used by applications requiring a timer interrupt (typically for applications needing finer granularity interrupts than the 10ms provided by the eCOS RTC).</p>
+<p>In the current firmware TIMER2 has been used as a precise timer for debugging output such as the trace functionality. If an application wish to use TIMER2 for other purposes it should define <code>_LEAVE_TIMER2</code> in which case those functions will return 0 and not touch the timer.<br>
+<span class="b">Applies to: DICE Mini/JR</span></p>
+
+<p><span class="b">Feature:</span> The eap module has been added to the DICE JR/Mini project tree. A new template has been generated to show how to use eap. The functionality of eap is defined in a separate document.<br>
+<span class="b">Applies to: DICE Mini/JR</span></p>
+
+<p><span class="b">Improvement:</span> The batch files used for making the project and for invoking InSight from VC8 have been improved so the <code>TC_DIR</code> variable will not be required anymore. The batch files will automatically set the environment based on where the project is located.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Improvement:</span> The AVS state machine has been modified for DICE JR/Mini so the ARX is only turned off when it is not in the middle of receiving a packet. This will prevent a situation where, in rare cases, turning off the ARX would disrupt the outgoing stream. This could lead to longer synchronization time with the driver after changing rates and sync. This new improved method can be disabled by defining <code>_AVS_OLD_RX_FIX</code>.<br>
+<span class="b">Applies to: DICE Mini/JR</span></p>
+
+<p><span class="b">BugFix:</span> DICE JR/Mini mixer bug workaround. This code compensates for the bug in the mixer at high sample rates (176.4/192). In that situation the mixer only produces a correct output for every second sample. There are two different workarounds, one gives the full 8 channels with reduced quality, the other gives 4 channels with full functionality.</p>
+<p>In order to engage the mixer fix, define:</p>
+<table border="0" cellspacing="10">
+<tr><td width="15%"><code>_FIQ, _MIXFIX_FIQ</code></td><td>to enable the ARM APB interrupt code fixing the mixer.</td></tr>
+<tr><td width="15%"><code>_MIXFIX_PERFECT4</code></td><td>to enable the perfect 4 channel fix, if not defined the less perfect 8 channel fix is engaged.</td></tr>
+<tr><td width="15%"><code>_MIXFIX_DAL</code></td><td>to enable the router to automatically spoof all routing from the mixer so it goes through the ARM APB fixing code. Defining this will effectively make the mixer bug transparent to applications using the dal for routing, except for the limited number of channels if <code>_MIXFIX_PERFECT4</code> is defined.</td></tr>
+<tr><td width="15%"><code>_MIXFIX_EAP</code></td><td>to enable eap to automatically spoof all routing from the mixer so it goes through the ARM APB fixing code. Defining this will effectively make the mixer bug transparent to applications using the eap for routing, except for the limited number of channels if <code>_MIXFIX_PERFECT4</code> is defined.</td></tr>
+</table>
+<p>Side effects:<div class="tab">The ARM APB routine handling the fix will steal some CPU cycles but this is insignificant in most cases.</div><br>
+<span class="b">Applies to: DICE Mini/JR</span></p>
+
+<p><span class="b">Feature:</span> CLI: dice.dump router on DICE JR/Mini now gives more verbose information about the routing table.<br>
+<span class="b">Applies to: DICE Mini/JR</span></p>
+
+<p><span class="b">BugFix:</span> The ARM audio interface was set to 4x4 at high rates on DICE JR/Mini. This is a copy/paste error from DICE II. The correct value is 8x8.<br>
+<span class="b">Applies to: DICE Mini/JR</span></p>
+
+<p><span class="b">Feature:</span> The universal inRam test has been added. This will enable loading of a RAM test into internal memory using the debugger. This test will be able to test the connection to external SDRAM and is invaluable in debugging new target hardware. The only thing required for this test to run is:
+<ul>
+	<li>Power supply (1.8v and 3.3v)</li>
+	<li>Correct JTAG connection</li>
+	<li>Clocks (SCLK and XTAL if PLLE=0, XTAL only if PLLE=1)</li>
+	<li>Reset line high.</li>
+</ul>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Improvement:</span> Doxygen modifications to enhance the auto generated documentation<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Improvement:</span> Updated all projects to use VC8. The intelisense system cannot determine which names are defined in Make.params so those are added manually under the project properties.
+The Build functions from within VC now correctly formats the errors and warnings so clicking on them will find the source line. The compilation also stops at errors.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Improvement:</span> Additional test functionality added to frmwload enabling the DICE tool to do more advanced diagnostics (internal, debugging)</p>
+<p>Details:</p>
+<ul>
+	<li>Define <code>_FTM</code>  to enable test functionality</li>
+	<li>Define <code>_AVSTRIG</code> to enable AVS trig functionality</li>
+	<li>Application requirements:
+	<ul>
+		<li>Must define functions <code>HRESULT myModeSetMode (uint32 mode)</code> and <code>HRESULT myModeBypassMidi (uint32 bOn)</code></li>
+		<li><code>myModeSetMode (uint32 mode)</code> enables the DICE tool to change the streaming mode (typically this function would be empty except for EVM)</li>
+		<li><code>myModeBypassMidi (uint32 bOn)</code> enables the DICE tool to do MIDI bypass testing, in order to support this diagnostic the application should implement this function. Examples can be found in the templates.</li>
+		<li>For <code>_AVSTRIG</code> the following functions should be defined. Please note that this functionality enables triggering an external IEEE1394 analyzer in case of errors. It is most likely not needed by final products.</li>
+		<li><code>targetEnableAVSTrigger (void)</code> - Programs a trigger port (typically <code>WCLK_OUT</code>) to be a GPIO</li>
+		<li><code>targetSignalAVSTrigger (void)</code> - Sends out a pulse on the programmed GPIO.</li></ul></li>
+	<li>Directions:
+	<ul>
+		<li>We suggest that <code>_FTM</code> is defined in final products. We also suggest that <code>myModeBypassMidi (uint32 bOn)</code> is implemented to bypass MIDI (see example in myApp). This will enable the DICE tool to perform MIDI diagnostic testing.</li></ul></li></ul><span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<p><span class="b">Improvement:</span> Updates to templates, automatic generation of projects during install, addition of EAP project for EVM002.<br>
+<span class="b">Applies to: DICE II, DICE Mini/JR</span></p>
+
+<h2>How to update firmware and potential implications:</h2>
+
+<p>Most of the updates will be automatic and have no consequences on being able to compile and run. Simply update the source tree and recompile projects. A few updates will require changes to the customer application. The templates will show how this can be done. Below is a description of those consequences:</p>
+
+<h3>New bus-reset handling in relation to soft-reset:</h3>
+<p>Make sure cyg_main contains:</p>
+<pre>
+	HRESULT StartBoot(<span class="blue">void</span>)
+	{
+      	<span class="green">// S/W Reset Power manager</span>
+      	targetBoardPrepareReset();
+      	*((<span class="blue">volatile</span> uint32 *) PWRMGRBASE) = 0xF;
+      
+      	TCTaskWait(500); <span class="green">// Reset 0.5 sec.</span>
+
+      	<span class="blue">return</span> E_FAIL;
+	}</pre>
+<p>and</p>
+<pre>
+	frmwLoadSetResetCB(StartBoot);</pre>
+
+<p>Please consult the project examples to see where to include these functions.</p>
+
+<p>Make sure targetBoard defines this function and add header to targetBoard.h</p>
+<pre>
+	<span class="green">// This function is called by the system when it needs to perform a</span>
+	<span class="green">// soft reset. If you need to reset any specific hardware, do it here</span>
+	<span class="blue">void</span> targetBoardPrepareReset(<span class="blue">void</span>)
+	{
+  	<span class="green">//this function will assure that the board is ready for reset</span>
+  	targetSetMinConfigROM();
+
+  	lhlBriForceBusReset();
+
+	TCTaskWait(1200);  <span class="green">//enough for computer to determine the device has gone with new LLC fix.</span>
+	}</pre>
+<p>Replace targetConfigCSR.h/c with the ones from the appropriate template (tcd22x0 for DICE JR/Mini and diceII_EVM002 for DICE II)</p>
+
+<h3>New Version info:</h3>
+<ul>
+	<li>Update to use the new SDK</li>
+	<li>Replace the files version.c/h with the ones from the template (it is not important which template, they are the same)</li>
+	<li>In version.c define APP_MAJ, APP_MIN, APP_SUB, APP_BUILD to contain your application version. If you utilized the application versions under the previous structure which had string versions of APP_MAJ and APP_MIN simply assign those version numbers as integers.</li>
+	<li>If you do not wish to use this new scheme, define <code>_USE_OLD_VERSION_INFO</code> in Make.params.</li></ul>
+
+<p>Why use the new versioning system?</p>
+<ul>
+	<li>Gives a consistent way of specifying the application version. It is essential for manufactures to be able to version their application independent of the TCAT SDK version.</li>
+	<li>Enables the TCAT CPL to determine if a certain binary fits a certain device and it will enable end-users to use our control panel without any risk of downgrading firmware or loading incompatible firmware. This is of particular importance to manufactures relying entirely on our CPL.</li>
+	<li>Enables control panels using PAL to obtain the version of running firmware and firmware binaries in a consistent way. The functions in PAL are made to be backward compatible to the old system.</li>
+	<li>The only potential problem is if a firmware using the new versioning system is attempted loaded with an old control panel (old PAL) in which case the binary will not be regarded as a valid binary. This should not be a problem assuming that the firmware always comes with the control panel and therefore will not be newer than the control panel.</li></ul>
+
+<h3>Improvements to firmware loader:</h3>
+<ul>
+	<li>Updating the firmware loader module is highly recommended and required for the use of the new version info. This will likely result in one or two linker errors. Those can be avoided in one of two ways:<ol type="a">
+		<li>By not defining _FTM and by defining <code>_USE_OLD_VERSION_INFO</code>. This is NOT recommended.
+		<li>Maintain the definition of <code>_FTM</code> and define two empty functions in myApp.c
+<pre>
+	HRESULT myModeSetMode (uint32 mode)
+	{
+		<span class="blue">return</span> NO_ERROR;
+	}
+	HRESULT myModeBypassMidi (uint32 bOn)
+	{
+		<span class="blue">return</span> NO_ERROR;
+	}</pre></li></ol></li>
+	<li>Choosing option b) makes a lot of new functionality available through the host. Some of this is for debugging and diagnostic purposes and it will enable TCAT to better assist in debugging problems in your products.</li></ul>
+
+<hr>
+
+<h2>Firmware changes since SVN revision 9110 (Build 76) up to revision 12707 (build 95)</h2>
+
+<h3>DICE JR/Mini Only</h3>
+<ul>
+	<li>Bugfix: ADAT Receiver Register definition was incorrect yielding the wrong user bits.</li>
+	<li>Feature/Update: Major overhaul of EVM002 templates, read EVM002 guide for more information.</li>
+</ul>
+
+<h3>DICE II Only</h3>
+
+<ul>
+	<li>Bugfix: Error in ADAT Rx statemachine, could result in problems locking to ADAT (<span class="b">SERIOUS</span>)</li>
+	<li>Feature: New application template for using DICE II with EVM002</li>
+	<li>Feature: Generic Software SPI added (used by EVM002 application)</li>
+</ul>
+
+<h3>Common</h3>
+
+<ul>
+	<li>Bugfix: Serious bug, where 1394 Tx get stuck. Only way to resume operation before fix was to reboot device. (<span class="b">SERIOUS</span>)</li>
+	<li>Feature/Change: CLI: <span class="b">dal.avs1phase</span> replaced with <span class="b">dal.avsphase</span> for debugging of 1394 phase offsets.</li>
+	<li>Feature: Added functionality for diagnostic testing. Make sure to include "ftm" in <code>APP_MODULE</code> define in make.param to include this functionality.</li>
+</ul>
+
+<h2>Integration of new updates</h2>
+
+<p>Updating from Build 76 should not cause any problems as the exported APIs have not changed. If "ftm" is included in Make.params (which we suggest) it will enable diagnostic tests to be run on the device/driver using the DICE tool. When building this way, the following link problem might occur:</p>
+<p>Unresolved: <code>myModeSetMode</code></p>
+<p>Unresolved: <code>myModeBypassMidi</code></p>
+<p>This can be solved by declaring two empty functions in your application module (myApp.c). The declarations would look like this:</p>
+<pre>HRESULT myModeSetMode (uint32 mode)
+
+{
+
+      <span class="blue">return</span> NO_ERROR;
+
+}
+
+HRESULT myModeBypassMidi (uint32 bOn)
+
+{
+
+      <span class="blue">return</span> NO_ERROR;
+
+}</pre>
+<hr>
+<h2>Firmware changes since SVN revision 207 (Build 25) up to revision 9110 (build 76)</h2>
+
+<h3>DICE JR/Mini Only</h3>
+
+<ul>
+	<li>Bugfix: The SPI interface routines have been updated. Some bugs which could potentially result in loss of data were fixed. One callback for data receive completion has been changed to pass a pointer instead of value. This might result in a small change in existing applications using the SPI routines.</li>
+	<li>Bugfix: The AML AVS/UART is now using DSR instead of ISR. As these functions signal semaphores using an ISR might result in unpredictable behavior.</li>
+	<li>Bugfix: The AML has been fixed so that sending MIDI data to 1394 will not overflow. On Dice Jr/Mini the thread will block if data is sent too fast.</li>
+	<li>Bugfix: Fixed definition of DICE Sample rate counter control register.</li>
+	<li>Bugfix: Added code to make sure AES receiver is updated to HIGH mode at interface start.</li>
+	<li>Bugfix: AVS receiver stuck state problem. IMPORTANT UPDATE</li>
+	<li> </li>
+	<li>Deprecated Functionality: Removed DICEII related definitions from diceDefs for Jr/Mini</li>
+	<li>Deprecated Functionality: Commented out various unneeded <code>SYS_TRACEn</code> debug output</li>
+	<li>Deprecated Functionality: Old TargetBoard LED functionality removed. This was for debugging only. Applications should update LEDs etc through the use of DAL callbacks. See myApp example.</li>
+	<li> </li>
+	<li>Templates: Project template scripts have been improved.</li>
+	<li>Templates: Brand new EVM002 template files supporting CPLD, LEDs and SW. 8 different modes can be selected. If the CPLD version is pre 1.2 the CPLD will need to be updated to make the Utility: The memory test running in internal RAM has been updated to run on DICE JR/Mini. See in_ram_test_jr_mini.</li>
+	<li> </li>
+	<li>Feature: LED/SW functionality available. The Splash screen will detect and show the version of the CPLD.</li>
+	<li>Feature: More complete use of _AVS #ifdef to allow non-1394 applications (router/PLL only)</li>
+	<li>Feature: Added AES receiver auto detect of high rates. Default off</li>
+	<li>Feature: Added new rate mode (<code>eDAL_RATE_MODE_ALL</code>) primarily for use when the device is used stand alone (no driver attached). This mode can automatically lock to any rate from 32k to 192k.</li>
+</ul>
+
+<h3>DICE II Only</h3>
+
+<ul>
+	<li>Bugfix: AML AVS/UART fixed bug, now using DSR instead of ISR. As these functions signal semaphores using an ISR might result in unpredictable behavior.</li>
+	<li>Templates: Project template scripts have been improved.</li>
+	<li>Errata: AML midi to 1394 can overflow, pending fix.</li>
+</ul>
+
+<h3>Common</h3>
+<ul>
+	<li>Feature: Added Simple Persistent Storage SPS  (<s>not fully debugged</s>)</li>
+	<li>Feature: Added Module CMS (Connection Management System) application example will be available in future release</li>
+	<li>Optimized firmware loader code with more yielding preventing host from potential timeout.</li>
+</ul>
+
+<h3>Known issues</h3>
+<p>The AML handles MIDI message routing between the 1394 interface and the UART. The normal mode is to let the MIDI pass through at the interrupt-handler level. The AML also allows the reception and transmission of MIDI through application buffers. Currently, the outgoing MIDI is not interrupt controlled. On DICE JR/Mini sending more data than can be handled by the bandwidth of 1394 will result in the thread blocking until there is available bandwidth. On DICE II the bytes will be lost. The MIDI system will be implemented with interrupt controlled transmission in an upcoming release.</p>
+
+<h3>Upcoming features</h3>
+<ul>
+	<li>AML: interrupt controlled transmit of MIDI in the Abstract MIDI Layer</li>
+	<li>EAP: The Extended Application Protocol provides host application configurability of devices (streaming, routing, mixer, peak, user)</li>
+	<li>(implemented) DICEII Microboard: Support for the DICE II microboard on the EVM002</li>
+	<li>AV/C Driver Model: the next version will run on the EVM002 and will also use the Modes system</li>
+	<li>Rubric: A Host utility (Mac and PC) that generates Music Subunit descriptors graphically for use in firmware applications</li>
+	<li>CMS: Connection Management System application examples</li>
+</ul>
+
+</body>
+</html>
